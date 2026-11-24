@@ -2,17 +2,18 @@
 
 Observatorio independiente de inteligencia sanitaria y farmacéutica. HealthScope organiza información pública sobre decisiones sanitarias, medicamentos, compras, cobertura y datos de Chile, con enlaces a las fuentes originales.
 
-**Versión:** 0.3 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
+**Versión:** 0.4 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
 
 ## Sitio público
 
 https://selguetagodoy.github.io/healthscope/
 
-Para activar la publicación, abre [Settings → Pages](https://github.com/selguetagodoy/healthscope/settings/pages) y selecciona **GitHub Actions** como fuente. El repositorio es público y el sitio se publica desde la rama `main` mediante `.github/workflows/deploy.yml`.
+GitHub Pages está habilitado con GitHub Actions. El repositorio es público y el sitio se publica desde la rama `main` mediante `.github/workflows/deploy.yml`.
 
 ## Funciones disponibles
 
-- Agenda editorial construida desde `events.json`.
+- Agenda editorial, nueve módulos con rutas independientes y fichas con URL estable generadas durante el build.
+- Buscador transversal del radar y filtros por fecha, autoridad y materia.
 - Radar con búsqueda, filtro por materia, ordenamiento, paginación y descarga CSV/JSON.
 - Vigilancia farmacéutica basada en alertas públicas seleccionadas del ISP.
 - Accesos a compras públicas, cobertura GES y Ley Ricarte Soto.

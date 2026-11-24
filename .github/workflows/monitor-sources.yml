@@ -7,6 +7,7 @@ on:
     paths:
       - ".github/workflows/monitor-sources.yml"
       - "data/sources.json"
+      - "scripts/monitor_sources.py"
   schedule:
     # Santiago alternates between UTC-3 and UTC-4. The local-time guard in the
     # collector selects 08:00, 12:00 and 16:30 in either season.
@@ -25,7 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pages: read
+      actions: read
+      pages: write
       id-token: write
     steps:
       - name: Check out repository
@@ -42,7 +44,7 @@ jobs:
         run: python scripts/validate_data.py
       - name: Commit monitoring snapshot
         id: commit
-        if: always()
+        if: success()
         shell: bash
         run: |
           if git diff --quiet -- data/pending.json data/monitoring.json; then

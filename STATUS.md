@@ -1,16 +1,14 @@
 # Estado · HealthScope Chile
 
-**Versión:** V0.3 · **Fecha:** 24-11-2026 · **Zona horaria del proyecto:** America/Santiago
+**Versión:** V0.4 · **Fecha:** 24-11-2026 · **Zona horaria del proyecto:** America/Santiago
 
 ## Despliegue
 
 - Repositorio: https://github.com/selguetagodoy/healthscope
 - URL objetivo: https://selguetagodoy.github.io/healthscope/
-- Estado comprobado inicialmente: HTTP 503.
-- GitHub Pages: sin habilitar. La intervención pendiente es seleccionar **GitHub Actions** en [Settings → Pages](https://github.com/selguetagodoy/healthscope/settings/pages).
-- Workflow de despliegue: `.github/workflows/deploy.yml` preparado para validar, compilar y publicar cuando Pages esté configurado.
-- Repositorio: V0.3 y sus correcciones están en la rama `main`.
-- GitHub Actions: validación aprobada; el workflow de publicación terminó con los pasos de despliegue omitidos porque Pages no está habilitado.
+- GitHub Pages habilitado; HTTP 200 y carga en Chrome comprobados en V0.3.
+- Workflow de publicación 45468881497 terminó correctamente.
+- V0.4 incorpora módulos independientes, fichas, búsqueda y correcciones del monitor; validación del nuevo despliegue pendiente.
 
 ## Funcionalidades incluidas
 
@@ -37,12 +35,12 @@
 - Sintaxis JavaScript aprobada con `node --check`.
 - Build estático local generado en `dist/`.
 - Auditoría estructural HTML/JS aprobada: anclas internas, referencias DOM, etiquetas ARIA, assets locales y breakpoint móvil.
-- Prueba visual del navegador pendiente: el Chromium del entorno administrado no pudo abrirse y la sesión de Desktop Commander en Windows expiró.
+- V0.3: Chrome cargó la portada, búsquedas de Ricarte Soto y ondansetrón, sin errores de consola; pruebas completas V0.4 pendientes.
 
 ## Próximas tareas
 
-1. En Settings → Pages, seleccionar **GitHub Actions** como fuente, siguiendo la [guía oficial de GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-2. Reejecutar el workflow de publicación y comprobar la URL HTTPS sin autenticación.
+1. Verificar despliegue V0.4 y rutas generadas.
+2. Probar filtros, exportaciones y móvil.
 3. Revisar la cadena TLS del endpoint ISP con una alternativa oficial que conserve la verificación de certificados.
 4. Revisar y clasificar las 11 capturas restantes del primer corte sin publicarlas automáticamente como novedades verificadas.
 5. Revisar el sitio publicado en escritorio, tablet y teléfono; documentar consola, enlaces y accesibilidad.

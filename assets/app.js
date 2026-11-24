@@ -39,12 +39,16 @@
     });
   }
 
+  function detailLink(event) { return './fichas/' + encodeURIComponent(event.id) + '/'; }
+  function linkedTitle(event) { return '<a class="record-title" href="' + escapeHtml(detailLink(event)) + '">' + escapeHtml(event.title) + '</a>'; }
   function populateCategories() {
     var select = $('category');
     Object.keys(CATEGORY_LABELS).forEach(function (key) {
       if (!state.events.some(function (event) { return event.category === key; })) return;
       var option = document.createElement('option'); option.value = key; option.textContent = CATEGORY_LABELS[key]; select.appendChild(option);
     });
+    Array.from(new Set(state.events.map(function(e){return e.authority;}).filter(Boolean))).sort().forEach(function(a){var option=document.createElement('option');option.value=a;option.textContent=a;$('authorityFilter').appendChild(option);});
+    var params = new URLSearchParams(location.search); $('query').value = params.get('q') || ''; if (params.has('materia')) select.value = params.get('materia'); if (select.selectedIndex < 0) select.value = ''; 
   }
 
   function renderEdition() {
@@ -59,24 +63,25 @@
     var lead = list[0];
     $('editionDate').textContent = 'Último hecho documentado · ' + dateLabel(lead.date);
     $('eventCountLabel').textContent = list.length + ' publicaciones verificadas';
-    $('featured').innerHTML = '<div class="feature-topline"><span class="brief-meta">' + escapeHtml(CATEGORY_LABELS[lead.category] || lead.category) + '</span><span class="feature-meta">' + dateLabel(lead.date) + '</span></div><div class="feature-visual"><span>HEALTHSCOPE / CHILE</span></div><div class="feature-body"><h3>' + escapeHtml(lead.title) + '</h3><p>' + escapeHtml(lead.summary) + '</p>' + sourceLink(lead.url, 'Consultar publicación oficial', 'text-link') + '</div>';
+    $('featured').innerHTML = '<div class="feature-topline"><span class="brief-meta">' + escapeHtml(CATEGORY_LABELS[lead.category] || lead.category) + '</span><span class="feature-meta">' + dateLabel(lead.date) + '</span></div><div class="feature-visual"><span>HEALTHSCOPE / CHILE</span></div><div class="feature-body"><h3>' + linkedTitle(lead) + '</h3><p>' + escapeHtml(lead.summary) + '</p>' + sourceLink(lead.url, 'Consultar publicación oficial', 'text-link') + '</div>';
     $('briefs').innerHTML = list.slice(1, 5).map(function (event) {
-      return '<article class="brief"><span class="brief-meta">' + escapeHtml(CATEGORY_LABELS[event.category] || event.category) + ' · ' + dateLabel(event.date) + '</span><h3>' + escapeHtml(event.title) + '</h3><p>' + escapeHtml(event.summary) + '</p>' + sourceLink(event.url, 'Fuente oficial', 'text-link') + '</article>';
+      return '<article class="brief"><span class="brief-meta">' + escapeHtml(CATEGORY_LABELS[event.category] || event.category) + ' · ' + dateLabel(event.date) + '</span><h3>' + linkedTitle(event) + '</h3><p>' + escapeHtml(event.summary) + '</p>' + sourceLink(event.url, 'Fuente oficial', 'text-link') + '</article>';
     }).join('') || '<p class="empty-state">Más novedades verificadas se incorporarán en próximas ediciones.</p>';
   }
 
   function filteredEvents() {
-    var query = normalize($('query').value);
+    var query = normalize($('query').value).trim();
+    var from = $('dateFrom').value, to = $('dateTo').value, authority = $('authorityFilter').value;
     var category = $('category').value;
     var sort = $('sortOrder').value;
     return verifiedEvents().filter(function (event) {
-      return (!category || event.category === category) && (!query || normalize(eventSummary(event)).includes(query));
+      return (!category || event.category === category) && (!authority || event.authority === authority) && (!from || event.date >= from) && (!to || event.date <= to) && (!query || query.split(/\s+/).every(function(token){return normalize(eventSummary(event)).includes(token);}));
     }).sort(function (a, b) { return sort === 'oldest' ? a.date.localeCompare(b.date) : b.date.localeCompare(a.date); });
   }
 
   function eventRow(event, compact) {
     var cat = CATEGORY_LABELS[event.category] || event.category || 'Salud';
-    return '<article class="event-row' + (compact ? ' compact-event' : '') + '"><time class="event-date" datetime="' + escapeHtml(event.date) + '">' + dateLabel(event.date) + '</time><div class="event-content"><span class="event-category">' + escapeHtml(cat) + (event.authority ? ' · ' + escapeHtml(event.authority) : '') + '</span><h3>' + escapeHtml(event.title) + '</h3><p>' + escapeHtml(event.summary) + '</p></div>' + sourceLink(event.url, 'Fuente primaria', 'event-source') + '</article>';
+    return '<article class="event-row' + (compact ? ' compact-event' : '') + '"><time class="event-date" datetime="' + escapeHtml(event.date) + '">' + dateLabel(event.date) + '</time><div class="event-content"><span class="event-category">' + escapeHtml(cat) + (event.authority ? ' · ' + escapeHtml(event.authority) : '') + '</span><h3>' + linkedTitle(event) + '</h3><p>' + escapeHtml(event.summary) + '</p>' + (event.implications ? '<p class="event-implication"><strong>Implicancias:</strong> ' + escapeHtml(event.implications) + '</p>' : '') + '<a class="text-link" href="' + escapeHtml(detailLink(event)) + '">Ver ficha →</a></div>' + sourceLink(event.url, 'Fuente primaria', 'event-source') + '</article>';
   }
 
   function renderResults() {
@@ -108,7 +113,7 @@
       return;
     }
     var potential = event.metric && event.metric.value ? '<div><span class="procurement-number">' + escapeHtml(event.metric.value) + '</span><span class="procurement-unit">' + escapeHtml(event.metric.unit || '') + '</span></div>' : '<div><span class="procurement-number">CENABAST</span><span class="procurement-unit">Abastecimiento público</span></div>';
-    $('procurementFeature').innerHTML = potential + '<div><span class="brief-meta" style="color:#f2b27f">' + dateLabel(event.date) + ' · ' + escapeHtml(event.authority) + '</span><h3>' + escapeHtml(event.title) + '</h3><p>' + escapeHtml(event.summary) + '</p>' + sourceLink(event.url, 'Abrir fuente oficial', 'text-link') + '</div>';
+    $('procurementFeature').innerHTML = potential + '<div><span class="brief-meta" style="color:#f2b27f">' + dateLabel(event.date) + ' · ' + escapeHtml(event.authority) + '</span><h3>' + linkedTitle(event) + '</h3><p>' + escapeHtml(event.summary) + '</p>' + sourceLink(event.url, 'Abrir fuente oficial', 'text-link') + '</div>';
   }
 
   function renderAccessEvents() {
@@ -192,7 +197,12 @@
   function exportJson() { download('healthscope-radar.json', JSON.stringify(filteredEvents(), null, 2), 'application/json;charset=utf-8'); }
 
   function bindEvents() {
-    $('query').addEventListener('input', function () { state.page = 1; renderResults(); });
+    function refresh(){state.page=1;renderResults();}
+    $('query').addEventListener('input', refresh);
+    $('query').addEventListener('search', refresh);
+    $('query').addEventListener('change', refresh);
+    ['dateFrom','dateTo','authorityFilter'].forEach(function(id){$(id).addEventListener('change',refresh);});
+    $('resetFilters').addEventListener('click',function(){['query','category','dateFrom','dateTo','authorityFilter'].forEach(function(id){$(id).value='';});$('sortOrder').value='newest';refresh();$('query').focus();});
     $('category').addEventListener('change', function () { state.page = 1; renderResults(); });
     $('sortOrder').addEventListener('change', function () { state.page = 1; renderResults(); });
     $('exportCsv').addEventListener('click', exportCsv);
@@ -209,14 +219,16 @@
 
   function renderAll() {
     populateCategories();
+    $('dashEvents').textContent=verifiedEvents().length; $('dashSources').textContent=state.sources.length; $('dashMedicines').textContent=state.medicines.length; $('dashPending').textContent=state.pending.length;
     renderEdition(); renderResults(); renderMedicines(); renderProcurement(); renderAccessEvents(); renderIndicators(); renderInstitutions(); renderResearch(); renderSources(); renderMonitoring();
   }
 
   bindEvents();
-  Promise.all([
-    loadJson('events.json'), loadJson('data/sources.json'), loadJson('data/medications.json'), loadJson('data/indicators.json'),
-    loadJson('data/institutions.json'), loadJson('data/research.json'), loadJson('data/pending.json'), loadJson('data/monitoring.json')
-  ]).then(function (data) {
+  var datasetPaths=['events.json','data/sources.json','data/medications.json','data/indicators.json','data/institutions.json','data/research.json','data/pending.json','data/monitoring.json'];
+  var failed=[];
+  Promise.all(datasetPaths.map(function(path){return loadJson(path).catch(function(){failed.push(path);return null;});})).then(function (data) {
+    state.error=failed.includes('events.json');
+    if(failed.length){$('dataNotice').hidden=false;$('dataNotice').textContent='Algunos datos no están disponibles temporalmente ('+failed.join(', ')+'). Las demás secciones siguen operativas.';}
     state.events = Array.isArray(data[0]) ? data[0] : [];
     state.sources = Array.isArray(data[1]) ? data[1] : [];
     state.medicines = Array.isArray(data[2]) ? data[2] : [];
