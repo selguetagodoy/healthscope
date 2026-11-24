@@ -5,7 +5,7 @@
       "title": "Presupuesto 2027 · Salud",
       "bulletin": "18.702-05",
       "status": "Tercer trámite concluido · Mixta del presupuesto general",
-      "summary": "La Cámara respaldó los recursos para LRS; Salud no figura entre las diez partidas con discrepancias.",
+      "summary": "La Cámara respaldó las modificaciones del Senado para LRS. La Partida 16 no figura en la lista de diez partidas con discrepancias remitidas a Mixta.",
       "metric": "$28.207 millones",
       "metric_label": "Recursos consignados vía Fonasa para LRS",
       "next": "Informe de Comisión Mixta, ratificación de ambas salas y publicación de la ley.",
@@ -20,6 +20,11 @@
           "date": "2026-11-18",
           "title": "Senado respalda la partida sanitaria; compromiso de reposición LRS",
           "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/"
+        },
+        {
+          "date": "2026-11-19",
+          "title": "Senado despacha el proyecto con modificaciones y devuelve el texto a la Cámara",
+          "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&mo=tramitacion"
         },
         {
           "date": "2026-11-23",
