@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-18",
   "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T17:50:23-03:00",
-  "last_monitor_at": "2026-11-24T20:50:02Z",
-  "extra_checked_at": "2026-11-24T17:50:23-03:00",
+  "generated_at": "2026-11-24T18:00:33-03:00",
+  "last_monitor_at": "2026-11-24T20:59:46Z",
+  "extra_checked_at": "2026-11-24T18:00:33-03:00",
   "schedule": "Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.",
   "verified": [
     {
@@ -185,9 +185,11 @@
     {
       "name": "Portal Red Salud",
       "url": "https://portalredsalud.cl/feed/",
-      "status": "ok",
-      "items_seen": 10,
-      "errors": []
+      "status": "error",
+      "items_seen": 0,
+      "errors": [
+        "<urlopen error timed out>"
+      ]
     },
     {
       "name": "Cooperativa",
@@ -220,6 +222,36 @@
     {
       "name": "FENPOF Chile",
       "url": "https://fenpof.cl/feed/",
+      "status": "ok",
+      "items_seen": 0,
+      "errors": []
+    },
+    {
+      "name": "ISP · Publicaciones oficiales",
+      "url": "https://www.ispch.gob.cl/feed/",
+      "status": "error",
+      "items_seen": 0,
+      "errors": [
+        "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
+      ]
+    },
+    {
+      "name": "Sociedad Chilena de Cardiología",
+      "url": "https://sochicar.cl/feed/",
+      "status": "ok",
+      "items_seen": 1,
+      "errors": []
+    },
+    {
+      "name": "Clínicas de Chile",
+      "url": "https://www.clinicasdechile.cl/feed/",
+      "status": "ok",
+      "items_seen": 7,
+      "errors": []
+    },
+    {
+      "name": "Colegio de Enfermeras de Chile",
+      "url": "https://colegiodeenfermeras.cl/feed/",
       "status": "ok",
       "items_seen": 0,
       "errors": []
