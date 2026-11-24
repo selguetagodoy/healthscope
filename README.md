@@ -2,7 +2,7 @@
 
 Observatorio independiente de inteligencia sanitaria y farmacéutica. HealthScope organiza información pública sobre decisiones sanitarias, medicamentos, compras, cobertura y datos de Chile, con enlaces a las fuentes originales.
 
-**Versión:** 0.6 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
+**Versión:** 0.7 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
 
 ## Sitio público
 
@@ -53,3 +53,5 @@ Los workflows de GitHub Actions ejecutan estas validaciones y publican el conten
 ## Independencia
 
 HealthScope es un proyecto personal e independiente. Usa información pública y no representa a organismos, empleadores ni clientes. Su contenido no es orientación médica.
+
+- Directorio de stakeholders institucionales, canales sociales enlazados por sitios oficiales y monitor de medios RSS. Publicaciones sociales: registro editorial manual; no se scrapean perfiles.

@@ -124,7 +124,8 @@ def parse_rss(content: bytes, source: dict, now: datetime | None = None) -> list
             "published": published_date.isoformat(),
             "category": source.get("category", "actualidad"),
             "title": title,
-            "summary": strip_markup(description)[:1200],
+            "source_type": source.get("source_type", "Fuente oficial"),
+            "summary": "" if source.get("source_type") == "Prensa" else strip_markup(description)[:1200],
             "medication": "",
             "status": "Pendiente de revisión",
             "captured_at": now_local.isoformat(timespec="seconds"),
@@ -223,7 +224,7 @@ def in_santiago_cut_window(now: datetime, tolerance_minutes: int = 20) -> bool:
 
 
 def fetch_url(url: str) -> tuple[int, bytes]:
-    request = urllib.request.Request(url, headers={"User-Agent": "HealthScopeChile/0.5 (public-source-monitor; contact: repository owner)", "Accept": "application/rss+xml, application/xml, text/html;q=0.9, */*;q=0.5"})
+    request = urllib.request.Request(url, headers={"User-Agent": "HealthScopeChile/0.7 (public-source-monitor; contact: repository owner)", "Accept": "application/rss+xml, application/xml, text/html;q=0.9, */*;q=0.5"})
     with urllib.request.urlopen(request, timeout=25) as response:
         data = response.read(MAX_BYTES + 1)
         if len(data) > MAX_BYTES:

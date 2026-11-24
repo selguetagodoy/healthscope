@@ -53,3 +53,9 @@
 
 - Catálogo de cobertura con 117 registros, identificadores, enlaces oficiales y búsqueda de tratamientos referenciados.
 - Pendientes: importación completa del registro sanitario, compras por línea, presupuesto y listado oficial EPoF con código ORPHA.
+
+## V0.7 · inteligencia de actores y prensa
+
+- Directorio institucional y canales sociales con procedencia.
+- Capturas RSS de prensa y comunicados con revisión pendiente.
+- Siguiente: autoridades y directivos con vigencia comprobada; publicaciones sociales mediante revisión editorial/API autorizada; cruce de temas y ORPHA, medicamentos, compras, presupuesto, ensayos clínicos y patentes.

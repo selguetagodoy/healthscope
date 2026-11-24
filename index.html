@@ -26,7 +26,7 @@
   <div class="utility-bar">
     <div class="shell utility-inner">
       <span>OBSERVATORIO INDEPENDIENTE · CHILE</span>
-      <span id="editionLine">EDICIÓN DIGITAL · V0.6</span>
+      <span id="editionLine">EDICIÓN DIGITAL · V0.7</span>
     </div>
   </div>
   <header class="site-header">
@@ -44,6 +44,8 @@
         <a href="./acceso/">Acceso</a>
         <a href="./cobertura/">Cobertura GES/LRS</a>
         <a href="./datos/">Datos</a>
+        <a href="./stakeholders/">Actores</a>
+        <a href="./prensa/">Prensa y redes</a>
         <a href="./instituciones/">Instituciones</a>
         <a href="./biblioteca/">Biblioteca</a>
         <a href="./fuentes/">Fuentes</a>
@@ -101,10 +103,12 @@
 
     <section class="observatories section-rule" aria-labelledby="observatories-title">
       <div class="section-heading">
-        <div><p class="eyebrow">02 / OBSERVATORIOS</p><h2 id="observatories-title">Nueve entradas al sistema</h2></div>
+        <div><p class="eyebrow">02 / OBSERVATORIOS</p><h2 id="observatories-title">Explora el sistema sanitario</h2></div>
         <p class="section-deck">Fuentes, decisiones y contexto organizados para consulta.</p>
       </div>
       <div class="observatory-list">
+        <a class="observatory" href="./stakeholders/"><span class="obs-index">10</span><span><strong>Stakeholders</strong><small>Actores y canales institucionales</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
+        <a class="observatory" href="./prensa/"><span class="obs-index">11</span><span><strong>Prensa y redes</strong><small>Capturas y declaraciones públicas</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./normativa/"><span class="obs-index">00</span><span><strong>Marco normativo</strong><small>Leyes de salud y proyectos prioritarios</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./radar/?materia=legislacion"><span class="obs-index">01</span><span><strong>Radar regulatorio</strong><small>Leyes, decretos, resoluciones y actividad parlamentaria</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./farmaceutico/"><span class="obs-index">02</span><span><strong>Farmacéutico</strong><small>Seguridad, alertas, registros y vigilancia de medicamentos</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
@@ -222,6 +226,23 @@
       <div class="institution-table" id="institutions" aria-live="polite"></div>
     </section>
 
+    <section class="section-rule" id="stakeholders" aria-labelledby="actors-title">
+      <div class="section-heading"><div><p class="eyebrow">INTELIGENCIA DE ACTORES</p><h2 id="actors-title">Stakeholders sanitarios</h2></div><span class="section-count" id="actorsCount" role="status">Cargando…</span></div>
+      <p class="section-deck">Directorio institucional inicial basado en fuentes públicas. Los enlaces sociales se incorporan cuando el sitio institucional los identifica; la ausencia de un enlace no demuestra que no exista una cuenta. No incluye datos personales privados ni asigna posiciones políticas inferidas.</p>
+      <div class="overview"><a href="./stakeholders/"><strong>41</strong><span>Actores institucionales</span></a><a href="./stakeholders/?channel=LinkedIn"><strong>6</strong><span>Canales LinkedIn</span></a><a href="./stakeholders/?channel=X"><strong>8</strong><span>Canales X</span></a><a href="./prensa/"><strong>20</strong><span>Medios catalogados</span></a></div>
+      <div class="filter-row"><label class="sr-only" for="actorQuery">Buscar actor</label><input id="actorQuery" type="search" placeholder="Buscar organización, tema o institución"><label class="sr-only" for="actorGroup">Sector</label><select id="actorGroup"><option value="">Todos los sectores</option></select><label class="sr-only" for="actorChannel">Canal social</label><select id="actorChannel"><option value="">Todos los canales</option><option value="LinkedIn">LinkedIn</option><option value="X">X / Twitter</option></select><button type="button" class="button button-light" id="actorReset">Limpiar</button><button type="button" class="button button-dark" id="actorExport">CSV</button></div>
+      <div id="actorResults" class="coverage-grid" aria-live="polite"></div>
+      <div class="pagination" id="actorPager"><button type="button" class="button button-light" id="actorPrev">← Anterior</button><span id="actorPage"></span><button type="button" class="button button-light" id="actorNext">Siguiente →</button></div>
+    </section>
+    <section class="section-rule" id="prensa" aria-labelledby="press-title">
+      <div class="section-heading"><div><p class="eyebrow">ESCUCHA DIGITAL</p><h2 id="press-title">Prensa, redes y comunicados</h2></div><span class="section-count" id="pressCount" role="status">Cargando…</span></div>
+      <p class="section-deck">Capturas de RSS y enlaces de publicaciones para revisión editorial. Una captura no acredita el contenido ni equivale a una decisión oficial. LinkedIn y X se consultan por sus canales públicos; no hay recolección automática de publicaciones sociales habilitada.</p>
+      <div class="filter-row"><label class="sr-only" for="pressQuery">Buscar publicación</label><input id="pressQuery" type="search" placeholder="Tema, actor, medio o titular"><label class="sr-only" for="pressKind">Canal</label><select id="pressKind"><option value="">Todos los canales</option><option value="Prensa">Prensa</option><option value="Comunicado institucional">Comunicados</option><option value="LinkedIn">LinkedIn</option><option value="X">X / Twitter</option></select><button type="button" class="button button-light" id="pressReset">Limpiar</button><button type="button" class="button button-dark" id="pressExport">CSV</button></div>
+      <div id="pressResults" class="result-list" aria-live="polite"></div>
+      <div class="pagination" id="pressPager"><button type="button" class="button button-light" id="pressPrev">← Anterior</button><span id="pressPage"></span><button type="button" class="button button-light" id="pressNext">Siguiente →</button></div>
+      <h3 class="directory-heading">Directorio de medios</h3><div id="mediaDirectory" class="coverage-grid"></div>
+      <p class="editorial-caption">Enlaces y titulares breves; el contenido completo permanece en la fuente. Sin extracción de artículos protegidos ni acceso a perfiles privados.</p>
+    </section>
     <section class="section-rule" id="investigacion" aria-labelledby="research-title">
       <div class="section-heading">
         <div><p class="eyebrow">09 / BIBLIOTECA DOCUMENTAL</p><h2 id="research-title">Investigación y documentos públicos</h2></div>
@@ -267,5 +288,6 @@
   </footer>
   <script src="./assets/app.js" defer></script>
   <script src="./assets/coverage.js" defer></script>
+  <script src="./assets/intelligence.js" defer></script>
 </body>
 </html>

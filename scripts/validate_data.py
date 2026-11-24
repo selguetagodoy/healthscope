@@ -35,7 +35,10 @@ def validate():
     research = load(ROOT / "data/research.json")
     pending = load(ROOT / "data/pending.json")
     coverage = load(ROOT / "data/coverage.json")
-    checks = ((coverage, "coverage"), (events, "events"), (sources, "sources"), (medicines, "medications"), (indicators, "indicators"), (institutions, "institutions"), (research, "research"), (pending, "pending"))
+    stakeholders = load(ROOT / "data/stakeholders.json")
+    media = load(ROOT / "data/media.json")
+    social_posts = load(ROOT / "data/social-posts.json")
+    checks = ((stakeholders, "stakeholders"), (media, "media"), (social_posts, "social_posts"), (coverage, "coverage"), (events, "events"), (sources, "sources"), (medicines, "medications"), (indicators, "indicators"), (institutions, "institutions"), (research, "research"), (pending, "pending"))
     for records, label in checks:
         check(isinstance(records, list), label + " must be an array", errors)
         if not isinstance(records, list):
@@ -48,6 +51,14 @@ def validate():
     check(len(coverage) == 117, "coverage catalog must contain 117 rows", errors)
     for x in coverage:
         check(bool(x.get("name")) and valid_https(x.get("url")) and valid_https(x.get("source_url")), "coverage row has incomplete provenance", errors)
+    for actor in stakeholders:
+        check(bool(actor.get("name")) and valid_https(actor.get("source_url")), "stakeholder without provenance", errors)
+        for channel in actor.get("channels", []):
+            check(channel.get("platform") in ("LinkedIn", "X") and valid_https(channel.get("url")) and valid_https(channel.get("source_url")), "invalid stakeholder channel", errors)
+    for item in media:
+        check(valid_https(item.get("url")) and (not item.get("feed") or valid_https(item["feed"])), "invalid media link", errors)
+    for post in social_posts:
+        check(post.get("source_type") in ("LinkedIn", "X") and valid_https(post.get("url")) and bool(post.get("status")), "invalid social post", errors)
     event_urls = set()
     for i, event in enumerate(events):
         prefix = "events[" + str(i) + "]"

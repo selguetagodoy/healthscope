@@ -1,0 +1,167 @@
+[
+  {
+    "id": "portal-prensa-salud",
+    "name": "Portal Prensa Salud",
+    "group": "Prensa especializada",
+    "url": "https://portalprensasalud.cl/",
+    "feed": "https://portalprensasalud.cl/feed/",
+    "mode": "RSS",
+    "feed_checked_at": "2026-11-24"
+  },
+  {
+    "id": "portal-red-salud",
+    "name": "Portal Red Salud",
+    "group": "Prensa especializada",
+    "url": "https://portalredsalud.cl/",
+    "feed": "https://portalredsalud.cl/feed/",
+    "mode": "RSS",
+    "feed_checked_at": "2026-11-24"
+  },
+  {
+    "id": "cooperativa",
+    "name": "Cooperativa",
+    "group": "Radio y prensa",
+    "url": "https://www.cooperativa.cl/",
+    "feed": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
+    "mode": "RSS",
+    "feed_checked_at": "2026-11-24"
+  },
+  {
+    "id": "diarioeldia",
+    "name": "Diario El Día",
+    "group": "Prensa regional",
+    "url": "https://www.diarioeldia.cl/",
+    "feed": "https://www.diarioeldia.cl/rss/salud/",
+    "mode": "RSS",
+    "feed_checked_at": "2026-11-24"
+  },
+  {
+    "id": "ciper",
+    "name": "CIPER",
+    "group": "Investigación periodística",
+    "url": "https://www.ciperchile.cl/",
+    "feed": "https://www.ciperchile.cl/feed/",
+    "mode": "RSS",
+    "feed_checked_at": "2026-11-24"
+  },
+  {
+    "id": "savalnet",
+    "name": "SAVALnet",
+    "group": "Prensa médica",
+    "url": "https://www.savalnet.cl/mundo-medico/noticias/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "medwave",
+    "name": "Medwave",
+    "group": "Revista científica",
+    "url": "https://www.medwave.cl/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "biobio",
+    "name": "BioBioChile",
+    "group": "Prensa nacional",
+    "url": "https://www.biobiochile.cl/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "df",
+    "name": "Diario Financiero",
+    "group": "Prensa económica",
+    "url": "https://www.df.cl/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "latercera",
+    "name": "La Tercera",
+    "group": "Prensa nacional",
+    "url": "https://www.latercera.com/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "emol",
+    "name": "Emol",
+    "group": "Prensa nacional",
+    "url": "https://www.emol.com/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "elmostrador",
+    "name": "El Mostrador",
+    "group": "Prensa nacional",
+    "url": "https://www.elmostrador.cl/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "adn",
+    "name": "ADN Radio",
+    "group": "Radio y prensa",
+    "url": "https://www.adnradio.cl/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "cnnchile",
+    "name": "CNN Chile",
+    "group": "Televisión y prensa",
+    "url": "https://www.cnnchile.com/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "t13",
+    "name": "T13",
+    "group": "Televisión y prensa",
+    "url": "https://www.t13.cl/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "24horas",
+    "name": "24 Horas",
+    "group": "Televisión y prensa",
+    "url": "https://www.24horas.cl/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "fiercepharma",
+    "name": "Fierce Pharma",
+    "group": "Industria internacional",
+    "url": "https://www.fiercepharma.com/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "biopharmadive",
+    "name": "BioPharma Dive",
+    "group": "Industria internacional",
+    "url": "https://www.biopharmadive.com/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "stat",
+    "name": "STAT",
+    "group": "Prensa sanitaria internacional",
+    "url": "https://www.statnews.com/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  },
+  {
+    "id": "endpoints",
+    "name": "Endpoints News",
+    "group": "Industria internacional",
+    "url": "https://endpts.com/",
+    "feed": "",
+    "mode": "Consulta editorial"
+  }
+]

@@ -1,0 +1,464 @@
+[
+  {
+    "id": "minsal",
+    "name": "Ministerio de Salud",
+    "group": "Sector público",
+    "scope": "Rectoría, política sanitaria y coordinación sectorial",
+    "url": "https://www.minsal.cl/",
+    "source_url": "https://www.minsal.cl/",
+    "channels": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/ministerio-de-salud-chile",
+        "source_url": "https://www.minsal.cl/",
+        "verified_at": "2026-11-24"
+      },
+      {
+        "platform": "X",
+        "url": "https://x.com/ministeriosalud",
+        "source_url": "https://www.minsal.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "sub-redes",
+    "name": "Subsecretaría de Redes Asistenciales",
+    "group": "Sector público",
+    "scope": "Redes públicas, hospitales y atención primaria",
+    "url": "https://www.minsal.cl/subsecretaria-de-redes-asistenciales/",
+    "source_url": "https://www.minsal.cl/subsecretaria-de-redes-asistenciales/",
+    "channels": []
+  },
+  {
+    "id": "sub-salud-publica",
+    "name": "Subsecretaría de Salud Pública",
+    "group": "Sector público",
+    "scope": "Salud pública y regulación sanitaria",
+    "url": "https://www.minsal.cl/subsecretaria-de-salud-publica/",
+    "source_url": "https://www.minsal.cl/subsecretaria-de-salud-publica/",
+    "channels": []
+  },
+  {
+    "id": "isp",
+    "name": "Instituto de Salud Pública",
+    "group": "Sector público",
+    "scope": "Vigilancia sanitaria, medicamentos y laboratorios",
+    "url": "https://www.ispch.gob.cl/",
+    "source_url": "https://www.ispch.gob.cl/",
+    "channels": []
+  },
+  {
+    "id": "anamed",
+    "name": "Agencia Nacional de Medicamentos",
+    "group": "Sector público",
+    "scope": "Regulación y farmacovigilancia",
+    "url": "https://www.ispch.gob.cl/anamed/",
+    "source_url": "https://www.ispch.gob.cl/anamed/",
+    "channels": []
+  },
+  {
+    "id": "deis",
+    "name": "Departamento de Estadísticas e Información de Salud",
+    "group": "Sector público",
+    "scope": "Estadísticas oficiales de salud",
+    "url": "https://deis.minsal.cl/",
+    "source_url": "https://deis.minsal.cl/",
+    "channels": []
+  },
+  {
+    "id": "diprece",
+    "name": "División de Prevención y Control de Enfermedades",
+    "group": "Sector público",
+    "scope": "Prevención, programas y garantías de salud",
+    "url": "https://diprece.minsal.cl/",
+    "source_url": "https://diprece.minsal.cl/",
+    "channels": []
+  },
+  {
+    "id": "cenabast",
+    "name": "Central de Abastecimiento · Cenabast",
+    "group": "Sector público",
+    "scope": "Compra e intermediación de medicamentos e insumos",
+    "url": "https://www.cenabast.cl/",
+    "source_url": "https://www.cenabast.cl/",
+    "channels": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/cenabast",
+        "source_url": "https://www.cenabast.cl/",
+        "verified_at": "2026-11-24"
+      },
+      {
+        "platform": "X",
+        "url": "https://x.com/Cenabast",
+        "source_url": "https://www.cenabast.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "fonasa",
+    "name": "Fondo Nacional de Salud",
+    "group": "Sector público",
+    "scope": "Seguro público y financiamiento de prestaciones",
+    "url": "https://www.fonasa.cl/",
+    "source_url": "https://www.fonasa.cl/",
+    "channels": []
+  },
+  {
+    "id": "supersalud",
+    "name": "Superintendencia de Salud",
+    "group": "Sector público",
+    "scope": "Fiscalización, derechos y regulación de aseguradores y prestadores",
+    "url": "https://www.superdesalud.gob.cl/",
+    "source_url": "https://www.superdesalud.gob.cl/",
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/SuperDeSalud",
+        "source_url": "https://www.superdesalud.gob.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "dipres",
+    "name": "Dirección de Presupuestos",
+    "group": "Sector público",
+    "scope": "Presupuesto fiscal y ejecución",
+    "url": "https://www.dipres.gob.cl/",
+    "source_url": "https://www.dipres.gob.cl/",
+    "channels": []
+  },
+  {
+    "id": "mercado-publico",
+    "name": "Dirección ChileCompra · Mercado Público",
+    "group": "Sector público",
+    "scope": "Contratación pública y datos de licitaciones",
+    "url": "https://www.chilecompra.cl/",
+    "source_url": "https://www.chilecompra.cl/",
+    "channels": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/chilecompra",
+        "source_url": "https://www.chilecompra.cl/",
+        "verified_at": "2026-11-24"
+      },
+      {
+        "platform": "X",
+        "url": "https://x.com/ChileCompra",
+        "source_url": "https://www.chilecompra.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "senado-salud",
+    "name": "Comisión de Salud del Senado",
+    "group": "Congreso",
+    "scope": "Discusión legislativa y fiscalización parlamentaria",
+    "url": "https://tramitacion.senado.cl/",
+    "source_url": "https://tramitacion.senado.cl/",
+    "channels": []
+  },
+  {
+    "id": "camara-salud",
+    "name": "Comisión de Salud de la Cámara",
+    "group": "Congreso",
+    "scope": "Discusión legislativa y fiscalización parlamentaria",
+    "url": "https://www.camara.cl/",
+    "source_url": "https://www.camara.cl/",
+    "channels": []
+  },
+  {
+    "id": "contraloria",
+    "name": "Contraloría General de la República",
+    "group": "Sector público",
+    "scope": "Control de legalidad y dictámenes",
+    "url": "https://www.contraloria.cl/",
+    "source_url": "https://www.contraloria.cl/",
+    "channels": []
+  },
+  {
+    "id": "inapi",
+    "name": "Instituto Nacional de Propiedad Industrial",
+    "group": "Sector público",
+    "scope": "Propiedad industrial y patentes",
+    "url": "https://www.inapi.cl/",
+    "source_url": "https://www.inapi.cl/",
+    "channels": []
+  },
+  {
+    "id": "ops-chile",
+    "name": "Organización Panamericana de la Salud · Chile",
+    "group": "Internacional",
+    "scope": "Cooperación y evidencia de salud pública regional",
+    "url": "https://www.paho.org/es/chile",
+    "source_url": "https://www.paho.org/es/chile",
+    "channels": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/pan-american-health-organization",
+        "source_url": "https://www.paho.org/es/chile",
+        "verified_at": "2026-11-24"
+      },
+      {
+        "platform": "X",
+        "url": "https://x.com/OPSOMSChile",
+        "source_url": "https://www.paho.org/es/chile",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "oms",
+    "name": "Organización Mundial de la Salud",
+    "group": "Internacional",
+    "scope": "Normas, evidencia y datos de salud",
+    "url": "https://www.who.int/",
+    "source_url": "https://www.who.int/",
+    "channels": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/world-health-organization",
+        "source_url": "https://www.who.int/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "ocde",
+    "name": "OCDE · Salud",
+    "group": "Internacional",
+    "scope": "Indicadores y comparaciones internacionales",
+    "url": "https://www.oecd.org/en/topics/health.html",
+    "source_url": "https://www.oecd.org/en/topics/health.html",
+    "channels": []
+  },
+  {
+    "id": "ema",
+    "name": "Agencia Europea de Medicamentos",
+    "group": "Internacional",
+    "scope": "Evaluación regulatoria y farmacovigilancia",
+    "url": "https://www.ema.europa.eu/en/medicines",
+    "source_url": "https://www.ema.europa.eu/en/medicines",
+    "channels": []
+  },
+  {
+    "id": "fda",
+    "name": "U.S. Food and Drug Administration",
+    "group": "Internacional",
+    "scope": "Información regulatoria y seguridad farmacéutica",
+    "url": "https://www.fda.gov/drugs",
+    "source_url": "https://www.fda.gov/drugs",
+    "channels": []
+  },
+  {
+    "id": "cadth",
+    "name": "Canada’s Drug Agency",
+    "group": "Internacional",
+    "scope": "Evaluación de tecnologías y medicamentos",
+    "url": "https://www.canada.ca/en/health-canada/corporate/about-health-canada/branches-agencies/canadian-agency-drugs-technologies-health.html",
+    "source_url": "https://www.canada.ca/en/health-canada/corporate/about-health-canada/branches-agencies/canadian-agency-drugs-technologies-health.html",
+    "channels": []
+  },
+  {
+    "id": "nice",
+    "name": "National Institute for Health and Care Excellence",
+    "group": "Internacional",
+    "scope": "Guías clínicas y evaluación de tecnologías",
+    "url": "https://www.nice.org.uk/",
+    "source_url": "https://www.nice.org.uk/",
+    "channels": []
+  },
+  {
+    "id": "cif",
+    "name": "Cámara de la Innovación Farmacéutica",
+    "group": "Industria",
+    "scope": "Innovación farmacéutica, acceso y políticas públicas",
+    "url": "https://cifchile.cl/",
+    "source_url": "https://cifchile.cl/",
+    "channels": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/cifchile",
+        "source_url": "https://cifchile.cl/",
+        "verified_at": "2026-11-24"
+      },
+      {
+        "platform": "X",
+        "url": "https://x.com/CIFChile",
+        "source_url": "https://cifchile.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "asilfa",
+    "name": "Asociación Industrial de Laboratorios Farmacéuticos",
+    "group": "Industria",
+    "scope": "Industria farmacéutica y mercado de medicamentos",
+    "url": "https://asilfa.cl/quienes-somos/",
+    "source_url": "https://asilfa.cl/quienes-somos/",
+    "channels": []
+  },
+  {
+    "id": "fenpof",
+    "name": "Federación de Enfermedades Poco Frecuentes de Chile",
+    "group": "Pacientes",
+    "scope": "Diagnóstico, tratamientos y políticas EPoF",
+    "url": "https://fenpof.cl/",
+    "source_url": "https://fenpof.cl/",
+    "channels": []
+  },
+  {
+    "id": "colmed",
+    "name": "Colegio Médico de Chile",
+    "group": "Profesionales",
+    "scope": "Ejercicio médico, políticas sanitarias y sistema de salud",
+    "url": "https://www.colegiomedico.cl/",
+    "source_url": "https://www.colegiomedico.cl/",
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/colmedchile",
+        "source_url": "https://www.colegiomedico.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "fecher",
+    "name": "Federación Chilena de Enfermedades Raras",
+    "group": "Pacientes",
+    "scope": "Representación de organizaciones de enfermedades raras",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "achap",
+    "name": "Alianza Chilena de Agrupaciones de Pacientes",
+    "group": "Pacientes",
+    "scope": "Participación de organizaciones de pacientes",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "achago",
+    "name": "Asociación Chilena de Agrupaciones Oncológicas",
+    "group": "Pacientes",
+    "scope": "Organizaciones oncológicas",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "asocimed",
+    "name": "Asociación de Sociedades Científicas-Médicas de Chile",
+    "group": "Profesionales",
+    "scope": "Sociedades científicas y políticas sanitarias",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "enfermeras",
+    "name": "Colegio de Enfermeras de Chile",
+    "group": "Profesionales",
+    "scope": "Representación profesional y cuidados",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "affi",
+    "name": "Asociación Gremial de Farmacias Independientes",
+    "group": "Industria",
+    "scope": "Farmacias independientes",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "prolmed",
+    "name": "Asociación de Productores Locales de Medicamentos",
+    "group": "Industria",
+    "scope": "Producción local de medicamentos",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "unfach",
+    "name": "Unión de Dueños de Farmacias de Chile",
+    "group": "Industria",
+    "scope": "Farmacias y distribución",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "apis",
+    "name": "Asociación de Proveedores de la Industria de la Salud",
+    "group": "Industria",
+    "scope": "Proveedores del sector sanitario",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "canalab",
+    "name": "Cámara Nacional de Laboratorios",
+    "group": "Industria",
+    "scope": "Laboratorios farmacéuticos",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "adimech",
+    "name": "Asociación Gremial de Dispositivos Médicos de Chile",
+    "group": "Industria",
+    "scope": "Dispositivos médicos",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "scdm",
+    "name": "Sociedad Científica de Dispositivos Médicos",
+    "group": "Profesionales",
+    "scope": "Dispositivos y evaluación técnica",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "politopedia",
+    "name": "Fundación Politopedia",
+    "group": "Sociedad civil",
+    "scope": "Políticas públicas y participación",
+    "url": "",
+    "source_url": "https://eticaensalud.cl/instituciones/",
+    "channels": []
+  },
+  {
+    "id": "senado-institucional",
+    "name": "Senado de Chile",
+    "group": "Congreso",
+    "scope": "Actividad legislativa institucional; no representa exclusivamente a la Comisión de Salud",
+    "url": "https://www.senado.cl/",
+    "source_url": "https://www.senado.cl/",
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/senado_chile",
+        "source_url": "https://www.senado.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  }
+]
