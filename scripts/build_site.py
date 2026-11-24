@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Build static pages and stable event permalinks for GitHub Pages."""
 import html
+import hashlib
+import csv
 import json
 import re
 import shutil
@@ -46,7 +48,35 @@ def main():
         for source in monitoring.get("sources",[]):
             source.pop("error",None)
         write(monitoring_path,monitoring)
+    # Publish a clean data projection, not internal collection placeholders.
+    for name in ("isp-registry","procurement","clinical-trials","patents","social-posts"):
+        p=DEST/"data"/(name+".json")
+        if not p.exists(): continue
+        obj=json.loads(p.read_text(encoding="utf-8"))
+        rows=obj if isinstance(obj,list) else obj.get("rows",[])
+        if isinstance(obj,dict): obj.pop("errors",None)
+        for row in rows:
+            if row.get("sale_condition")=="No consultada": row["sale_condition"]=""
+            if row.get("active_ingredients")=="No informado": row["active_ingredients"]=""
+            if row.get("supplier")=="Proveedor no publicado en esta vista": row["supplier"]=""
+        write(p,obj)
+    p=DEST/"data"/"procurement-lines.csv"
+    if p.exists():
+        tmp=p.with_suffix(".tmp")
+        with p.open(encoding="utf-8-sig",newline="") as src, tmp.open("w",encoding="utf-8-sig",newline="") as dst:
+            rd=csv.DictReader(src); writer=csv.DictWriter(dst,fieldnames=rd.fieldnames);writer.writeheader()
+            for row in rd:
+                if row.get("supplier")=="Proveedor no publicado en esta vista": row["supplier"]=""
+                writer.writerow(row)
+        tmp.replace(p)
     template=(ROOT/"index.html").read_text(encoding="utf-8")
+    # Fingerprint assets so a new edition never loads stale JavaScript.
+    def version_asset(match):
+        path=match[1]
+        digest=hashlib.sha256((ROOT/path).read_bytes()).hexdigest()[:12]
+        return path+"?v="+digest
+    template=re.sub(r"(assets/[a-zA-Z0-9_-]+\.(?:js|css))(?=\x22)",version_asset,template)
+    (DEST/"index.html").write_text(template,encoding="utf-8")
     sitemap=[BASE]
     for route,(section,title) in MODULES.items():
         page=meta(template,title,BASE+route+"/").replace("<head>","<head>\n  <base href=\"../\">",1).replace("<body>",'<body data-view="'+section+'">',1)
@@ -65,7 +95,7 @@ def main():
         if not e.get("implications"): main=main.replace("<h2>Implicancias</h2><p></p>","")
         if not e.get("medication"): main=main.replace('<p class="detail-meta">Medicamento o tema: </p>',"")
         page=re.sub(r'<main id="contenido".*?</main>',lambda _:main,page,flags=re.S,count=1)
-        page=re.sub(r'<script[^>]*src="[^"]*(?:app|coverage|intelligence|epof|isp-registry|bulk|weekly)\.js"[^>]*></script>','',page)
+        page=re.sub(r'<script[^>]*src="[^"]*(?:app|coverage|intelligence|epof|isp-registry|bulk|weekly)\.js(?:\?v=[a-f0-9]+)?"[^>]*></script>','',page)
         page=page.replace('href="#contenido"','href="'+esc(url)+'#contenido"',1)
         write_page(path,page); sitemap.append(url)
     (DEST/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+esc(u)+'</loc></url>' for u in sitemap)+'</urlset>',encoding="utf-8")
