@@ -1,0 +1,22 @@
+(function(){
+'use strict';
+const $=id=>document.getElementById(id);if(!$('weekly')||(document.body.dataset.view&&document.body.dataset.view!=='weekly'))return;
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function link(v){try{return new URL(v).protocol==='https:'?esc(v):''}catch{return ''}}
+function fmt(v){if(!v)return 'Sin corte registrado';const d=new Date(v);return Number.isNaN(d.getTime())?v:d.toLocaleString('es-CL',{timeZone:'America/Santiago',dateStyle:'medium',timeStyle:'short'})}
+function day(v){return v?v.slice(8,10)+'/'+v.slice(5,7):'Fecha pendiente'}
+function row(r,verified){return '<article class="weekly-item"><small>'+esc(r.topic)+' · '+esc(day(r.published))+(r.new_since_previous?' · NUEVO EN EL CORTE':'')+'</small><h3>'+esc(r.title)+'</h3><p class="weekly-author">'+esc(r.authority)+' · '+esc(r.source_type)+'</p>'+(verified?'<p>'+esc(r.summary)+'</p>'+(r.implications?'<p class="weekly-impact"><strong>Implicancias:</strong> '+esc(r.implications)+'</p>':''):'')+'<a class="text-link" target="_blank" rel="noopener noreferrer" href="'+link(r.url)+'">Fuente directa ↗</a></article>'}
+function group(rows,verified){if(!rows.length)return '<p class="empty-state">Sin registros en esta ventana. No implica ausencia de novedades fuera de las fuentes cubiertas.</p>';return rows.map(r=>row(r,verified)).join('')}
+async function copy(text){try{await navigator.clipboard.writeText(text);$('weeklyCopyStatus').textContent='Copiado al portapapeles.'}catch{$('weeklyCopyStatus').textContent='No se pudo copiar automáticamente.';const a=document.createElement('textarea');a.value=text;a.setAttribute('aria-label','Texto del reporte');$('weeklyCopyStatus').append(a);a.select()}}
+function report(d,verified){const rows=verified?d.verified:d.candidates;return ['HEALTHSCOPE CHILE · '+(verified?'BRIEFING VERIFICADO':'PENDIENTES DE REVISIÓN'),'Ventana: '+day(d.window_start)+'–'+day(d.window_end)+' · Corte: '+fmt(d.last_monitor_at),...rows.map(r=>'\n*'+r.title+'*\n'+day(r.published)+' · '+r.authority+(verified?'\n'+r.summary+(r.implications?'\nImplicancias: '+r.implications:''):'\nPendiente de revisión editorial')+'\n'+r.url)].join('\n')}
+fetch('./data/weekly-brief.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('brief');return r.json()}).then(d=>{
+const full=document.body.dataset.view==='weekly';const ok=d.sources.filter(s=>s.status==='ok').length;
+$('weeklyWindow').textContent=day(d.window_start)+'–'+day(d.window_end)+' · ventana móvil de siete días';$('weeklyCut').textContent='Última consulta: '+fmt(d.last_monitor_at);$('weeklyHealth').textContent=ok+' de '+d.sources.length+' fuentes operativas';
+$('weeklyKpis').innerHTML=[['Verificadas',d.verified.length],['Por revisar',d.candidates.length],['Nuevas desde corte previo',d.verified.concat(d.candidates).filter(r=>r.new_since_previous).length],['Fuentes operativas',ok+'/'+d.sources.length]].map(([label,v])=>'<div><strong>'+esc(v)+'</strong><span>'+esc(label)+'</span></div>').join('');
+$('weeklyVerified').innerHTML=group(full?d.verified:d.verified.slice(0,4),true);
+$('weeklyCandidates').innerHTML=group(full?d.candidates:d.candidates.slice(0,6),false);
+$('weeklyUndated').innerHTML=d.undated_social.length?d.undated_social.map(r=>'<p>'+esc(r.authority)+' · '+esc(r.title)+' <a class="text-link" href="'+link(r.url)+'" target="_blank" rel="noopener noreferrer">Abrir ↗</a></p>').join(''):'<p>Sin publicaciones registradas sin fecha.</p>';
+$('weeklySourceList').innerHTML=d.sources.map(s=>'<div class="weekly-source"><a href="'+link(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.name)+'</a><span>'+esc(s.status==='ok'?'Operativa':s.status==='partial'?'Parcial':'Error de consulta')+' · '+esc(s.items_seen??0)+' capturas</span>'+(s.errors?.length?'<small>'+esc(s.errors.join('; '))+'</small>':'')+'</div>').join('');
+$('weeklyCopy').disabled=!d.verified.length;$('weeklyCopyPending').disabled=!d.candidates.length;$('weeklyCopy').onclick=()=>copy(report(d,true));$('weeklyCopyPending').onclick=()=>copy(report(d,false));
+}).catch(()=>{$('weeklyCut').textContent='Briefing no disponible';$('weeklyVerified').textContent='Consulta el radar de decisiones.';$('weeklyCandidates').textContent='Consulta las fuentes originales.'});
+})();

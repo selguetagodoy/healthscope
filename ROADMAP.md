@@ -75,3 +75,9 @@
 - Presupuesto histórico, estudios clínicos, patentes y compras: interfaces y colectores; cobertura cuantificada en los archivos generados.
 - Redes: directorio y publicaciones verificables; automatización de LinkedIn/X solo con permisos API.
 - Pendientes estructurales: importación ISP completa, histórico de compras de cinco años, auditoría de vigencia de cargos individuales, mapeos temáticos y validación funcional.
+
+## V1.1 · briefing ejecutivo semanal
+
+- Portada dinámica, clasificación temática, copia del reporte, últimos siete días y corte previo.
+- Captura adicional de ediciones Diario Oficial y actividad legislativa con procedencia y estado.
+- Las declaraciones sociales y las novedades capturadas requieren revisión antes de promoverse a hechos verificados.

@@ -18,3 +18,6 @@
 - V0.9: muestra ISP de 27 registros, buscador, filtros, exportaciones e importador CSV oficial. Consulta directa vigente: 1.178 resultados, 25 importados; Trikafta: 2 de 2. La exportación Excel desde Playwright no concluyó; la extracción completa sigue pendiente. Despliegue pendiente al momento del commit.
 
 - V1.0: serie BCN 2017–2026 (10 años); 4 nuevos observatorios y recolector de datos públicos para ClinicalTrials.gov, INAPI y ChileCompra. Los recuentos reales se registran tras cada importación; no se afirma cobertura completa sin resultados. Directorio social ampliado a 53 instituciones y 30 canales, ocho publicaciones LinkedIn identificadas editorialmente sin fecha exacta comprobada. API social no autorizada; ISP masivo sigue limitado.
+
+- V1.0 publicada: 2.912 estudios con sede en Chile, 19.614 registros de solicitudes/concesiones farmacéuticas de 36 archivos anuales, compras agosto–octubre 2026 (13.561 líneas en octubre; 10.000 en vista web), 10 años de presupuesto, 53 actores y 30 canales sociales.
+- V1.1: briefing semanal público, copia de reporte verificado y pendientes separados, cortes de tres horas hábiles y uno diario fines de semana. Diario Oficial (sumario), Senado y Cámara con estado por fuente. LinkedIn/X sin API autorizada. La generación y publicación de esta revisión se verifican por CI.

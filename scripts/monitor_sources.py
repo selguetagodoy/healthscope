@@ -224,7 +224,7 @@ def in_santiago_cut_window(now: datetime, tolerance_minutes: int = 20) -> bool:
 
 
 def fetch_url(url: str) -> tuple[int, bytes]:
-    request = urllib.request.Request(url, headers={"User-Agent": "HealthScopeChile/0.7 (public-source-monitor; contact: repository owner)", "Accept": "application/rss+xml, application/xml, text/html;q=0.9, */*;q=0.5"})
+    request = urllib.request.Request(url, headers={"User-Agent": "HealthScopeChile/1.1 (public-source-monitor; contact: repository owner)", "Accept": "application/rss+xml, application/xml, text/html;q=0.9, */*;q=0.5"})
     with urllib.request.urlopen(request, timeout=25) as response:
         data = response.read(MAX_BYTES + 1)
         if len(data) > MAX_BYTES:
@@ -286,7 +286,7 @@ def collect(now: datetime | None = None) -> tuple[list[dict], dict]:
     monitor = read_json(ROOT / "data" / "monitoring.json", {})
     monitor.update({
         "timezone": "America/Santiago",
-        "schedule": ["08:00", "12:00", "16:30"],
+        "schedule": ["Cada 3 horas en jornada hábil (UTC 11:17–23:17)", "Fin de semana: 15:17 UTC"],
         "last_attempt_at": now_utc.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "sources": source_results,
     })
@@ -298,9 +298,6 @@ def collect(now: datetime | None = None) -> tuple[list[dict], dict]:
 
 def main() -> int:
     now = datetime.now(timezone.utc)
-    if os.getenv("GITHUB_EVENT_NAME") == "schedule" and not in_santiago_cut_window(now):
-        print("Ejecución horaria fuera de los cortes de America/Santiago; se omite la consulta.")
-        return 0
     pending, monitor = collect(now)
     write_json(ROOT / "data" / "pending.json", pending)
     write_json(ROOT / "data" / "monitoring.json", monitor)
