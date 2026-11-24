@@ -1,7 +1,7 @@
 {
-  "last_attempt_at": "2026-11-24T17:23:23Z",
-  "last_success_at": "2026-11-24T17:23:23Z",
-  "last_success_local": "2026-11-24 14:23 -03",
+  "last_attempt_at": "2026-11-24T17:25:29Z",
+  "last_success_at": "2026-11-24T17:25:29Z",
+  "last_success_local": "2026-11-24 14:25 -03",
   "schedule": [
     "08:00",
     "12:00",
@@ -9,7 +9,7 @@
   ],
   "sources": [
     {
-      "checked_at": "2026-11-24T14:23:23-03:00",
+      "checked_at": "2026-11-24T14:25:29-03:00",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>",
       "id": "isp-alertas",
       "items_seen": 0,
@@ -18,7 +18,7 @@
       "status": "error"
     },
     {
-      "checked_at": "2026-11-24T14:23:23-03:00",
+      "checked_at": "2026-11-24T14:25:29-03:00",
       "http_status": 200,
       "id": "minsal-noticias",
       "items_seen": 10,
@@ -27,12 +27,21 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T14:23:23-03:00",
+      "checked_at": "2026-11-24T14:25:29-03:00",
       "http_status": 200,
       "id": "cenabast-noticias",
       "items_seen": 9,
       "monitor_url": "https://www.cenabast.cl/feed/",
       "name": "Cenabast",
+      "status": "ok"
+    },
+    {
+      "checked_at": "2026-11-24T14:25:29-03:00",
+      "http_status": 200,
+      "id": "diprece",
+      "items_seen": 2,
+      "monitor_url": "https://diprece.minsal.cl/feed/",
+      "name": "DIPRECE",
       "status": "ok"
     }
   ],

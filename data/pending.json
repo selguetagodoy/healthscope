@@ -126,6 +126,20 @@
     "url": "https://www.cenabast.cl/cenabast-presenta-recopilatorio-institucional-que-contempla-politicas-claves-en-desarrollo-de-personas-etica-integridad-y-transformacion-digital"
   },
   {
+    "authority": "DIPRECE",
+    "captured_at": "2026-11-24T14:25:29-03:00",
+    "category": "actualidad",
+    "date": "2026-10-29",
+    "id": "diprece-9f18a0030af94634bc",
+    "medication": "",
+    "published": "2026-10-29",
+    "source_id": "diprece",
+    "status": "Pendiente de revisión",
+    "summary": "DIPRECE y Departamento de Epidemiología presentaron los principales resultados de salud bucal de la Encuesta Nacional de Calidad de Vida y Salud (ENCAVI) 2023-2024, destacando la relación entre salud bucal, calidad de vida, salud mental, enfermedades crónicas y funcionamiento. El 20 de octubre se realizó el webinar “Salud Bucal en Chile: principales resultados de la ENCAVI 2023-2024” , instancia organizada conjuntamente por el Departamento de Epidemiología de la División de Planificación Sanitaria y el Departamento de Salud Bucal de la División de Prevención y Control de Enfermedades (DIPRECE), con la participación de los Departamentos de Salud Mental, Enfermedades No Transmisibles y Rehabilitación y Discapacidad. La actividad tuvo como objetivo difundir los hallazgos del Informe de Salud Bucal ENCAVI 2023-2024 y los Informes de Funcionamiento y Discapacidad ENCAVI 2023-2024 y relevar la importancia de comprender la salud bucal como parte integral de la salud general y del bienestar de las personas. Entre los principales resultados presentados, se observó una disminución del alto impacto de la salud bucal en la calidad de vida, medido mediante el instrumento OHIP, que pasó de 12,5%",
+    "title": "Webinar Salud bucal en Chile: ENCAVI 2023-2024",
+    "url": "https://diprece.minsal.cl/webinar-salud-bucal-en-chile-encavi-2023-2024"
+  },
+  {
     "authority": "Cenabast",
     "captured_at": "2026-11-24T14:14:13-03:00",
     "category": "compras",
@@ -194,6 +208,20 @@
     "summary": "La iniciativa forma parte de Remedios Más Cerca de Ti de Cenabast, proyecto que a través de distintos modelos de entrega busca facilitar el acceso a medicamentos de pacientes de […]",
     "title": "Pacientes del Hospital Barros Luco reciben medicamentos en sus hogares gracias a piloto de Cenabast",
     "url": "https://www.cenabast.cl/pacientes-del-hospital-barros-luco-reciben-medicamentos-en-sus-hogares-gracias-a-piloto-de-cenabast"
+  },
+  {
+    "authority": "DIPRECE",
+    "captured_at": "2026-11-24T14:25:29-03:00",
+    "category": "actualidad",
+    "date": "2026-08-05",
+    "id": "diprece-4bacbb191d1a8a2812",
+    "medication": "",
+    "published": "2026-08-05",
+    "source_id": "diprece",
+    "status": "Pendiente de revisión",
+    "summary": "Hospitalización Psiquiátrica – Información para Equipos de Salud .pic{display:none;} :root { /* Paleta verde tomada del afiche oficial del ciclo de webinars (image002.png, Depto. de Salud Mental). La norma gráfica del Estado no fija paleta para el contenido de una página: solo protege el isologo, la tipografía gobCL y el header/footer, que aquí no se tocan. El azul de enlaces es el \"primary\" del Framework Kit de gobierno digital. */ --sm-primary: #3f7454; --sm-primary-dark: #2f5f45; --sm-primary-soft: #e4f1e3; --sm-accent: #3d7576; --sm-link: #006fb3; --sm-surface: #ffffff; --sm-page: #f4f8f3; --sm-border: #d3ddd4; --sm-border-strong: #bdc9be; /* Borde de los controles de formulario: WCAG 1.4.11 pide 3:1 para que se distinga dónde empieza el campo. #7e9282 sobre blanco da 3.32:1. */ --sm-border-control: #7e9282; --sm-text: #1e2a22; --sm-muted: #566158; --sm-radius: 8px; --sm-shadow: 0 8px 24px rgba(31, 36, 48, .08); --sm-font: \"Roboto\", \"Helvetica Neue\", Helvetica, Arial, system-ui, -apple-system, sans-serif; } #breadcrumbs, .social, .fontsize, .post-header { display: none; } html, body { max-width: 100%; overflow-x: hidden; } body { margin: 0; background: var(--sm-page); color: va",
+    "title": "Webinars de transferencia técnica para la implementación del Reglamento de Hospitalización Psiquiátrica, en el marco de la Ley N° 21.331.",
+    "url": "https://diprece.minsal.cl/hospitalizacion-psiquiatrica"
   },
   {
     "authority": "Cenabast",
