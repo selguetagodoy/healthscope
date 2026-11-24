@@ -33,7 +33,7 @@
 ## Validación
 
 - 4 pruebas unitarias aprobadas.
-- Validador de datos y pruebas CI de esta actualización: resultado por confirmar.
+- Validación de datos CI aprobada tras la curaduría editorial (workflow 45459551239).
 - Sintaxis JavaScript aprobada con `node --check`.
 - Build estático local generado en `dist/`.
 - Auditoría estructural HTML/JS aprobada: anclas internas, referencias DOM, etiquetas ARIA, assets locales y breakpoint móvil.
