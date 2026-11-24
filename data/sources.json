@@ -592,5 +592,45 @@
     "kind": "Dataset internacional",
     "url": "https://www.orphacode.org/pack-nomenclature/",
     "automated": false
+  },
+  {
+    "id": "bcn-budget",
+    "name": "BCN · Presupuesto Nacional",
+    "scope": "Ley inicial y ejecución anual",
+    "kind": "Dataset público",
+    "url": "https://www.bcn.cl/presupuesto/periodo/2026",
+    "automated": false
+  },
+  {
+    "id": "inapi-applications",
+    "name": "INAPI · Solicitudes de patentes",
+    "scope": "Archivos anuales 2009 en adelante",
+    "kind": "Dataset público",
+    "url": "https://datos.gob.cl/dataset/solicitudes-de-patentes",
+    "automated": false
+  },
+  {
+    "id": "inapi-grants",
+    "name": "INAPI · Registros de patentes",
+    "scope": "Archivos anuales 2009 en adelante",
+    "kind": "Dataset público",
+    "url": "https://datos.gob.cl/dataset/registros-de-patentes",
+    "automated": false
+  },
+  {
+    "id": "clinical-api",
+    "name": "ClinicalTrials.gov · API",
+    "scope": "Estudios registrados y localizaciones",
+    "kind": "Dataset público",
+    "url": "https://clinicaltrials.gov/api/v2/studies",
+    "automated": false
+  },
+  {
+    "id": "chilecompra-monthly",
+    "name": "ChileCompra · órdenes de compra",
+    "scope": "Descargas mensuales por línea",
+    "kind": "Dataset público",
+    "url": "https://datos-abiertos.chilecompra.cl/descargas",
+    "automated": false
   }
 ]

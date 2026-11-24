@@ -2,7 +2,7 @@
 
 Observatorio independiente de inteligencia sanitaria y farmacéutica. HealthScope organiza información pública sobre decisiones sanitarias, medicamentos, compras, cobertura y datos de Chile, con enlaces a las fuentes originales.
 
-**Versión:** 0.9 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
+**Versión:** 1.0 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
 
 ## Sitio público
 
@@ -63,3 +63,7 @@ HealthScope es un proyecto personal e independiente. Usa información pública y
 ## Registro sanitario ISP
 
 Muestra inicial de 27 registros verificados: 2 Trikafta y 25 de la primera página de venta directa vigente (1.178 resultados informados). El importador `scripts/import_isp.py` acepta exportaciones oficiales convertidas a CSV UTF-8, con estado, condición, fecha, criterio y total esperado explícitos. No confundir autorización con cobertura ni disponibilidad.
+
+## V1.0 · Bases estructuradas
+
+Presupuesto BCN 2017–2026, estudios ClinicalTrials.gov con sede Chile, solicitudes y registros INAPI seleccionados por IPC, líneas de órdenes ChileCompra UNSPSC 51. `pip install -r requirements-intelligence.txt` y `python scripts/import_intelligence.py --months 2026-10 2026-09 2026-08`. Los archivos y sus estados se documentan en cada dataset. LinkedIn/X: fuentes y perfiles públicos; publicaciones sociales manuales, sin acceso API autorizado.

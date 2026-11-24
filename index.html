@@ -26,7 +26,7 @@
   <div class="utility-bar">
     <div class="shell utility-inner">
       <span>OBSERVATORIO INDEPENDIENTE · CHILE</span>
-      <span id="editionLine">EDICIÓN DIGITAL · V0.9</span>
+      <span id="editionLine">EDICIÓN DIGITAL · V1.0</span>
     </div>
   </div>
   <header class="site-header">
@@ -45,7 +45,9 @@
         <a href="./acceso/">Acceso</a>
         <a href="./cobertura/">Cobertura GES/LRS</a>
         <a href="./enfermedades-raras/">Enfermedades raras</a>
-        <a href="./datos/">Datos</a>
+        <a href="./presupuesto/">Presupuesto</a>
+        <a href="./ensayos-clinicos/">Ensayos</a>
+        <a href="./patentes/">Patentes</a>
         <a href="./stakeholders/">Actores</a>
         <a href="./prensa/">Prensa y redes</a>
         <a href="./instituciones/">Instituciones</a>
@@ -109,6 +111,10 @@
         <p class="section-deck">Fuentes, decisiones y contexto organizados para consulta.</p>
       </div>
       <div class="observatory-list">
+        <a class="observatory" href="./compras-farmaceuticas/"><span class="obs-index">14</span><span><strong>Compras farmacéuticas</strong><small>Órdenes y líneas de productos</small></span><span class="obs-arrow">↗</span></a>
+        <a class="observatory" href="./presupuesto/"><span class="obs-index">15</span><span><strong>Presupuesto histórico</strong><small>Partida 16 y ejecución</small></span><span class="obs-arrow">↗</span></a>
+        <a class="observatory" href="./ensayos-clinicos/"><span class="obs-index">16</span><span><strong>Ensayos clínicos</strong><small>Estudios con centros en Chile</small></span><span class="obs-arrow">↗</span></a>
+        <a class="observatory" href="./patentes/"><span class="obs-index">17</span><span><strong>Patentes farmacéuticas</strong><small>Solicitudes y registros INAPI</small></span><span class="obs-arrow">↗</span></a>
         <a class="observatory" href="./medicamentos/"><span class="obs-index">13</span><span><strong>Registro sanitario ISP</strong><small>Productos, titulares y principios activos</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./enfermedades-raras/"><span class="obs-index">12</span><span><strong>Enfermedades raras</strong><small>Listado nacional, códigos ORPHA y marco REPOF</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./stakeholders/"><span class="obs-index">10</span><span><strong>Stakeholders</strong><small>Actores y canales institucionales</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
@@ -253,19 +259,47 @@
     <section class="section-rule" id="stakeholders" aria-labelledby="actors-title">
       <div class="section-heading"><div><p class="eyebrow">INTELIGENCIA DE ACTORES</p><h2 id="actors-title">Stakeholders sanitarios</h2></div><span class="section-count" id="actorsCount" role="status">Cargando…</span></div>
       <p class="section-deck">Directorio institucional inicial basado en fuentes públicas. Los enlaces sociales se incorporan cuando el sitio institucional los identifica; la ausencia de un enlace no demuestra que no exista una cuenta. No incluye datos personales privados ni asigna posiciones políticas inferidas.</p>
-      <div class="overview"><a href="./stakeholders/"><strong>41</strong><span>Actores institucionales</span></a><a href="./stakeholders/?channel=LinkedIn"><strong>6</strong><span>Canales LinkedIn</span></a><a href="./stakeholders/?channel=X"><strong>8</strong><span>Canales X</span></a><a href="./prensa/"><strong>20</strong><span>Medios catalogados</span></a></div>
+      <div class="overview"><a href="./stakeholders/"><strong>53</strong><span>Actores institucionales</span></a><a href="./stakeholders/?channel=LinkedIn"><strong>12</strong><span>Canales LinkedIn</span></a><a href="./stakeholders/?channel=X"><strong>18</strong><span>Canales X</span></a><a href="./prensa/"><strong>20</strong><span>Medios catalogados</span></a></div>
       <div class="filter-row"><label class="sr-only" for="actorQuery">Buscar actor</label><input id="actorQuery" type="search" placeholder="Buscar organización, tema o institución"><label class="sr-only" for="actorGroup">Sector</label><select id="actorGroup"><option value="">Todos los sectores</option></select><label class="sr-only" for="actorChannel">Canal social</label><select id="actorChannel"><option value="">Todos los canales</option><option value="LinkedIn">LinkedIn</option><option value="X">X / Twitter</option></select><button type="button" class="button button-light" id="actorReset">Limpiar</button><button type="button" class="button button-dark" id="actorExport">CSV</button></div>
       <div id="actorResults" class="coverage-grid" aria-live="polite"></div>
       <div class="pagination" id="actorPager"><button type="button" class="button button-light" id="actorPrev">← Anterior</button><span id="actorPage"></span><button type="button" class="button button-light" id="actorNext">Siguiente →</button></div>
     </section>
     <section class="section-rule" id="prensa" aria-labelledby="press-title">
       <div class="section-heading"><div><p class="eyebrow">ESCUCHA DIGITAL</p><h2 id="press-title">Prensa, redes y comunicados</h2></div><span class="section-count" id="pressCount" role="status">Cargando…</span></div>
-      <p class="section-deck">Capturas de RSS y enlaces de publicaciones para revisión editorial. Una captura no acredita el contenido ni equivale a una decisión oficial. LinkedIn y X se consultan por sus canales públicos; no hay recolección automática de publicaciones sociales habilitada.</p>
+      <p class="section-deck">Capturas de RSS y enlaces de publicaciones para revisión editorial. Una captura no acredita el contenido ni equivale a una decisión oficial. LinkedIn y X se consultan por sus canales públicos. Las publicaciones identificadas manualmente se distinguen de la captura RSS. No se ha autorizado una API de redes sociales.</p>
       <div class="filter-row"><label class="sr-only" for="pressQuery">Buscar publicación</label><input id="pressQuery" type="search" placeholder="Tema, actor, medio o titular"><label class="sr-only" for="pressKind">Canal</label><select id="pressKind"><option value="">Todos los canales</option><option value="Prensa">Prensa</option><option value="Comunicado institucional">Comunicados</option><option value="LinkedIn">LinkedIn</option><option value="X">X / Twitter</option></select><button type="button" class="button button-light" id="pressReset">Limpiar</button><button type="button" class="button button-dark" id="pressExport">CSV</button></div>
       <div id="pressResults" class="result-list" aria-live="polite"></div>
       <div class="pagination" id="pressPager"><button type="button" class="button button-light" id="pressPrev">← Anterior</button><span id="pressPage"></span><button type="button" class="button button-light" id="pressNext">Siguiente →</button></div>
       <h3 class="directory-heading">Directorio de medios</h3><div id="mediaDirectory" class="coverage-grid"></div>
       <p class="editorial-caption">Enlaces y titulares breves; el contenido completo permanece en la fuente. Sin extracción de artículos protegidos ni acceso a perfiles privados.</p>
+    </section>
+    <section class="section-rule bulk-section" id="bulk-procurement" aria-labelledby="bulk-procurement-title" data-bulk="bulk-procurement">
+      <div class="section-heading"><div><p class="eyebrow">DIRECCIÓN CHILECOMPRA · SEGMENTO UNSPSC 51</p><h2 id="bulk-procurement-title">Compras farmacéuticas</h2></div><span class="section-count bulk-count" role="status">Cargando…</span></div>
+      <p class="section-deck">Órdenes de compra a nivel de línea. Se distinguen estados y monedas. El estado de la orden no demuestra adjudicación, entrega ni pago.</p><div class="channel-links bulk-links"><a class="text-link" href="https://datos-abiertos.chilecompra.cl/descargas" target="_blank" rel="noopener noreferrer">Datos abiertos ChileCompra ↗</a> <a class="text-link" href="https://www.cenabast.cl/documentos-cenabast/" target="_blank" rel="noopener noreferrer">Documentos Cenabast ↗</a></div>
+      <div class="bulk-meta editorial-caption" role="status"></div><div class="bulk-extra"></div>
+      <div class="filter-row"><label class="sr-only" for="bulk-procurement-query">Buscar</label><input id="bulk-procurement-query" class="bulk-query" type="search" placeholder="Producto, comprador, licitación, proveedor"><label class="sr-only" for="bulk-procurement-filter">Filtro</label><select id="bulk-procurement-filter" class="bulk-filter"><option value="">Todos</option></select><button class="button button-light bulk-reset" type="button">Limpiar</button><button class="button button-dark bulk-export" type="button" disabled>CSV filtrado</button><button class="button button-light bulk-json" type="button" disabled>JSON</button></div>
+      <div class="epof-table bulk-results" aria-live="polite" aria-busy="true"></div><div class="pagination bulk-pager" hidden><button class="button button-light bulk-prev" type="button">← Anterior</button><span class="bulk-page"></span><button class="button button-light bulk-next" type="button">Siguiente →</button></div>
+    </section>
+    <section class="section-rule bulk-section" id="bulk-budget" aria-labelledby="bulk-budget-title" data-bulk="bulk-budget">
+      <div class="section-heading"><div><p class="eyebrow">PARTIDA 16 · 2017–2026</p><h2 id="bulk-budget-title">Presupuesto sanitario histórico</h2></div><span class="section-count bulk-count" role="status">Cargando…</span></div>
+      <p class="section-deck">Ley de presupuestos inicial en pesos nominales, sin ajuste inflacionario. Ejecución porcentual informada por BCN; 2026 corresponde a septiembre, no a cierre anual.</p><div class="channel-links bulk-links"><a class="text-link" href="https://www.bcn.cl/presupuesto/periodo/2026" target="_blank" rel="noopener noreferrer">BCN ↗</a> <a class="text-link" href="https://www.presupuestoabierto.cl/" target="_blank" rel="noopener noreferrer">Presupuesto Abierto ↗</a></div>
+      <div class="bulk-meta editorial-caption" role="status"></div><div class="bulk-extra"></div>
+      <div class="filter-row"><label class="sr-only" for="bulk-budget-query">Buscar</label><input id="bulk-budget-query" class="bulk-query" type="search" placeholder="Año o corte"><label class="sr-only" for="bulk-budget-filter">Filtro</label><select id="bulk-budget-filter" class="bulk-filter"><option value="">Todos</option></select><button class="button button-light bulk-reset" type="button">Limpiar</button><button class="button button-dark bulk-export" type="button" disabled>CSV filtrado</button><button class="button button-light bulk-json" type="button" disabled>JSON</button></div>
+      <div class="epof-table bulk-results" aria-live="polite" aria-busy="true"></div><div class="pagination bulk-pager" hidden><button class="button button-light bulk-prev" type="button">← Anterior</button><span class="bulk-page"></span><button class="button button-light bulk-next" type="button">Siguiente →</button></div>
+    </section>
+    <section class="section-rule bulk-section" id="bulk-trials" aria-labelledby="bulk-trials-title" data-bulk="bulk-trials">
+      <div class="section-heading"><div><p class="eyebrow">CLINICALTRIALS.GOV · REGISTRO INTERNACIONAL</p><h2 id="bulk-trials-title">Estudios clínicos en Chile</h2></div><span class="section-count bulk-count" role="status">Cargando…</span></div>
+      <p class="section-deck">Estudios con al menos una sede en Chile, incluidos ensayos intervencionales y estudios observacionales. La inscripción no equivale a aprobación local ni acceso a tratamiento.</p><div class="channel-links bulk-links"><a class="text-link" href="https://clinicaltrials.gov/search?locStr=Chile&country=Chile" target="_blank" rel="noopener noreferrer">Registro original ↗</a> <a class="text-link" href="https://www.ispch.gob.cl/" target="_blank" rel="noopener noreferrer">ISP ↗</a></div>
+      <div class="bulk-meta editorial-caption" role="status"></div><div class="bulk-extra"></div>
+      <div class="filter-row"><label class="sr-only" for="bulk-trials-query">Buscar</label><input id="bulk-trials-query" class="bulk-query" type="search" placeholder="NCT, enfermedad, medicamento, patrocinador"><label class="sr-only" for="bulk-trials-filter">Filtro</label><select id="bulk-trials-filter" class="bulk-filter"><option value="">Todos</option></select><button class="button button-light bulk-reset" type="button">Limpiar</button><button class="button button-dark bulk-export" type="button" disabled>CSV filtrado</button><button class="button button-light bulk-json" type="button" disabled>JSON</button></div>
+      <div class="epof-table bulk-results" aria-live="polite" aria-busy="true"></div><div class="pagination bulk-pager" hidden><button class="button button-light bulk-prev" type="button">← Anterior</button><span class="bulk-page"></span><button class="button button-light bulk-next" type="button">Siguiente →</button></div>
+    </section>
+    <section class="section-rule bulk-section" id="bulk-patents" aria-labelledby="bulk-patents-title" data-bulk="bulk-patents">
+      <div class="section-heading"><div><p class="eyebrow">INAPI · NÚCLEO IPC FARMACÉUTICO</p><h2 id="bulk-patents-title">Patentes y solicitudes farmacéuticas</h2></div><span class="section-count bulk-count" role="status">Cargando…</span></div>
+      <p class="section-deck">Selección por clasificación internacional IPC. Una solicitud no es una patente concedida. La fecha de expiración publicada no acredita vigencia jurídica ni libertad de operación.</p><div class="channel-links bulk-links"><a class="text-link" href="https://tramites.inapi.cl/OpenData/PatentOpenData" target="_blank" rel="noopener noreferrer">Datos abiertos INAPI ↗</a> <a class="text-link" href="https://datos.gob.cl/dataset/solicitudes-de-patentes" target="_blank" rel="noopener noreferrer">Solicitudes ↗</a> <a class="text-link" href="https://datos.gob.cl/dataset/registros-de-patentes" target="_blank" rel="noopener noreferrer">Registros ↗</a></div>
+      <div class="bulk-meta editorial-caption" role="status"></div><div class="bulk-extra"></div>
+      <div class="filter-row"><label class="sr-only" for="bulk-patents-query">Buscar</label><input id="bulk-patents-query" class="bulk-query" type="search" placeholder="Título, solicitante institucional, número, IPC"><label class="sr-only" for="bulk-patents-filter">Filtro</label><select id="bulk-patents-filter" class="bulk-filter"><option value="">Todos</option></select><button class="button button-light bulk-reset" type="button">Limpiar</button><button class="button button-dark bulk-export" type="button" disabled>CSV filtrado</button><button class="button button-light bulk-json" type="button" disabled>JSON</button></div>
+      <div class="epof-table bulk-results" aria-live="polite" aria-busy="true"></div><div class="pagination bulk-pager" hidden><button class="button button-light bulk-prev" type="button">← Anterior</button><span class="bulk-page"></span><button class="button button-light bulk-next" type="button">Siguiente →</button></div>
     </section>
     <section class="section-rule" id="investigacion" aria-labelledby="research-title">
       <div class="section-heading">
@@ -315,5 +349,6 @@
   <script src="./assets/intelligence.js" defer></script>
   <script src="./assets/epof.js" defer></script>
   <script src="./assets/isp-registry.js" defer></script>
+  <script src="./assets/bulk.js" defer></script>
 </body>
 </html>

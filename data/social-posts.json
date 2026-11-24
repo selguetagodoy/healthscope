@@ -1,1 +1,124 @@
-[]
+[
+  {
+    "id": "li-achm-7524490139029434368",
+    "authority": "Asociación Chilena de Municipalidades",
+    "title": "Acceso a medicamentos y rol de los municipios",
+    "summary": "Invitación a un encuentro sobre acceso municipal a medicamentos, anunciado para el 9 de noviembre de 2026.",
+    "url": "https://es.linkedin.com/posts/https-www.achm.cl-_c%C3%B3mo-ampliar-el-acceso-a-medicamentos-activity-7524490139029434368-SFbk",
+    "topics": [
+      "Cenabast",
+      "municipios",
+      "acceso"
+    ],
+    "source_type": "LinkedIn",
+    "status": "Publicación identificada · afirmaciones no validadas",
+    "published": "",
+    "captured_at": "2026-11-24"
+  },
+  {
+    "id": "li-cif-7519448556567412736",
+    "authority": "CIF Chile",
+    "title": "Debate sobre brechas de acceso a tratamientos",
+    "summary": "El gremio difundió una discusión sobre los resultados del indicador W.A.I.T. y barreras de cobertura.",
+    "url": "https://es.linkedin.com/posts/cifchile_webinar-wait-indicator-2026-brecha-activity-7519448556567412736-EPIP",
+    "topics": [
+      "acceso",
+      "LRS",
+      "innovación"
+    ],
+    "source_type": "LinkedIn",
+    "status": "Publicación identificada · afirmaciones no validadas",
+    "published": "",
+    "captured_at": "2026-11-24"
+  },
+  {
+    "id": "li-cenabast-7501721413020454912",
+    "authority": "Cenabast",
+    "title": "Participación en discusión de acceso e innovación",
+    "summary": "La institución informó su participación en una conversación sobre evaluación y financiamiento de medicamentos.",
+    "url": "https://es.linkedin.com/posts/cenabast_cenabast-activity-7501721413020454912-xgAG",
+    "topics": [
+      "compras",
+      "innovación"
+    ],
+    "source_type": "LinkedIn",
+    "status": "Publicación identificada · afirmaciones no validadas",
+    "published": "",
+    "captured_at": "2026-11-24"
+  },
+  {
+    "id": "li-cenabast-7515836936570384384",
+    "authority": "Cenabast",
+    "title": "Consulta al mercado sobre trazabilidad",
+    "summary": "Comunicó una consulta técnica sobre interoperabilidad y estándares logísticos de medicamentos.",
+    "url": "https://es.linkedin.com/posts/cenabast_cenabast-minsal-saludp%C3%BAblica-activity-7515836936570384384-TM_L",
+    "topics": [
+      "trazabilidad",
+      "compras"
+    ],
+    "source_type": "LinkedIn",
+    "status": "Publicación identificada · afirmaciones no validadas",
+    "published": "",
+    "captured_at": "2026-11-24"
+  },
+  {
+    "id": "li-cenabast-7526353091106054144",
+    "authority": "Cenabast",
+    "title": "Intermediación de medicamentos y municipios",
+    "summary": "Informó su participación en un webinar de la ACHM sobre intermediación y gasto de bolsillo.",
+    "url": "https://es.linkedin.com/posts/cenabast_remediosm%C3%A1sbaratos-leycenabast-cenabast-activity-7526353091106054144-8EbJ",
+    "topics": [
+      "Ley Cenabast",
+      "acceso"
+    ],
+    "source_type": "LinkedIn",
+    "status": "Publicación identificada · afirmaciones no validadas",
+    "published": "",
+    "captured_at": "2026-11-24"
+  },
+  {
+    "id": "li-cif-7511448628323016704",
+    "authority": "CIF Chile",
+    "title": "Acceso oncológico y presupuesto 2027",
+    "summary": "El gremio difundió una entrevista a su vicepresidenta ejecutiva sobre cobertura y presupuesto sanitario.",
+    "url": "https://es.linkedin.com/posts/cifchile_cifchile-innovaci%C3%B3nbiom%C3%A9dica-oncolog%C3%ADa-activity-7511448628323016704-9oN9",
+    "topics": [
+      "oncología",
+      "presupuesto"
+    ],
+    "source_type": "LinkedIn",
+    "status": "Publicación identificada · afirmaciones no validadas",
+    "published": "",
+    "captured_at": "2026-11-24"
+  },
+  {
+    "id": "li-cif-7501699630842408960",
+    "authority": "CIF Chile",
+    "title": "Estudio sobre brechas de acceso",
+    "summary": "Difusión de una instancia de discusión en torno a un estudio con Espacio Público.",
+    "url": "https://es.linkedin.com/posts/cifchile_cienciaeinnovaci%C3%B3nparatodos-saludparatodos-activity-7501699630842408960-YDOD",
+    "topics": [
+      "acceso",
+      "evidencia"
+    ],
+    "source_type": "LinkedIn",
+    "status": "Publicación identificada · afirmaciones no validadas",
+    "published": "",
+    "captured_at": "2026-11-24"
+  },
+  {
+    "id": "li-cerpohchi-7528496200908480512",
+    "authority": "Congreso CERPOHCHI Chile",
+    "title": "Congreso sobre enfermedades raras y diagnóstico genético",
+    "summary": "El congreso informó participación de actores de investigación y tecnología diagnóstica.",
+    "url": "https://es.linkedin.com/posts/congreso-cerpohchi-chile_cerpohchi2026-3billion-diagn%C3%B3sticogen%C3%A9tico-activity-7528496200908480512-u5EO",
+    "topics": [
+      "EPoF",
+      "diagnóstico"
+    ],
+    "source_type": "LinkedIn",
+    "status": "Publicación identificada · afirmaciones no validadas",
+    "published": "",
+    "captured_at": "2026-11-24"
+  }
+]

@@ -46,7 +46,14 @@
     "scope": "Vigilancia sanitaria, medicamentos y laboratorios",
     "url": "https://www.ispch.gob.cl/",
     "source_url": "https://www.ispch.gob.cl/",
-    "channels": []
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/ispch",
+        "source_url": "https://www.ispch.gob.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
   },
   {
     "id": "anamed",
@@ -187,7 +194,20 @@
     "scope": "Propiedad industrial y patentes",
     "url": "https://www.inapi.cl/",
     "source_url": "https://www.inapi.cl/",
-    "channels": []
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/inapichile",
+        "source_url": "https://www.inapi.cl/",
+        "verified_at": "2026-11-24"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/inapi-chile",
+        "source_url": "https://www.inapi.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
   },
   {
     "id": "ops-chile",
@@ -243,7 +263,14 @@
     "scope": "Evaluación regulatoria y farmacovigilancia",
     "url": "https://www.ema.europa.eu/en/medicines",
     "source_url": "https://www.ema.europa.eu/en/medicines",
-    "channels": []
+    "channels": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/european-medicines-agency",
+        "source_url": "https://www.ema.europa.eu/en/medicines",
+        "verified_at": "2026-11-24"
+      }
+    ]
   },
   {
     "id": "fda",
@@ -252,7 +279,20 @@
     "scope": "Información regulatoria y seguridad farmacéutica",
     "url": "https://www.fda.gov/drugs",
     "source_url": "https://www.fda.gov/drugs",
-    "channels": []
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/FDAdrugs",
+        "source_url": "https://www.fda.gov/drugs",
+        "verified_at": "2026-11-24"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/fda",
+        "source_url": "https://www.fda.gov/drugs",
+        "verified_at": "2026-11-24"
+      }
+    ]
   },
   {
     "id": "cadth",
@@ -270,7 +310,20 @@
     "scope": "Guías clínicas y evaluación de tecnologías",
     "url": "https://www.nice.org.uk/",
     "source_url": "https://www.nice.org.uk/",
-    "channels": []
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/NICEcomms",
+        "source_url": "https://www.nice.org.uk/",
+        "verified_at": "2026-11-24"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/national-institute-for-health-and-clinical-excellence",
+        "source_url": "https://www.nice.org.uk/",
+        "verified_at": "2026-11-24"
+      }
+    ]
   },
   {
     "id": "cif",
@@ -360,8 +413,8 @@
     "name": "Asociación de Sociedades Científicas-Médicas de Chile",
     "group": "Profesionales",
     "scope": "Sociedades científicas y políticas sanitarias",
-    "url": "",
-    "source_url": "https://eticaensalud.cl/instituciones/",
+    "url": "https://asocimed.cl/",
+    "source_url": "https://asocimed.cl/",
     "channels": []
   },
   {
@@ -369,9 +422,16 @@
     "name": "Colegio de Enfermeras de Chile",
     "group": "Profesionales",
     "scope": "Representación profesional y cuidados",
-    "url": "",
-    "source_url": "https://eticaensalud.cl/instituciones/",
-    "channels": []
+    "url": "https://colegiodeenfermeras.cl/",
+    "source_url": "https://colegiodeenfermeras.cl/",
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/colegioenfermer",
+        "source_url": "https://colegiodeenfermeras.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
   },
   {
     "id": "affi",
@@ -460,5 +520,162 @@
         "verified_at": "2026-11-24"
       }
     ]
+  },
+  {
+    "id": "clinicas",
+    "name": "Clínicas de Chile",
+    "group": "Prestadores",
+    "scope": "Prestación privada y política sanitaria",
+    "url": "https://www.clinicasdechile.cl/",
+    "source_url": "https://www.clinicasdechile.cl/",
+    "channels": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/clínicas-de-chile",
+        "source_url": "https://www.clinicasdechile.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "isapres",
+    "name": "Asociación de Isapres de Chile",
+    "group": "Aseguradores",
+    "scope": "Seguro privado y regulación",
+    "url": "https://www.isapre.cl/",
+    "source_url": "https://www.isapre.cl/",
+    "channels": []
+  },
+  {
+    "id": "medwave",
+    "name": "Medwave",
+    "group": "Investigación",
+    "scope": "Evidencia clínica y salud pública",
+    "url": "https://www.medwave.cl/",
+    "source_url": "https://www.medwave.cl/",
+    "channels": []
+  },
+  {
+    "id": "savalnet",
+    "name": "SAVALnet",
+    "group": "Prensa especializada",
+    "scope": "Actualidad médica",
+    "url": "https://www.savalnet.cl/",
+    "source_url": "https://www.savalnet.cl/",
+    "channels": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/savalnet",
+        "source_url": "https://www.savalnet.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "uchile-med",
+    "name": "Facultad de Medicina Universidad de Chile",
+    "group": "Academia",
+    "scope": "Investigación y formación médica",
+    "url": "https://medicina.uchile.cl/",
+    "source_url": "https://medicina.uchile.cl/",
+    "channels": []
+  },
+  {
+    "id": "uc-med",
+    "name": "Facultad de Medicina UC",
+    "group": "Academia",
+    "scope": "Investigación y formación médica",
+    "url": "https://medicina.uc.cl/",
+    "source_url": "https://medicina.uc.cl/",
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/FacMedicinaUC",
+        "source_url": "https://medicina.uc.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "colegio-farmaceuticos",
+    "name": "Colegio de Químicos Farmacéuticos y Bioquímicos",
+    "group": "Profesionales",
+    "scope": "Profesión farmacéutica",
+    "url": "https://www.colegiofarmaceutico.cl/",
+    "source_url": "https://www.colegiofarmaceutico.cl/",
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/ColegioQFyBQ",
+        "source_url": "https://www.colegiofarmaceutico.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "sochipe",
+    "name": "Sociedad Chilena de Pediatría",
+    "group": "Profesionales",
+    "scope": "Pediatría y salud infantil",
+    "url": "https://sochipe.cl/v3/index.php",
+    "source_url": "https://sochipe.cl/v3/index.php",
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/sochipe",
+        "source_url": "https://sochipe.cl/v3/index.php",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "sochinf",
+    "name": "Sociedad Chilena de Infectología",
+    "group": "Profesionales",
+    "scope": "Infectología y vacunación",
+    "url": "https://www.sochinf.cl/",
+    "source_url": "https://www.sochinf.cl/",
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/SochinfOficial",
+        "source_url": "https://www.sochinf.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "sochicar",
+    "name": "Sociedad Chilena de Cardiología",
+    "group": "Profesionales",
+    "scope": "Cardiología",
+    "url": "https://sochicar.cl/",
+    "source_url": "https://sochicar.cl/",
+    "channels": [
+      {
+        "platform": "X",
+        "url": "https://x.com/Sochicaroficial",
+        "source_url": "https://sochicar.cl/",
+        "verified_at": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "sochimi",
+    "name": "Sociedad Chilena de Medicina Intensiva",
+    "group": "Profesionales",
+    "scope": "Cuidados intensivos",
+    "url": "https://sochimi.cl/",
+    "source_url": "https://sochimi.cl/",
+    "channels": []
+  },
+  {
+    "id": "achm",
+    "name": "Asociación Chilena de Municipalidades",
+    "group": "Sociedad civil",
+    "scope": "Atención primaria y acceso municipal a medicamentos",
+    "url": "https://www.achm.cl/",
+    "source_url": "https://www.achm.cl/",
+    "channels": []
   }
 ]

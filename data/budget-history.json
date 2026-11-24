@@ -1,0 +1,98 @@
+{
+  "count": 10,
+  "source": "BCN / DIPRES",
+  "scope": "Partida 16 · ley inicial, pesos nominales; porcentajes de ejecución informados por BCN (sobre presupuesto vigente, no ley inicial). 2026 es parcial.",
+  "checked_at": "2026-11-24",
+  "rows": [
+    {
+      "id": "p16-2017",
+      "year": 2017,
+      "initial_thousand_clp": 7294559106,
+      "income_pct": 101.2,
+      "expense_pct": 101.4,
+      "execution_cut": "Diciembre",
+      "source_url": "https://www.bcn.cl/presupuesto/periodo/2017"
+    },
+    {
+      "id": "p16-2018",
+      "year": 2018,
+      "initial_thousand_clp": 8174283789,
+      "income_pct": 101.5,
+      "expense_pct": 101.9,
+      "execution_cut": "Diciembre",
+      "source_url": "https://www.bcn.cl/presupuesto/periodo/2018"
+    },
+    {
+      "id": "p16-2019",
+      "year": 2019,
+      "initial_thousand_clp": 9059970056,
+      "income_pct": 100.4,
+      "expense_pct": 97.5,
+      "execution_cut": "Diciembre",
+      "source_url": "https://www.bcn.cl/presupuesto/periodo/2019"
+    },
+    {
+      "id": "p16-2020",
+      "year": 2020,
+      "initial_thousand_clp": 9991811120,
+      "income_pct": 99,
+      "expense_pct": 96.8,
+      "execution_cut": "Diciembre",
+      "source_url": "https://www.bcn.cl/presupuesto/periodo/2020"
+    },
+    {
+      "id": "p16-2021",
+      "year": 2021,
+      "initial_thousand_clp": 9953176100,
+      "income_pct": 98.6,
+      "expense_pct": 98.4,
+      "execution_cut": "Diciembre",
+      "source_url": "https://www.bcn.cl/presupuesto/periodo/2021"
+    },
+    {
+      "id": "p16-2022",
+      "year": 2022,
+      "initial_thousand_clp": 11848903100,
+      "income_pct": 100.3,
+      "expense_pct": 98,
+      "execution_cut": "Diciembre",
+      "source_url": "https://www.bcn.cl/presupuesto/periodo/2022"
+    },
+    {
+      "id": "p16-2023",
+      "year": 2023,
+      "initial_thousand_clp": 12799886289,
+      "income_pct": 102.2,
+      "expense_pct": 98.3,
+      "execution_cut": "Diciembre",
+      "source_url": "https://www.bcn.cl/presupuesto/periodo/2023"
+    },
+    {
+      "id": "p16-2024",
+      "year": 2024,
+      "initial_thousand_clp": 14680724535,
+      "income_pct": 102.4,
+      "expense_pct": 99.1,
+      "execution_cut": "Diciembre",
+      "source_url": "https://www.bcn.cl/presupuesto/periodo/2024"
+    },
+    {
+      "id": "p16-2025",
+      "year": 2025,
+      "initial_thousand_clp": 16035630513,
+      "income_pct": 103.2,
+      "expense_pct": 99.7,
+      "execution_cut": "Diciembre",
+      "source_url": "https://www.bcn.cl/presupuesto/periodo/2025"
+    },
+    {
+      "id": "p16-2026",
+      "year": 2026,
+      "initial_thousand_clp": 17251054647,
+      "income_pct": 88,
+      "expense_pct": 80.8,
+      "execution_cut": "Septiembre",
+      "source_url": "https://www.bcn.cl/presupuesto/periodo/2026"
+    }
+  ]
+}

@@ -73,6 +73,16 @@ def validate():
     check(len(isp_rows) == isp.get("count") and len(regs) == len(set(regs)), "ISP count or duplicate registrations", errors)
     check(valid_https(isp.get("source_url")) and bool(isp.get("scope")), "ISP provenance missing", errors)
     check(all(r.get("registration") and r.get("name") and r.get("holder") and r.get("checked_at") for r in isp_rows), "ISP row incomplete", errors)
+    budget = load(ROOT / "data/budget-history.json")
+    check(len(budget["rows"]) == budget["count"] == 10 and {x["year"] for x in budget["rows"]} == set(range(2017,2027)), "Budget coverage mismatch", errors)
+    for dataset in ("clinical-trials","patents","procurement"):
+        path = ROOT / ("data/"+dataset+".json")
+        if path.exists():
+            obj = load(path)
+            records = obj.get("rows", [])
+            keys = [x.get("id") for x in records]
+            check(len(records) == obj.get("count") and len(set(keys)) == len(keys) and all(keys), dataset+" count or identifier mismatch", errors)
+            check(valid_https(obj.get("source_url")) and bool(obj.get("scope")), dataset+" missing provenance", errors)
     event_urls = set()
     for i, event in enumerate(events):
         prefix = "events[" + str(i) + "]"

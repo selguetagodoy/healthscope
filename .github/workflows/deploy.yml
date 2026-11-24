@@ -82,6 +82,25 @@ jobs:
               echo '::warning::EPOF catalogue unavailable; publish explicit pending state.'
             fi
           fi
+      - name: Import clinical, patent and procurement data
+        if: steps.pages-check.outputs.enabled == 'true'
+        shell: bash
+        run: |
+          if [ ! -s data/clinical-trials.json ] || [ ! -s data/patents.json ] || [ ! -s data/procurement.json ]; then
+            python -m pip install -r requirements-intelligence.txt
+            python scripts/import_intelligence.py --months 2026-10 2026-09 2026-08 || echo '::warning::Some public datasets unavailable; see bulk-status.json.'
+            python scripts/validate_data.py
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            for path in data/clinical-trials.json data/patents.json data/procurement.json data/procurement-lines.csv data/bulk-status.json; do
+              if [ -f "$path" ]; then git add "$path"; fi
+            done
+            if ! git diff --cached --quiet; then
+              git commit -m 'Import public clinical, patent and procurement snapshots'
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
       - name: Validate data and assemble site
         if: steps.pages-check.outputs.enabled == 'true'
         run: |

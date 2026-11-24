@@ -69,3 +69,9 @@
 
 - 27 registros iniciales con procedencia y filtros; importación masiva pendiente de exportaciones oficiales.
 - Próxima prioridad: compras farmacéuticas y adjudicaciones por línea de producto.
+
+## V1.0 · entrega integral
+
+- Presupuesto histórico, estudios clínicos, patentes y compras: interfaces y colectores; cobertura cuantificada en los archivos generados.
+- Redes: directorio y publicaciones verificables; automatización de LinkedIn/X solo con permisos API.
+- Pendientes estructurales: importación ISP completa, histórico de compras de cinco años, auditoría de vigencia de cargos individuales, mapeos temáticos y validación funcional.
