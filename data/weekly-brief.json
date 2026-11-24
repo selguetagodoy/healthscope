@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-18",
   "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T20:43:40-03:00",
-  "last_monitor_at": "2026-11-24T23:42:48Z",
-  "extra_checked_at": "2026-11-24T20:43:40-03:00",
+  "generated_at": "2026-11-24T20:45:11-03:00",
+  "last_monitor_at": "2026-11-24T23:44:16Z",
+  "extra_checked_at": "2026-11-24T20:45:11-03:00",
   "legislative_tracker": {
     "updated": "2026-11-24",
     "projects": [
@@ -11,7 +11,7 @@
         "title": "Presupuesto 2027 · Salud",
         "bulletin": "18.702-05",
         "status": "Tercer trámite concluido · Mixta del presupuesto general",
-        "summary": "La Cámara respaldó los recursos para LRS; Salud no figura entre las diez partidas con discrepancias.",
+        "summary": "La Cámara respaldó las modificaciones del Senado para LRS. La Partida 16 no figura en la lista de diez partidas con discrepancias remitidas a Mixta.",
         "metric": "$28.207 millones",
         "metric_label": "Recursos consignados vía Fonasa para LRS",
         "next": "Informe de Comisión Mixta, ratificación de ambas salas y publicación de la ley.",
@@ -26,6 +26,11 @@
             "date": "2026-11-18",
             "title": "Senado respalda la partida sanitaria; compromiso de reposición LRS",
             "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/"
+          },
+          {
+            "date": "2026-11-19",
+            "title": "Senado despacha el proyecto con modificaciones y devuelve el texto a la Cámara",
+            "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&mo=tramitacion"
           },
           {
             "date": "2026-11-23",
@@ -79,6 +84,22 @@
       "new_since_previous": false
     },
     {
+      "id": "camara-citacion-salud-2026-11-24",
+      "published": "2026-11-24",
+      "title": "Agenda de Cámara: Comisión de Salud citada el 24 de noviembre",
+      "authority": "Comisión de Salud de la Cámara",
+      "source_type": "Citación parlamentaria",
+      "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=1707&prmIdTipo=2101",
+      "topic": "Regulación y Congreso",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 2,
+      "status": "Verificado",
+      "summary": "La citación oficial incluye el debate del boletín 17.800-11 sobre etiquetado del jurel y la participación de autoridades sanitarias y otros actores. La convocatoria se distingue de los acuerdos posteriores de la comisión.",
+      "implications": "El asunto constituye agenda parlamentaria; el resultado debe establecerse a partir del registro de acuerdos.",
+      "new_since_previous": true
+    },
+    {
       "id": "camara-presupuesto-2027-salud-2026-11-23",
       "published": "2026-11-23",
       "title": "Cámara respalda $28.207 millones para la Ley Ricarte Soto y Salud queda fuera de las discrepancias enviadas a Mixta",
@@ -90,8 +111,8 @@
       "vote_totals": "",
       "score": 12,
       "status": "Verificado",
-      "summary": "En tercer trámite constitucional, la Cámara respaldó las modificaciones que consignan $28.207 millones a través de Fonasa para la Ley Ricarte Soto. Remitió diferencias de diez partidas a Comisión Mixta; la Partida 16 no figura entre ellas.",
-      "implications": "El acuerdo reduce la incertidumbre sobre la reposición de recursos para tratamientos de alto costo. El presupuesto global sigue en tramitación hasta su despacho y publicación.",
+      "summary": "En tercer trámite, la Cámara aprobó la mayor parte de las enmiendas del Senado por 138 votos a favor y realizó votaciones separadas. Entre los cambios aprobados, informó $28.207 millones vía Fonasa para la Ley Ricarte Soto. Salud no figura entre las diez partidas con diferencias remitidas a Mixta.",
+      "implications": "El acuerdo sobre los recursos para LRS avanzó en tercer trámite. Los 138 votos corresponden al conjunto principal de enmiendas, no a una votación exclusiva de LRS. Resta el despacho del presupuesto general y su publicación.",
       "new_since_previous": false
     },
     {
@@ -109,6 +130,22 @@
       "summary": "El instituto habilitó una base descargable y de actualización periódica sobre sospechas de reacciones adversas a medicamentos y eventos supuestamente atribuibles a vacunas. La ficha técnica informa registros desde 2014 y un periodo disponible hasta octubre de 2026.",
       "implications": "El conjunto permite investigación secundaria en farmacovigilancia; su uso requiere considerar el carácter de notificación de sospecha y las notas metodológicas del ISP.",
       "new_since_previous": false
+    },
+    {
+      "id": "senado-despacho-presupuesto-2027-2026-11-19",
+      "published": "2026-11-19",
+      "title": "Senado despacha el Presupuesto 2027 con modificaciones, incluida la Partida 16 de Salud",
+      "authority": "Sala del Senado",
+      "source_type": "Tramitación legislativa oficial",
+      "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&mo=tramitacion",
+      "topic": "Presupuesto y financiamiento",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 4,
+      "status": "Verificado",
+      "summary": "La tramitación oficial del Senado registra el despacho del proyecto en segundo trámite constitucional el 19 de noviembre, con modificaciones. El registro incluye la Partida 16 entre las partidas despachadas.",
+      "implications": "Las modificaciones regresaron a la Cámara de origen para su pronunciamiento. El despacho del Senado no equivale a la publicación de la ley.",
+      "new_since_previous": true
     },
     {
       "id": "camara-respuesta-epof-presupuesto-2026-11-18",
@@ -450,8 +487,10 @@
   ],
   "all_ids": [
     "senado-bol-15047-11-tabla-2026-11-24",
+    "camara-citacion-salud-2026-11-24",
     "camara-presupuesto-2027-salud-2026-11-23",
     "isp-ram-esavi-base-2026-11-23",
+    "senado-despacho-presupuesto-2027-2026-11-19",
     "camara-respuesta-epof-presupuesto-2026-11-18",
     "senado-presupuesto-2027-salud-2026-11-18",
     "castro-reposicion-lrs-2026-11-18",
