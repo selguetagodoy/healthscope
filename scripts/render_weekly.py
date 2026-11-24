@@ -33,7 +33,10 @@ def item(r,verified):
     meta=" · ".join(filter(None,[r.get("topic"),day(r.get("published")),"NUEVO" if r.get("new_since_previous") else ""]))
     author=" · ".join(dict.fromkeys(filter(None,[r.get("authority"),r.get("source_type")])))
     body=""
-    if verified:
+    if r.get("source_type")=="Votación de Sala":
+        if r.get("vote_result"):body+="<p><strong>Resultado: </strong>"+esc(r["vote_result"])+"</p>"
+        if r.get("vote_totals"):body+="<p>"+esc(r["vote_totals"])+"</p>"
+    elif verified:
         if r.get("summary"):body+="<p>"+esc(r["summary"])+"</p>"
         if r.get("implications"):body+='<p class="weekly-impact"><strong>Implicancias:</strong> '+esc(r["implications"])+"</p>"
     return '<article class="weekly-item"><small>'+esc(meta)+'</small><h3>'+esc(r["title"])+'</h3><p class="weekly-author">'+esc(author)+'</p>'+body+'<a class="text-link" target="_blank" rel="noopener noreferrer" href="'+link+'">Fuente directa ↗</a></article>'
@@ -62,10 +65,22 @@ def render(page,d,full=False):
         block='<div class="leg-brief"><p class="eyebrow">CONGRESO · SEGUIMIENTO DE PROYECTOS</p><h2>Estado de la agenda legislativa</h2><p class="editorial-caption">Estado documentado al '+esc(day(tracker.get("updated")))+' · Cámara, Senado y Comisión Mixta</p><div class="leg-grid">'+''.join(cards)+'</div></div>'
         page=page.replace('<div class="weekly-body">',block+'<div class="weekly-body">',1)
     # Prioritize the latest budget outcome and represent each chamber before other headlines.
-    leading=[x for x in verified if x["id"]=="camara-presupuesto-2027-salud-2026-11-23"]
+    leading=[x for x in verified if x.get("id")=="camara-presupuesto-2027-salud-2026-11-23"]
     ordered=leading+[x for x in verified if x not in leading]
-    replace("div","weeklyVerified","".join(item(r,True) for r in (ordered if full else ordered[:5])) or '<p><a href="./radar/">Ver agenda sanitaria →</a></p>')
-    replace("div","weeklyCandidates","".join(item(r,False) for r in (candidates if full else candidates[:6])) or '<p><a href="./prensa/">Ver publicaciones →</a></p>')
+    # Select across themes, not five versions of the same budget story.
+    selected=[];topics=set()
+    for x in ordered:
+        key=x.get("topic","")
+        if key in topics:continue
+        selected.append(x);topics.add(key)
+    selected.extend(x for x in ordered if x not in selected)
+    replace("div","weeklyVerified","".join(item(r,True) for r in (ordered if full else selected[:5])) or '<p><a href="./radar/">Ver agenda sanitaria →</a></p>')
+    votes=[x for x in candidates if x.get("source_type")=="Votación de Sala"]
+    other=[x for x in candidates if x not in votes]
+    publications="".join(item(r,False) for r in (other if full else other[:6]))
+    if votes:
+        publications='<h3 class="weekly-subtitle">Votaciones de la Cámara</h3>'+''.join(item(r,False) for r in (votes if full else votes[:5]))+'<h3 class="weekly-subtitle">Otras publicaciones</h3>'+publications
+    replace("div","weeklyCandidates",publications or '<p><a href="./prensa/">Ver publicaciones →</a></p>')
     replace("div","weeklySourceList","".join('<div class="weekly-source"><a href="'+safe(s["url"])+'" target="_blank" rel="noopener noreferrer">'+esc(s.get("name"))+"</a></div>" for s in sources))
     report=["HEALTHSCOPE CHILE · BRIEFING","Ventana: "+day(d.get("window_start"))+"–"+day(d.get("window_end"))]
     for r in ordered:
