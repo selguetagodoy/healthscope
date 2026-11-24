@@ -1,5 +1,5 @@
 """Validate and prepare public projections with traceable original links."""
-import csv,json,re
+import csv,json,re,unicodedata
 from collections import Counter
 from pathlib import Path
 from urllib.parse import quote
@@ -10,6 +10,11 @@ def write(p,d):
 def order_url(code):
     if not re.fullmatch(r"\d+-\d+-[A-Z0-9]+",str(code or "")):return ""
     return "https://www.mercadopublico.cl/PurchaseOrder/Modules/PO/DetailsPurchaseOrder.aspx?codigoOC="+quote(code,safe="")
+def patent_scope(row):
+    title="".join(c for c in unicodedata.normalize("NFD",row.get("title","").lower()) if not unicodedata.combining(c))
+    cosmetic=bool(re.search(r"\bcosmetic\w*\b|\bmaquillaje\b|\bperfume\b|\bdesodorante\b|\bestetic\w*\b",title))
+    pharma=bool(re.search(r"\bfarmaceutic\w*\b|\bterapeutic\w*\b|\bmedicinal\w*\b|\btratamiento\b|\bterapia\b|\benfermedad\w*\b|\bprevencion\b",title))
+    return "Cosmética declarada" if cosmetic and not pharma else "Aplicación mixta" if cosmetic else "Selección IPC"
 def prepare(dest):
     data=dest/"data";p=data/"procurement.json";d=read(p);detail=data/"procurement-lines.csv"
     if detail.exists():
@@ -22,7 +27,12 @@ def prepare(dest):
         with detail.open("w",encoding="utf-8-sig",newline="") as fp:
             wr=csv.DictWriter(fp,fieldnames=list(rows[0]));wr.writeheader();wr.writerows(rows)
         write(p,d)
-    pat=read(data/"patents.json");pat["unique_applications"]=len({r["application"] for r in pat["rows"]});pat["kind_counts"]=dict(Counter(r["kind"] for r in pat["rows"]))
+    pat=read(data/"patents.json")
+    for row in pat["rows"]:row["scope_class"]=patent_scope(row)
+    total=len(pat["rows"]);pat["rows"]=[r for r in pat["rows"] if r["scope_class"]!="Cosmética declarada"];pat["count"]=len(pat["rows"])
+    pat["excluded_cosmetic_title"]=total-pat["count"]
+    pat["scope"]="Selección por IPC de interés farmacéutico; excluye títulos exclusivamente cosméticos según clasificación textual conservadora. Puede incluir aplicaciones mixtas. Solicitudes y registros son hitos distintos."
+    pat["unique_applications"]=len({r["application"] for r in pat["rows"]});pat["kind_counts"]=dict(Counter(r["kind"] for r in pat["rows"]))
     write(data/"patents.json",pat)
     trials=read(data/"clinical-trials.json");trials["type_counts"]=dict(Counter(r["type"] for r in trials["rows"]));write(data/"clinical-trials.json",trials)
 
