@@ -32,7 +32,7 @@ def safe(url):
     return p.scheme=="https" and bool(p.hostname)
 def relevant(text):
     t=fold(text)
-    return any(x in t for x in ("presupuesto para salud","partida de salud","tratamiento de alto costo","evaluacion de tecnologias sanitarias","acceso a tratamientos","medicament","farmac","ricarte soto","trikafta","fibrosis quistica","enfermedades raras","enfermedades poco frecuentes","alto costo","hemofilia","angioedema","inmunoglobulina","oncolog","cancer","cenabast","anamed","farmacovigilancia","partida 16","presupuesto de salud","presupuesto sanitario","garantias explicitas","fonasa","isapre","bioequivalencia","instituto de salud publica","ley 20.850","ley 21.743","20.850","21.743","15047-11","15.047-11","17375-11","17.375-11")) or bool(re.search(r"\bges\b|\bisp\b|\bepof\b",t))
+    return any(x in t for x in ("comision de salud","codigo sanitario","presupuesto para salud","partida de salud","tratamiento de alto costo","evaluacion de tecnologias sanitarias","acceso a tratamientos","medicament","farmac","ricarte soto","trikafta","fibrosis quistica","enfermedades raras","enfermedades poco frecuentes","alto costo","hemofilia","angioedema","inmunoglobulina","oncolog","cancer","cenabast","anamed","farmacovigilancia","partida 16","presupuesto de salud","presupuesto sanitario","garantias explicitas","fonasa","isapre","bioequivalencia","instituto de salud publica","ley 20.850","ley 21.743","20.850","21.743","15047-11","15.047-11","17375-11","17.375-11")) or bool(re.search(r"\bges\b|\bisp\b|\bepof\b",t))
 def classify(record):
     t=fold(" ".join(str(record.get(k,"")) for k in ("title","summary","medication","topics")))
     cat=record.get("category","")
