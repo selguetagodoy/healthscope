@@ -63,9 +63,9 @@
     var lead = list[0];
     $('editionDate').textContent = 'Último hecho documentado · ' + dateLabel(lead.date);
     $('eventCountLabel').textContent = list.length + ' publicaciones verificadas';
-    $('featured').innerHTML = '<div class="feature-topline"><span class="brief-meta">' + escapeHtml(CATEGORY_LABELS[lead.category] || lead.category) + '</span><span class="feature-meta">' + dateLabel(lead.date) + '</span></div><div class="feature-visual"><span>HEALTHSCOPE / CHILE</span></div><div class="feature-body"><h3>' + linkedTitle(lead) + '</h3><p>' + escapeHtml(lead.summary) + '</p>' + sourceLink(lead.url, 'Consultar publicación oficial', 'text-link') + '</div>';
+    $('featured').innerHTML = '<div class="feature-topline"><span class="brief-meta">' + escapeHtml(CATEGORY_LABELS[lead.category] || lead.category) + '</span><span class="feature-meta">' + dateLabel(lead.date) + '</span></div><div class="feature-visual"><span>HEALTHSCOPE / CHILE</span></div><div class="feature-body"><h3>' + linkedTitle(lead) + '</h3><p>' + escapeHtml(lead.summary) + '</p>' + sourceLink(lead.url, 'Consultar publicación', 'text-link') + '</div>';
     $('briefs').innerHTML = list.slice(1, 5).map(function (event) {
-      return '<article class="brief"><span class="brief-meta">' + escapeHtml(CATEGORY_LABELS[event.category] || event.category) + ' · ' + dateLabel(event.date) + '</span><h3>' + linkedTitle(event) + '</h3><p>' + escapeHtml(event.summary) + '</p>' + sourceLink(event.url, 'Fuente oficial', 'text-link') + '</article>';
+      return '<article class="brief"><span class="brief-meta">' + escapeHtml(CATEGORY_LABELS[event.category] || event.category) + ' · ' + dateLabel(event.date) + '</span><h3>' + linkedTitle(event) + '</h3><p>' + escapeHtml(event.summary) + '</p>' + sourceLink(event.url, 'Fuente original', 'text-link') + '</article>';
     }).join('') || '<p class="empty-state">Más novedades verificadas se incorporarán en próximas ediciones.</p>';
   }
 
@@ -117,7 +117,7 @@
   }
 
   function renderAccessEvents() {
-    var list = verifiedEvents().filter(function (event) { return event.category === 'acceso' || event.category === 'legislacion'; }).slice(0, 2);
+    var list = verifiedEvents().filter(function (event) { return event.category === 'acceso' || event.category === 'legislacion'; }).sort(function(a,b){return b.date.localeCompare(a.date)}).slice(0,2);
     $('accessEvents').innerHTML = list.map(function (event) { return eventRow(event, true); }).join('');
   }
 
@@ -142,7 +142,7 @@
     $('research').innerHTML = state.research.map(function (item) {
       var href = safeUrl(item.url);
       return href ? '<a class="research-item" href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer"><small>' + escapeHtml(item.kind) + '</small><strong>' + escapeHtml(item.title) + '</strong><span>' + escapeHtml(item.institution) + (item.date ? ' · ' + escapeHtml(item.date) : '') + ' ↗</span></a>' : '';
-    }).join('') || '<p class="empty-state">La biblioteca documental se ampliará con fuentes verificables.</p>';
+    }).join('') || '<p class="empty-state">Consulta el directorio documental.</p>';
   }
 
   function renderSources() {
@@ -181,6 +181,7 @@
 
   function bindEvents() {
     function refresh(){state.page=1;renderResults();}
+    if($('query')){
     $('query').addEventListener('input', refresh);
     $('query').addEventListener('search', refresh);
     $('query').addEventListener('change', refresh);
@@ -192,18 +193,19 @@
     $('exportJson').addEventListener('click', exportJson);
     $('previousPage').addEventListener('click', function () { state.page = Math.max(1, state.page - 1); renderResults(); });
     $('nextPage').addEventListener('click', function () { state.page += 1; renderResults(); });
-    $('medicineSearch').addEventListener('input', renderMedicines);
-    $('institutionSearch').addEventListener('input', renderInstitutions);
-    $('sourceSearch').addEventListener('input', renderSources);
+    }
+    if($('medicineSearch'))$('medicineSearch').addEventListener('input', renderMedicines);
+    if($('institutionSearch'))$('institutionSearch').addEventListener('input', renderInstitutions);
+    if($('sourceSearch'))$('sourceSearch').addEventListener('input', renderSources);
     document.querySelectorAll('[data-filter]').forEach(function (link) {
-      link.addEventListener('click', function () { var select = $('category'); if (select.querySelector('option[value="' + link.dataset.filter + '"]')) select.value = link.dataset.filter; state.page = 1; renderResults(); });
+      link.addEventListener('click', function () { var select = $('category'); if (!select)return; if (select.querySelector('option[value="' + link.dataset.filter + '"]')) select.value = link.dataset.filter; state.page = 1; renderResults(); });
     });
   }
 
   function renderAll() {
-    populateCategories();
-    $('dashEvents').textContent=verifiedEvents().length; $('dashSources').textContent=state.sources.length; $('dashMedicines').textContent=state.medicines.length; $('dashPending').textContent='117';
-    renderEdition(); renderResults(); renderMedicines(); renderProcurement(); renderAccessEvents(); renderIndicators(); renderInstitutions(); renderResearch(); renderSources(); renderMonitoring();
+    if($('category'))populateCategories();
+    if($('dashEvents')){$('dashEvents').textContent=verifiedEvents().length;$('dashSources').textContent=state.sources.length;$('dashMedicines').textContent=state.medicines.length;$('dashPending').textContent='117'}
+    if($('featured'))renderEdition(); if($('results'))renderResults(); if($('medicineResults'))renderMedicines(); if($('procurementFeature'))renderProcurement(); if($('accessEvents'))renderAccessEvents(); if($('indicators'))renderIndicators(); if($('institutions'))renderInstitutions(); if($('research'))renderResearch(); if($('sources'))renderSources(); if($('lastRun'))renderMonitoring();
   }
 
   bindEvents();
@@ -224,8 +226,8 @@
   }).catch(function () {
     state.error = true;
     state.events = []; state.sources = []; state.medicines = []; state.indicators = []; state.institutions = []; state.research = []; state.pending = [];
-    $('results').setAttribute('aria-busy', 'false');
-    $('results').innerHTML = '<div class="empty-state"><strong>El registro no está disponible temporalmente</strong><span>Consulta las fuentes oficiales enlazadas en cada observatorio.</span></div>';
+    if($('results')){$('results').setAttribute('aria-busy', 'false');
+    $('results').innerHTML = '<div class="empty-state"><strong>El registro no está disponible temporalmente</strong><span>Consulta las fuentes oficiales enlazadas en cada observatorio.</span></div>';}
     renderAll();
   });
 })();

@@ -12,7 +12,7 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / "dist"
 BASE = "https://selguetagodoy.github.io/healthscope/"
-MODULES = {"semana":("weekly","La semana en salud"),"compras-farmaceuticas":("bulk-procurement","Compras farmacéuticas"),"presupuesto":("bulk-budget","Presupuesto sanitario histórico"),"ensayos-clinicos":("bulk-trials","Estudios clínicos en Chile"),"patentes":("bulk-patents","Patentes farmacéuticas"),"medicamentos":("registro-isp","Registro sanitario de medicamentos"),"enfermedades-raras":("epof","Enfermedades poco frecuentes · ORPHA"),"stakeholders":("stakeholders","Stakeholders sanitarios"),"prensa":("prensa","Prensa, redes y comunicados"),"cobertura":("cobertura","Catálogo GES y Ley Ricarte Soto"),"normativa":("normativa","Leyes y proyectos prioritarios"),"actualidad":("actualidad","Actualidad sanitaria"),"radar":("radar","Radar de decisiones"),"farmaceutico":("pharma","Vigilancia farmacéutica"),"compras":("compras","Compras públicas"),"acceso":("acceso","Acceso y cobertura"),"datos":("datos","Datos y presupuesto"),"instituciones":("ecosistema","Instituciones"),"biblioteca":("investigacion","Biblioteca documental"),"fuentes":("fuentes","Fuentes y actualización")}
+MODULES = {"buscar":("global-results","Búsqueda transversal"),"semana":("weekly","La semana en salud"),"compras-farmaceuticas":("bulk-procurement","Compras farmacéuticas"),"presupuesto":("bulk-budget","Presupuesto sanitario histórico"),"ensayos-clinicos":("bulk-trials","Estudios clínicos en Chile"),"patentes":("bulk-patents","Patentes farmacéuticas"),"medicamentos":("registro-isp","Registro sanitario de medicamentos"),"enfermedades-raras":("epof","Enfermedades poco frecuentes · ORPHA"),"stakeholders":("stakeholders","Stakeholders sanitarios"),"prensa":("prensa","Prensa, redes y comunicados"),"cobertura":("cobertura","Catálogo GES y Ley Ricarte Soto"),"normativa":("normativa","Leyes y proyectos prioritarios"),"actualidad":("actualidad","Actualidad sanitaria"),"radar":("radar","Radar de decisiones"),"farmaceutico":("pharma","Vigilancia farmacéutica"),"compras":("compras","Compras públicas"),"acceso":("acceso","Acceso y cobertura"),"datos":("datos","Datos y presupuesto"),"instituciones":("ecosistema","Instituciones"),"biblioteca":("investigacion","Biblioteca documental"),"fuentes":("fuentes","Fuentes y actualización")}
 def esc(v):
     return html.escape(str(v or ""), quote=True)
 def write_page(path, text):
@@ -69,8 +69,9 @@ def main():
                 if row.get("supplier")=="Proveedor no publicado en esta vista": row["supplier"]=""
                 writer.writerow(row)
         tmp.replace(p)
-    from public_data import prepare
+    from public_data import prepare, indexes
     prepare(DEST)
+    indexes(DEST)
     template=(ROOT/"index.html").read_text(encoding="utf-8")
     # Fingerprint assets so a new edition never loads stale JavaScript.
     def version_asset(match):
@@ -79,7 +80,24 @@ def main():
         return path+"?v="+digest
     template=re.sub(r"(assets/[a-zA-Z0-9_-]+\.(?:js|css))(?=\x22)",version_asset,template)
     from render_weekly import render
-    (DEST/"index.html").write_text(render(template,brief),encoding="utf-8")
+    # Retain only the visible top-level sections and the scripts they use.
+    specialized={"weekly":"weekly","global-results":"search","registro-isp":"isp-registry","epof":"epof","cobertura":"coverage","stakeholders":"intelligence","prensa":"intelligence","bulk-procurement":"bulk","bulk-budget":"bulk","bulk-trials":"bulk","bulk-patents":"bulk"}
+    def prune(page, sections, scripts):
+        main=re.search(r'<main id="contenido"[^>]*>.*?</main>',page,re.S)
+        if not main:raise ValueError("Main content missing")
+        content=main[0]
+        parts=list(re.finditer(r'^    <section\b[^\n]*',content,re.M))
+        if not parts:raise ValueError("Sections missing")
+        out=content[:parts[0].start()]
+        for i,m in enumerate(parts):
+            match=re.search(r'\bid="([^"]+)"',m[0].split(">",1)[0])
+            key=match[1] if match else "observatories"
+            end=parts[i+1].start() if i+1<len(parts) else content.rfind("</main>")
+            if key in sections:out+=content[m.start():end]
+        out+="  </main>"
+        page=page[:main.start()]+out+page[main.end():]
+        return re.sub(r'<script[^>]*src="[^"]*assets/([a-zA-Z0-9_-]+)\.js(?:\?v=[a-f0-9]+)?"[^>]*></script>',lambda m:m[0] if m[1] in scripts else "",page)
+    (DEST/"index.html").write_text(prune(render(template,brief),{"weekly","inicio","resumen","actualidad","observatories"},{"app","weekly"}),encoding="utf-8")
     sitemap=[BASE]
     for route,(section,title) in MODULES.items():
         page=meta(template,title,BASE+route+"/").replace("<head>","<head>\n  <base href=\"../\">",1).replace("<body>",'<body data-view="'+section+'">',1)
@@ -87,6 +105,7 @@ def main():
         page=page.replace('<div id="dataNotice"', '<div class="module-intro"><a href="./">Inicio</a> / '+esc(title)+'</div><div id="dataNotice"',1)
         page=page.replace('href="#contenido"','href="./'+route+'/#contenido"',1)
         if section=="weekly": page=render(page,brief,full=True)
+        page=prune(page,{section},{specialized.get(section,"app")})
         write_page(route,page); sitemap.append(BASE+route+"/")
     events=json.loads((ROOT/"events.json").read_text(encoding="utf-8"))
     for e in events:
@@ -99,7 +118,7 @@ def main():
         if not e.get("implications"): main=main.replace("<h2>Implicancias</h2><p></p>","")
         if not e.get("medication"): main=main.replace('<p class="detail-meta">Medicamento o tema: </p>',"")
         page=re.sub(r'<main id="contenido".*?</main>',lambda _:main,page,flags=re.S,count=1)
-        page=re.sub(r'<script[^>]*src="[^"]*(?:app|coverage|intelligence|epof|isp-registry|bulk|weekly)\.js(?:\?v=[a-f0-9]+)?"[^>]*></script>','',page)
+        page=re.sub(r'<script[^>]*src="[^"]*(?:app|coverage|intelligence|epof|isp-registry|bulk|weekly|search)\.js(?:\?v=[a-f0-9]+)?"[^>]*></script>','',page)
         page=page.replace('href="#contenido"','href="'+esc(url)+'#contenido"',1)
         write_page(path,page); sitemap.append(url)
     (DEST/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+esc(u)+'</loc></url>' for u in sitemap)+'</urlset>',encoding="utf-8")
