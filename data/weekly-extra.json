@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-24T20:32:44-03:00",
+  "checked_at": "2026-11-24T20:43:40-03:00",
   "diario": [
     {
       "id": "956d7fac421e3eb2012638",
@@ -60,6 +60,15 @@
       "errors": [
         "HTTP Error 403: Forbidden"
       ]
+    },
+    {
+      "id": "camara-xml-votos",
+      "name": "Cámara · Votaciones oficiales XML",
+      "url": "https://opendata.camara.cl/camaradiputados/WServices/WSLegislativo.asmx/retornarVotacionesXAnno?prmAnno=2026",
+      "status": "ok",
+      "items_seen": 0,
+      "annual_records": 1870,
+      "errors": []
     }
   ]
 }

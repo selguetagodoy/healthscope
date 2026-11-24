@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-18",
   "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T20:32:44-03:00",
-  "last_monitor_at": "2026-11-24T23:31:28Z",
-  "extra_checked_at": "2026-11-24T20:32:44-03:00",
+  "generated_at": "2026-11-24T20:43:40-03:00",
+  "last_monitor_at": "2026-11-24T23:42:48Z",
+  "extra_checked_at": "2026-11-24T20:43:40-03:00",
   "legislative_tracker": {
     "updated": "2026-11-24",
     "projects": [
@@ -70,6 +70,8 @@
       "source_type": "Sesión parlamentaria",
       "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=24%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23231&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3",
       "topic": "Presupuesto y financiamiento",
+      "vote_result": "",
+      "vote_totals": "",
       "score": 14,
       "status": "Verificado",
       "summary": "El registro de la sesión del 24 de noviembre consigna pendiente el proyecto que busca modificar la distribución del fondo de protección financiera de la Ley 20.850. La comisión acordó además remitir antecedentes municipales sobre atención primaria a la Comisión Mixta de Presupuestos.",
@@ -84,11 +86,13 @@
       "source_type": "Comunicado parlamentario",
       "url": "https://www.camara.cl/cms/2026/11/23/presupuesto-2027-camara-envia-a-mixta-diez-temas/",
       "topic": "Presupuesto y financiamiento",
+      "vote_result": "",
+      "vote_totals": "",
       "score": 12,
       "status": "Verificado",
       "summary": "En tercer trámite constitucional, la Cámara respaldó las modificaciones que consignan $28.207 millones a través de Fonasa para la Ley Ricarte Soto. Remitió diferencias de diez partidas a Comisión Mixta; la Partida 16 no figura entre ellas.",
       "implications": "El acuerdo reduce la incertidumbre sobre la reposición de recursos para tratamientos de alto costo. El presupuesto global sigue en tramitación hasta su despacho y publicación.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "isp-ram-esavi-base-2026-11-23",
@@ -98,6 +102,8 @@
       "source_type": "Base de datos pública",
       "url": "https://www.ispch.gob.cl/noticia/el-isp-disponibiliza-la-base-de-datos-de-reportes-de-sospechas-de-reacciones-adversas-a-medicamentos-ram-y-eventos-supuestamente-atribuibles-a-vacunacion-e-inmunizacion-esavi-registrados-desde-201/",
       "topic": "Medicamentos y seguridad",
+      "vote_result": "",
+      "vote_totals": "",
       "score": 7,
       "status": "Verificado",
       "summary": "El instituto habilitó una base descargable y de actualización periódica sobre sospechas de reacciones adversas a medicamentos y eventos supuestamente atribuibles a vacunas. La ficha técnica informa registros desde 2014 y un periodo disponible hasta octubre de 2026.",
@@ -112,11 +118,13 @@
       "source_type": "Respuesta a oficio de fiscalización",
       "url": "https://www.camara.cl/verdoc.aspx?prmID=182484&prmTIPO=OFICIO_FISCALIZACION_RESPUESTA",
       "topic": "Presupuesto y financiamiento",
+      "vote_result": "",
+      "vote_totals": "",
       "score": 21,
       "status": "Verificado",
       "summary": "En respuesta al oficio 27273 del diputado Andrés Celis, el Ministerio informó que el proyecto 2027 supera los $18,3 billones y contempla un aumento aproximado de 4,7% respecto de la base 2026 utilizada por la autoridad.",
       "implications": "La respuesta permite contrastar las cifras de formulación presupuestaria y los antecedentes de enfermedades poco frecuentes con las modificaciones aprobadas durante la tramitación.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "senado-presupuesto-2027-salud-2026-11-18",
@@ -126,6 +134,8 @@
       "source_type": "Prensa",
       "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/",
       "topic": "Presupuesto y financiamiento",
+      "vote_result": "",
+      "vote_totals": "",
       "score": 17,
       "status": "Verificado",
       "summary": "Diario y Radio Universidad de Chile informó la aprobación de la partida sanitaria y el compromiso del Ejecutivo de reponer recursos del sistema de alto costo, en la discusión del Presupuesto 2027.",
@@ -140,6 +150,8 @@
       "source_type": "Declaración pública",
       "url": "https://www.pschile.cl/senador-juan-luis-castro-destaca-acuerdo-con-el-gobierno-para-reponer-28-mil-millones-a-la-ley-ricarte-soto-era-inaceptable-rebajar-esos-recursos/",
       "topic": "Presupuesto y financiamiento",
+      "vote_result": "",
+      "vote_totals": "",
       "score": 12,
       "status": "Verificado",
       "summary": "El senador comunicó públicamente un acuerdo para reponer $28 mil millones en el contexto de la discusión presupuestaria.",
@@ -154,6 +166,8 @@
       "source_type": "Nota de farmacovigilancia",
       "url": "https://www.ispch.gob.cl/noticia/isp-publica-nota-de-farmacovigilancia-sobre-agonistas-del-receptor-de-glp-1-por-riesgo-de-neuropatia-optica-isquemica-anterior-no-arteritica/",
       "topic": "Medicamentos y seguridad",
+      "vote_result": "",
+      "vote_totals": "",
       "score": 7,
       "status": "Verificado",
       "summary": "El ISP informó que instruirá actualizar los folletos dirigidos a pacientes y profesionales para medicamentos con agonistas del receptor GLP-1, a raíz del riesgo de neuropatía óptica isquémica anterior no arterítica.",
@@ -170,6 +184,8 @@
       "source_type": "Diario Oficial",
       "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2026/11/18/44602/01/2901733.pdf",
       "topic": "Regulación y Congreso",
+      "vote_result": "",
+      "vote_totals": "",
       "score": 2,
       "status": "Pendiente de revisión",
       "summary": "",
@@ -184,6 +200,8 @@
       "source_type": "Fuente oficial",
       "url": "https://www.minsal.cl/ministra-chomali-encabeza-firma-de-convenio-para-extender-la-estrategia-recetas-culturales-a-todo-el-pais",
       "topic": "Medicamentos y seguridad",
+      "vote_result": "",
+      "vote_totals": "",
       "score": 0,
       "status": "Pendiente de revisión",
       "summary": "",
@@ -198,6 +216,8 @@
       "source_type": "Prensa",
       "url": "https://portalredsalud.cl/2026/11/24/el-ejercicio-terapeutico-como-parte-de-la-atencion-integral-del-cancer",
       "topic": "Prensa especializada",
+      "vote_result": "",
+      "vote_totals": "",
       "score": 0,
       "status": "Pendiente de revisión",
       "summary": "",
@@ -417,6 +437,15 @@
       "errors": [
         "HTTP Error 403: Forbidden"
       ]
+    },
+    {
+      "id": "camara-xml-votos",
+      "name": "Cámara · Votaciones oficiales XML",
+      "url": "https://opendata.camara.cl/camaradiputados/WServices/WSLegislativo.asmx/retornarVotacionesXAnno?prmAnno=2026",
+      "status": "ok",
+      "items_seen": 0,
+      "annual_records": 1870,
+      "errors": []
     }
   ],
   "all_ids": [
