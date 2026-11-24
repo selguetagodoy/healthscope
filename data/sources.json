@@ -576,5 +576,21 @@
       "sanitari",
       "presupuesto salud"
     ]
+  },
+  {
+    "id": "epof-minsal",
+    "name": "DIPRECE · Listado Nacional EPOF",
+    "scope": "Nomenclatura nacional ORPHA y documentación del REPOF",
+    "kind": "Dataset público",
+    "url": "https://diprece.minsal.cl/enfermedades-poco-frecuentes/",
+    "automated": false
+  },
+  {
+    "id": "orphacodes",
+    "name": "Orphanet · ORPHAcodes",
+    "scope": "Nomenclatura internacional, sinónimos y mapeos",
+    "kind": "Dataset internacional",
+    "url": "https://www.orphacode.org/pack-nomenclature/",
+    "automated": false
   }
 ]

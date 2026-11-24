@@ -281,3 +281,6 @@ body[data-view] main>section{display:none}body[data-view] main>section.module-ac
 
 /* V0.7 */
 .channel-links{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}.channel-links .text-link{font-size:12px}.directory-heading{font:500 28px var(--serif);margin-top:40px}
+
+/* V0.8 */
+.epof-table{overflow-x:auto;margin:18px 0}.epof-table table{width:100%;border-collapse:collapse;background:var(--white)}.epof-table th,.epof-table td{padding:12px;text-align:left;border-bottom:1px solid var(--line);font-size:13px}.epof-table th{background:var(--pine);color:white}.epof-table td:first-child{width:95px;white-space:nowrap;color:var(--pine)}.epof-table td:last-child{width:140px}.epof-table tbody tr:nth-child(even){background:#f4f6f2}@media(max-width:650px){.epof-table th,.epof-table td{padding:9px;font-size:12px}.epof-table td:last-child{width:auto}}

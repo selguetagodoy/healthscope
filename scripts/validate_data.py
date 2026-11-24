@@ -59,6 +59,14 @@ def validate():
         check(valid_https(item.get("url")) and (not item.get("feed") or valid_https(item["feed"])), "invalid media link", errors)
     for post in social_posts:
         check(post.get("source_type") in ("LinkedIn", "X") and valid_https(post.get("url")) and bool(post.get("status")), "invalid social post", errors)
+    epof_path = ROOT / "data/epof.json"
+    if epof_path.exists():
+        catalog = load(epof_path)
+        rows = catalog.get("rows", [])
+        codes = [r.get("code") for r in rows]
+        check(len(rows) == catalog.get("count") == catalog.get("declared_count") == 9784, "EPOF catalogue count mismatch", errors)
+        check(len(codes) == len(set(codes)) and all(isinstance(c,int) and c>0 for c in codes), "EPOF invalid or duplicate ORPHA codes", errors)
+        check(all(bool(r.get("name")) for r in rows) and valid_https(catalog.get("source_url")), "EPOF missing names or provenance", errors)
     event_urls = set()
     for i, event in enumerate(events):
         prefix = "events[" + str(i) + "]"

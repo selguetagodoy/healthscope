@@ -59,3 +59,8 @@
 - Directorio institucional y canales sociales con procedencia.
 - Capturas RSS de prensa y comunicados con revisión pendiente.
 - Siguiente: autoridades y directivos con vigencia comprobada; publicaciones sociales mediante revisión editorial/API autorizada; cruce de temas y ORPHA, medicamentos, compras, presupuesto, ensayos clínicos y patentes.
+
+## V0.8 · catálogo nacional EPOF
+
+- Buscador por ORPHA y denominación, exportaciones y procedencia de la versión nacional.
+- Pendientes: confirmar importación y publicación, cruzar sinónimos, CIE y coberturas mediante mapeos explícitos; registro ISP, compras, presupuesto, ensayos y patentes.

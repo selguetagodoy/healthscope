@@ -26,7 +26,7 @@
   <div class="utility-bar">
     <div class="shell utility-inner">
       <span>OBSERVATORIO INDEPENDIENTE · CHILE</span>
-      <span id="editionLine">EDICIÓN DIGITAL · V0.7</span>
+      <span id="editionLine">EDICIÓN DIGITAL · V0.8</span>
     </div>
   </div>
   <header class="site-header">
@@ -43,6 +43,7 @@
         <a href="./compras/">Compras</a>
         <a href="./acceso/">Acceso</a>
         <a href="./cobertura/">Cobertura GES/LRS</a>
+        <a href="./enfermedades-raras/">Enfermedades raras</a>
         <a href="./datos/">Datos</a>
         <a href="./stakeholders/">Actores</a>
         <a href="./prensa/">Prensa y redes</a>
@@ -107,6 +108,7 @@
         <p class="section-deck">Fuentes, decisiones y contexto organizados para consulta.</p>
       </div>
       <div class="observatory-list">
+        <a class="observatory" href="./enfermedades-raras/"><span class="obs-index">12</span><span><strong>Enfermedades raras</strong><small>Listado nacional, códigos ORPHA y marco REPOF</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./stakeholders/"><span class="obs-index">10</span><span><strong>Stakeholders</strong><small>Actores y canales institucionales</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./prensa/"><span class="obs-index">11</span><span><strong>Prensa y redes</strong><small>Capturas y declaraciones públicas</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./normativa/"><span class="obs-index">00</span><span><strong>Marco normativo</strong><small>Leyes de salud y proyectos prioritarios</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
@@ -204,6 +206,16 @@
       <div class="pagination" id="coveragePager"><button class="button button-light" id="coveragePrev" type="button">← Anterior</button><span id="coveragePage"></span><button class="button button-light" id="coverageNext" type="button">Siguiente →</button></div>
       <p class="editorial-caption">Corte de extracción: 24-11-2026. GES: denominaciones abreviadas de las fichas de orientación, no transcripción del decreto. LRS: tratamientos referenciados por la Superintendencia; las fichas y protocolos determinan el alcance exacto. La lista GES de tratamientos es parcial.</p>
     </section>
+    <section class="section-rule" id="epof" aria-labelledby="epof-title">
+      <div class="section-heading"><div><p class="eyebrow">NOMENCLATURA NACIONAL · LEY 21.743</p><h2 id="epof-title">Enfermedades poco frecuentes</h2></div><span class="section-count" id="epofCount" role="status">Cargando catálogo…</span></div>
+      <p class="section-deck">Listado Nacional de EPOF aprobado por Resolución Exenta N.º 30 del 8 de enero de 2026. La fuente declara 9.784 entidades de la nomenclatura Orphanet; el catálogo no equivale al REPOF de personas, a su listado operativo ni a cobertura GES/LRS.</p>
+      <div class="policy-grid"><a class="policy-card" href="https://diprece.minsal.cl/enfermedades-poco-frecuentes/" target="_blank" rel="noopener noreferrer"><small>FUENTE PRIMARIA</small><strong>Oficina Nacional EPOF · DIPRECE</strong><span>Buscador oficial y documentación normativa ↗</span></a><a class="policy-card" href="https://diprece.minsal.cl/wp-content/uploads/2026/01/Aprueba-listado-nacional-de-epof-establecido-en-la-ley-21.743.pdf" target="_blank" rel="noopener noreferrer"><small>RESOLUCIÓN EXENTA N.º 30</small><strong>Reconocimiento sanitario</strong><span>Consultar acto administrativo ↗</span></a><a class="policy-card" href="./cobertura/"><small>COBERTURA</small><strong>GES y Ley Ricarte Soto</strong><span>Consultar catálogo separado →</span></a><a class="policy-card" href="https://www.orphacode.org/pack-nomenclature/" target="_blank" rel="noopener noreferrer"><small>REFERENCIA INTERNACIONAL</small><strong>Orphanet / ORPHAcodes</strong><span>Nomenclatura, sinónimos y mapeos ↗</span></a></div>
+      <div id="epofMeta" class="editorial-caption" role="status"></div>
+      <div class="filter-row"><label class="sr-only" for="epofQuery">Buscar por código o nombre</label><input id="epofQuery" type="search" placeholder="Ej. fibrosis quística, ORPHA:586"><label class="sr-only" for="epofSize">Resultados por página</label><select id="epofSize"><option value="25">25 por página</option><option value="50">50 por página</option><option value="100">100 por página</option></select><button class="button button-light" type="button" id="epofReset">Limpiar</button><button class="button button-dark" type="button" id="epofCsv" disabled>CSV filtrado</button><button class="button button-light" type="button" id="epofJson" disabled>JSON filtrado</button></div>
+      <div class="epof-table" id="epofResults" aria-live="polite" aria-busy="true"></div>
+      <div class="pagination" id="epofPager" hidden><button class="button button-light" id="epofPrev" type="button">← Anterior</button><span id="epofPage"></span><button class="button button-light" id="epofNext" type="button">Siguiente →</button></div>
+      <p class="editorial-caption">Fuente: MINSAL/DIPRECE, nomenclatura nacional basada en Orphanet. Los datos son entidades diagnósticas y no registros de pacientes ni estimaciones de prevalencia. La inclusión no garantiza un tratamiento o financiamiento.</p>
+    </section>
     <section class="section-rule" id="datos" aria-labelledby="datos-title">
       <div class="section-heading">
         <div><p class="eyebrow">07 / LABORATORIO DE DATOS</p><h2 id="datos-title">Cifras con fuente y perímetro</h2></div>
@@ -289,5 +301,6 @@
   <script src="./assets/app.js" defer></script>
   <script src="./assets/coverage.js" defer></script>
   <script src="./assets/intelligence.js" defer></script>
+  <script src="./assets/epof.js" defer></script>
 </body>
 </html>

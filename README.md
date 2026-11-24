@@ -2,7 +2,7 @@
 
 Observatorio independiente de inteligencia sanitaria y farmacéutica. HealthScope organiza información pública sobre decisiones sanitarias, medicamentos, compras, cobertura y datos de Chile, con enlaces a las fuentes originales.
 
-**Versión:** 0.7 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
+**Versión:** 0.8 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
 
 ## Sitio público
 
@@ -55,3 +55,7 @@ Los workflows de GitHub Actions ejecutan estas validaciones y publican el conten
 HealthScope es un proyecto personal e independiente. Usa información pública y no representa a organismos, empleadores ni clientes. Su contenido no es orientación médica.
 
 - Directorio de stakeholders institucionales, canales sociales enlazados por sitios oficiales y monitor de medios RSS. Publicaciones sociales: registro editorial manual; no se scrapean perfiles.
+
+## Nomenclatura EPOF
+
+`python scripts/import_epof.py` importa el CSV público enlazado por DIPRECE y valida 9.784 códigos únicos antes de generar `data/epof.json`. No se consultan registros personales. La copia es opcional para la compilación; si falta, la interfaz remite al catálogo oficial. La publicación indica el estado real de importación.
