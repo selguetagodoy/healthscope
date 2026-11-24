@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-18",
   "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T17:31:48-03:00",
-  "last_monitor_at": "2026-11-24T20:31:31Z",
-  "extra_checked_at": "2026-11-24T17:31:48-03:00",
+  "generated_at": "2026-11-24T17:50:23-03:00",
+  "last_monitor_at": "2026-11-24T20:50:02Z",
+  "extra_checked_at": "2026-11-24T17:50:23-03:00",
   "schedule": "Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.",
   "verified": [
     {

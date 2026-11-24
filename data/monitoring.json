@@ -1,14 +1,14 @@
 {
-  "last_attempt_at": "2026-11-24T20:31:31Z",
-  "last_success_at": "2026-11-24T20:31:31Z",
-  "last_success_local": "2026-11-24 17:31 -03",
+  "last_attempt_at": "2026-11-24T20:50:02Z",
+  "last_success_at": "2026-11-24T20:50:02Z",
+  "last_success_local": "2026-11-24 17:50 -03",
   "schedule": [
     "Cada 3 horas en jornada hábil (UTC 11:17–23:17)",
     "Fin de semana: 15:17 UTC"
   ],
   "sources": [
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>",
       "id": "isp-alertas",
       "items_seen": 0,
@@ -17,7 +17,7 @@
       "status": "error"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "minsal-noticias",
       "items_seen": 10,
@@ -26,7 +26,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "cenabast-noticias",
       "items_seen": 9,
@@ -35,7 +35,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "diprece",
       "items_seen": 2,
@@ -44,7 +44,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "chilecompra",
       "items_seen": 1,
@@ -53,7 +53,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "media-portal-prensa-salud",
       "items_seen": 10,
@@ -62,7 +62,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "media-portal-red-salud",
       "items_seen": 10,
@@ -71,7 +71,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "media-cooperativa",
       "items_seen": 0,
@@ -80,7 +80,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "media-diarioeldia",
       "items_seen": 1,
@@ -89,7 +89,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "media-ciper",
       "items_seen": 0,
@@ -98,7 +98,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "actor-colmed",
       "items_seen": 6,
@@ -107,7 +107,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T17:31:31-03:00",
+      "checked_at": "2026-11-24T17:50:02-03:00",
       "http_status": 200,
       "id": "actor-fenpof",
       "items_seen": 0,
