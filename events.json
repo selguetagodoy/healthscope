@@ -324,5 +324,157 @@
     "status": "Verificado",
     "source_type": "Piloto de dispensación domiciliaria",
     "url": "https://www.cenabast.cl/pacientes-del-hospital-barros-luco-reciben-medicamentos-en-sus-hogares-gracias-a-piloto-de-cenabast"
+  },
+  {
+    "id": "senado-lrs-2026-10-27",
+    "date": "2026-10-27",
+    "published": "2026-10-27",
+    "category": "legislacion",
+    "authority": "Comisión de Salud del Senado",
+    "title": "Comisión de Salud escucha al Ejecutivo sobre la reforma del Fondo de Alto Costo",
+    "summary": "La comisión recibió exposiciones de la ministra de Salud y del responsable de la coordinación de la Ley Ricarte Soto en el marco del estudio del boletín 15.047-11.",
+    "implications": "Hito del debate sobre sustentabilidad y distribución del fondo; no acredita aprobación de la reforma.",
+    "medication": "Ley Ricarte Soto",
+    "topics": [
+      "15047-11",
+      "alto costo",
+      "financiamiento"
+    ],
+    "status": "Verificado",
+    "source_type": "Fuente oficial",
+    "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=27%2F10%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23162&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3"
+  },
+  {
+    "id": "senado-lrs-2026-11-10",
+    "date": "2026-11-10",
+    "published": "2026-11-10",
+    "category": "legislacion",
+    "authority": "Comisión de Salud del Senado",
+    "title": "La reforma de la Ley Ricarte Soto permanece pendiente de tratamiento",
+    "summary": "El historial de materias de la Comisión de Salud identifica el boletín 15.047-11 como no tratado el 10 de noviembre.",
+    "implications": "La presencia en tabla no equivale a avance legislativo ni a una decisión sobre cobertura.",
+    "medication": "Ley Ricarte Soto",
+    "topics": [
+      "15047-11",
+      "alto costo",
+      "tramitación"
+    ],
+    "status": "Verificado",
+    "source_type": "Fuente oficial",
+    "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=10%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23193&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3"
+  },
+  {
+    "id": "senado-modernizacion-salud-2026-11-09",
+    "date": "2026-11-09",
+    "published": "2026-11-09",
+    "category": "legislacion",
+    "authority": "Comisión de Salud del Senado",
+    "title": "Mesa de modernización entrega informe final a la Comisión de Salud",
+    "summary": "El registro de materias de la comisión confirma la recepción del informe final de la mesa de modernización sanitaria.",
+    "implications": "Las propuestas deben distinguirse de proyectos ingresados, decisiones normativas y medidas implementadas.",
+    "medication": "",
+    "topics": [
+      "reforma sanitaria",
+      "modernización"
+    ],
+    "status": "Verificado",
+    "source_type": "Fuente oficial",
+    "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=09%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23185&inicio=14%3A00&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3"
+  },
+  {
+    "id": "senado-presupuesto-salud-2027-2026-10-19",
+    "date": "2026-10-19",
+    "published": "2026-10-19",
+    "category": "datos",
+    "authority": "Senado de Chile",
+    "title": "Subcomisión examina la Partida 16 del proyecto de Presupuestos 2027",
+    "summary": "La Tercera Subcomisión Mixta estudió la propuesta presupuestaria del Ministerio de Salud y recibió presentaciones de sus autoridades y servicios.",
+    "implications": "Es un hito de discusión del proyecto, no la ley aprobada ni una cifra definitiva de financiamiento.",
+    "medication": "",
+    "topics": [
+      "presupuesto 2027",
+      "partida 16",
+      "DIPRES"
+    ],
+    "status": "Verificado",
+    "source_type": "Fuente oficial",
+    "url": "https://www.senado.cl/actividad-legislativa/comisiones/618/23120"
+  },
+  {
+    "id": "supersalud-ges-casos-2026-10-14",
+    "date": "2026-10-14",
+    "published": "2026-10-14",
+    "category": "acceso",
+    "authority": "Superintendencia de Salud",
+    "title": "Autoridades presentan cifras acumuladas de utilización del GES",
+    "summary": "Los registros provisionales suman 62.554.296 casos entre julio de 2005 y junio de 2026, incluidos 17.177.933 activos al cierre del periodo.",
+    "implications": "Los casos no equivalen a personas únicas; permiten observar utilización y cobertura del régimen.",
+    "medication": "GES",
+    "topics": [
+      "garantías",
+      "Fonasa",
+      "Isapres",
+      "estadísticas"
+    ],
+    "status": "Verificado",
+    "source_type": "Fuente oficial",
+    "url": "https://www.superdesalud.gob.cl/noticias/2026/10/mas-de-62-millones-de-casos-ges-desde-2005-salud-presenta-cifras-actualizadas-y-llama-a-ejercer-las-garantias/"
+  },
+  {
+    "id": "supersalud-ges-caec-2026-05-13",
+    "date": "2026-05-13",
+    "published": "2026-05-13",
+    "category": "acceso",
+    "authority": "Superintendencia de Salud",
+    "title": "Superintendencia informa instrucciones sobre cobertura oncológica GES y CAEC",
+    "summary": "La autoridad comunicó instrucciones a las Isapres relativas a información y gestión de la cobertura de pacientes oncológicos.",
+    "implications": "La instrucción es relevante para la oportunidad de acceso; el alcance específico debe consultarse en el acto oficial.",
+    "medication": "",
+    "topics": [
+      "oncología",
+      "GES",
+      "CAEC",
+      "Isapres"
+    ],
+    "status": "Verificado",
+    "source_type": "Fuente oficial",
+    "url": "https://www.superdesalud.gob.cl/noticias/2026/05/superintendencia-de-salud-instruye-a-las-isapres-informar-y-gestionar-sin-demoras-la-cobertura-ges-y-caec-para-todos-los-pacientes-con-cancer/"
+  },
+  {
+    "id": "chilecompra-innovacion-salud-2026-11-17",
+    "date": "2026-11-17",
+    "published": "2026-11-18",
+    "category": "compras",
+    "authority": "ChileCompra",
+    "title": "ChileCompra presenta mecanismos de contratación innovadora al sector salud",
+    "summary": "En el congreso de innovación sanitaria del Maule se discutieron instrumentos de contratación para desafíos públicos y se desarrolló un taller con el Laboratorio de Gobierno.",
+    "implications": "Abre una vía de diseño de futuras compras de innovación; no constituye una licitación o adjudicación farmacéutica.",
+    "medication": "",
+    "topics": [
+      "compras públicas",
+      "innovación",
+      "Maule"
+    ],
+    "status": "Verificado",
+    "source_type": "Fuente oficial",
+    "url": "https://www.chilecompra.cl/2026/11/chilecompra-impulsa-la-compra-publica-de-innovacion-en-congreso-de-innovacion-en-salud-del-maule/"
+  },
+  {
+    "id": "chilecompra-webinar-salud-2026-09-03",
+    "date": "2026-09-03",
+    "published": "2026-09-03",
+    "category": "compras",
+    "authority": "ChileCompra",
+    "title": "ChileCompra difunde instrumentos de innovación en contrataciones sanitarias",
+    "summary": "La institución realizó una actividad con organizaciones del ecosistema de salud para explicar herramientas de contratación orientadas a la innovación.",
+    "implications": "Antecedente de desarrollo de capacidades; no acredita una compra ejecutada.",
+    "medication": "",
+    "topics": [
+      "compras públicas",
+      "innovación"
+    ],
+    "status": "Verificado",
+    "source_type": "Fuente oficial",
+    "url": "https://www.chilecompra.cl/2026/09/chilecompra-aborda-oportunidades-de-la-compra-publica-de-innovacion-en-webinar-sobre-transformacion-en-compras-en-salud/"
   }
 ]

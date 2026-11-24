@@ -8,7 +8,7 @@
 - [x] Activar filtros, paginación y exportaciones CSV/JSON.
 - [x] Incorporar directorios e indicadores con perímetro explícito.
 - [x] Añadir validación de datos y automatización para MINSAL, Cenabast, DIPRECE e ISP; tres endpoints respondieron en el primer corte.
-- [ ] Seleccionar GitHub Actions como fuente de Pages y verificar el despliegue público.
+- [x] Seleccionar GitHub Actions como fuente de Pages y verificar el despliegue público.
 - [x] Ejecutar el primer corte automatizado; tres de los cuatro endpoints respondieron y las capturas quedaron pendientes de revisión.
 
 ## V0.4 · Poblamiento trazable
@@ -42,3 +42,9 @@
 - Publicación disponible en HTTPS y accesible sin autenticación.
 - Cobertura, fuentes, fechas y pruebas documentadas.
 - Funciones prioritarias estables y documentación de continuidad al día.
+
+## Entrega V0.5 · 24-11-2026
+
+- Módulo normativo, fuentes directas, indicadores GES y nuevos hitos oficiales.
+- RSS ChileCompra con filtro sanitario; pendiente verificar su ejecución en CI.
+- Próxima entrega: ingestión de datos transaccionales, registro sanitario y presupuesto estructurado, con evidencia y control de cobertura.

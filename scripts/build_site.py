@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / "dist"
 BASE = "https://selguetagodoy.github.io/healthscope/"
-MODULES = {"actualidad":("actualidad","Actualidad sanitaria"),"radar":("radar","Radar de decisiones"),"farmaceutico":("pharma","Vigilancia farmacéutica"),"compras":("compras","Compras públicas"),"acceso":("acceso","Acceso y cobertura"),"datos":("datos","Datos y presupuesto"),"instituciones":("ecosistema","Instituciones"),"biblioteca":("investigacion","Biblioteca documental"),"fuentes":("fuentes","Fuentes y actualización")}
+MODULES = {"normativa":("normativa","Leyes y proyectos prioritarios"),"actualidad":("actualidad","Actualidad sanitaria"),"radar":("radar","Radar de decisiones"),"farmaceutico":("pharma","Vigilancia farmacéutica"),"compras":("compras","Compras públicas"),"acceso":("acceso","Acceso y cobertura"),"datos":("datos","Datos y presupuesto"),"instituciones":("ecosistema","Instituciones"),"biblioteca":("investigacion","Biblioteca documental"),"fuentes":("fuentes","Fuentes y actualización")}
 def esc(v):
     return html.escape(str(v or ""), quote=True)
 def write_page(path, text):

@@ -19,6 +19,13 @@ class MonitorSourceTests(unittest.TestCase):
         self.assertEqual(records[0]["status"], "Pendiente de revisión")
         self.assertEqual(records[0]["title"], "Noticia & salud")
 
+    def test_rss_filter_and_markup(self):
+        xml = b'<rss><channel><item><title>Compra de medicamentos</title><link>https://example.org/1</link><pubDate>Mon, 23 Nov 2026 14:50:23 +0000</pubDate></item><item><title>Compra de automoviles</title><link>https://example.org/2</link><pubDate>Mon, 23 Nov 2026 14:50:23 +0000</pubDate></item></channel></rss>'
+        source = {"id":"test", "name":"Test", "keywords":["medicamento"]}
+        records = monitor_sources.parse_rss(xml, source, datetime(2026,11,24,tzinfo=timezone.utc))
+        self.assertEqual(len(records), 1)
+        self.assertEqual(monitor_sources.strip_markup("<style>noise</style><p>Texto</p><script>noise</script>"), "Texto")
+
     def test_alert_table_extracts_official_article_link(self):
         html = b'''<table><tr><td>16-11-2026</td><td>Falsificados</td><td>Farmaceutico</td><td>Alerta de producto</td><td><a href="https://www.ispch.gob.cl/alerta/producto/">Publicacion ISP</a></td></tr></table>'''
         source = {"id": "isp-alertas", "name": "ISP", "category": "farmaceutico"}

@@ -8,6 +8,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -47,9 +48,16 @@ def strip_markup(value: str) -> str:
         def __init__(self):
             super().__init__(convert_charrefs=True)
             self.parts = []
+            self.skip = 0
+
+        def handle_starttag(self, tag, attrs):
+            if tag.lower() in {"style", "script"}: self.skip += 1
+
+        def handle_endtag(self, tag):
+            if tag.lower() in {"style", "script"} and self.skip: self.skip -= 1
 
         def handle_data(self, data):
-            self.parts.append(data)
+            if not self.skip: self.parts.append(data)
 
     parser = TextOnly()
     parser.feed(value or "")
@@ -93,6 +101,11 @@ def parse_rss(content: bytes, source: dict, now: datetime | None = None) -> list
         pub = "".join(fields.get("pubdate", ET.Element("pubDate")).itertext()).strip()
         description = "".join(fields.get("description", ET.Element("description")).itertext())
         if not title or not canonical_url(link) or not pub:
+            continue
+        keywords = source.get("keywords", [])
+        def fold(value):
+            return "".join(c for c in unicodedata.normalize("NFD", value.lower()) if not unicodedata.combining(c))
+        if keywords and not any(fold(word) in fold(title + " " + strip_markup(description)) for word in keywords):
             continue
         try:
             published = parsedate_to_datetime(pub)
@@ -210,7 +223,7 @@ def in_santiago_cut_window(now: datetime, tolerance_minutes: int = 20) -> bool:
 
 
 def fetch_url(url: str) -> tuple[int, bytes]:
-    request = urllib.request.Request(url, headers={"User-Agent": "HealthScopeChile/0.3 (public-source-monitor; contact: repository owner)", "Accept": "application/rss+xml, application/xml, text/html;q=0.9, */*;q=0.5"})
+    request = urllib.request.Request(url, headers={"User-Agent": "HealthScopeChile/0.5 (public-source-monitor; contact: repository owner)", "Accept": "application/rss+xml, application/xml, text/html;q=0.9, */*;q=0.5"})
     with urllib.request.urlopen(request, timeout=25) as response:
         data = response.read(MAX_BYTES + 1)
         if len(data) > MAX_BYTES:

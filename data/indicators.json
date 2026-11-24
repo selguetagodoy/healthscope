@@ -1,6 +1,92 @@
 [
-  {"id":"transplants-2026-ytd","value":"602","unit":"trasplantes","label":"Actividad informada por MINSAL","period":"Acumulado en 2026","as_of":"20 nov 2026","qualification":"La fuente lo compara con el mayor registro desde 2000.","url":"https://www.minsal.cl/minsal-reporta-602-trasplantes-en-lo-que-va-del-ano-el-mayor-registro-desde-el-2000/"},
-  {"id":"cenabast-hospitals","value":"115","unit":"hospitales","label":"Conectados al sistema de abastecimiento de Cenabast","period":"Dato informado por Cenabast","as_of":"09 nov 2026","qualification":"Cifra institucional; no equivale a evaluación independiente de desempeño.","url":"https://www.cenabast.cl/sistema-de-abastecimiento-unico-de-medicamentos-de-cenabast-permitira-optimizar-recursos-en-35-mil-millones/"},
-  {"id":"cenabast-projection","value":"CLP 35.000 millones","unit":"hasta · 24 meses","label":"Optimización potencial estimada por Cenabast","period":"Proyección institucional","as_of":"09 nov 2026","qualification":"Estimación comunicada; no corresponde a ahorro ejecutado.","url":"https://www.cenabast.cl/sistema-de-abastecimiento-unico-de-medicamentos-de-cenabast-permitira-optimizar-recursos-en-35-mil-millones/"},
-  {"id":"ram-esavi-period","value":"2014–2026","unit":"periodo cubierto","label":"Base pública de sospechas RAM / ESAVI del ISP","period":"Datos disponibles hasta octubre de 2026","as_of":"23 nov 2026","qualification":"Notificaciones de sospecha; no son una medida de incidencia causal.","url":"https://www.ispch.gob.cl/anamed/farmacovigilancia/herramientas-y-recursos-de-informacion/base-de-datos-nacional-notificaciones-de-sospechas-de-ram-esavi/"}
+  {
+    "id": "transplants-2026-ytd",
+    "value": "602",
+    "unit": "trasplantes",
+    "label": "Actividad informada por MINSAL",
+    "period": "Acumulado en 2026",
+    "as_of": "20 nov 2026",
+    "qualification": "La fuente lo compara con el mayor registro desde 2000.",
+    "url": "https://www.minsal.cl/minsal-reporta-602-trasplantes-en-lo-que-va-del-ano-el-mayor-registro-desde-el-2000/"
+  },
+  {
+    "id": "cenabast-hospitals",
+    "value": "115",
+    "unit": "hospitales",
+    "label": "Conectados al sistema de abastecimiento de Cenabast",
+    "period": "Dato informado por Cenabast",
+    "as_of": "09 nov 2026",
+    "qualification": "Cifra institucional; no equivale a evaluación independiente de desempeño.",
+    "url": "https://www.cenabast.cl/sistema-de-abastecimiento-unico-de-medicamentos-de-cenabast-permitira-optimizar-recursos-en-35-mil-millones/"
+  },
+  {
+    "id": "cenabast-projection",
+    "value": "CLP 35.000 millones",
+    "unit": "hasta · 24 meses",
+    "label": "Optimización potencial estimada por Cenabast",
+    "period": "Proyección institucional",
+    "as_of": "09 nov 2026",
+    "qualification": "Estimación comunicada; no corresponde a ahorro ejecutado.",
+    "url": "https://www.cenabast.cl/sistema-de-abastecimiento-unico-de-medicamentos-de-cenabast-permitira-optimizar-recursos-en-35-mil-millones/"
+  },
+  {
+    "id": "ram-esavi-period",
+    "value": "2014–2026",
+    "unit": "periodo cubierto",
+    "label": "Base pública de sospechas RAM / ESAVI del ISP",
+    "period": "Datos disponibles hasta octubre de 2026",
+    "as_of": "23 nov 2026",
+    "qualification": "Notificaciones de sospecha; no son una medida de incidencia causal.",
+    "url": "https://www.ispch.gob.cl/anamed/farmacovigilancia/herramientas-y-recursos-de-informacion/base-de-datos-nacional-notificaciones-de-sospechas-de-ram-esavi/"
+  },
+  {
+    "id": "ges-cases-total",
+    "value": "62.554.296",
+    "unit": "casos",
+    "label": "Casos GES acumulados",
+    "period": "Jul 2005–jun 2026",
+    "as_of": "14 oct 2026",
+    "qualification": "Casos, no personas únicas. Datos provisionales.",
+    "url": "https://www.superdesalud.gob.cl/noticias/2026/10/mas-de-62-millones-de-casos-ges-desde-2005-salud-presenta-cifras-actualizadas-y-llama-a-ejercer-las-garantias/"
+  },
+  {
+    "id": "ges-fonasa-cases",
+    "value": "59.325.399",
+    "unit": "casos",
+    "label": "Casos GES en Fonasa",
+    "period": "Jul 2005–jun 2026",
+    "as_of": "14 oct 2026",
+    "qualification": "Casos acumulados; datos provisionales.",
+    "url": "https://www.superdesalud.gob.cl/noticias/2026/10/mas-de-62-millones-de-casos-ges-desde-2005-salud-presenta-cifras-actualizadas-y-llama-a-ejercer-las-garantias/"
+  },
+  {
+    "id": "ges-isapre-cases",
+    "value": "3.228.897",
+    "unit": "casos",
+    "label": "Casos GES en Isapres",
+    "period": "Jul 2005–jun 2026",
+    "as_of": "14 oct 2026",
+    "qualification": "Casos acumulados; datos provisionales.",
+    "url": "https://www.superdesalud.gob.cl/noticias/2026/10/mas-de-62-millones-de-casos-ges-desde-2005-salud-presenta-cifras-actualizadas-y-llama-a-ejercer-las-garantias/"
+  },
+  {
+    "id": "ges-active",
+    "value": "17.177.933",
+    "unit": "casos",
+    "label": "Casos GES activos",
+    "period": "Jun 2026",
+    "as_of": "14 oct 2026",
+    "qualification": "Stock activo al cierre; datos provisionales.",
+    "url": "https://www.superdesalud.gob.cl/noticias/2026/10/mas-de-62-millones-de-casos-ges-desde-2005-salud-presenta-cifras-actualizadas-y-llama-a-ejercer-las-garantias/"
+  },
+  {
+    "id": "ges-new-2026",
+    "value": "1.987.954",
+    "unit": "casos",
+    "label": "Nuevos casos GES",
+    "period": "Ene–jun 2026",
+    "as_of": "14 oct 2026",
+    "qualification": "Flujo semestral; datos provisionales.",
+    "url": "https://www.superdesalud.gob.cl/noticias/2026/10/mas-de-62-millones-de-casos-ges-desde-2005-salud-presenta-cifras-actualizadas-y-llama-a-ejercer-las-garantias/"
+  }
 ]
