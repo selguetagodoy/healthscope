@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-24T19:31:13-03:00",
+  "checked_at": "2026-11-24T20:32:44-03:00",
   "diario": [
     {
       "id": "956d7fac421e3eb2012638",
@@ -44,7 +44,17 @@
     {
       "id": "Cámara de Diputadas y Diputados",
       "name": "Cámara de Diputadas y Diputados",
-      "url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894",
+      "url": "https://camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894",
+      "status": "error",
+      "items_seen": 0,
+      "errors": [
+        "HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "id": "camara-prensa",
+      "name": "Cámara · Comunicados y Sala",
+      "url": "https://www.camara.cl/cms/prensa/",
       "status": "error",
       "items_seen": 0,
       "errors": [

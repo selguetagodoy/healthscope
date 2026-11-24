@@ -1,25 +1,67 @@
 {
   "window_start": "2026-11-18",
   "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T19:31:13-03:00",
-  "last_monitor_at": "2026-11-24T22:30:15Z",
-  "extra_checked_at": "2026-11-24T19:31:13-03:00",
+  "generated_at": "2026-11-24T20:32:44-03:00",
+  "last_monitor_at": "2026-11-24T23:31:28Z",
+  "extra_checked_at": "2026-11-24T20:32:44-03:00",
+  "legislative_tracker": {
+    "updated": "2026-11-24",
+    "projects": [
+      {
+        "title": "Presupuesto 2027 · Salud",
+        "bulletin": "18.702-05",
+        "status": "Tercer trámite concluido · Mixta del presupuesto general",
+        "summary": "La Cámara respaldó los recursos para LRS; Salud no figura entre las diez partidas con discrepancias.",
+        "metric": "$28.207 millones",
+        "metric_label": "Recursos consignados vía Fonasa para LRS",
+        "next": "Informe de Comisión Mixta, ratificación de ambas salas y publicación de la ley.",
+        "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391",
+        "timeline": [
+          {
+            "date": "2026-11-13",
+            "title": "Cámara despacha el proyecto al Senado",
+            "url": "https://www.camara.cl/cms/2026/11/13/camara-concluyo-despacho-del-presupuesto-2027/"
+          },
+          {
+            "date": "2026-11-18",
+            "title": "Senado respalda la partida sanitaria; compromiso de reposición LRS",
+            "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/"
+          },
+          {
+            "date": "2026-11-23",
+            "title": "Cámara respalda modificaciones de Salud; diez otras partidas a Mixta",
+            "url": "https://www.camara.cl/cms/2026/11/23/presupuesto-2027-camara-envia-a-mixta-diez-temas/"
+          }
+        ]
+      },
+      {
+        "title": "Reforma del Fondo de Diagnósticos y Tratamientos de Alto Costo",
+        "bulletin": "15.047-11",
+        "status": "En discusión · Comisión de Salud del Senado",
+        "summary": "El registro del 24 de noviembre deja pendiente la reforma de la distribución del fondo.",
+        "next": "Nuevo tratamiento en comisión y acuerdos legislativos.",
+        "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=24%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23231&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3",
+        "timeline": [
+          {
+            "date": "2026-11-24",
+            "title": "Materia permanece pendiente en comisión",
+            "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=24%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23231&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3"
+          }
+        ]
+      },
+      {
+        "title": "Libre elección de farmacia y continuidad de tratamientos crónicos",
+        "bulletin": "18.784-11",
+        "status": "Primer trámite constitucional · Cámara de Diputados",
+        "summary": "Moción que propone evitar restricciones comerciales a la elección de farmacia y al acceso a coberturas de seguros.",
+        "next": "Discusión en Comisión de Salud; seguimiento de indicaciones y votaciones.",
+        "url": "https://camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18784-11&prmID=19452",
+        "timeline": []
+      }
+    ]
+  },
   "schedule": "Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.",
   "verified": [
-    {
-      "id": "senado-presupuesto-2027-salud-2026-11-18",
-      "published": "2026-11-18",
-      "title": "Senado respalda partida de Salud con compromiso de reposición para Ley Ricarte Soto",
-      "authority": "Senado de Chile",
-      "source_type": "Prensa",
-      "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/",
-      "topic": "Presupuesto y financiamiento",
-      "score": 17,
-      "status": "Verificado",
-      "summary": "Diario y Radio Universidad de Chile informó la aprobación de la partida sanitaria y el compromiso del Ejecutivo de reponer recursos del sistema de alto costo, en la discusión del Presupuesto 2027.",
-      "implications": "La continuidad financiera de tratamientos de alto costo sigue vinculada al texto presupuestario definitivo.",
-      "new_since_previous": false
-    },
     {
       "id": "senado-bol-15047-11-tabla-2026-11-24",
       "published": "2026-11-24",
@@ -35,18 +77,18 @@
       "new_since_previous": false
     },
     {
-      "id": "castro-reposicion-lrs-2026-11-18",
-      "published": "2026-11-18",
-      "title": "Presidente de Comisión de Salud destaca acuerdo de reposición de recursos para LRS",
-      "authority": "Juan Luis Castro · Comisión de Salud",
-      "source_type": "Declaración pública",
-      "url": "https://www.pschile.cl/senador-juan-luis-castro-destaca-acuerdo-con-el-gobierno-para-reponer-28-mil-millones-a-la-ley-ricarte-soto-era-inaceptable-rebajar-esos-recursos/",
+      "id": "camara-presupuesto-2027-salud-2026-11-23",
+      "published": "2026-11-23",
+      "title": "Cámara respalda $28.207 millones para la Ley Ricarte Soto y Salud queda fuera de las discrepancias enviadas a Mixta",
+      "authority": "Cámara de Diputadas y Diputados",
+      "source_type": "Comunicado parlamentario",
+      "url": "https://www.camara.cl/cms/2026/11/23/presupuesto-2027-camara-envia-a-mixta-diez-temas/",
       "topic": "Presupuesto y financiamiento",
       "score": 12,
       "status": "Verificado",
-      "summary": "El senador comunicó públicamente un acuerdo para reponer $28 mil millones en el contexto de la discusión presupuestaria.",
-      "implications": "La declaración identifica una prioridad de negociación; el monto definitivo debe comprobarse en el texto aprobado.",
-      "new_since_previous": false
+      "summary": "En tercer trámite constitucional, la Cámara respaldó las modificaciones que consignan $28.207 millones a través de Fonasa para la Ley Ricarte Soto. Remitió diferencias de diez partidas a Comisión Mixta; la Partida 16 no figura entre ellas.",
+      "implications": "El acuerdo reduce la incertidumbre sobre la reposición de recursos para tratamientos de alto costo. El presupuesto global sigue en tramitación hasta su despacho y publicación.",
+      "new_since_previous": true
     },
     {
       "id": "isp-ram-esavi-base-2026-11-23",
@@ -60,6 +102,48 @@
       "status": "Verificado",
       "summary": "El instituto habilitó una base descargable y de actualización periódica sobre sospechas de reacciones adversas a medicamentos y eventos supuestamente atribuibles a vacunas. La ficha técnica informa registros desde 2014 y un periodo disponible hasta octubre de 2026.",
       "implications": "El conjunto permite investigación secundaria en farmacovigilancia; su uso requiere considerar el carácter de notificación de sospecha y las notas metodológicas del ISP.",
+      "new_since_previous": false
+    },
+    {
+      "id": "camara-respuesta-epof-presupuesto-2026-11-18",
+      "published": "2026-11-18",
+      "title": "Respuesta ministerial sobre financiamiento de medicamentos para enfermedades poco frecuentes",
+      "authority": "Ministerio de Salud · Cámara de Diputados",
+      "source_type": "Respuesta a oficio de fiscalización",
+      "url": "https://www.camara.cl/verdoc.aspx?prmID=182484&prmTIPO=OFICIO_FISCALIZACION_RESPUESTA",
+      "topic": "Presupuesto y financiamiento",
+      "score": 21,
+      "status": "Verificado",
+      "summary": "En respuesta al oficio 27273 del diputado Andrés Celis, el Ministerio informó que el proyecto 2027 supera los $18,3 billones y contempla un aumento aproximado de 4,7% respecto de la base 2026 utilizada por la autoridad.",
+      "implications": "La respuesta permite contrastar las cifras de formulación presupuestaria y los antecedentes de enfermedades poco frecuentes con las modificaciones aprobadas durante la tramitación.",
+      "new_since_previous": true
+    },
+    {
+      "id": "senado-presupuesto-2027-salud-2026-11-18",
+      "published": "2026-11-18",
+      "title": "Senado respalda partida de Salud con compromiso de reposición para Ley Ricarte Soto",
+      "authority": "Senado de Chile",
+      "source_type": "Prensa",
+      "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/",
+      "topic": "Presupuesto y financiamiento",
+      "score": 17,
+      "status": "Verificado",
+      "summary": "Diario y Radio Universidad de Chile informó la aprobación de la partida sanitaria y el compromiso del Ejecutivo de reponer recursos del sistema de alto costo, en la discusión del Presupuesto 2027.",
+      "implications": "La continuidad financiera de tratamientos de alto costo sigue vinculada al texto presupuestario definitivo.",
+      "new_since_previous": false
+    },
+    {
+      "id": "castro-reposicion-lrs-2026-11-18",
+      "published": "2026-11-18",
+      "title": "Presidente de Comisión de Salud destaca acuerdo de reposición de recursos para LRS",
+      "authority": "Juan Luis Castro · Comisión de Salud",
+      "source_type": "Declaración pública",
+      "url": "https://www.pschile.cl/senador-juan-luis-castro-destaca-acuerdo-con-el-gobierno-para-reponer-28-mil-millones-a-la-ley-ricarte-soto-era-inaceptable-rebajar-esos-recursos/",
+      "topic": "Presupuesto y financiamiento",
+      "score": 12,
+      "status": "Verificado",
+      "summary": "El senador comunicó públicamente un acuerdo para reponer $28 mil millones en el contexto de la discusión presupuestaria.",
+      "implications": "La declaración identifica una prioridad de negociación; el monto definitivo debe comprobarse en el texto aprobado.",
       "new_since_previous": false
     },
     {
@@ -228,7 +312,7 @@
       "name": "Cooperativa",
       "url": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
       "status": "ok",
-      "items_seen": 0,
+      "items_seen": 1,
       "errors": []
     },
     {
@@ -317,7 +401,17 @@
     {
       "id": "Cámara de Diputadas y Diputados",
       "name": "Cámara de Diputadas y Diputados",
-      "url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894",
+      "url": "https://camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894",
+      "status": "error",
+      "items_seen": 0,
+      "errors": [
+        "HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "id": "camara-prensa",
+      "name": "Cámara · Comunicados y Sala",
+      "url": "https://www.camara.cl/cms/prensa/",
       "status": "error",
       "items_seen": 0,
       "errors": [
@@ -326,10 +420,12 @@
     }
   ],
   "all_ids": [
-    "senado-presupuesto-2027-salud-2026-11-18",
     "senado-bol-15047-11-tabla-2026-11-24",
-    "castro-reposicion-lrs-2026-11-18",
+    "camara-presupuesto-2027-salud-2026-11-23",
     "isp-ram-esavi-base-2026-11-23",
+    "camara-respuesta-epof-presupuesto-2026-11-18",
+    "senado-presupuesto-2027-salud-2026-11-18",
+    "castro-reposicion-lrs-2026-11-18",
     "isp-glp1-naiona-2026-11-18",
     "956d7fac421e3eb2012638",
     "minsal-noticias-cd1100eb6977d5e421",
