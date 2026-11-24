@@ -305,3 +305,5 @@ body:not([data-view]) #inicio.masthead{padding:20px 0;}.weekly-brief .empty-stat
 
 /* Editorial cleanup */
 .transparency-panel{grid-template-columns:repeat(2,minmax(0,1fr))}.weekly-time span:empty,.section-count:empty,.weekly-actions span:empty{display:none}.weekly-source{grid-template-columns:1fr}.weekly-note{font-size:12px}.source-row .mode-tag{color:var(--muted)}
+
+.weekly-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:600px){.weekly-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.weekly-kpis>div{padding:12px 8px}.weekly-kpis strong{font-size:21px}}

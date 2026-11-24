@@ -76,13 +76,15 @@ def main():
         digest=hashlib.sha256((ROOT/path).read_bytes()).hexdigest()[:12]
         return path+"?v="+digest
     template=re.sub(r"(assets/[a-zA-Z0-9_-]+\.(?:js|css))(?=\x22)",version_asset,template)
-    (DEST/"index.html").write_text(template,encoding="utf-8")
+    from render_weekly import render
+    (DEST/"index.html").write_text(render(template,brief),encoding="utf-8")
     sitemap=[BASE]
     for route,(section,title) in MODULES.items():
         page=meta(template,title,BASE+route+"/").replace("<head>","<head>\n  <base href=\"../\">",1).replace("<body>",'<body data-view="'+section+'">',1)
         page=re.sub(r'<section ([^>]*\bid="'+re.escape(section)+r'"[^>]*)>',lambda m:'<section '+re.sub(r'class="([^"]*)"',r'class="\1 module-active"',m[1],count=1)+'>',page,count=1)
         page=page.replace('<div id="dataNotice"', '<div class="module-intro"><a href="./">Inicio</a> / '+esc(title)+'</div><div id="dataNotice"',1)
         page=page.replace('href="#contenido"','href="./'+route+'/#contenido"',1)
+        if section=="weekly": page=render(page,brief,full=True)
         write_page(route,page); sitemap.append(BASE+route+"/")
     events=json.loads((ROOT/"events.json").read_text(encoding="utf-8"))
     for e in events:

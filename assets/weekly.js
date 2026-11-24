@@ -1,21 +1,8 @@
 (function(){
 'use strict';
-const $=id=>document.getElementById(id);if(!$('weekly')||(document.body.dataset.view&&document.body.dataset.view!=='weekly'))return;
-const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function link(v){try{return new URL(v).protocol==='https:'?esc(v):''}catch{return ''}}
-function fmt(v){if(!v)return '';const d=new Date(v);return Number.isNaN(d.getTime())?v:d.toLocaleString('es-CL',{timeZone:'America/Santiago',dateStyle:'medium',timeStyle:'short'})}
-function day(v){return v?v.slice(8,10)+'/'+v.slice(5,7):''}
-function row(r,verified){return '<article class="weekly-item"><small>'+esc(r.topic)+' · '+esc(day(r.published))+(r.new_since_previous?' · NUEVO EN EL CORTE':'')+'</small><h3>'+esc(r.title)+'</h3><p class="weekly-author">'+esc(r.authority)+' · '+esc(r.source_type)+'</p>'+(verified?'<p>'+esc(r.summary)+'</p>'+(r.implications?'<p class="weekly-impact"><strong>Implicancias:</strong> '+esc(r.implications)+'</p>':''):'')+'<a class="text-link" target="_blank" rel="noopener noreferrer" href="'+link(r.url)+'">Fuente directa ↗</a></article>'}
-function group(rows,verified){if(!rows.length)return '<p class="empty-state">Consulta el radar de decisiones y las fuentes originales.</p>';return rows.map(r=>row(r,verified)).join('')}
-async function copy(text){try{await navigator.clipboard.writeText(text);$('weeklyCopyStatus').textContent='Copiado al portapapeles.'}catch{$('weeklyCopyStatus').textContent='No se pudo copiar automáticamente.';const a=document.createElement('textarea');a.value=text;a.setAttribute('aria-label','Texto del reporte');$('weeklyCopyStatus').append(a);a.select()}}
-function report(d,verified){const rows=verified?d.verified:d.candidates;return ['HEALTHSCOPE CHILE · '+(verified?'BRIEFING VERIFICADO':'PENDIENTES DE REVISIÓN'),'Ventana: '+day(d.window_start)+'–'+day(d.window_end)+' · Corte: '+fmt(d.last_monitor_at),...rows.map(r=>'\n*'+r.title+'*\n'+day(r.published)+' · '+r.authority+(verified?'\n'+r.summary+(r.implications?'\nImplicancias: '+r.implications:''):'\nPendiente de revisión editorial')+'\n'+r.url)].join('\n')}
-fetch('./data/weekly-brief.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('brief');return r.json()}).then(d=>{
-const full=document.body.dataset.view==='weekly';const ok=d.sources.filter(s=>s.status==='ok').length;
-$('weeklyWindow').textContent=day(d.window_start)+'–'+day(d.window_end)+' · ventana móvil de siete días';$('weeklyCut').textContent='Actualización: '+fmt(d.last_monitor_at);$('weeklyHealth').textContent='';
-$('weeklyKpis').innerHTML=[['Destacados',d.verified.length],['Publicaciones',d.candidates.length],['Novedades del corte',d.verified.concat(d.candidates).filter(r=>r.new_since_previous).length],['Fuentes de la edición',d.sources.filter(s=>s.status==='ok').length]].map(([label,v])=>'<div><strong>'+esc(v)+'</strong><span>'+esc(label)+'</span></div>').join('');
-$('weeklyVerified').innerHTML=group(full?d.verified:d.verified.slice(0,4),true);
-$('weeklyCandidates').innerHTML=group(full?d.candidates:d.candidates.slice(0,6),false);
-$('weeklySourceList').innerHTML=d.sources.filter(s=>s.status==='ok'||s.status==='partial').map(s=>'<div class="weekly-source"><a href="'+link(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.name)+'</a></div>').join('');
-$('weeklyCopy').disabled=!d.verified.length;$('weeklyCopy').onclick=()=>copy(report(d,true));
-}).catch(()=>{$('weeklyCut').textContent='La semana en salud';$('weeklyVerified').textContent='Consulta el radar de decisiones.';$('weeklyCandidates').textContent='Consulta las fuentes originales.'});
+const $=id=>document.getElementById(id);
+const b=$('weeklyCopy'),r=$('weeklyReport');if(!b||!r||b.hidden)return;
+let report;try{report=JSON.parse(r.textContent)}catch{return}
+b.disabled=false;
+b.onclick=async()=>{try{await navigator.clipboard.writeText(report);$('weeklyCopyStatus').textContent='Copiado al portapapeles.'}catch{const a=document.createElement('textarea');a.value=report;a.setAttribute('aria-label','Texto del briefing');$('weeklyCopyStatus').replaceChildren(a);a.select()}};
 })();
