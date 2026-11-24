@@ -144,17 +144,29 @@
     var q = normalize($('sourceSearch').value);
     var rows = state.sources.filter(function (item) { return normalize([item.name, item.scope, item.kind, item.mode].join(' ')).includes(q); });
     var automated = state.sources.filter(function (item) { return item.automated === true; }).length;
+    var sourceRuns = {};
+    ((state.monitoring && state.monitoring.sources) || []).forEach(function (run) { sourceRuns[run.id] = run; });
+    var successful = Object.keys(sourceRuns).filter(function (id) { return sourceRuns[id].status === 'ok'; }).length;
+    var failed = Object.keys(sourceRuns).filter(function (id) { return sourceRuns[id].status === 'error'; }).length;
     $('sourceCount').textContent = rows.length + ' fuentes en el directorio';
-    $('automatedCount').textContent = automated + ' configuradas';
+    $('automatedCount').textContent = Object.keys(sourceRuns).length ? successful + '/' + automated + ' disponibles' + (failed ? ' · ' + failed + (failed === 1 ? ' con error' : ' con errores') : '') : automated + ' configuradas';
     $('sources').innerHTML = rows.map(function (item) {
-      var mode = item.automated ? 'Monitor automático' : 'Consulta directa';
-      return '<div class="source-row"><strong>' + escapeHtml(item.name) + '</strong><span>' + escapeHtml(item.scope) + '</span><span class="mode-tag">' + mode + '</span>' + sourceLink(item.url, 'Abrir', '') + '</div>';
+      var mode = 'Consulta directa';
+      var modeClass = 'mode-tag';
+      var run = sourceRuns[item.id];
+      if (item.automated && !run) { mode = 'Monitor automático · primer corte pendiente'; modeClass += ' mode-pending'; }
+      else if (item.automated && run.status === 'ok') { mode = 'Corte correcto · HTTP ' + (run.http_status || 'OK'); modeClass += ' mode-ok'; }
+      else if (item.automated) { mode = 'Error de conexión · captura pendiente'; modeClass += ' mode-error'; }
+      if (item.automated && run && run.checked_at) mode += ' · ' + dateLabel(run.checked_at.slice(0, 10)) + ' ' + run.checked_at.slice(11, 16);
+      return '<div class="source-row"><strong>' + escapeHtml(item.name) + '</strong><span>' + escapeHtml(item.scope) + '</span><span class="' + modeClass + '">' + escapeHtml(mode) + '</span>' + sourceLink(item.url, 'Abrir', '') + '</div>';
     }).join('') || '<p class="empty-state">No hay fuentes que coincidan con la búsqueda.</p>';
   }
 
   function renderMonitoring() {
     var m = state.monitoring || {};
-    $('lastRun').textContent = m.last_success_at ? dateLabel(m.last_success_at.slice(0, 10)) + ' · ' + (m.timezone || 'America/Santiago') : 'Pendiente de primera ejecución';
+    var lastAttempt = m.last_attempt_at ? new Date(m.last_attempt_at) : null;
+    var lastLabel = lastAttempt && !Number.isNaN(lastAttempt.getTime()) ? new Intl.DateTimeFormat('es-CL', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'America/Santiago' }).format(lastAttempt) + ' · America/Santiago' : 'Pendiente de primera ejecución';
+    $('lastRun').textContent = lastLabel;
     $('pendingCount').textContent = state.pending.length + (state.pending.length === 1 ? ' registro' : ' registros');
     $('pendingSummary').textContent = state.pending.length ? state.pending.length + ' capturas · revisión pendiente' : 'Sin capturas nuevas';
     var latest = state.pending.slice().sort(function (a, b) { return (b.published || b.date).localeCompare(a.published || a.date); }).slice(0, 5);

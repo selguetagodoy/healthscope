@@ -30,7 +30,7 @@ Los precios solo se compararán cuando se encuentren disponibles medicamento, co
 
 ## Automatización
 
-El workflow consulta el archivo público de alertas ANAMED y los feeds RSS de MINSAL y Cenabast. Se ejecuta como objetivo a las 08:00, 12:00 y 16:30 de lunes a viernes, hora de Santiago. Debido a que GitHub Actions programa en UTC, el monitor valida la zona local antes de descargar fuentes. La disponibilidad y latencia del servicio de Actions pueden desplazar un corte.
+El workflow consulta el archivo público de alertas ANAMED y los feeds RSS de MINSAL, Cenabast y DIPRECE. Se ejecuta como objetivo a las 08:00, 12:00 y 16:30 de lunes a viernes, hora de Santiago. Debido a que GitHub Actions programa en UTC, el monitor valida la zona local antes de descargar fuentes. La disponibilidad y latencia del servicio de Actions pueden desplazar un corte.
 
 Los contenidos recogidos de fuentes oficiales ingresan a revisión. La automatización organiza y compara información pública; el análisis y la publicación editorial siguen siendo decisiones humanas.
 

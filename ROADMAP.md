@@ -7,9 +7,9 @@
 - [x] Publicar diez novedades respaldadas por enlaces oficiales.
 - [x] Activar filtros, paginación y exportaciones CSV/JSON.
 - [x] Incorporar directorios e indicadores con perímetro explícito.
-- [x] Añadir validación de datos y automatización para tres autoridades.
+- [x] Añadir validación de datos y automatización para MINSAL, Cenabast, DIPRECE e ISP; tres endpoints respondieron en el primer corte.
 - [ ] Seleccionar GitHub Actions como fuente de Pages y verificar el despliegue público.
-- [ ] Ejecutar el primer corte automatizado y confirmar las tres conexiones.
+- [x] Ejecutar el primer corte automatizado; tres de los cuatro endpoints respondieron y las capturas quedaron pendientes de revisión.
 
 ## V0.4 · Poblamiento trazable
 

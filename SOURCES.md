@@ -8,11 +8,12 @@ HealthScope prioriza publicaciones, tablas, normas y conjuntos de datos de organ
 
 | Fuente | Método | URL consultada | Uso |
 |---|---|---|---|
-| ISP · alertas ANAMED | Tabla HTML pública | https://www.ispch.gob.cl/categorias-alertas/anamed/ | Alertas de seguridad, retiros y productos sin registro |
+| ISP · alertas ANAMED | Tabla HTML pública | https://www.ispch.gob.cl/categorias-alertas/anamed/ | Alertas de seguridad, retiros y productos sin registro; el runner registra error TLS |
 | MINSAL | Feed RSS público | https://www.minsal.cl/feed/ | Comunicados y noticias del Ministerio |
 | Cenabast | Feed RSS público | https://www.cenabast.cl/feed/ | Abastecimiento, compras y actividad institucional |
+| DIPRECE | Feed RSS público | https://diprece.minsal.cl/feed/ | Prevención, prestaciones, guías y programas sanitarios |
 
-Las tres vías respondieron durante el reconocimiento inicial del 24 de noviembre de 2026. La primera ejecución de GitHub Actions queda pendiente hasta que el workflow pueda correr en la rama predeterminada.
+El monitor realizó su primer corte real el 24 de noviembre de 2026. En el último corte registrado, MINSAL, Cenabast y DIPRECE respondieron con HTTP 200; el endpoint de alertas del ISP falló la verificación de su certificado TLS en el runner de GitHub. La verificación TLS permanece activa.
 
 ## Registro editorial
 

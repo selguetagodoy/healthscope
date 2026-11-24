@@ -153,6 +153,9 @@ h1 { max-width: 680px; margin: 21px 0 15px; font: 500 clamp(42px,5.1vw,67px)/.99
 .institution-row a, .source-row a { justify-self: end; color: var(--green); font-size: 10px; font-weight: 750; text-decoration: none; }
 .source-row { grid-template-columns: minmax(150px,.75fr) minmax(170px,1.2fr) minmax(125px,.7fr) 95px; }
 .mode-tag { color: var(--green) !important; font-size: 9px !important; font-weight: 750; }
+.mode-tag.mode-ok { color: #236251 !important; }
+.mode-tag.mode-error { color: #9b3f34 !important; }
+.mode-tag.mode-pending { color: #776b52 !important; }
 .research-list { border-top: 1px solid var(--line); }
 .research-item { display: grid; grid-template-columns: 80px 1fr 100px; gap: 18px; align-items: center; padding: 13px 5px; border-bottom: 1px solid var(--line); text-decoration: none; }
 .research-item small { color: var(--green); font-size: 9px; font-weight: 800; letter-spacing: .08em; }

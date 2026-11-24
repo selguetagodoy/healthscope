@@ -19,7 +19,7 @@ Para activar la publicación, abre [Settings → Pages](https://github.com/selgu
 - Indicadores con fecha, calificación y fuente.
 - Directorios de instituciones y documentos públicos con filtros.
 - Transparencia sobre fuentes automatizadas, cortes y capturas pendientes de revisión.
-- Pipelines para seguir MINSAL, Cenabast e ISP en los cortes locales establecidos.
+- Pipelines para seguir MINSAL, Cenabast, DIPRECE e ISP en los cortes locales establecidos; las capturas del ISP quedan identificadas como error mientras su endpoint no complete TLS en GitHub Actions.
 
 ## Desarrollo local
 
