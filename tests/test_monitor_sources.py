@@ -31,6 +31,8 @@ class MonitorSourceTests(unittest.TestCase):
     def test_canonical_url_strips_tracking_and_rejects_non_https(self):
         self.assertEqual(monitor_sources.canonical_url("https://EXAMPLE.org/a/?utm_source=x#top"), "https://example.org/a")
         self.assertEqual(monitor_sources.canonical_url("http://example.org/a"), "")
+        self.assertEqual(monitor_sources.canonical_url("https://example.org/doc?id=123&utm_source=feed"), "https://example.org/doc?id=123")
+        self.assertNotEqual(monitor_sources.canonical_url("https://example.org/doc?id=123"), monitor_sources.canonical_url("https://example.org/doc?id=456"))
 
     def test_schedule_window_uses_santiago_daylight_time(self):
         summertime = datetime(2026, 11, 24, 11, 0, tzinfo=timezone.utc)
