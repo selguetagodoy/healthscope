@@ -75,3 +75,7 @@ La portada y `/semana/` presentan siete días móviles de novedades farmacéutic
 ## Seguimiento gratuito de conversación pública
 
 Prensa ofrece diez búsquedas temáticas de publicaciones indexadas en LinkedIn y X, web y Google Alerts. El directorio ofrece consultas semanales por actor. No se automatizan consultas de Google Search ni se extraen perfiles de redes sociales. Cuatro RSS adicionales (ISP, SOCHICAR, Clínicas de Chile, Colegio de Enfermeras) se integran al corte periódico y al briefing. Google Alerts requiere activar la alerta en la cuenta personal.
+
+## Auditoría y actualización
+
+Búsqueda transversal por registro, páginas independientes, detalle íntegro del último mes de compras, enlaces HTTPS de la ficha original, prestaciones LRS contrastadas individualmente y filtros de estados clínicos y años de patentes. El flujo Refresh public health datasets recupera hasta seis meses faltantes por ejecución (objetivo móvil 60 meses), reconsulta los últimos tres meses y ensayos semanalmente, y actualiza patentes mensualmente. No es garantía de acceso histórico completo: la interfaz muestra solo periodos importados. El comando editorial_review.py permite registrar revisiones de fuentes públicas; el repositorio es público y no admite notas confidenciales. Las publicaciones sociales se consultan en el buscador original, sin API de pago.

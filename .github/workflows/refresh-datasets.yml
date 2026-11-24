@@ -1,0 +1,58 @@
+name: Refresh public health datasets
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/refresh-datasets.yml", "scripts/refresh_datasets.py"]
+  schedule:
+    - cron: "37 5 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: health-dataset-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install open data importer
+        run: pip install -r requirements-intelligence.txt
+      - name: Refresh and backfill bounded public snapshots
+        shell: bash
+        run: |
+          args="--batch 6"
+          if [ "$(date -u +%u)" = "1" ] || [ "$GITHUB_EVENT_NAME" != "schedule" ]; then
+            args="$args --refresh-recent --refresh-clinical"
+          fi
+          if [ "$(date -u +%d)" = "01" ] || [ "$GITHUB_EVENT_NAME" != "schedule" ]; then
+            args="$args --refresh-patents"
+          fi
+          python scripts/refresh_datasets.py $args
+          python scripts/validate_data.py
+      - name: Commit and publish successful snapshots
+        id: commit
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/procurement* data/clinical-trials.json data/patents.json
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m 'Refresh public healthcare datasets'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Publish current edition
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({owner: context.repo.owner,repo: context.repo.repo,workflow_id:'deploy.yml',ref:'main'});
