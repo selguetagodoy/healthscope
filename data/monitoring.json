@@ -1,0 +1,12 @@
+{
+  "timezone": "America/Santiago",
+  "schedule": ["08:00", "12:00", "16:30"],
+  "last_attempt_at": null,
+  "last_success_at": null,
+  "last_success_local": null,
+  "sources": [
+    {"id":"isp-alertas","name":"ISP · Alertas ANAMED","status":"pendiente_primera_ejecucion","items_seen":0},
+    {"id":"minsal-noticias","name":"Ministerio de Salud","status":"pendiente_primera_ejecucion","items_seen":0},
+    {"id":"cenabast-noticias","name":"Cenabast","status":"pendiente_primera_ejecucion","items_seen":0}
+  ]
+}
