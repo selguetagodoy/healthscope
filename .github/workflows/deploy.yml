@@ -115,6 +115,20 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+      - name: Wait for Pages artifact registration
+        if: steps.pages-check.outputs.enabled == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            for (let attempt = 0; attempt < 15; attempt++) {
+              const result = await github.rest.actions.listWorkflowRunArtifacts({owner: context.repo.owner, repo: context.repo.repo, run_id: context.runId, per_page: 100});
+              if (result.data.artifacts.some(a => a.name === 'github-pages' && !a.expired)) {
+                core.info('Pages artifact registered.');
+                return;
+              }
+              await new Promise(resolve => setTimeout(resolve, 5000));
+            }
+            core.setFailed('Pages artifact did not register in the Actions API.');
       - name: Deploy to GitHub Pages
         if: steps.pages-check.outputs.enabled == 'true'
         id: deployment

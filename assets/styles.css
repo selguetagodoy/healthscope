@@ -311,3 +311,5 @@ body:not([data-view]) #inicio.masthead{padding:20px 0;}.weekly-brief .empty-stat
 .social-discovery{margin-top:28px}.social-query{border-top:1px solid var(--line);padding-top:8px;margin-top:8px}.social-discovery .coverage-card h3{font-size:19px}
 
 .search-result p{border-bottom:1px solid var(--line);padding:6px 0;margin:0;font-size:13px}.bulk-table-controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+.weekly-head .creator-credit{margin-top:13px;color:#dce9e3;font-size:12px;letter-spacing:.01em}.creator-credit strong,.copyright strong{font-weight:650}.copyright{font-size:11px}
