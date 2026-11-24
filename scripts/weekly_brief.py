@@ -15,7 +15,9 @@ DATA=ROOT/"data"
 TZ=ZoneInfo("America/Santiago")
 DO="https://www.diariooficial.interior.gob.cl/edicionelectronica/index.php"
 SENATE="https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&mo=tramitacion"
-CHAMBER="https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894"
+CHAMBER="https://camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894"
+CHAMBER_PRESS="https://www.camara.cl/cms/prensa/"
+CHAMBER_AGENDA="https://camara.cl/legislacion/comisiones/citaciones.aspx?prmID=767&prmIdTipo=2101"
 def read(name,default):
     path=ROOT/name
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
@@ -120,6 +122,27 @@ def extra(now):
         except Exception as e:
             leg.extend(x for x in prev.get("legislative",[]) if x.get("authority")==authority and x.get("published","")>=(today-timedelta(days=6)).isoformat())
             statuses.append({"id":authority,"name":authority,"url":url,"status":"error","items_seen":0,"errors":[str(e)[:200]]})
+    # Independent chamber press path: dated official articles, not a Senate table parser.
+    try:
+        doc=fetch(CHAMBER_PRESS);found=[]
+        for a in doc.select("a[href]"):
+            url=urljoin(CHAMBER_PRESS,a["href"])
+            m=re.search(r"/cms/(\d{4})/(\d{2})/(\d{2})/([^/]+)/?",urlsplit(url).path)
+            if not m or not safe(url) or urlsplit(url).hostname not in ("www.camara.cl","camara.cl"):continue
+            when="-".join(m.groups()[:3])
+            if not (today-timedelta(days=6)).isoformat()<=when<=today.isoformat():continue
+            title=a.get_text(" ",strip=True) or m[4].replace("-"," ").capitalize()
+            if not relevant(title) and not ("presupuesto" in fold(title) or "comisiones" in fold(title)):continue
+            if url in {x["url"] for x in found}:continue
+            # Generic headlines are included only when the article itself has a health focus.
+            article=fetch(url)
+            if not relevant(article.get_text(" ",strip=True)):continue
+            found.append(capture(title,url,when,"Cámara de Diputados","Comunicado parlamentario","legislacion"))
+        leg.extend(found)
+        statuses.append({"id":"camara-prensa","name":"Cámara · Comunicados y Sala","url":CHAMBER_PRESS,"status":"ok","items_seen":len(found),"errors":[]})
+    except Exception as e:
+        leg.extend(x for x in prev.get("legislative",[]) if x.get("authority")=="Cámara de Diputados" and x.get("published","")>=(today-timedelta(days=6)).isoformat())
+        statuses.append({"id":"camara-prensa","name":"Cámara · Comunicados y Sala","url":CHAMBER_PRESS,"status":"error","items_seen":0,"errors":[str(e)[:200]]})
     obj={"checked_at":now.isoformat(timespec="seconds"),"diario":do,"legislative":leg,"sources":statuses}
     write(DATA/"weekly-extra.json",obj)
     return obj
@@ -144,10 +167,10 @@ def make(now,extra_data=None):
         item={"id":r.get("id",url),"published":when,"title":title,"authority":r.get("authority",""),"source_type":r.get("source_type","Fuente oficial"),"url":url,"topic":classify(r),"score":score(r),"status":"Verificado" if ok else "Pendiente de revisión","summary":r.get("summary","") if ok else "","implications":r.get("implications","") if ok else "","new_since_previous":bool(old) and (r.get("id",url) not in previous or (same_cut and r.get("id",url) in previous_new))}
         (verified if ok else candidates).append(item)
     key=lambda x:(x["score"],x["published"],x["title"])
-    verified.sort(key=key,reverse=True);candidates.sort(key=key,reverse=True)
+    verified.sort(key=lambda x:(x["published"],x["score"],x["title"]),reverse=True);candidates.sort(key=key,reverse=True)
     health_sources=[{"name":r.get("name",""),"url":r.get("monitor_url",""),"status":r.get("status",""),"items_seen":r.get("items_seen",0),"errors":[r["error"]] if r.get("error") else []} for r in monitor.get("sources",[])]
     health_sources.extend(extra_data.get("sources",[]))
-    result={"window_start":start,"window_end":end,"generated_at":now.isoformat(timespec="seconds"),"last_monitor_at":monitor.get("last_attempt_at"),"extra_checked_at":extra_data.get("checked_at"),"schedule":"Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.","verified":verified,"candidates":candidates,"undated_social":undated,"sources":health_sources,"all_ids":[r["id"] for r in verified+candidates]}
+    result={"window_start":start,"window_end":end,"generated_at":now.isoformat(timespec="seconds"),"last_monitor_at":monitor.get("last_attempt_at"),"extra_checked_at":extra_data.get("checked_at"),"legislative_tracker":read("data/legislative-tracker.json",{}),"schedule":"Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.","verified":verified,"candidates":candidates,"undated_social":undated,"sources":health_sources,"all_ids":[r["id"] for r in verified+candidates]}
     return result
 def main():
     p=argparse.ArgumentParser();p.add_argument("--offline",action="store_true");a=p.parse_args();now=datetime.now(TZ)

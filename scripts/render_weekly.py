@@ -51,11 +51,24 @@ def render(page,d,full=False):
     replace("strong","weeklyCut",esc("Actualización: "+timestamp(d.get("last_monitor_at") or d.get("generated_at"))))
     kpis=[("Destacados",len(verified)),("Publicaciones",len(candidates)),("Fuentes de la edición",len(sources))]
     replace("div","weeklyKpis","".join("<div><strong>"+esc(v)+"</strong><span>"+esc(k)+"</span></div>" for k,v in kpis))
-    replace("div","weeklyVerified","".join(item(r,True) for r in (verified if full else verified[:4])) or '<p><a href="./radar/">Ver agenda sanitaria →</a></p>')
+    tracker=d.get("legislative_tracker",{})
+    if tracker.get("projects"):
+        cards=[]
+        for p in tracker["projects"]:
+            if not safe(p.get("url")):continue
+            timeline="".join('<li><a href="'+safe(t["url"])+'" target="_blank" rel="noopener noreferrer"><time>'+esc(day(t["date"]))+'</time> '+esc(t["title"])+'</a></li>' for t in p.get("timeline",[]) if safe(t.get("url")))
+            metric=('<div class="leg-metric"><strong>'+esc(p["metric"])+'</strong><small>'+esc(p["metric_label"])+'</small></div>') if p.get("metric") else ""
+            cards.append('<article class="leg-card"><small>BOLETÍN '+esc(p["bulletin"])+'</small><h3>'+esc(p["title"])+'</h3><p class="leg-status">'+esc(p["status"])+'</p>'+metric+'<p>'+esc(p["summary"])+'</p>'+('<ol class="leg-timeline">'+timeline+'</ol>' if timeline else '')+'<p class="leg-next"><strong>Próximo hito:</strong> '+esc(p["next"])+'</p><a class="text-link" href="'+safe(p["url"])+'" target="_blank" rel="noopener noreferrer">Tramitación oficial ↗</a></article>')
+        block='<div class="leg-brief"><p class="eyebrow">CONGRESO · SEGUIMIENTO DE PROYECTOS</p><h2>Estado de la agenda legislativa</h2><p class="editorial-caption">Estado documentado al '+esc(day(tracker.get("updated")))+' · Cámara, Senado y Comisión Mixta</p><div class="leg-grid">'+''.join(cards)+'</div></div>'
+        page=page.replace('<div class="weekly-body">',block+'<div class="weekly-body">',1)
+    # Prioritize the latest budget outcome and represent each chamber before other headlines.
+    leading=[x for x in verified if x["id"]=="camara-presupuesto-2027-salud-2026-11-23"]
+    ordered=leading+[x for x in verified if x not in leading]
+    replace("div","weeklyVerified","".join(item(r,True) for r in (ordered if full else ordered[:5])) or '<p><a href="./radar/">Ver agenda sanitaria →</a></p>')
     replace("div","weeklyCandidates","".join(item(r,False) for r in (candidates if full else candidates[:6])) or '<p><a href="./prensa/">Ver publicaciones →</a></p>')
     replace("div","weeklySourceList","".join('<div class="weekly-source"><a href="'+safe(s["url"])+'" target="_blank" rel="noopener noreferrer">'+esc(s.get("name"))+"</a></div>" for s in sources))
     report=["HEALTHSCOPE CHILE · BRIEFING","Ventana: "+day(d.get("window_start"))+"–"+day(d.get("window_end"))]
-    for r in verified:
+    for r in ordered:
         report.extend(["","*"+r["title"]+"*",day(r.get("published"))+" · "+r.get("authority",""),r.get("summary","")])
         if r.get("implications"):report.append("Implicancias: "+r["implications"])
         report.append(r["url"])

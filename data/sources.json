@@ -784,5 +784,37 @@
       "alerta",
       "farmacovigilancia"
     ]
+  },
+  {
+    "id": "camara-prensa",
+    "name": "Cámara · Comunicados y Sala",
+    "url": "https://www.camara.cl/cms/prensa/",
+    "scope": "Actividad legislativa y presupuestaria",
+    "kind": "Fuente legislativa",
+    "automated": false
+  },
+  {
+    "id": "camara-salud",
+    "name": "Cámara · Comisión de Salud",
+    "url": "https://camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894",
+    "scope": "Resultados y acuerdos de comisión",
+    "kind": "Fuente legislativa",
+    "automated": false
+  },
+  {
+    "id": "camara-presupuesto",
+    "name": "Cámara · Presupuesto 2027",
+    "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391",
+    "scope": "Tramitación, votaciones e informes",
+    "kind": "Fuente legislativa",
+    "automated": false
+  },
+  {
+    "id": "camara-opendata",
+    "name": "Cámara · Servicios de datos abiertos",
+    "url": "https://opendata.camara.cl/camaradiputados/WServices/WSLegislativo.asmx",
+    "scope": "Servicios de proyectos y votaciones",
+    "kind": "Fuente legislativa",
+    "automated": false
   }
 ]

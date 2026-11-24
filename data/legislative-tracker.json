@@ -1,0 +1,56 @@
+{
+  "updated": "2026-11-24",
+  "projects": [
+    {
+      "title": "Presupuesto 2027 · Salud",
+      "bulletin": "18.702-05",
+      "status": "Tercer trámite concluido · Mixta del presupuesto general",
+      "summary": "La Cámara respaldó los recursos para LRS; Salud no figura entre las diez partidas con discrepancias.",
+      "metric": "$28.207 millones",
+      "metric_label": "Recursos consignados vía Fonasa para LRS",
+      "next": "Informe de Comisión Mixta, ratificación de ambas salas y publicación de la ley.",
+      "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391",
+      "timeline": [
+        {
+          "date": "2026-11-13",
+          "title": "Cámara despacha el proyecto al Senado",
+          "url": "https://www.camara.cl/cms/2026/11/13/camara-concluyo-despacho-del-presupuesto-2027/"
+        },
+        {
+          "date": "2026-11-18",
+          "title": "Senado respalda la partida sanitaria; compromiso de reposición LRS",
+          "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/"
+        },
+        {
+          "date": "2026-11-23",
+          "title": "Cámara respalda modificaciones de Salud; diez otras partidas a Mixta",
+          "url": "https://www.camara.cl/cms/2026/11/23/presupuesto-2027-camara-envia-a-mixta-diez-temas/"
+        }
+      ]
+    },
+    {
+      "title": "Reforma del Fondo de Diagnósticos y Tratamientos de Alto Costo",
+      "bulletin": "15.047-11",
+      "status": "En discusión · Comisión de Salud del Senado",
+      "summary": "El registro del 24 de noviembre deja pendiente la reforma de la distribución del fondo.",
+      "next": "Nuevo tratamiento en comisión y acuerdos legislativos.",
+      "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=24%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23231&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3",
+      "timeline": [
+        {
+          "date": "2026-11-24",
+          "title": "Materia permanece pendiente en comisión",
+          "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=24%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23231&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3"
+        }
+      ]
+    },
+    {
+      "title": "Libre elección de farmacia y continuidad de tratamientos crónicos",
+      "bulletin": "18.784-11",
+      "status": "Primer trámite constitucional · Cámara de Diputados",
+      "summary": "Moción que propone evitar restricciones comerciales a la elección de farmacia y al acceso a coberturas de seguros.",
+      "next": "Discusión en Comisión de Salud; seguimiento de indicaciones y votaciones.",
+      "url": "https://camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18784-11&prmID=19452",
+      "timeline": []
+    }
+  ]
+}

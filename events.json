@@ -514,5 +514,52 @@
       "Partida 16"
     ],
     "status": "Verificado"
+  },
+  {
+    "id": "camara-presupuesto-2027-salud-2026-11-23",
+    "date": "2026-11-23",
+    "published": "2026-11-23",
+    "category": "datos",
+    "authority": "Cámara de Diputadas y Diputados",
+    "title": "Cámara respalda $28.207 millones para la Ley Ricarte Soto y Salud queda fuera de las discrepancias enviadas a Mixta",
+    "summary": "En tercer trámite constitucional, la Cámara respaldó las modificaciones que consignan $28.207 millones a través de Fonasa para la Ley Ricarte Soto. Remitió diferencias de diez partidas a Comisión Mixta; la Partida 16 no figura entre ellas.",
+    "implications": "El acuerdo reduce la incertidumbre sobre la reposición de recursos para tratamientos de alto costo. El presupuesto global sigue en tramitación hasta su despacho y publicación.",
+    "medication": "Ley Ricarte Soto",
+    "topics": [
+      "Presupuesto 2027",
+      "Partida 16",
+      "Fonasa",
+      "Boletín 18.702-05",
+      "Cámara de Diputados"
+    ],
+    "status": "Verificado",
+    "source_type": "Comunicado parlamentario",
+    "url": "https://www.camara.cl/cms/2026/11/23/presupuesto-2027-camara-envia-a-mixta-diez-temas/",
+    "project_status": "Tercer trámite concluido · Presupuesto a Comisión Mixta",
+    "metric": {
+      "value": "28.207",
+      "unit": "millones CLP",
+      "qualification": "Recursos consignados vía Fonasa para LRS en modificaciones aprobadas; no es el presupuesto total de LRS"
+    }
+  },
+  {
+    "id": "camara-respuesta-epof-presupuesto-2026-11-18",
+    "date": "2026-11-18",
+    "published": "2026-11-18",
+    "category": "datos",
+    "authority": "Ministerio de Salud · Cámara de Diputados",
+    "title": "Respuesta ministerial sobre financiamiento de medicamentos para enfermedades poco frecuentes",
+    "summary": "En respuesta al oficio 27273 del diputado Andrés Celis, el Ministerio informó que el proyecto 2027 supera los $18,3 billones y contempla un aumento aproximado de 4,7% respecto de la base 2026 utilizada por la autoridad.",
+    "implications": "La respuesta permite contrastar las cifras de formulación presupuestaria y los antecedentes de enfermedades poco frecuentes con las modificaciones aprobadas durante la tramitación.",
+    "medication": "Enfermedades poco frecuentes",
+    "topics": [
+      "Presupuesto 2027",
+      "Ley Ricarte Soto",
+      "Oficio 27273",
+      "Partida 16"
+    ],
+    "status": "Verificado",
+    "source_type": "Respuesta a oficio de fiscalización",
+    "url": "https://www.camara.cl/verdoc.aspx?prmID=182484&prmTIPO=OFICIO_FISCALIZACION_RESPUESTA"
   }
 ]
