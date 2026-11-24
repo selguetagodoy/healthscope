@@ -302,3 +302,6 @@ body[data-view] main>section{display:none}body[data-view] main>section.module-ac
 .weekly-brief details{padding:12px 20px;border-top:1px solid var(--line)}.weekly-brief summary{cursor:pointer;font-size:13px;font-weight:650}.weekly-source{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:12px}.weekly-source small{grid-column:1/-1;color:var(--muted);overflow-wrap:anywhere}.weekly-note{padding:12px 20px;margin:0;font-size:11px;line-height:1.5;color:var(--muted);background:#f4f7f3}
 @media(max-width:800px){.weekly-head{flex-direction:column;align-items:flex-start;padding:20px}.weekly-time{text-align:left;flex:0 0 auto}.weekly-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.weekly-body{grid-template-columns:1fr;gap:10px}.weekly-body>div+div{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:14px}.weekly-source{grid-template-columns:1fr}}
 body:not([data-view]) #inicio.masthead{padding:20px 0;}.weekly-brief .empty-state{font-size:13px}
+
+/* Editorial cleanup */
+.transparency-panel{grid-template-columns:repeat(2,minmax(0,1fr))}.weekly-time span:empty,.section-count:empty,.weekly-actions span:empty{display:none}.weekly-source{grid-template-columns:1fr}.weekly-note{font-size:12px}.source-row .mode-tag{color:var(--muted)}

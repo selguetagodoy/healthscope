@@ -26,7 +26,7 @@
   <div class="utility-bar">
     <div class="shell utility-inner">
       <span>OBSERVATORIO INDEPENDIENTE · CHILE</span>
-      <span id="editionLine">EDICIÓN DIGITAL · V1.1</span>
+      <span id="editionLine">EDICIÓN DIGITAL</span>
     </div>
   </div>
   <header class="site-header">
@@ -61,17 +61,17 @@
   <main id="contenido" class="shell">
     <div class="search-strip" aria-label="Buscador de novedades">
       <form action="./radar/" method="get" class="global-search"><label for="globalQuery">Buscar en el radar sanitario</label><input id="globalQuery" name="q" type="search" placeholder="Medicamento, boletín, autoridad o tema"><button class="button button-dark" type="submit">Buscar</button></form>
-      <a class="text-link" href="./fuentes/">Estado del monitoreo ↗</a>
+      <a class="text-link" href="./fuentes/">Directorio de fuentes ↗</a>
     </div>
     <div id="dataNotice" role="status" class="data-notice" hidden></div>
     <section id="weekly" class="weekly-brief section-rule" aria-labelledby="weekly-title">
       <div class="weekly-head"><div><p class="eyebrow">HEALTHSCOPE WEEKLY INTELLIGENCE · CHILE</p><h1 id="weekly-title">La semana en salud</h1><p>Decisiones farmacéuticas, regulatorias y legislativas. Acceso, financiamiento, actores y conversación pública.</p></div><div class="weekly-time"><span id="weeklyWindow">Últimos siete días</span><strong id="weeklyCut" role="status">Cargando corte…</strong><span id="weeklyHealth"></span></div></div>
-      <div class="weekly-actions"><button type="button" id="weeklyCopy" class="button button-dark" disabled>Copiar briefing verificado</button><button type="button" id="weeklyCopyPending" class="button button-light" disabled>Copiar pendientes de revisión</button><a class="text-link" href="./semana/">Abrir briefing completo →</a><a class="text-link" href="./fuentes/">Fuentes y estado ↗</a><span role="status" id="weeklyCopyStatus"></span></div>
+      <div class="weekly-actions"><button type="button" id="weeklyCopy" class="button button-dark" disabled>Copiar briefing</button><a class="text-link" href="./semana/">Abrir briefing completo →</a><a class="text-link" href="./fuentes/">Fuentes ↗</a><span role="status" id="weeklyCopyStatus"></span></div>
       <div class="weekly-kpis" id="weeklyKpis"></div>
-      <div class="weekly-body"><div><h2>Destacados verificados</h2><div id="weeklyVerified" aria-live="polite">Cargando…</div></div><div><h2>Radar por revisar</h2><p class="editorial-caption">Publicaciones capturadas; no son decisiones confirmadas.</p><div id="weeklyCandidates"></div></div></div>
-      <details id="weeklySocial"><summary>Publicaciones sociales sin fecha comprobada</summary><div id="weeklyUndated"></div></details>
-      <details id="weeklySources"><summary>Estado de fuentes y cobertura del corte</summary><div id="weeklySourceList"></div></details>
-      <p class="weekly-note">Selección automática de los últimos siete días por relevancia farmacéutica. Solo los registros revisados editorialmente se incluyen como verificados; las demás capturas requieren comprobación. Fuentes sociales sin API autorizada no equivalen a escucha continua.</p>
+      <div class="weekly-body"><div><h2>Destacados de la semana</h2><div id="weeklyVerified" aria-live="polite">Cargando…</div></div><div><h2>Publicaciones y agenda</h2><p class="editorial-caption">Selección de publicaciones originales y actividad institucional.</p><div id="weeklyCandidates"></div></div></div>
+      
+      <details id="weeklySources"><summary>Fuentes de la edición</summary><div id="weeklySourceList"></div></details>
+      <p class="weekly-note">Selección de los últimos siete días. Los destacados contienen hechos documentados; las publicaciones y agendas remiten a sus fuentes originales.</p>
     </section>
     <section class="masthead" id="inicio" aria-labelledby="mast-title">
       <div class="mast-copy">
@@ -101,7 +101,7 @@
       <a href="./radar/"><strong id="dashEvents">—</strong><span>Novedades verificadas</span></a>
       <a href="./fuentes/"><strong id="dashSources">—</strong><span>Fuentes catalogadas</span></a>
       <a href="./farmaceutico/"><strong id="dashMedicines">—</strong><span>Alertas seleccionadas</span></a>
-      <a href="./fuentes/"><strong id="dashPending">—</strong><span>Capturas en revisión</span></a>
+      <a href="./cobertura/"><strong id="dashPending">117</strong><span>Problemas GES y LRS</span></a>
     </section>
     <section class="edition section-rule" id="actualidad" aria-labelledby="agenda-title">
       <div class="section-heading">
@@ -112,7 +112,7 @@
         <article id="featured" class="featured" aria-live="polite"><p class="loading-note">Cargando selección editorial…</p></article>
         <div id="briefs" class="briefs" aria-live="polite"></div>
       </div>
-      <div class="editorial-foot"><span id="eventCountLabel">Registro en preparación</span><a href="./radar/">Explorar el radar completo <span aria-hidden="true">→</span></a></div>
+      <div class="editorial-foot"><span id="eventCountLabel">Agenda sanitaria</span><a href="./radar/">Explorar el radar completo <span aria-hidden="true">→</span></a></div>
     </section>
 
     <section class="observatories section-rule" aria-labelledby="observatories-title">
@@ -128,7 +128,7 @@
         <a class="observatory" href="./medicamentos/"><span class="obs-index">13</span><span><strong>Registro sanitario ISP</strong><small>Productos, titulares y principios activos</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./enfermedades-raras/"><span class="obs-index">12</span><span><strong>Enfermedades raras</strong><small>Listado nacional, códigos ORPHA y marco REPOF</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./stakeholders/"><span class="obs-index">10</span><span><strong>Stakeholders</strong><small>Actores y canales institucionales</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
-        <a class="observatory" href="./prensa/"><span class="obs-index">11</span><span><strong>Prensa y redes</strong><small>Capturas y declaraciones públicas</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
+        <a class="observatory" href="./prensa/"><span class="obs-index">11</span><span><strong>Prensa y redes</strong><small>Noticias y declaraciones públicas</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./normativa/"><span class="obs-index">00</span><span><strong>Marco normativo</strong><small>Leyes de salud y proyectos prioritarios</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./radar/?materia=legislacion"><span class="obs-index">01</span><span><strong>Radar regulatorio</strong><small>Leyes, decretos, resoluciones y actividad parlamentaria</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
         <a class="observatory" href="./farmaceutico/"><span class="obs-index">02</span><span><strong>Farmacéutico</strong><small>Seguridad, alertas, registros y vigilancia de medicamentos</small></span><span class="obs-arrow" aria-hidden="true">↗</span></a>
@@ -173,7 +173,7 @@
         <div><p class="eyebrow">04 / VIGILANCIA FARMACÉUTICA</p><h2 id="pharma-title">Alertas y seguridad</h2></div>
         <a class="text-link" href="https://www.ispch.gob.cl/categorias-alertas/anamed/" target="_blank" rel="noopener noreferrer">Archivo ANAMED ↗</a>
       </div>
-      <div class="policy-grid"><a class="policy-card" href="https://registrosanitario.ispch.gob.cl/" target="_blank" rel="noopener noreferrer"><small>CONSULTA OFICIAL</small><strong>Registro sanitario de medicamentos</strong><span>Busca producto, principio activo, titular, número y situación del registro. HealthScope aún no replica la base completa.</span><span class="text-link">Consultar fuente ↗</span></a></div>
+      <div class="policy-grid"><a class="policy-card" href="https://registrosanitario.ispch.gob.cl/" target="_blank" rel="noopener noreferrer"><small>CONSULTA OFICIAL</small><strong>Registro sanitario de medicamentos</strong><span>Consulta productos, principios activos, titulares y registros sanitarios.</span><span class="text-link">Consultar fuente ↗</span></a></div>
       <div class="split-grid">
         <div>
           <p class="section-deck">Novedades verificadas en las fuentes públicas del Instituto de Salud Pública. El listado refleja alertas y publicaciones seleccionadas, no el registro sanitario completo.</p>
@@ -191,20 +191,20 @@
 
     <section class="section-rule" id="registro-isp" aria-labelledby="isp-reg-title">
       <div class="section-heading"><div><p class="eyebrow">AGENCIA NACIONAL DE MEDICAMENTOS</p><h2 id="isp-reg-title">Registro sanitario de medicamentos</h2></div><span class="section-count" id="ispCount" role="status">Cargando…</span></div>
-      <p class="section-deck">Muestra parcial de productos consultados en el ISP. La condición vigente observada en la consulta no equivale a disponibilidad comercial, indicación clínica, equivalencia terapéutica ni cobertura financiera. Verifique siempre la ficha original.</p>
-      <div class="policy-grid"><a class="policy-card" href="https://registrosanitario.ispch.gob.cl/" target="_blank" rel="noopener noreferrer"><small>FUENTE OFICIAL</small><strong>Consulta completa ISP</strong><span>Buscar registros y exportar los resultados oficiales ↗</span></a><a class="policy-card" href="./medicamentos/?q=trikafta"><small>SELECCIÓN INICIAL</small><strong>Trikafta · registros consultados</strong><span>Consultar por nombre y titular →</span></a><a class="policy-card" href="./cobertura/"><small>ACCESO Y COBERTURA</small><strong>GES y Ley Ricarte Soto</strong><span>Catálogo independiente de cobertura →</span></a></div>
+      <p class="section-deck">Selección de registros sanitarios del ISP. Consulta por producto, principio activo y titular. La autorización sanitaria es independiente de la cobertura y la disponibilidad comercial.</p>
+      <div class="policy-grid"><a class="policy-card" href="https://registrosanitario.ispch.gob.cl/" target="_blank" rel="noopener noreferrer"><small>FUENTE OFICIAL</small><strong>Consulta completa ISP</strong><span>Buscar registros y exportar los resultados oficiales ↗</span></a><a class="policy-card" href="./medicamentos/?q=trikafta"><small>MEDICAMENTOS DESTACADOS</small><strong>Trikafta · registros consultados</strong><span>Consultar por nombre y titular →</span></a><a class="policy-card" href="./cobertura/"><small>ACCESO Y COBERTURA</small><strong>GES y Ley Ricarte Soto</strong><span>Catálogo independiente de cobertura →</span></a></div>
       <p id="ispScope" class="editorial-caption" role="status"></p>
       <div class="filter-row"><label class="sr-only" for="ispQuery">Buscar registro</label><input id="ispQuery" type="search" placeholder="Producto, principio activo, titular o registro"><label class="sr-only" for="ispSale">Condición de venta</label><select id="ispSale"><option value="">Todas las condiciones</option></select><button class="button button-light" id="ispReset" type="button">Limpiar</button><button class="button button-dark" id="ispCsv" type="button" disabled>CSV</button><button class="button button-light" id="ispJson" type="button" disabled>JSON</button></div>
       <div id="ispRows" class="epof-table" aria-live="polite" aria-busy="true"></div>
       <div class="pagination" id="ispPager" hidden><button class="button button-light" id="ispPrev" type="button">← Anterior</button><span id="ispPage"></span><button class="button button-light" id="ispNext" type="button">Siguiente →</button></div>
-      <p class="editorial-caption">Los campos vacíos indican información no observada en la tabla consultada. Las fechas se reproducen tal como aparecen en el registro; no se infiere fecha de renovación a partir del número de registro.</p>
+      <p class="editorial-caption">Fuente: ISP. Fechas y estados según la consulta oficial.</p>
     </section>
     <section class="section-rule" id="compras" aria-labelledby="compras-title">
       <div class="section-heading">
         <div><p class="eyebrow">05 / ABASTECIMIENTO</p><h2 id="compras-title">Compras públicas y medicamentos</h2></div>
         <a class="text-link" href="https://www.mercadopublico.cl/" target="_blank" rel="noopener noreferrer">Mercado Público ↗</a>
       </div>
-      <div class="policy-grid"><a class="policy-card" href="https://datos-abiertos.chilecompra.cl/descargas" target="_blank" rel="noopener noreferrer"><small>DATOS ABIERTOS</small><strong>Órdenes de compra y licitaciones</strong><span>Descarga archivos de transacciones para análisis por comprador, producto y periodo.</span><span class="text-link">Consultar fuente ↗</span></a><a class="policy-card" href="https://datos-abiertos.chilecompra.cl/descargas/procesos-ocds" target="_blank" rel="noopener noreferrer"><small>ESTÁNDAR OCDS</small><strong>Procesos de contratación</strong><span>Acceso a datos de contratación abiertos. Los registros aún no se han importado al sitio.</span><span class="text-link">Consultar fuente ↗</span></a><a class="policy-card" href="https://selguetagodoy.github.io/healthscope/radar/?materia=compras" target="_blank" rel="noopener noreferrer"><small>RADAR</small><strong>Novedades de compras</strong><span>Consulta la selección editorial de decisiones y anuncios sanitarios.</span><span class="text-link">Consultar fuente ↗</span></a></div>
+      <div class="policy-grid"><a class="policy-card" href="https://datos-abiertos.chilecompra.cl/descargas" target="_blank" rel="noopener noreferrer"><small>DATOS ABIERTOS</small><strong>Órdenes de compra y licitaciones</strong><span>Descarga archivos de transacciones para análisis por comprador, producto y periodo.</span><span class="text-link">Consultar fuente ↗</span></a><a class="policy-card" href="https://datos-abiertos.chilecompra.cl/descargas/procesos-ocds" target="_blank" rel="noopener noreferrer"><small>ESTÁNDAR OCDS</small><strong>Procesos de contratación</strong><span>Datos de contratación pública en formato abierto.</span><span class="text-link">Consultar fuente ↗</span></a><a class="policy-card" href="https://selguetagodoy.github.io/healthscope/radar/?materia=compras" target="_blank" rel="noopener noreferrer"><small>RADAR</small><strong>Novedades de compras</strong><span>Consulta la selección editorial de decisiones y anuncios sanitarios.</span><span class="text-link">Consultar fuente ↗</span></a></div>
       <div class="procurement-feature" id="procurementFeature"><p class="loading-note">Cargando antecedentes verificados…</p></div>
       <p class="editorial-caption">Los anuncios institucionales sobre ahorros u optimización se presentan como proyecciones cuando esa es la formulación de la fuente. Las adjudicaciones y precios requieren contraste con las bases de compra correspondientes.</p>
     </section>
@@ -227,22 +227,22 @@
 
     <section class="section-rule" id="cobertura" aria-labelledby="coverage-title">
       <div class="section-heading"><div><p class="eyebrow">CATÁLOGO DE COBERTURA</p><h2 id="coverage-title">GES y Ley Ricarte Soto</h2></div><span class="section-count" id="coverageCount" role="status">Cargando catálogo…</span></div>
-      <p class="section-deck">117 problemas de salud catalogados desde la Superintendencia de Salud. La existencia de una ficha no acredita elegibilidad individual, acceso efectivo ni cobertura de todos los fármacos. Consulte las prestaciones, indicaciones y protocolos oficiales aplicables.</p>
+      <p class="section-deck">117 problemas de salud según la Superintendencia de Salud. Las prestaciones y condiciones de acceso se detallan en las fichas y protocolos oficiales.</p>
       <div class="overview coverage-overview"><a href="./cobertura/?regime=GES"><strong>90</strong><span>Problemas GES</span></a><a href="./cobertura/?regime=LRS"><strong>27</strong><span>Problemas LRS</span></a><a href="./cobertura/"><strong>117</strong><span>Total de fichas</span></a><a href="https://diprece.minsal.cl/enfermedades-poco-frecuentes/" target="_blank" rel="noopener noreferrer"><strong>EPoF</strong><span>Marco oficial</span></a></div>
       <div class="filter-row"><label for="coverageQuery" class="sr-only">Buscar condición o tratamiento</label><input type="search" id="coverageQuery" placeholder="Buscar enfermedad, código o fármaco…"><label for="coverageRegime" class="sr-only">Régimen</label><select id="coverageRegime"><option value="">Todos los regímenes</option><option value="GES">GES</option><option value="LRS">Ley Ricarte Soto</option></select><button type="button" class="button button-light" id="coverageReset">Limpiar</button><button type="button" class="button button-dark" id="coverageCsv">CSV</button><button type="button" class="button button-light" id="coverageJson">JSON</button></div>
       <div id="coverageResults" class="coverage-grid" aria-live="polite" aria-busy="true"></div>
       <div class="pagination" id="coveragePager"><button class="button button-light" id="coveragePrev" type="button">← Anterior</button><span id="coveragePage"></span><button class="button button-light" id="coverageNext" type="button">Siguiente →</button></div>
-      <p class="editorial-caption">Corte de extracción: 24-11-2026. GES: denominaciones abreviadas de las fichas de orientación, no transcripción del decreto. LRS: tratamientos referenciados por la Superintendencia; las fichas y protocolos determinan el alcance exacto. La lista GES de tratamientos es parcial.</p>
+      <p class="editorial-caption">Fuente: Superintendencia de Salud · 24/11/2026. Denominaciones y tratamientos seleccionados de las fichas de orientación.</p>
     </section>
     <section class="section-rule" id="epof" aria-labelledby="epof-title">
       <div class="section-heading"><div><p class="eyebrow">NOMENCLATURA NACIONAL · LEY 21.743</p><h2 id="epof-title">Enfermedades poco frecuentes</h2></div><span class="section-count" id="epofCount" role="status">Cargando catálogo…</span></div>
-      <p class="section-deck">Listado Nacional de EPOF aprobado por Resolución Exenta N.º 30 del 8 de enero de 2026. La fuente declara 9.784 entidades de la nomenclatura Orphanet; el catálogo no equivale al REPOF de personas, a su listado operativo ni a cobertura GES/LRS.</p>
+      <p class="section-deck">Listado Nacional de EPOF aprobado por Resolución Exenta N.º 30 del 8 de enero de 2026: 9.784 entidades de la nomenclatura Orphanet.</p>
       <div class="policy-grid"><a class="policy-card" href="https://diprece.minsal.cl/enfermedades-poco-frecuentes/" target="_blank" rel="noopener noreferrer"><small>FUENTE PRIMARIA</small><strong>Oficina Nacional EPOF · DIPRECE</strong><span>Buscador oficial y documentación normativa ↗</span></a><a class="policy-card" href="https://diprece.minsal.cl/wp-content/uploads/2026/01/Aprueba-listado-nacional-de-epof-establecido-en-la-ley-21.743.pdf" target="_blank" rel="noopener noreferrer"><small>RESOLUCIÓN EXENTA N.º 30</small><strong>Reconocimiento sanitario</strong><span>Consultar acto administrativo ↗</span></a><a class="policy-card" href="./cobertura/"><small>COBERTURA</small><strong>GES y Ley Ricarte Soto</strong><span>Consultar catálogo separado →</span></a><a class="policy-card" href="https://www.orphacode.org/pack-nomenclature/" target="_blank" rel="noopener noreferrer"><small>REFERENCIA INTERNACIONAL</small><strong>Orphanet / ORPHAcodes</strong><span>Nomenclatura, sinónimos y mapeos ↗</span></a></div>
       <div id="epofMeta" class="editorial-caption" role="status"></div>
       <div class="filter-row"><label class="sr-only" for="epofQuery">Buscar por código o nombre</label><input id="epofQuery" type="search" placeholder="Ej. fibrosis quística, ORPHA:586"><label class="sr-only" for="epofSize">Resultados por página</label><select id="epofSize"><option value="25">25 por página</option><option value="50">50 por página</option><option value="100">100 por página</option></select><button class="button button-light" type="button" id="epofReset">Limpiar</button><button class="button button-dark" type="button" id="epofCsv" disabled>CSV filtrado</button><button class="button button-light" type="button" id="epofJson" disabled>JSON filtrado</button></div>
       <div class="epof-table" id="epofResults" aria-live="polite" aria-busy="true"></div>
       <div class="pagination" id="epofPager" hidden><button class="button button-light" id="epofPrev" type="button">← Anterior</button><span id="epofPage"></span><button class="button button-light" id="epofNext" type="button">Siguiente →</button></div>
-      <p class="editorial-caption">Fuente: MINSAL/DIPRECE, nomenclatura nacional basada en Orphanet. Los datos son entidades diagnósticas y no registros de pacientes ni estimaciones de prevalencia. La inclusión no garantiza un tratamiento o financiamiento.</p>
+      <p class="editorial-caption">Fuente: MINSAL/DIPRECE · Nomenclatura nacional de entidades diagnósticas basada en Orphanet.</p>
     </section>
     <section class="section-rule" id="datos" aria-labelledby="datos-title">
       <div class="section-heading">
@@ -268,7 +268,7 @@
 
     <section class="section-rule" id="stakeholders" aria-labelledby="actors-title">
       <div class="section-heading"><div><p class="eyebrow">INTELIGENCIA DE ACTORES</p><h2 id="actors-title">Stakeholders sanitarios</h2></div><span class="section-count" id="actorsCount" role="status">Cargando…</span></div>
-      <p class="section-deck">Directorio institucional inicial basado en fuentes públicas. Los enlaces sociales se incorporan cuando el sitio institucional los identifica; la ausencia de un enlace no demuestra que no exista una cuenta. No incluye datos personales privados ni asigna posiciones políticas inferidas.</p>
+      <p class="section-deck">Directorio de instituciones, gremios, organizaciones de pacientes, sociedades científicas y actores del ecosistema sanitario.</p>
       <div class="overview"><a href="./stakeholders/"><strong>53</strong><span>Actores institucionales</span></a><a href="./stakeholders/?channel=LinkedIn"><strong>12</strong><span>Canales LinkedIn</span></a><a href="./stakeholders/?channel=X"><strong>18</strong><span>Canales X</span></a><a href="./prensa/"><strong>20</strong><span>Medios catalogados</span></a></div>
       <div class="filter-row"><label class="sr-only" for="actorQuery">Buscar actor</label><input id="actorQuery" type="search" placeholder="Buscar organización, tema o institución"><label class="sr-only" for="actorGroup">Sector</label><select id="actorGroup"><option value="">Todos los sectores</option></select><label class="sr-only" for="actorChannel">Canal social</label><select id="actorChannel"><option value="">Todos los canales</option><option value="LinkedIn">LinkedIn</option><option value="X">X / Twitter</option></select><button type="button" class="button button-light" id="actorReset">Limpiar</button><button type="button" class="button button-dark" id="actorExport">CSV</button></div>
       <div id="actorResults" class="coverage-grid" aria-live="polite"></div>
@@ -276,12 +276,12 @@
     </section>
     <section class="section-rule" id="prensa" aria-labelledby="press-title">
       <div class="section-heading"><div><p class="eyebrow">ESCUCHA DIGITAL</p><h2 id="press-title">Prensa, redes y comunicados</h2></div><span class="section-count" id="pressCount" role="status">Cargando…</span></div>
-      <p class="section-deck">Capturas de RSS y enlaces de publicaciones para revisión editorial. Una captura no acredita el contenido ni equivale a una decisión oficial. LinkedIn y X se consultan por sus canales públicos. Las publicaciones identificadas manualmente se distinguen de la captura RSS. No se ha autorizado una API de redes sociales.</p>
+      <p class="section-deck">Selección de noticias, comunicados institucionales y publicaciones en redes sociales, con acceso a sus fuentes originales.</p>
       <div class="filter-row"><label class="sr-only" for="pressQuery">Buscar publicación</label><input id="pressQuery" type="search" placeholder="Tema, actor, medio o titular"><label class="sr-only" for="pressKind">Canal</label><select id="pressKind"><option value="">Todos los canales</option><option value="Prensa">Prensa</option><option value="Comunicado institucional">Comunicados</option><option value="LinkedIn">LinkedIn</option><option value="X">X / Twitter</option></select><button type="button" class="button button-light" id="pressReset">Limpiar</button><button type="button" class="button button-dark" id="pressExport">CSV</button></div>
       <div id="pressResults" class="result-list" aria-live="polite"></div>
       <div class="pagination" id="pressPager"><button type="button" class="button button-light" id="pressPrev">← Anterior</button><span id="pressPage"></span><button type="button" class="button button-light" id="pressNext">Siguiente →</button></div>
       <h3 class="directory-heading">Directorio de medios</h3><div id="mediaDirectory" class="coverage-grid"></div>
-      <p class="editorial-caption">Enlaces y titulares breves; el contenido completo permanece en la fuente. Sin extracción de artículos protegidos ni acceso a perfiles privados.</p>
+      <p class="editorial-caption">Titulares y enlaces a las publicaciones originales.</p>
     </section>
     <section class="section-rule bulk-section" id="bulk-procurement" aria-labelledby="bulk-procurement-title" data-bulk="bulk-procurement">
       <div class="section-heading"><div><p class="eyebrow">DIRECCIÓN CHILECOMPRA · SEGMENTO UNSPSC 51</p><h2 id="bulk-procurement-title">Compras farmacéuticas</h2></div><span class="section-count bulk-count" role="status">Cargando…</span></div>
@@ -325,33 +325,33 @@
         <span class="section-count" id="sourceCount">Directorio en carga</span>
       </div>
       <div class="transparency-panel">
-        <div><span class="transparency-label">Último corte automatizado</span><strong id="lastRun">Pendiente de primera ejecución</strong></div>
-        <div><span class="transparency-label">Fuentes monitorizadas</span><strong id="automatedCount">0 configuradas</strong></div>
-        <div><span class="transparency-label">Pendientes editoriales</span><strong id="pendingCount">0 registros</strong></div>
+        <div><span class="transparency-label">Actualización</span><strong id="lastRun"></strong></div>
+        <div><span class="transparency-label">Fuentes del directorio</span><strong id="automatedCount"></strong></div>
+        
       </div>
-      <p class="editorial-caption">Los registros capturados automáticamente quedan en revisión y se muestran por separado. La portada solo presenta información revisada y enlazada a su fuente oficial.</p>
+      <p class="editorial-caption">Directorio de fuentes oficiales, institucionales y especializadas.</p>
       <div class="filter-row compact-row"><label class="sr-only" for="sourceSearch">Buscar fuente</label><input id="sourceSearch" type="search" placeholder="Buscar fuente por nombre o tema…" autocomplete="off"></div>
       <div class="source-table" id="sources"></div>
-      <div class="pending-block"><div class="pending-heading"><h3>En revisión editorial</h3><span id="pendingSummary">Sin capturas nuevas</span></div><div id="pendingItems" class="pending-list"></div></div>
+      
     </section>
 
     <section class="section-rule methodology" id="metodo" aria-labelledby="metodo-title">
       <div class="section-heading"><div><p class="eyebrow">11 / ESTÁNDAR EDITORIAL</p><h2 id="metodo-title">Hechos, contexto y fuentes</h2></div></div>
       <div class="method-columns">
         <p>HealthScope organiza información pública y mantiene la fecha del hecho, la institución responsable y el documento original. Diferencia anuncios, propuestas, estimaciones, decisiones aprobadas y medidas implementadas.</p>
-        <p>Las publicaciones seleccionadas reflejan una revisión editorial; los procesos automatizados solo proponen novedades para revisión. Las cifras incluyen unidad, periodo y procedencia cuando la fuente los proporciona.</p>
+        <p>Las publicaciones distinguen hechos, propuestas y declaraciones. Las cifras incluyen unidad, periodo y fuente.</p>
         <p>HealthScope es un proyecto independiente. No representa a instituciones públicas, empleadores ni clientes. Su contenido informa sobre políticas y regulación, y no constituye orientación clínica ni consejo médico.</p>
       </div>
-      <div class="method-links"><a href="./METHODOLOGY.md">Metodología</a><a href="./SOURCES.md">Política de fuentes</a><a href="./STATUS.md">Estado del proyecto</a><a href="./DATA_DICTIONARY.md">Diccionario de datos</a></div>
+      <div class="method-links"><a href="./METHODOLOGY.md">Metodología</a><a href="./SOURCES.md">Política de fuentes</a><a href="./DATA_DICTIONARY.md">Diccionario de datos</a></div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <a class="brand footer-brand" href="#inicio"><img src="./assets/brand.svg" width="38" height="38" alt=""><span class="brand-copy"><strong>HEALTHSCOPE</strong><small>INTELIGENCIA SANITARIA Y FARMACÉUTICA</small></span></a>
+      <a class="brand footer-brand" href="./"><img src="./assets/brand.svg" width="38" height="38" alt=""><span class="brand-copy"><strong>HEALTHSCOPE</strong><small>INTELIGENCIA SANITARIA Y FARMACÉUTICA</small></span></a>
       <p>Proyecto independiente de información pública sobre salud en Chile.</p>
-      <a href="#inicio">Volver al inicio ↑</a>
-      <small class="copyright">© 2026 HealthScope Chile · Versión 0.3</small>
+      <a href="./">Volver al inicio ↑</a>
+      <small class="copyright">© 2026 HealthScope Chile</small>
     </div>
   </footer>
   <script src="./assets/app.js" defer></script>

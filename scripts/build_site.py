@@ -26,13 +26,26 @@ def meta(page, title, url):
 def main():
     if DEST.exists(): shutil.rmtree(DEST)
     DEST.mkdir(parents=True)
-    for name in ("index.html","events.json","robots.txt","sitemap.xml",".nojekyll","README.md","METHODOLOGY.md","SOURCES.md","DATA_DICTIONARY.md","STATUS.md"):
+    for name in ("index.html","events.json","robots.txt","sitemap.xml",".nojekyll","METHODOLOGY.md","SOURCES.md","DATA_DICTIONARY.md"):
         source=ROOT/name
         if source.exists(): shutil.copy2(source,DEST/name)
     for name in ("assets","data"): shutil.copytree(ROOT/name,DEST/name)
     from weekly_brief import make, write, TZ
     from datetime import datetime
-    write(DEST/"data"/"weekly-brief.json",make(datetime.now(TZ)))
+    brief=make(datetime.now(TZ))
+    # Only public editorial fields; execution diagnostics stay in the repository.
+    brief.pop("undated_social",None)
+    for source in brief["sources"]:
+        source.pop("errors",None)
+    write(DEST/"data"/"weekly-brief.json",brief)
+    for internal in ("weekly-extra.json","bulk-status.json"):
+        (DEST/"data"/internal).unlink(missing_ok=True)
+    monitoring_path=DEST/"data"/"monitoring.json"
+    if monitoring_path.exists():
+        monitoring=json.loads(monitoring_path.read_text(encoding="utf-8"))
+        for source in monitoring.get("sources",[]):
+            source.pop("error",None)
+        write(monitoring_path,monitoring)
     template=(ROOT/"index.html").read_text(encoding="utf-8")
     sitemap=[BASE]
     for route,(section,title) in MODULES.items():
@@ -48,7 +61,9 @@ def main():
         path="fichas/"+eid+"/"; url=BASE+path
         title=esc(e.get("title")); source=esc(e.get("url"))
         page=meta(template,e.get("title"),url).replace("<head>","<head>\n  <base href=\"../../\">",1)
-        main='<main id="contenido" class="shell"><article class="event-detail"><p class="module-intro"><a href="./">Inicio</a> / <a href="./radar/">Radar</a> / Ficha</p><p class="eyebrow">REGISTRO VERIFICADO · '+esc(e.get("category"))+'</p><h1>'+title+'</h1><p class="detail-meta">Fecha del hecho: '+esc(e.get("date"))+' · Publicación: '+esc(e.get("published"))+' · '+esc(e.get("authority"))+'</p><h2>Hecho documentado</h2><p>'+esc(e.get("summary"))+'</p><h2>Implicancias</h2><p>'+esc(e.get("implications") or "Sin análisis adicional registrado.")+'</p><p class="detail-meta">Medicamento o tema: '+esc(e.get("medication") or "No especificado")+'</p><div class="detail-actions"><a class="button button-dark" href="'+source+'" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a><a class="button button-light" href="./radar/">Volver al radar</a></div></article></main>'
+        main='<main id="contenido" class="shell"><article class="event-detail"><p class="module-intro"><a href="./">Inicio</a> / <a href="./radar/">Radar</a> / Ficha</p><p class="eyebrow">REGISTRO VERIFICADO · '+esc(e.get("category"))+'</p><h1>'+title+'</h1><p class="detail-meta">Fecha del hecho: '+esc(e.get("date"))+' · Publicación: '+esc(e.get("published"))+' · '+esc(e.get("authority"))+'</p><h2>Hecho documentado</h2><p>'+esc(e.get("summary"))+'</p><h2>Implicancias</h2><p>'+esc(e.get("implications"))+'</p><p class="detail-meta">Medicamento o tema: '+esc(e.get("medication"))+'</p><div class="detail-actions"><a class="button button-dark" href="'+source+'" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a><a class="button button-light" href="./radar/">Volver al radar</a></div></article></main>'
+        if not e.get("implications"): main=main.replace("<h2>Implicancias</h2><p></p>","")
+        if not e.get("medication"): main=main.replace('<p class="detail-meta">Medicamento o tema: </p>',"")
         page=re.sub(r'<main id="contenido".*?</main>',lambda _:main,page,flags=re.S,count=1)
         page=re.sub(r'<script[^>]*src="[^"]*(?:app|coverage|intelligence|epof|isp-registry|bulk|weekly)\.js"[^>]*></script>','',page)
         page=page.replace('href="#contenido"','href="'+esc(url)+'#contenido"',1)

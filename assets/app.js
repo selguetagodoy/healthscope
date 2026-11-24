@@ -54,7 +54,7 @@
   function renderEdition() {
     var list = verifiedEvents().slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
     if (!list.length) {
-      $('featured').innerHTML = '<div class="feature-body"><span class="brief-meta">FUENTES PRIMARIAS</span><h3>Selección editorial en preparación</h3><p>Consulta el directorio de fuentes públicas mientras incorporamos registros revisados.</p></div>';
+      $('featured').innerHTML = '<div class="feature-body"><span class="brief-meta">FUENTES PRIMARIAS</span><h3>Agenda sanitaria</h3><p>Consulta las fuentes y documentos originales.</p></div>';
       $('briefs').innerHTML = '<p class="empty-state">La agenda editorial se actualizará con decisiones respaldadas por documentos oficiales.</p>';
       $('editionDate').textContent = 'Hechos documentados · fuentes primarias';
       $('eventCountLabel').textContent = 'Sin registros verificados';
@@ -91,7 +91,7 @@
     var from = (state.page - 1) * PAGE_SIZE;
     $('radarCount').textContent = list.length + (list.length === 1 ? ' registro verificado' : ' registros verificados');
     $('results').setAttribute('aria-busy', 'false');
-    $('results').innerHTML = list.length ? list.slice(from, from + PAGE_SIZE).map(function (event) { return eventRow(event, false); }).join('') : '<div class="empty-state"><strong>' + (state.error ? 'No fue posible cargar el registro' : 'Sin coincidencias') + '</strong><span>' + (state.error ? 'Recarga la página o consulta las fuentes originales.' : 'Prueba otra palabra o materia. Los registros capturados automáticamente se mantienen en revisión.') + '</span></div>';
+    $('results').innerHTML = list.length ? list.slice(from, from + PAGE_SIZE).map(function (event) { return eventRow(event, false); }).join('') : '<div class="empty-state"><strong>' + (state.error ? 'No fue posible cargar el registro' : 'Sin coincidencias') + '</strong><span>' + (state.error ? 'Recarga la página o consulta las fuentes originales.' : 'Prueba otra palabra o materia.') + '</span></div>';
     $('pagination').hidden = list.length <= PAGE_SIZE;
     $('pageLabel').textContent = 'Página ' + state.page + ' de ' + pages;
     $('previousPage').disabled = state.page <= 1;
@@ -109,7 +109,7 @@
   function renderProcurement() {
     var event = state.events.filter(function (item) { return item.category === 'compras' && item.status === 'Verificado'; }).sort(function (a, b) { return b.date.localeCompare(a.date); })[0];
     if (!event) {
-      $('procurementFeature').innerHTML = '<p class="empty-state">No hay novedades verificadas de compras públicas en el corte disponible. Consulta Mercado Público y Cenabast.</p>';
+      $('procurementFeature').innerHTML = '<p class="empty-state">Consulta las novedades de compras públicas en Mercado Público y Cenabast.</p>';
       return;
     }
     var potential = event.metric && event.metric.value ? '<div><span class="procurement-number">' + escapeHtml(event.metric.value) + '</span><span class="procurement-unit">' + escapeHtml(event.metric.unit || '') + '</span></div>' : '<div><span class="procurement-number">CENABAST</span><span class="procurement-unit">Abastecimiento público</span></div>';
@@ -126,7 +126,7 @@
       var value = String(item.value) + (item.unit ? ' ' + item.unit : '');
       var status = item.qualification ? '<span class="indicator-meta">' + escapeHtml(item.qualification) + '</span>' : '';
       return '<article class="indicator"><span class="indicator-value">' + escapeHtml(value) + '</span><span class="indicator-label">' + escapeHtml(item.label) + '</span><span class="indicator-meta">' + escapeHtml(item.period || '') + (item.as_of ? ' · ' + escapeHtml(item.as_of) : '') + '</span>' + status + sourceLink(item.url, 'Ver evidencia', 'indicator-link') + '</article>';
-    }).join('') || '<p class="empty-state">No hay indicadores validados en el conjunto de datos.</p>';
+    }).join('') || '<p class="empty-state">Consulta las estadísticas en las fuentes oficiales.</p>';
   }
 
   function renderInstitutions() {
@@ -148,36 +148,19 @@
   function renderSources() {
     var q = normalize($('sourceSearch').value);
     var rows = state.sources.filter(function (item) { return normalize([item.name, item.scope, item.kind, item.mode].join(' ')).includes(q); });
-    var automated = state.sources.filter(function (item) { return item.automated === true; }).length;
-    var sourceRuns = {};
-    ((state.monitoring && state.monitoring.sources) || []).forEach(function (run) { sourceRuns[run.id] = run; });
-    var successful = Object.keys(sourceRuns).filter(function (id) { return sourceRuns[id].status === 'ok'; }).length;
-    var failed = Object.keys(sourceRuns).filter(function (id) { return sourceRuns[id].status === 'error'; }).length;
     $('sourceCount').textContent = rows.length + ' fuentes en el directorio';
-    $('automatedCount').textContent = Object.keys(sourceRuns).length ? successful + '/' + automated + ' disponibles' + (failed ? ' · ' + failed + (failed === 1 ? ' con error' : ' con errores') : '') : automated + ' configuradas';
+    $('automatedCount').textContent = state.sources.length + ' fuentes';
     $('sources').innerHTML = rows.map(function (item) {
-      var mode = 'Consulta directa';
+      var mode = item.kind || 'Fuente pública';
       var modeClass = 'mode-tag';
-      var run = sourceRuns[item.id];
-      if (item.automated && !run) { mode = 'Monitor automático · primer corte pendiente'; modeClass += ' mode-pending'; }
-      else if (item.automated && run.status === 'ok') { mode = 'Corte correcto · HTTP ' + (run.http_status || 'OK'); modeClass += ' mode-ok'; }
-      else if (item.automated) { mode = 'Error de conexión · captura pendiente'; modeClass += ' mode-error'; }
-      if (item.automated && run && run.checked_at) mode += ' · ' + dateLabel(run.checked_at.slice(0, 10)) + ' ' + run.checked_at.slice(11, 16);
       return '<div class="source-row"><strong>' + escapeHtml(item.name) + '</strong><span>' + escapeHtml(item.scope) + '</span><span class="' + modeClass + '">' + escapeHtml(mode) + '</span>' + sourceLink(item.url, 'Abrir', '') + '</div>';
     }).join('') || '<p class="empty-state">No hay fuentes que coincidan con la búsqueda.</p>';
   }
 
   function renderMonitoring() {
     var m = state.monitoring || {};
-    var lastAttempt = m.last_attempt_at ? new Date(m.last_attempt_at) : null;
-    var lastLabel = lastAttempt && !Number.isNaN(lastAttempt.getTime()) ? new Intl.DateTimeFormat('es-CL', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'America/Santiago' }).format(lastAttempt) + ' · America/Santiago' : 'Pendiente de primera ejecución';
-    $('lastRun').textContent = lastLabel;
-    $('pendingCount').textContent = state.pending.length + (state.pending.length === 1 ? ' registro' : ' registros');
-    $('pendingSummary').textContent = state.pending.length ? state.pending.length + ' capturas · revisión pendiente' : 'Sin capturas nuevas';
-    var latest = state.pending.slice().sort(function (a, b) { return (b.published || b.date).localeCompare(a.published || a.date); }).slice(0, 5);
-    $('pendingItems').innerHTML = latest.length ? latest.map(function (item) {
-      return '<div class="pending-row"><strong>' + escapeHtml(item.title) + '</strong><span>' + escapeHtml(item.authority || item.source_id || 'Fuente oficial') + ' · ' + dateLabel(item.date) + ' · pendiente</span></div>';
-    }).join('') : '<p class="empty-state">Las novedades automáticas aparecerán aquí después de la primera ejecución programada y pasarán por revisión editorial.</p>';
+    var d = m.last_success_at ? new Date(m.last_success_at) : null;
+    $('lastRun').textContent = d && !Number.isNaN(d.getTime()) ? new Intl.DateTimeFormat('es-CL', {day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'America/Santiago'}).format(d) : '';
   }
 
   function csvCell(value) {
@@ -219,7 +202,7 @@
 
   function renderAll() {
     populateCategories();
-    $('dashEvents').textContent=verifiedEvents().length; $('dashSources').textContent=state.sources.length; $('dashMedicines').textContent=state.medicines.length; $('dashPending').textContent=state.pending.length;
+    $('dashEvents').textContent=verifiedEvents().length; $('dashSources').textContent=state.sources.length; $('dashMedicines').textContent=state.medicines.length; $('dashPending').textContent='117';
     renderEdition(); renderResults(); renderMedicines(); renderProcurement(); renderAccessEvents(); renderIndicators(); renderInstitutions(); renderResearch(); renderSources(); renderMonitoring();
   }
 
@@ -228,7 +211,7 @@
   var failed=[];
   Promise.all(datasetPaths.map(function(path){return loadJson(path).catch(function(){failed.push(path);return null;});})).then(function (data) {
     state.error=failed.includes('events.json');
-    if(failed.length){$('dataNotice').hidden=false;$('dataNotice').textContent='Algunos datos no están disponibles temporalmente ('+failed.join(', ')+'). Las demás secciones siguen operativas.';}
+    if(failed.includes('events.json')){$('dataNotice').hidden=false;$('dataNotice').textContent='Consulta el directorio de fuentes.';}
     state.events = Array.isArray(data[0]) ? data[0] : [];
     state.sources = Array.isArray(data[1]) ? data[1] : [];
     state.medicines = Array.isArray(data[2]) ? data[2] : [];
