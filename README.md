@@ -2,7 +2,7 @@
 
 Observatorio independiente de inteligencia sanitaria y farmacéutica. HealthScope organiza información pública sobre decisiones sanitarias, medicamentos, compras, cobertura y datos de Chile, con enlaces a las fuentes originales.
 
-**Versión:** 0.5 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
+**Versión:** 0.6 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
 
 ## Sitio público
 
@@ -12,11 +12,12 @@ GitHub Pages está habilitado con GitHub Actions. El repositorio es público y e
 
 ## Funciones disponibles
 
-- Agenda editorial, diez módulos con rutas independientes y fichas con URL estable generadas durante el build.
+- Agenda editorial, once módulos con rutas independientes y fichas con URL estable generadas durante el build.
 - Buscador transversal del radar y filtros por fecha, autoridad y materia.
 - Radar con búsqueda, filtro por materia, ordenamiento, paginación y descarga CSV/JSON.
 - Vigilancia farmacéutica basada en alertas públicas seleccionadas del ISP.
-- Accesos a compras públicas, cobertura GES y Ley Ricarte Soto.
+- Catálogo consultable y exportable de 90 problemas GES y 27 LRS, con fichas oficiales; tratamientos GES parciales.
+- Accesos a compras públicas y registro sanitario.
 - Indicadores con fecha, calificación y fuente.
 - Directorios de instituciones y documentos públicos con filtros.
 - Transparencia sobre fuentes automatizadas, cortes y capturas pendientes de revisión.

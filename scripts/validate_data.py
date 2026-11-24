@@ -34,7 +34,8 @@ def validate():
     institutions = load(ROOT / "data/institutions.json")
     research = load(ROOT / "data/research.json")
     pending = load(ROOT / "data/pending.json")
-    checks = ((events, "events"), (sources, "sources"), (medicines, "medications"), (indicators, "indicators"), (institutions, "institutions"), (research, "research"), (pending, "pending"))
+    coverage = load(ROOT / "data/coverage.json")
+    checks = ((coverage, "coverage"), (events, "events"), (sources, "sources"), (medicines, "medications"), (indicators, "indicators"), (institutions, "institutions"), (research, "research"), (pending, "pending"))
     for records, label in checks:
         check(isinstance(records, list), label + " must be an array", errors)
         if not isinstance(records, list):
@@ -42,6 +43,11 @@ def validate():
         ids = [item.get("id") for item in records if isinstance(item, dict)]
         check(all(ids), label + " records must have ids", errors)
         check(len(ids) == len(set(ids)), label + " contains duplicate ids", errors)
+    check({x.get("code") for x in coverage if x.get("regime") == "GES"} == {str(i) for i in range(1,91)}, "GES catalog must contain codes 1–90", errors)
+    check(sum(x.get("regime") == "LRS" for x in coverage) == 27, "LRS catalog must contain 27 rows", errors)
+    check(len(coverage) == 117, "coverage catalog must contain 117 rows", errors)
+    for x in coverage:
+        check(bool(x.get("name")) and valid_https(x.get("url")) and valid_https(x.get("source_url")), "coverage row has incomplete provenance", errors)
     event_urls = set()
     for i, event in enumerate(events):
         prefix = "events[" + str(i) + "]"

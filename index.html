@@ -26,7 +26,7 @@
   <div class="utility-bar">
     <div class="shell utility-inner">
       <span>OBSERVATORIO INDEPENDIENTE · CHILE</span>
-      <span id="editionLine">EDICIÓN DIGITAL · V0.5</span>
+      <span id="editionLine">EDICIÓN DIGITAL · V0.6</span>
     </div>
   </div>
   <header class="site-header">
@@ -42,6 +42,7 @@
         <a href="./farmaceutico/">Farmacéutico</a>
         <a href="./compras/">Compras</a>
         <a href="./acceso/">Acceso</a>
+        <a href="./cobertura/">Cobertura GES/LRS</a>
         <a href="./datos/">Datos</a>
         <a href="./instituciones/">Instituciones</a>
         <a href="./biblioteca/">Biblioteca</a>
@@ -186,9 +187,19 @@
         <a href="https://www.superdesalud.gob.cl/" target="_blank" rel="noopener noreferrer"><small>REGULACIÓN</small><strong>Superintendencia de Salud</strong><span>Derechos, fiscalización y estadísticas ↗</span></a>
       </div>
       <div class="policy-grid"><a class="policy-card" href="https://www.bcn.cl/leychile/navegar?idNorma=1213122" target="_blank" rel="noopener noreferrer"><small>LEY 21.743</small><strong>Enfermedades raras</strong><span>Marco legal y obligaciones institucionales; no implica cobertura automática de fármacos.</span><span class="text-link">Consultar fuente ↗</span></a><a class="policy-card" href="https://www.bcn.cl/leychile/navegar?idLey=20850" target="_blank" rel="noopener noreferrer"><small>LEY 20.850</small><strong>Protección financiera de alto costo</strong><span>Consulta el texto legal; la elegibilidad se determina según normativa y protocolos aplicables.</span><span class="text-link">Consultar fuente ↗</span></a></div>
+      <p><a class="button button-dark" href="./cobertura/">Explorar catálogo GES y Ley Ricarte Soto (117 registros) →</a></p>
       <div id="accessEvents" class="access-update" aria-live="polite"></div>
     </section>
 
+    <section class="section-rule" id="cobertura" aria-labelledby="coverage-title">
+      <div class="section-heading"><div><p class="eyebrow">CATÁLOGO DE COBERTURA</p><h2 id="coverage-title">GES y Ley Ricarte Soto</h2></div><span class="section-count" id="coverageCount" role="status">Cargando catálogo…</span></div>
+      <p class="section-deck">117 problemas de salud catalogados desde la Superintendencia de Salud. La existencia de una ficha no acredita elegibilidad individual, acceso efectivo ni cobertura de todos los fármacos. Consulte las prestaciones, indicaciones y protocolos oficiales aplicables.</p>
+      <div class="overview coverage-overview"><a href="./cobertura/?regime=GES"><strong>90</strong><span>Problemas GES</span></a><a href="./cobertura/?regime=LRS"><strong>27</strong><span>Problemas LRS</span></a><a href="./cobertura/"><strong>117</strong><span>Total de fichas</span></a><a href="https://diprece.minsal.cl/enfermedades-poco-frecuentes/" target="_blank" rel="noopener noreferrer"><strong>EPoF</strong><span>Marco oficial</span></a></div>
+      <div class="filter-row"><label for="coverageQuery" class="sr-only">Buscar condición o tratamiento</label><input type="search" id="coverageQuery" placeholder="Buscar enfermedad, código o fármaco…"><label for="coverageRegime" class="sr-only">Régimen</label><select id="coverageRegime"><option value="">Todos los regímenes</option><option value="GES">GES</option><option value="LRS">Ley Ricarte Soto</option></select><button type="button" class="button button-light" id="coverageReset">Limpiar</button><button type="button" class="button button-dark" id="coverageCsv">CSV</button><button type="button" class="button button-light" id="coverageJson">JSON</button></div>
+      <div id="coverageResults" class="coverage-grid" aria-live="polite" aria-busy="true"></div>
+      <div class="pagination" id="coveragePager"><button class="button button-light" id="coveragePrev" type="button">← Anterior</button><span id="coveragePage"></span><button class="button button-light" id="coverageNext" type="button">Siguiente →</button></div>
+      <p class="editorial-caption">Corte de extracción: 24-11-2026. GES: denominaciones abreviadas de las fichas de orientación, no transcripción del decreto. LRS: tratamientos referenciados por la Superintendencia; las fichas y protocolos determinan el alcance exacto. La lista GES de tratamientos es parcial.</p>
+    </section>
     <section class="section-rule" id="datos" aria-labelledby="datos-title">
       <div class="section-heading">
         <div><p class="eyebrow">07 / LABORATORIO DE DATOS</p><h2 id="datos-title">Cifras con fuente y perímetro</h2></div>
@@ -255,5 +266,6 @@
     </div>
   </footer>
   <script src="./assets/app.js" defer></script>
+  <script src="./assets/coverage.js" defer></script>
 </body>
 </html>

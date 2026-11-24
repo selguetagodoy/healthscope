@@ -48,3 +48,8 @@
 - Módulo normativo, fuentes directas, indicadores GES y nuevos hitos oficiales.
 - RSS ChileCompra con filtro sanitario; pendiente verificar su ejecución en CI.
 - Próxima entrega: ingestión de datos transaccionales, registro sanitario y presupuesto estructurado, con evidencia y control de cobertura.
+
+## Entrega V0.6 · 24-11-2026
+
+- Catálogo de cobertura con 117 registros, identificadores, enlaces oficiales y búsqueda de tratamientos referenciados.
+- Pendientes: importación completa del registro sanitario, compras por línea, presupuesto y listado oficial EPoF con código ORPHA.

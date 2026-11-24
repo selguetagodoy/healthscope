@@ -1,0 +1,1173 @@
+[
+  {
+    "id": "ges-1",
+    "regime": "GES",
+    "code": "1",
+    "name": "Insuficiencia renal crónica terminal",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/insuficiencia-renal-cronica-terminal-2/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-2",
+    "regime": "GES",
+    "code": "2",
+    "name": "Cardiopatías congénitas operables",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cardiopatias-congenitas-operables/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-3",
+    "regime": "GES",
+    "code": "3",
+    "name": "Cáncer cervicouterino",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-cervicouterino/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-4",
+    "regime": "GES",
+    "code": "4",
+    "name": "Alivio del dolor y cuidados paliativos por cáncer avanzado",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/alivio-del-dolor-y-cuidados-paliativos-por-cancer-avanzado/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-5",
+    "regime": "GES",
+    "code": "5",
+    "name": "Infarto al corazón",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/infarto-al-corazon/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-6",
+    "regime": "GES",
+    "code": "6",
+    "name": "Diabetes Mellitus tipo 1",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/diabetes-mellitus-tipo-1/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-7",
+    "regime": "GES",
+    "code": "7",
+    "name": "Diabetes mellitus tipo 2",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/diabetes-mellitus-tipo-2/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-8",
+    "regime": "GES",
+    "code": "8",
+    "name": "Cáncer de mama",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-de-mama/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-9",
+    "regime": "GES",
+    "code": "9",
+    "name": "Disrafias espinales",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/disrafias-espinales/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-10",
+    "regime": "GES",
+    "code": "10",
+    "name": "Tratamiento quirúrgico de escoliósis en personas menores de 25 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-quirurgico-de-escoliosis-en-personas-menores-de-25-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-11",
+    "regime": "GES",
+    "code": "11",
+    "name": "Tratamiento quirúrgico de cataratas",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-quirurgico-de-cataratas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-12",
+    "regime": "GES",
+    "code": "12",
+    "name": "Endoprótesis total de cadera en personas de 65 años y más con artrosis de cadera con limitación funcional severa",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/endoprotesis-total-de-cadera-en-personas-de-65-anos-y-mas-con-artrosis-de-cadera-con-limitacion-funcional-severa/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-13",
+    "regime": "GES",
+    "code": "13",
+    "name": "Fisura labiopalatina",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/fisura-labiopalatina/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-14",
+    "regime": "GES",
+    "code": "14",
+    "name": "Cáncer en personas menores de 15 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-en-personas-menores-de-15-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-15",
+    "regime": "GES",
+    "code": "15",
+    "name": "Esquizofrenia",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/esquizofrenia/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-16",
+    "regime": "GES",
+    "code": "16",
+    "name": "Cáncer de testículo en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-de-testiculo-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-17",
+    "regime": "GES",
+    "code": "17",
+    "name": "Linfomas en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/linfomas-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-18",
+    "regime": "GES",
+    "code": "18",
+    "name": "Síndrome de Inmunodeficiencia Adquirida (VIH/SIDA)",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/sindrome-de-inmunodeficiencia-adquirida-vih-sida/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-19",
+    "regime": "GES",
+    "code": "19",
+    "name": "Infección respiratoria aguda (IRA) de manejo ambulatorio en personas menores de 5 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/infeccion-respiratoria-aguda-ira-de-manejo-ambulatorio-en-personas-menores-de-5-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-20",
+    "regime": "GES",
+    "code": "20",
+    "name": "Neumonía adquirida en la comunidad de manejo ambulatorio en personas de 65 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/neumonia-adquirida-en-la-comunidad-de-manejo-ambulatorio-en-personas-de-65-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-21",
+    "regime": "GES",
+    "code": "21",
+    "name": "Hipertensión arterial primaria o esencial en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipertension-arterial-primaria-o-esencial-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-22",
+    "regime": "GES",
+    "code": "22",
+    "name": "Epilepsia no refractaria en personas desde 1 año y menores de 15 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/epilepsia-no-refractaria-en-personas-desde-1-ano-y-menores-de-15-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-23",
+    "regime": "GES",
+    "code": "23",
+    "name": "Salud oral integral para niños y niñas de 6 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/salud-oral-integral-para-ninos-y-ninas-de-6-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-24",
+    "regime": "GES",
+    "code": "24",
+    "name": "Prevención del parto prematuro",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/prevencion-del-parto-prematuro/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-25",
+    "regime": "GES",
+    "code": "25",
+    "name": "Trastornos de generación de impulsos y conducción en personas de 15 años y más, que requieren marcapaso",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/trastornos-de-generacion-de-impulsos-y-conduccion-en-personas-de-15-anos-y-mas-que-requieren-marcapaso/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-26",
+    "regime": "GES",
+    "code": "26",
+    "name": "Colecistectomía preventiva del cáncer de vesícula en personas de 35 a 49 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/colecistectomia-preventiva-del-cancer-de-vesicula-en-personas-de-35-a-49-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-27",
+    "regime": "GES",
+    "code": "27",
+    "name": "Cáncer gástrico",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-gastrico/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-28",
+    "regime": "GES",
+    "code": "28",
+    "name": "Cáncer de próstata en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-de-prostata-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-29",
+    "regime": "GES",
+    "code": "29",
+    "name": "Vicios de refracción en personas de 65 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/vicios-de-refraccion-en-personas-de-65-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-30",
+    "regime": "GES",
+    "code": "30",
+    "name": "Estrabismo en personas menores de 9 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/estrabismo-en-personas-menores-de-9-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-31",
+    "regime": "GES",
+    "code": "31",
+    "name": "Retinopatía diabética",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/retinopatia-diabetica/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-32",
+    "regime": "GES",
+    "code": "32",
+    "name": "Desprendimiento de retina regmatógeno no traumático",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/desprendimiento-de-retina-regmatogeno-no-traumatico/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-33",
+    "regime": "GES",
+    "code": "33",
+    "name": "Hemofilia",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hemofilia/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-34",
+    "regime": "GES",
+    "code": "34",
+    "name": "Depresión en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/depresion-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-35",
+    "regime": "GES",
+    "code": "35",
+    "name": "Tratamiento de la hiperplasia benigna de la próstata en personas sintomáticas",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-de-la-hiperplasia-benigna-de-la-prostata-en-personas-sintomaticas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-36",
+    "regime": "GES",
+    "code": "36",
+    "name": "Ayudas técnicas para personas de 65 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/ayudas-tecnicas-para-personas-de-65-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-37",
+    "regime": "GES",
+    "code": "37",
+    "name": "Ataque Cerebrovascular Isquémico en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/ataque-cerebrovascular-isquemico-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-38",
+    "regime": "GES",
+    "code": "38",
+    "name": "Enfermedad Pulmonar Obstructiva Crónica de tratamiento ambulatorio",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-pulmonar-obstructiva-cronica-de-tratamiento-ambulatorio/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-39",
+    "regime": "GES",
+    "code": "39",
+    "name": "Asma bronquial moderada y grave en personas menores de 15 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/asma-bronquial-moderada-y-grave-en-personas-menores-de-15-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-40",
+    "regime": "GES",
+    "code": "40",
+    "name": "Síndrome de Dificultad Respiratoria en el recién nacido/a",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/sindrome-de-dificultad-respiratoria-en-el-recien-nacido-a/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-41",
+    "regime": "GES",
+    "code": "41",
+    "name": "Tratamiento Médico en personas de 55 años y más con artrosis de cadera y/o rodilla, leve o moderada",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-medico-en-personas-de-55-anos-y-mas-con-artrosis-de-cadera-y-o-rodilla-leve-o-moderada/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-42",
+    "regime": "GES",
+    "code": "42",
+    "name": "Hemorragia Subaracnoidea secundaria a ruptura de Aneurismas cerebrales",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hemorragia-subaracnoidea-secundaria-a-ruptura-de-aneurismas-cerebrales/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-43",
+    "regime": "GES",
+    "code": "43",
+    "name": "Tumores Primarios del Sistema Nervioso Central en personas de 15 años o más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tumores-primarios-del-sistema-nervioso-central-en-personas-de-15-anos-o-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-44",
+    "regime": "GES",
+    "code": "44",
+    "name": "Tratamiento Quirúrgico de Hernia del Núcleo Pulposo Lumbar",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-quirurgico-de-hernia-del-nucleo-pulposo-lumbar/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-45",
+    "regime": "GES",
+    "code": "45",
+    "name": "Leucemia en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/leucemia-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-46",
+    "regime": "GES",
+    "code": "46",
+    "name": "Urgencia Odontológica Ambulatoria",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/urgencia-odontologica-ambulatoria/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-47",
+    "regime": "GES",
+    "code": "47",
+    "name": "Salud Oral Integral de personas de 60 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/salud-oral-integral-de-personas-de-60-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-48",
+    "regime": "GES",
+    "code": "48",
+    "name": "Politraumatizado Grave",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/politraumatizado-grave/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-49",
+    "regime": "GES",
+    "code": "49",
+    "name": "Traumatismo Cráneo Encefálico moderado o grave",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/traumatismo-craneo-encefalico-moderado-o-grave/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-50",
+    "regime": "GES",
+    "code": "50",
+    "name": "Trauma Ocular Grave",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/trauma-ocular-grave/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-51",
+    "regime": "GES",
+    "code": "51",
+    "name": "Fibrosis Quística",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/fibrosis-quistica/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": "Fibrosis quística; Trikafta / elexacaftor, tezacaftor e ivacaftor (consultar lineamientos y criterios del GES 2025–2028)",
+    "treatment_source": "https://diprece.minsal.cl/enfermedades-poco-frecuentes/"
+  },
+  {
+    "id": "ges-52",
+    "regime": "GES",
+    "code": "52",
+    "name": "Artritis Reumatoídea",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/artritis-reumatoidea/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-53",
+    "regime": "GES",
+    "code": "53",
+    "name": "Consumo perjudicial o dependencia de riesgo bajo a moderado de alcohol y drogas en personas menores de 20 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/consumo-perjudicial-o-dependencia-de-riesgo-bajo-a-moderado-de-alcohol-y-drogas-en-personas-menores-de-20-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-54",
+    "regime": "GES",
+    "code": "54",
+    "name": "Analgesia del parto",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/analgesia-del-parto/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-55",
+    "regime": "GES",
+    "code": "55",
+    "name": "Gran Quemado",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/gran-quemado/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-56",
+    "regime": "GES",
+    "code": "56",
+    "name": "Hipoacusia bilateral en personas de 65 años y más que requieren uso de audífono",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipoacusia-bilateral-en-personas-de-65-anos-y-mas-que-requieren-uso-de-audifono/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-57",
+    "regime": "GES",
+    "code": "57",
+    "name": "Retinopatía del prematuro",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/retinopatia-del-prematuro/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-58",
+    "regime": "GES",
+    "code": "58",
+    "name": "Displasia broncopulmonar del prematuro/a",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/displasia-broncopulmonar-del-prematuro-a/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-59",
+    "regime": "GES",
+    "code": "59",
+    "name": "Hipoacusia neurosensorial bilateral del prematuro/a",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipoacusia-neurosensorial-bilateral-del-prematuro-a/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-60",
+    "regime": "GES",
+    "code": "60",
+    "name": "Epilepsia no refractaria en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/epilepsia-no-refractaria-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-61",
+    "regime": "GES",
+    "code": "61",
+    "name": "Asma bronquial en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/asma-bronquial-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-62",
+    "regime": "GES",
+    "code": "62",
+    "name": "Enfermedad de Parkinson",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-parkinson/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-63",
+    "regime": "GES",
+    "code": "63",
+    "name": "Artritis idiopática juvenil",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/artritis-idiopatica-juvenil/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-64",
+    "regime": "GES",
+    "code": "64",
+    "name": "Prevención secundaria enfermedad renal crónica terminal",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/prevencion-secundaria-enfermedad-renal-cronica-terminal/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-65",
+    "regime": "GES",
+    "code": "65",
+    "name": "Displasia luxante de caderas",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/displasia-luxante-de-caderas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-66",
+    "regime": "GES",
+    "code": "66",
+    "name": "Salud oral integral de la persona gestante",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/salud-oral-integral-de-la-persona-gestante/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-67",
+    "regime": "GES",
+    "code": "67",
+    "name": "Esclerosis múltiple remitente recurrente",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/esclerosis-multiple-remitente-recurrente/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-68",
+    "regime": "GES",
+    "code": "68",
+    "name": "Hepatitis crónica por Virus Hepatitis B",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hepatitis-cronica-por-virus-hepatitis-b/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-69",
+    "regime": "GES",
+    "code": "69",
+    "name": "Hepatitis crónica por Virus Hepatitis C",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hepatitis-cronica-por-virus-hepatitis-c/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-70",
+    "regime": "GES",
+    "code": "70",
+    "name": "Cáncer Colorectal en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-colorectal-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-71",
+    "regime": "GES",
+    "code": "71",
+    "name": "Cáncer de Ovario Epitelial",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-de-ovario-epitelial/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-72",
+    "regime": "GES",
+    "code": "72",
+    "name": "Cáncer Vesical en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-vesical-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-73",
+    "regime": "GES",
+    "code": "73",
+    "name": "Osteosarcoma en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/osteosarcoma-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-74",
+    "regime": "GES",
+    "code": "74",
+    "name": "Tratamiento Quirúrgico de lesiones crónicas de la válvula aórtica en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-quirurgico-de-lesiones-cronicas-de-la-valvula-aortica-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-75",
+    "regime": "GES",
+    "code": "75",
+    "name": "Trastorno Bipolar en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/trastorno-bipolar-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-76",
+    "regime": "GES",
+    "code": "76",
+    "name": "Hipotiroidismo en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipotiroidismo-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-77",
+    "regime": "GES",
+    "code": "77",
+    "name": "Hipoacusia moderada, severa y profunda en personas menores de 4 años",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipoacusia-moderada-severa-y-profunda-en-personas-menores-de-4-anos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-78",
+    "regime": "GES",
+    "code": "78",
+    "name": "Lupus Eritematoso Sistémico",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/lupus-eritematoso-sistemico/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-79",
+    "regime": "GES",
+    "code": "79",
+    "name": "Tratamiento Quirúrgico de lesiones crónicas de las válvulas mitral y tricúspide en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-quirurgico-de-lesiones-cronicas-de-las-valvulas-mitral-y-tricuspide-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-80",
+    "regime": "GES",
+    "code": "80",
+    "name": "Tratamiento de erradicación del Helicobacter Pylori",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-de-erradicacion-del-helicobacter-pylori/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-81",
+    "regime": "GES",
+    "code": "81",
+    "name": "Cáncer de pulmón en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-de-pulmon-en-personas-de-15-anos-y-mas-2/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-82",
+    "regime": "GES",
+    "code": "82",
+    "name": "Cáncer de Tiroides en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-de-tiroides-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-83",
+    "regime": "GES",
+    "code": "83",
+    "name": "Cáncer Renal en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-renal-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-84",
+    "regime": "GES",
+    "code": "84",
+    "name": "Mieloma Múltiple en personas de 15 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/mieloma-multiple-en-personas-de-15-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-85",
+    "regime": "GES",
+    "code": "85",
+    "name": "Enfermedad de Alzheimer y otras demencias",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-alzheimer-y-otras-demencias-2/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-86",
+    "regime": "GES",
+    "code": "86",
+    "name": "Atención integral de salud en agresión sexual aguda",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/atencion-integral-de-salud-en-agresion-sexual-aguda/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-87",
+    "regime": "GES",
+    "code": "87",
+    "name": "Rehabilitación SARS COV-2",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/rehabilitacion-sars-cov-2/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-88",
+    "regime": "GES",
+    "code": "88",
+    "name": "Tratamiento farmacológico tras alta hospitalaria por cirrosis hepática",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-farmacologico-tras-alta-hospitalaria-por-cirrosis-hepatica/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-89",
+    "regime": "GES",
+    "code": "89",
+    "name": "Tratamiento hospitalario para personas menores de 15 años con depresión grave refractaria o psicótica con riesgo suicida",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-hospitalario-para-personas-menores-de-15-anos-con-depresion-grave-refractaria-o-psicotica-con-riesgo-suicida/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "ges-90",
+    "regime": "GES",
+    "code": "90",
+    "name": "Cesación del consumo de tabaco en personas de 25 años y más",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cesacion-del-consumo-de-tabaco-en-personas-de-25-anos-y-mas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/",
+    "checked_at": "2026-11-24",
+    "treatments": ""
+  },
+  {
+    "id": "lrs-1",
+    "regime": "LRS",
+    "code": "",
+    "name": "Angiodema Hereditario",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/angiodema-hereditario/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Inhibidor de C1 esterasa"
+  },
+  {
+    "id": "lrs-2",
+    "regime": "LRS",
+    "code": "",
+    "name": "Artritis Psoriásica moderada o grave refractaria a tratamiento habitual",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/artritis-psoriasica-moderada-o-grave-refractaria-a-tratamiento-habitual/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Golimumab; etanercept; adalimumab; secukinumab"
+  },
+  {
+    "id": "lrs-3",
+    "regime": "LRS",
+    "code": "",
+    "name": "Artritis Reumatoide activa refractaria a tratamiento habitual",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/artritis-reumatoide-activa-refractaria-a-tratamiento-habitual/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Etanercept; abatacept; adalimumab; golimumab; tocilizumab; tofacitinib; rituximab"
+  },
+  {
+    "id": "lrs-4",
+    "regime": "LRS",
+    "code": "",
+    "name": "Ayudas técnicas para esclerosis lateral amiotrófica moderada o severa",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/ayudas-tecnicas-para-esclerosis-lateral-amiotrofica-moderada-o-severa/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Ayudas técnicas y soporte vital"
+  },
+  {
+    "id": "lrs-5",
+    "regime": "LRS",
+    "code": "",
+    "name": "Cáncer de Mama HER2+",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-de-mama-her2/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Trastuzumab"
+  },
+  {
+    "id": "lrs-6",
+    "regime": "LRS",
+    "code": "",
+    "name": "Diabetes tipo 1 inestable severa",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/diabetes-tipo-1-inestable-severa/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Insulina mediante bomba"
+  },
+  {
+    "id": "lrs-7",
+    "regime": "LRS",
+    "code": "",
+    "name": "Dispositivos de uso médico para epidermólisis bullosa distrófica o juntural",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/dispositivos-de-uso-medico-para-epidermolisis-bullosa-distrofica-o-juntural/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Dispositivos de curación"
+  },
+  {
+    "id": "lrs-8",
+    "regime": "LRS",
+    "code": "",
+    "name": "Distonía Generalizada",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/distonia-generalizada/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Estimulación cerebral profunda"
+  },
+  {
+    "id": "lrs-9",
+    "regime": "LRS",
+    "code": "",
+    "name": "Enfermedad de Crohn grave refractaria a tratamiento habitual",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-crohn-grave-refractaria-a-tratamiento-habitual/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Infliximab; adalimumab"
+  },
+  {
+    "id": "lrs-10",
+    "regime": "LRS",
+    "code": "",
+    "name": "Enfermedad de Fabry",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-fabry/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Agalsidasa"
+  },
+  {
+    "id": "lrs-11",
+    "regime": "LRS",
+    "code": "",
+    "name": "Enfermedad de Gaucher",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-gaucher/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Taliglucerasa; imiglucerasa"
+  },
+  {
+    "id": "lrs-12",
+    "regime": "LRS",
+    "code": "",
+    "name": "Enfermedad progresiva de Tumores Neuroendocrinos Pancreáticos",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-progresiva-de-tumores-neuroendocrinos-pancreaticos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Sunitinib; everolimus"
+  },
+  {
+    "id": "lrs-13",
+    "regime": "LRS",
+    "code": "",
+    "name": "Esclerosis Múltiple recurrente remitente con falla a tratamiento con inmunomoduladores y Esclerosis Múltiple primaria progresiva",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/esclerosis-multiple-recurrente-remitente-con-falla-a-tratamiento-con-inmunomoduladores-y-esclerosis-multiple-primaria-progresiva/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Fingolimod; natalizumab; alemtuzumab; cladribina; ocrelizumab"
+  },
+  {
+    "id": "lrs-14",
+    "regime": "LRS",
+    "code": "",
+    "name": "Hipertensión Arterial Pulmonar Grupo I",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipertension-arterial-pulmonar-grupo-i/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Iloprost inhalatorio; ambrisentán; bosentán"
+  },
+  {
+    "id": "lrs-15",
+    "regime": "LRS",
+    "code": "",
+    "name": "Hipoacusia sensorioneural bilateral severa o profunda postlocutiva",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipoacusia-sensorioneural-bilateral-severa-o-profunda-postlocutiva/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Implante coclear unilateral"
+  },
+  {
+    "id": "lrs-16",
+    "regime": "LRS",
+    "code": "",
+    "name": "Mielofibrosis primaria o secundaria a otras neoplasias mieloproliferativas,",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/mielofibrosis-primaria-o-secundaria-a-otras-neoplasias-mieloproliferativas/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Ruxolitinib"
+  },
+  {
+    "id": "lrs-17",
+    "regime": "LRS",
+    "code": "",
+    "name": "Mucopolisacaridosis Tipo I",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/mucopolisacaridosis-tipo-i/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Laronidasa"
+  },
+  {
+    "id": "lrs-18",
+    "regime": "LRS",
+    "code": "",
+    "name": "Mucopolisacaridosis Tipo II",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/mucopolisacaridosis-tipo-ii/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Idursulfasa"
+  },
+  {
+    "id": "lrs-19",
+    "regime": "LRS",
+    "code": "",
+    "name": "Mucopolisacaridosis Tipo VI",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/mucopolisacaridosis-tipo-vi/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Galsulfasa"
+  },
+  {
+    "id": "lrs-20",
+    "regime": "LRS",
+    "code": "",
+    "name": "Nutrición Enteral domiciliaria total o parcial, para personas cuya condición de salud imposibilita la alimentación por vía oral",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/nutricion-enteral-domiciliaria-total-o-parcial-para-personas-cuya-condicion-de-salud-imposibilita-la-alimentacion-por-via-oral/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Nutrición enteral domiciliaria"
+  },
+  {
+    "id": "lrs-21",
+    "regime": "LRS",
+    "code": "",
+    "name": "Profilaxis del virus respiratorio sincicial para prematuros menores de 32 semanas y lactantes menores de 1 año con cardiopatías congénitas hemodinámicamente significativas no resueltas o cardiopatías cianóticas secundarias",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/profilaxis-del-virus-respiratorio-sincicial-para-prematuros-menores-de-32-semanas-y-lactantes-menores-de-1-ano-con-cardiopatias-congenitas-hemodinamicamente-significativas-no-resueltas-o-cardiopatias/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Palivizumab"
+  },
+  {
+    "id": "lrs-22",
+    "regime": "LRS",
+    "code": "",
+    "name": "Tirosinemia Tipo I",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tirosinemia-tipo-i/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Nitisinona"
+  },
+  {
+    "id": "lrs-23",
+    "regime": "LRS",
+    "code": "",
+    "name": "Tratamiento Colitis Ulcerosa moderada o grave, refractaria al tratamiento de primera línea",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-colitis-ulcerosa-moderada-o-grave-refractaria-al-tratamiento-de-primera-linea/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Golimumab; adalimumab; infliximab"
+  },
+  {
+    "id": "lrs-24",
+    "regime": "LRS",
+    "code": "",
+    "name": "Tratamiento de Inmunodeficiencias Primarias",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-de-inmunodeficiencias-primarias/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Inmunoglobulina G intravenosa o subcutánea"
+  },
+  {
+    "id": "lrs-25",
+    "regime": "LRS",
+    "code": "",
+    "name": "Tratamiento Lupus Eritematoso Sistémico con compromiso cutáneo o articular refractario a tratamiento habitual",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-lupus-eritematoso-sistemico-con-compromiso-cutaneo-o-articular-refractario-a-tratamiento-habitual/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Belimumab"
+  },
+  {
+    "id": "lrs-26",
+    "regime": "LRS",
+    "code": "",
+    "name": "Tratamiento para la Corea en personas con Enfermedad de Huntington",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-para-la-corea-en-personas-con-enfermedad-de-huntington/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Tetrabenazina"
+  },
+  {
+    "id": "lrs-27",
+    "regime": "LRS",
+    "code": "",
+    "name": "Tumores del Estroma Gastrointestinal no resecables o Metástasicos",
+    "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tumores-del-estroma-gastrointestinal-no-resecables-o-metastasicos/",
+    "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
+    "checked_at": "2026-11-24",
+    "treatments": "Imatinib; sunitinib"
+  }
+]
