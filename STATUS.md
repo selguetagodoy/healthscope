@@ -19,21 +19,21 @@
 - Alertas farmacéuticas seleccionadas, acceso y cobertura, compras, indicadores, instituciones, documentos y directorio de fuentes.
 - Seguimiento automatizado configurado para cuatro fuentes. En el último corte respondieron correctamente MINSAL, Cenabast y DIPRECE; el ISP registró error de verificación TLS en el runner de GitHub.
 
-## Inventario inicial
+## Inventario actualizado
 
-- Novedades verificadas: 10.
+- Novedades verificadas: 16.
 - Fuentes en el directorio: 33.
 - Fuentes con consulta automática configurada: 4.
 - Alertas farmacéuticas seleccionadas: 4.
 - Indicadores con fuente: 4.
 - Instituciones: 28.
 - Documentos y repositorios: 12.
-- Capturas pendientes de revisión: 17; el monitor realizó su primer corte el 24-11-2026 a las 14:25 (America/Santiago).
+- Capturas pendientes de revisión: 11; seis registros fueron verificados y agregados a la agenda. El monitor realizó su primer corte el 24-11-2026 a las 14:25 (America/Santiago).
 
 ## Validación
 
 - 4 pruebas unitarias aprobadas.
-- Validador de datos aprobado con los conteos anteriores.
+- Validador de datos y pruebas CI de esta actualización: resultado por confirmar.
 - Sintaxis JavaScript aprobada con `node --check`.
 - Build estático local generado en `dist/`.
 - Auditoría estructural HTML/JS aprobada: anclas internas, referencias DOM, etiquetas ARIA, assets locales y breakpoint móvil.
@@ -44,5 +44,5 @@
 1. En Settings → Pages, seleccionar **GitHub Actions** como fuente, siguiendo la [guía oficial de GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 2. Reejecutar el workflow de publicación y comprobar la URL HTTPS sin autenticación.
 3. Revisar la cadena TLS del endpoint ISP con una alternativa oficial que conserve la verificación de certificados.
-4. Revisar y clasificar las 17 capturas del primer corte sin publicarlas automáticamente como novedades verificadas.
+4. Revisar y clasificar las 11 capturas restantes del primer corte sin publicarlas automáticamente como novedades verificadas.
 5. Revisar el sitio publicado en escritorio, tablet y teléfono; documentar consola, enlaces y accesibilidad.

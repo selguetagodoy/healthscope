@@ -9,7 +9,11 @@
     "summary": "El instituto habilitó una base descargable y de actualización periódica sobre sospechas de reacciones adversas a medicamentos y eventos supuestamente atribuibles a vacunas. La ficha técnica informa registros desde 2014 y un periodo disponible hasta octubre de 2026.",
     "implications": "El conjunto permite investigación secundaria en farmacovigilancia; su uso requiere considerar el carácter de notificación de sospecha y las notas metodológicas del ISP.",
     "medication": "Farmacovigilancia",
-    "topics": ["RAM", "ESAVI", "datos abiertos"],
+    "topics": [
+      "RAM",
+      "ESAVI",
+      "datos abiertos"
+    ],
     "status": "Verificado",
     "source_type": "Base de datos pública",
     "url": "https://www.ispch.gob.cl/noticia/el-isp-disponibiliza-la-base-de-datos-de-reportes-de-sospechas-de-reacciones-adversas-a-medicamentos-ram-y-eventos-supuestamente-atribuibles-a-vacunacion-e-inmunizacion-esavi-registrados-desde-201/"
@@ -24,7 +28,11 @@
     "summary": "En un comunicado del 22 de noviembre, el Ministerio señaló que continuará revisando orientaciones técnicas y circulares relacionadas con hormonización cruzada, conforme al sentido de una indicación presentada por el Ejecutivo.",
     "implications": "La comunicación describe un proceso de revisión ministerial; la publicación no equivale por sí misma a una nueva norma ni informa la entrada en vigencia de cambios clínicos.",
     "medication": "",
-    "topics": ["orientaciones técnicas", "circulares", "MINSAL"],
+    "topics": [
+      "orientaciones técnicas",
+      "circulares",
+      "MINSAL"
+    ],
     "status": "Verificado",
     "source_type": "Comunicado ministerial",
     "url": "https://www.minsal.cl/comunicado-de-prensa-22-de-noviembre-2026/"
@@ -39,10 +47,18 @@
     "summary": "El Ministerio informó 602 trasplantes realizados en el año hasta la fecha de publicación y señaló que corresponde al mayor registro desde 2000.",
     "implications": "La cifra es un reporte institucional acumulado. La nota original entrega el contexto y el desglose asociado a la actividad de trasplantes.",
     "medication": "",
-    "topics": ["trasplantes", "donación", "actividad sanitaria"],
+    "topics": [
+      "trasplantes",
+      "donación",
+      "actividad sanitaria"
+    ],
     "status": "Verificado",
     "source_type": "Estadística institucional",
-    "metric": {"value": "602", "unit": "trasplantes", "qualification": "Acumulado informado por MINSAL"},
+    "metric": {
+      "value": "602",
+      "unit": "trasplantes",
+      "qualification": "Acumulado informado por MINSAL"
+    },
     "url": "https://www.minsal.cl/minsal-reporta-602-trasplantes-en-lo-que-va-del-ano-el-mayor-registro-desde-el-2000/"
   },
   {
@@ -55,10 +71,18 @@
     "summary": "La Central reportó 115 hospitales conectados a la plataforma de interoperabilidad. La institución estimó que una mejor gestión de fármacos e insumos podría optimizar hasta CLP 35.000 millones en 24 meses.",
     "implications": "El monto corresponde a una estimación institucional de optimización potencial y no a ahorros ejecutados o verificados.",
     "medication": "Medicamentos e insumos",
-    "topics": ["abastecimiento", "hospitales", "interoperabilidad"],
+    "topics": [
+      "abastecimiento",
+      "hospitales",
+      "interoperabilidad"
+    ],
     "status": "Verificado",
     "source_type": "Anuncio institucional",
-    "metric": {"value": "Hasta CLP 35.000 millones", "unit": "estimación a 24 meses", "qualification": "Proyección comunicada por Cenabast"},
+    "metric": {
+      "value": "Hasta CLP 35.000 millones",
+      "unit": "estimación a 24 meses",
+      "qualification": "Proyección comunicada por Cenabast"
+    },
     "url": "https://www.cenabast.cl/sistema-de-abastecimiento-unico-de-medicamentos-de-cenabast-permitira-optimizar-recursos-en-35-mil-millones/"
   },
   {
@@ -71,7 +95,11 @@
     "summary": "El proyecto propone modificar la distribución del fondo de protección financiera de la Ley Ricarte Soto. La ficha de la sesión del 24 de noviembre lo incorpora como punto 1; el registro enlazado permite revisar el desarrollo parlamentario consignado.",
     "implications": "La inclusión en tabla acredita que el asunto estaba citado para la sesión. Esta referencia no acredita una aprobación ni un cambio normativo.",
     "medication": "Ley Ricarte Soto",
-    "topics": ["Boletín 15.047-11", "Ley 20.850", "Comisión de Salud"],
+    "topics": [
+      "Boletín 15.047-11",
+      "Ley 20.850",
+      "Comisión de Salud"
+    ],
     "status": "Verificado",
     "project_status": "Incluido en tabla; resultado sustantivo no atribuido en este registro",
     "source_type": "Sesión parlamentaria",
@@ -87,7 +115,11 @@
     "summary": "El ISP informó que instruirá actualizar los folletos dirigidos a pacientes y profesionales para medicamentos con agonistas del receptor GLP-1, a raíz del riesgo de neuropatía óptica isquémica anterior no arterítica.",
     "implications": "La autoridad comunicó una medida de actualización de información de seguridad. La nota oficial describe el alcance y la evidencia considerada.",
     "medication": "Agonistas del receptor GLP-1",
-    "topics": ["farmacovigilancia", "seguridad de medicamentos", "NOIANA"],
+    "topics": [
+      "farmacovigilancia",
+      "seguridad de medicamentos",
+      "NOIANA"
+    ],
     "status": "Verificado",
     "source_type": "Nota de farmacovigilancia",
     "url": "https://www.ispch.gob.cl/noticia/isp-publica-nota-de-farmacovigilancia-sobre-agonistas-del-receptor-de-glp-1-por-riesgo-de-neuropatia-optica-isquemica-anterior-no-arteritica/"
@@ -102,10 +134,18 @@
     "summary": "MINSAL anunció que las 100 comunas que tenían APS Universal se sumarán a la estrategia de pesquisa en consultorios y CESFAM. La ministra indicó que 128 comunas tendrán disponibilidad del examen de VPH en 2027; el plan incorpora una modalidad de autotest.",
     "implications": "La nota describe una expansión progresiva de pesquisa y disponibilidad del examen. El anuncio no acredita por sí solo el inicio operativo en cada comuna.",
     "medication": "",
-    "topics": ["cáncer cervicouterino", "atención primaria", "detección precoz"],
+    "topics": [
+      "cáncer cervicouterino",
+      "atención primaria",
+      "detección precoz"
+    ],
     "status": "Verificado",
     "source_type": "Anuncio ministerial",
-    "metric": {"value": "100", "unit": "comunas", "qualification": "Cobertura anunciada de la estrategia"},
+    "metric": {
+      "value": "100",
+      "unit": "comunas",
+      "qualification": "Cobertura anunciada de la estrategia"
+    },
     "url": "https://www.minsal.cl/ministerio-de-salud-amplia-a-100-comunas-la-estrategia-de-deteccion-precoz-del-cancer-cervicouterino-en-la-aps/"
   },
   {
@@ -118,7 +158,11 @@
     "summary": "La alerta del ISP del 16 de noviembre se refiere a un producto ofrecido como Darzalex 400 mg / 20 mL y clasificado por la autoridad en la categoría de falsificados o sin registro sanitario.",
     "implications": "El aviso de seguridad identifica el producto objeto de la alerta. Consulta la publicación del ISP para revisar los detalles y las recomendaciones oficiales.",
     "medication": "Producto comercializado como Darzalex",
-    "topics": ["alerta sanitaria", "producto sin registro", "daratumumab"],
+    "topics": [
+      "alerta sanitaria",
+      "producto sin registro",
+      "daratumumab"
+    ],
     "status": "Verificado",
     "source_type": "Alerta sanitaria",
     "url": "https://www.ispch.gob.cl/alerta/alerta-de-productos-farmaceuticos-sin-registro-falsificados-alerta-a-la-comunidad-sobre-el-producto-comercializado-como-darzalex-400-mg-20-ml/"
@@ -133,7 +177,11 @@
     "summary": "La alerta publicada el 13 de noviembre se refiere a una solución inyectable de ondansetrón 8 mg / 4 mL de Vitafarma S.A. Los detalles del retiro se encuentran en el documento del ISP.",
     "implications": "El registro identifica el producto y remite a la alerta primaria para confirmar lotes, alcance y motivo del retiro.",
     "medication": "Ondansetrón",
-    "topics": ["retiro del mercado", "alerta 36/26", "Vitafarma"],
+    "topics": [
+      "retiro del mercado",
+      "alerta 36/26",
+      "Vitafarma"
+    ],
     "status": "Verificado",
     "source_type": "Alerta de retiro del mercado",
     "url": "https://www.ispch.gob.cl/alerta/alerta-de-retiro-del-mercado-n36-26-del-producto-farmaceutico-ondansetron-solucion-inyectable-8mg-4-ml-de-vitafarma-s-a/"
@@ -148,9 +196,133 @@
     "summary": "El ISP publicó la alerta N.º 34/26 para cefazolina polvo para solución inyectable 1 g. La nota informativa atribuye la medida a la notificación del titular por la presencia de un cuerpo extraño en una unidad del producto.",
     "implications": "La alerta se refiere al producto y lote señalados en la fuente; el alcance debe consultarse en la ficha oficial y su nota asociada.",
     "medication": "Cefazolina",
-    "topics": ["retiro del mercado", "alerta 34/26", "Difem"],
+    "topics": [
+      "retiro del mercado",
+      "alerta 34/26",
+      "Difem"
+    ],
     "status": "Verificado",
     "source_type": "Alerta de retiro del mercado",
     "url": "https://www.ispch.gob.cl/alerta/alerta-de-retiro-del-mercado-n34-26-del-producto-farmaceutico-cefazolina-polvo-para-solucion-inyectable-1-g-de-difem-laboratorios-s-a/"
+  },
+  {
+    "id": "minsal-campana-vapeadores-adolescentes-2026-11-13",
+    "date": "2026-11-13",
+    "published": "2026-11-13",
+    "category": "actualidad",
+    "authority": "Ministerio de Salud",
+    "title": "MINSAL lanza una campaña preventiva ante el consumo adolescente de vapeadores",
+    "summary": "La campaña, presentada el 13 de noviembre y programada por un mes, apunta especialmente a adolescentes de 12 a 14 años y también a jóvenes de 18 a 20 años, madres, padres y cuidadores. MINSAL citó la EMTJ 2024: uno de cada tres estudiantes de 13 a 15 años había probado vapeadores con nicotina y 15% reportó consumo durante el último mes.",
+    "implications": "El anuncio instala la prevención del vapeo adolescente como prioridad de salud pública. Las cifras citadas corresponden a la EMTJ 2024; la publicación informa una campaña preventiva, no una nueva medida regulatoria.",
+    "medication": "",
+    "topics": [
+      "adolescentes",
+      "vapeo",
+      "prevención",
+      "EMTJ 2024"
+    ],
+    "status": "Verificado",
+    "source_type": "Campaña ministerial",
+    "url": "https://www.minsal.cl/pa-que-fumas-nueva-campana-ministerio-de-salud-alerta-el-dano-del-tabaco-y-vapeadores-en-adolescentes"
+  },
+  {
+    "id": "diprece-encavi-salud-bucal-2026-10-29",
+    "date": "2026-10-29",
+    "published": "2026-10-29",
+    "category": "datos",
+    "authority": "DIPRECE y Departamento de Epidemiología del MINSAL",
+    "title": "DIPRECE presenta resultados de salud bucal de la ENCAVI 2023-2024",
+    "summary": "Los resultados presentados el 20 de octubre muestran que el alto impacto de la salud bucal en la calidad de vida, medido por OHIP, bajó de 12,5% en 2015-2016 a 9,0% en 2023-2024. La encuesta también reportó que 13% de las personas de 15 años y más cumple simultáneamente las recomendaciones de cepillado con pasta dental dos veces al día y uso diario de hilo dental.",
+    "implications": "Los datos ofrecen una referencia nacional sobre salud bucal y desigualdades por edad, educación, ingresos y territorio. Corresponden a resultados de encuesta y no a cambios de cobertura o prestaciones.",
+    "medication": "",
+    "topics": [
+      "ENCAVI 2023-2024",
+      "salud bucal",
+      "desigualdades",
+      "OHIP"
+    ],
+    "status": "Verificado",
+    "source_type": "Resultados de encuesta nacional",
+    "url": "https://diprece.minsal.cl/webinar-salud-bucal-en-chile-encavi-2023-2024"
+  },
+  {
+    "id": "cenabast-ges-coquimbo-tolterodina-2026-10-19",
+    "date": "2026-10-19",
+    "published": "2026-10-19",
+    "category": "acceso",
+    "authority": "Cenabast y Hospital San Pablo de Coquimbo",
+    "title": "Cenabast y Hospital de Coquimbo preparan un piloto para retirar tolterodina GES en farmacias Salcobrand",
+    "summary": "El convenio contempla que 100 pacientes de urología y ginecología retiren su tratamiento GES habitual con tolterodina 2 mg en tres locales Salcobrand de Coquimbo. Al anunciarse, el proyecto seguía en una fase de integración tecnológica y operativa; la entrega comenzaría una vez implementado el modelo.",
+    "implications": "El piloto busca acercar un tratamiento GES y reducir traslados a la farmacia hospitalaria. La firma del convenio no acreditaba que el servicio ya estuviera disponible para las pacientes.",
+    "medication": "Tolterodina 2 mg",
+    "topics": [
+      "GES",
+      "acceso",
+      "dispensación",
+      "Coquimbo"
+    ],
+    "status": "Verificado",
+    "source_type": "Convenio para piloto",
+    "url": "https://www.cenabast.cl/cenabast-hospital-de-coquimbo-y-salcobrand-firman-convenio-para-acercar-medicamentos-ges-gratuitos-a-pacientes-de-la-comuna"
+  },
+  {
+    "id": "cenabast-ley-cenabast-ahumada-2026-10-07",
+    "date": "2026-10-07",
+    "published": "2026-10-07",
+    "category": "acceso",
+    "authority": "Cenabast y Ministerio de Salud",
+    "title": "421 sucursales de Farmacias Ahumada se incorporan a la Ley Cenabast",
+    "summary": "Cenabast informó la adhesión de 421 locales de Farmacias Ahumada, que elevó a 1.703 el total de farmacias adheridas. La primera etapa consideró 26 medicamentos y la institución comunicó un ahorro promedio de 53% frente a los mismos productos en farmacias no adheridas.",
+    "implications": "La ampliación extiende la red de venta de medicamentos con precios regulados y puede reducir el gasto de bolsillo. El ahorro promedio y el catálogo corresponden a cifras comunicadas por Cenabast; disponibilidad y ahorro varían por producto y local.",
+    "medication": "",
+    "topics": [
+      "Ley Cenabast",
+      "precios",
+      "farmacias",
+      "medicamentos"
+    ],
+    "status": "Verificado",
+    "source_type": "Ampliación de red de dispensación",
+    "url": "https://www.cenabast.cl/421-locales-de-farmacias-ahumada-se-adhieren-a-la-ley-cenabast-para-fortalecer-la-cobertura-de-remedios-mas-baratos"
+  },
+  {
+    "id": "cenabast-barros-luco-yapp-2026-09-24",
+    "date": "2026-09-24",
+    "published": "2026-09-24",
+    "category": "acceso",
+    "authority": "Cenabast, Hospital Barros Luco Trudeau y Yapp",
+    "title": "Cenabast y el Hospital Barros Luco inician retiro gratuito de tratamientos en farmacias",
+    "summary": "El piloto comenzó en septiembre y contempla más de 1.500 pacientes con cáncer de mama, hiperplasia benigna de próstata, EPOC y asma de seis comunas del sur de Santiago. Los pacientes reciben aviso para retirar sus medicamentos sin costo en una farmacia adherida a la Ley Cenabast.",
+    "implications": "El modelo prueba un canal de dispensación fuera de la farmacia hospitalaria, con supervisión clínica del hospital y trazabilidad. La cobertura descrita corresponde a la fase inicial del piloto, no a una política nacional.",
+    "medication": "",
+    "topics": [
+      "acceso",
+      "dispensación",
+      "Yapp",
+      "Hospital Barros Luco"
+    ],
+    "status": "Verificado",
+    "source_type": "Inicio de piloto de acceso",
+    "url": "https://www.cenabast.cl/cenabast-hospital-barros-luco-trudeau-y-yapp-inician-piloto-para-el-retiro-de-medicamentos-gratuitos-en-farmacias-privadas"
+  },
+  {
+    "id": "cenabast-barros-luco-despacho-domicilio-2026-08-13",
+    "date": "2026-08-13",
+    "published": "2026-08-13",
+    "category": "acceso",
+    "authority": "Cenabast y Hospital Barros Luco Trudeau",
+    "title": "Cenabast reporta un piloto de despacho domiciliario para pacientes del Hospital Barros Luco",
+    "summary": "En una nota del 13 de agosto, Cenabast informó que 90 pacientes con cáncer de mama y EPOC de Paine, Calera de Tango y Buin recibían sus tratamientos en el domicilio mediante un piloto junto al Hospital Barros Luco Trudeau y CorreosChile.",
+    "implications": "La modalidad reduce traslados para los pacientes incluidos en el piloto. El dato de 90 beneficiarios describe la situación comunicada en agosto y no acredita una expansión posterior del programa.",
+    "medication": "",
+    "topics": [
+      "acceso",
+      "despacho domiciliario",
+      "Cenabast",
+      "Hospital Barros Luco"
+    ],
+    "status": "Verificado",
+    "source_type": "Piloto de dispensación domiciliaria",
+    "url": "https://www.cenabast.cl/pacientes-del-hospital-barros-luco-reciben-medicamentos-en-sus-hogares-gracias-a-piloto-de-cenabast"
   }
 ]
