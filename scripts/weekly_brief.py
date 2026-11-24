@@ -117,7 +117,7 @@ def vote_rows(raw,today):
     root=ET.fromstring(raw)
     tag=lambda node:node.tag.rsplit("}",1)[-1]
     if tag(root)!="VotacionesColeccion":raise ValueError("Unexpected official vote response")
-    result=[];scanned=0
+    result=[];scanned=0;dates=[];week_count=0;budget_context=0
     for v in root:
         if tag(v)!="Votacion":continue
         scanned+=1
@@ -126,10 +126,15 @@ def vote_rows(raw,today):
             x=fields.get(name)
             return " ".join(x.itertext()).strip() if x is not None else ""
         when=val("Fecha")[:10];ident=val("Id");title=val("Descripcion")
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}",when):dates.append(when)
         if not ident.isdigit() or not (today-timedelta(days=6)).isoformat()<=when<=today.isoformat():continue
+        week_count+=1
         t=fold(title)
-        if not relevant(title) and not re.search(r"\bpart(?:ida)?\.?\s*16\b|\b18702-05\b.*\bsalud\b",t):continue
-        if "presupuesto" in t and not re.search(r"\bsalud\b|\bpart(?:ida)?\.?\s*16\b|ricarte soto|fonasa|medicament|farmac|cenabast|\bges\b",t):continue
+        budget=bool(re.search(r"18\.?702\s*-\s*05|presupuestos?.{0,100}2027|2027.{0,100}presupuestos?",t))
+        health=bool(re.search(r"\bsalud\b|\bpart(?:ida)?\.?\s*16\b|ricarte soto|fonasa|medicament|farmac|cenabast|\bges\b",t))
+        if not relevant(title) and not health and not budget:continue
+        if budget and not health:budget_context+=1
+        if "presupuesto" in t and not health and not budget:continue
         outcome=val("Resultado")
         votes=[]
         for label,key in [("A favor","TotalSi"),("En contra","TotalNo"),("Abstenciones","TotalAbstencion")]:
@@ -151,8 +156,8 @@ def collect_chamber_votes(today):
         with urlopen(Request(url,headers={"User-Agent":"HealthScopeChile/1.2 public legislative monitor","Accept":"text/xml,application/xml"}),timeout=35) as response:
             raw=response.read(30_000_001)
         if len(raw)>30_000_000:raise ValueError("Annual XML exceeds limit")
-        rows,n=vote_rows(raw,today);result.extend(rows);scanned+=n
-    return result,scanned
+        rows,n,diag=vote_rows(raw,today);result.extend(rows);scanned+=n;diagnostics.append(diag)
+    return result,scanned,{"latest_date":max((x["latest_date"] for x in diagnostics),default=""),"week_records":sum(x["week_records"] for x in diagnostics),"budget_context_records":sum(x["budget_context_records"] for x in diagnostics)}
 
 def extra(now):
     today=now.date();prev=read("data/weekly-extra.json",{})
@@ -189,9 +194,9 @@ def extra(now):
         leg.extend(x for x in prev.get("legislative",[]) if x.get("authority")=="Cámara de Diputados" and x.get("published","")>=(today-timedelta(days=6)).isoformat())
         statuses.append({"id":"camara-prensa","name":"Cámara · Comunicados y Sala","url":CHAMBER_PRESS,"status":"error","items_seen":0,"errors":[str(e)[:200]]})
     try:
-        rows,scanned=collect_chamber_votes(today)
+        rows,scanned,diag=collect_chamber_votes(today)
         leg.extend(rows)
-        statuses.append({"id":"camara-xml-votos","name":"Cámara · Votaciones oficiales XML","url":CHAMBER_VOTES+"?prmAnno="+str(today.year),"status":"ok","items_seen":len(rows),"annual_records":scanned,"errors":[]})
+        statuses.append({"id":"camara-xml-votos","name":"Cámara · Votaciones oficiales XML","url":CHAMBER_VOTES+"?prmAnno="+str(today.year),"status":"ok","items_seen":len(rows),"annual_records":scanned,**diag,"errors":[]})
     except Exception as e:
         leg.extend(x for x in prev.get("legislative",[]) if x.get("source_type")=="Votación de Sala" and x.get("published","")>=(today-timedelta(days=6)).isoformat())
         statuses.append({"id":"camara-xml-votos","name":"Cámara · Votaciones oficiales XML","url":CHAMBER_VOTES+"?prmAnno="+str(today.year),"status":"error","items_seen":0,"errors":[str(e)[:200]]})
