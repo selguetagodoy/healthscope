@@ -109,6 +109,51 @@ def legislative_rows(doc,authority,source_type,base,today):
         if authority.startswith("Senado") and len(cells)>4:r["summary"]=cells[4][:450]
         result.append(r)
     return result
+
+CHAMBER_VOTES="https://opendata.camara.cl/camaradiputados/WServices/WSLegislativo.asmx/retornarVotacionesXAnno"
+def vote_rows(raw,today):
+    """Read only vote aggregates; never publish individual identifiers or votes."""
+    import xml.etree.ElementTree as ET
+    root=ET.fromstring(raw)
+    tag=lambda node:node.tag.rsplit("}",1)[-1]
+    if tag(root)!="VotacionesColeccion":raise ValueError("Unexpected official vote response")
+    result=[];scanned=0
+    for v in root:
+        if tag(v)!="Votacion":continue
+        scanned+=1
+        fields={tag(x):x for x in v if tag(x)!="Votos"}
+        def val(name):
+            x=fields.get(name)
+            return " ".join(x.itertext()).strip() if x is not None else ""
+        when=val("Fecha")[:10];ident=val("Id");title=val("Descripcion")
+        if not ident.isdigit() or not (today-timedelta(days=6)).isoformat()<=when<=today.isoformat():continue
+        t=fold(title)
+        if not relevant(title) and not re.search(r"\bpart(?:ida)?\.?\s*16\b|\b18702-05\b.*\bsalud\b",t):continue
+        if "presupuesto" in t and not re.search(r"\bsalud\b|\bpart(?:ida)?\.?\s*16\b|ricarte soto|fonasa|medicament|farmac|cenabast|\bges\b",t):continue
+        outcome=val("Resultado")
+        votes=[]
+        for label,key in [("A favor","TotalSi"),("En contra","TotalNo"),("Abstenciones","TotalAbstencion")]:
+            count=val(key)
+            if count.isdigit():votes.append(label+": "+count)
+        url="https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion="+ident
+        r=capture(title[:450],url,when,"Cámara de Diputados","Votación de Sala","legislacion")
+        r["id"]="camara-votacion-"+ident
+        r["vote_result"]=outcome
+        r["vote_totals"]=" · ".join(votes)
+        r["summary"]=" · ".join(filter(None,[outcome,r["vote_totals"]]))
+        result.append(r)
+    if not scanned:raise ValueError("Empty annual vote collection")
+    return result,scanned
+def collect_chamber_votes(today):
+    result=[];scanned=0
+    for year in sorted({today.year,(today-timedelta(days=6)).year}):
+        url=CHAMBER_VOTES+"?prmAnno="+str(year)
+        with urlopen(Request(url,headers={"User-Agent":"HealthScopeChile/1.2 public legislative monitor","Accept":"text/xml,application/xml"}),timeout=35) as response:
+            raw=response.read(30_000_001)
+        if len(raw)>30_000_000:raise ValueError("Annual XML exceeds limit")
+        rows,n=vote_rows(raw,today);result.extend(rows);scanned+=n
+    return result,scanned
+
 def extra(now):
     today=now.date();prev=read("data/weekly-extra.json",{})
     do,status=collect_do(today,prev.get("diario",[]));statuses=[status];leg=[]
@@ -143,6 +188,13 @@ def extra(now):
     except Exception as e:
         leg.extend(x for x in prev.get("legislative",[]) if x.get("authority")=="Cámara de Diputados" and x.get("published","")>=(today-timedelta(days=6)).isoformat())
         statuses.append({"id":"camara-prensa","name":"Cámara · Comunicados y Sala","url":CHAMBER_PRESS,"status":"error","items_seen":0,"errors":[str(e)[:200]]})
+    try:
+        rows,scanned=collect_chamber_votes(today)
+        leg.extend(rows)
+        statuses.append({"id":"camara-xml-votos","name":"Cámara · Votaciones oficiales XML","url":CHAMBER_VOTES+"?prmAnno="+str(today.year),"status":"ok","items_seen":len(rows),"annual_records":scanned,"errors":[]})
+    except Exception as e:
+        leg.extend(x for x in prev.get("legislative",[]) if x.get("source_type")=="Votación de Sala" and x.get("published","")>=(today-timedelta(days=6)).isoformat())
+        statuses.append({"id":"camara-xml-votos","name":"Cámara · Votaciones oficiales XML","url":CHAMBER_VOTES+"?prmAnno="+str(today.year),"status":"error","items_seen":0,"errors":[str(e)[:200]]})
     obj={"checked_at":now.isoformat(timespec="seconds"),"diario":do,"legislative":leg,"sources":statuses}
     write(DATA/"weekly-extra.json",obj)
     return obj
@@ -164,7 +216,7 @@ def make(now,extra_data=None):
         if not start<=when<=end:continue
         seen.add(url.rstrip("/"))
         ok=r.get("status")=="Verificado"
-        item={"id":r.get("id",url),"published":when,"title":title,"authority":r.get("authority",""),"source_type":r.get("source_type","Fuente oficial"),"url":url,"topic":classify(r),"score":score(r),"status":"Verificado" if ok else "Pendiente de revisión","summary":r.get("summary","") if ok else "","implications":r.get("implications","") if ok else "","new_since_previous":bool(old) and (r.get("id",url) not in previous or (same_cut and r.get("id",url) in previous_new))}
+        item={"id":r.get("id",url),"published":when,"title":title,"authority":r.get("authority",""),"source_type":r.get("source_type","Fuente oficial"),"url":url,"topic":classify(r),"vote_result":r.get("vote_result",""),"vote_totals":r.get("vote_totals",""),"score":score(r),"status":"Verificado" if ok else "Pendiente de revisión","summary":r.get("summary","") if ok or r.get("source_type")=="Votación de Sala" else "","implications":r.get("implications","") if ok else "","new_since_previous":bool(old) and (r.get("id",url) not in previous or (same_cut and r.get("id",url) in previous_new))}
         (verified if ok else candidates).append(item)
     key=lambda x:(x["score"],x["published"],x["title"])
     verified.sort(key=lambda x:(x["published"],x["score"],x["title"]),reverse=True);candidates.sort(key=key,reverse=True)
