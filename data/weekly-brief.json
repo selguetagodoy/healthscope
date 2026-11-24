@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-18",
   "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T20:45:11-03:00",
-  "last_monitor_at": "2026-11-24T23:44:16Z",
-  "extra_checked_at": "2026-11-24T20:45:11-03:00",
+  "generated_at": "2026-11-24T20:51:06-03:00",
+  "last_monitor_at": "2026-11-24T23:50:08Z",
+  "extra_checked_at": "2026-11-24T20:51:06-03:00",
   "legislative_tracker": {
     "updated": "2026-11-24",
     "projects": [
@@ -97,7 +97,7 @@
       "status": "Verificado",
       "summary": "La citación oficial incluye el debate del boletín 17.800-11 sobre etiquetado del jurel y la participación de autoridades sanitarias y otros actores. La convocatoria se distingue de los acuerdos posteriores de la comisión.",
       "implications": "El asunto constituye agenda parlamentaria; el resultado debe establecerse a partir del registro de acuerdos.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "camara-presupuesto-2027-salud-2026-11-23",
@@ -145,7 +145,7 @@
       "status": "Verificado",
       "summary": "La tramitación oficial del Senado registra el despacho del proyecto en segundo trámite constitucional el 19 de noviembre, con modificaciones. El registro incluye la Partida 16 entre las partidas despachadas.",
       "implications": "Las modificaciones regresaron a la Cámara de origen para su pronunciamiento. El despacho del Senado no equivale a la publicación de la ley.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "camara-respuesta-epof-presupuesto-2026-11-18",
@@ -479,10 +479,11 @@
       "id": "camara-xml-votos",
       "name": "Cámara · Votaciones oficiales XML",
       "url": "https://opendata.camara.cl/camaradiputados/WServices/WSLegislativo.asmx/retornarVotacionesXAnno?prmAnno=2026",
-      "status": "ok",
+      "status": "error",
       "items_seen": 0,
-      "annual_records": 1870,
-      "errors": []
+      "errors": [
+        "not enough values to unpack (expected 3, got 2)"
+      ]
     }
   ],
   "all_ids": [
