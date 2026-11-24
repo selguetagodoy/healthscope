@@ -1,7 +1,7 @@
 {
-  "last_attempt_at": "2026-11-24T19:52:58Z",
-  "last_success_at": "2026-11-24T19:52:58Z",
-  "last_success_local": "2026-11-24 16:52 -03",
+  "last_attempt_at": "2026-11-24T20:07:34Z",
+  "last_success_at": "2026-11-24T20:07:34Z",
+  "last_success_local": "2026-11-24 17:07 -03",
   "schedule": [
     "08:00",
     "12:00",
@@ -9,7 +9,7 @@
   ],
   "sources": [
     {
-      "checked_at": "2026-11-24T16:52:58-03:00",
+      "checked_at": "2026-11-24T17:07:34-03:00",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>",
       "id": "isp-alertas",
       "items_seen": 0,
@@ -18,7 +18,7 @@
       "status": "error"
     },
     {
-      "checked_at": "2026-11-24T16:52:58-03:00",
+      "checked_at": "2026-11-24T17:07:34-03:00",
       "http_status": 200,
       "id": "minsal-noticias",
       "items_seen": 10,
@@ -27,7 +27,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T16:52:58-03:00",
+      "checked_at": "2026-11-24T17:07:34-03:00",
       "http_status": 200,
       "id": "cenabast-noticias",
       "items_seen": 9,
@@ -36,7 +36,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T16:52:58-03:00",
+      "checked_at": "2026-11-24T17:07:34-03:00",
       "http_status": 200,
       "id": "diprece",
       "items_seen": 2,
@@ -45,12 +45,75 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T16:52:58-03:00",
+      "checked_at": "2026-11-24T17:07:34-03:00",
       "http_status": 200,
       "id": "chilecompra",
       "items_seen": 1,
       "monitor_url": "https://www.chilecompra.cl/category/noticias/noticias/feed/",
       "name": "ChileCompra",
+      "status": "ok"
+    },
+    {
+      "checked_at": "2026-11-24T17:07:34-03:00",
+      "http_status": 200,
+      "id": "media-portal-prensa-salud",
+      "items_seen": 10,
+      "monitor_url": "https://portalprensasalud.cl/feed/",
+      "name": "Portal Prensa Salud",
+      "status": "ok"
+    },
+    {
+      "checked_at": "2026-11-24T17:07:34-03:00",
+      "http_status": 200,
+      "id": "media-portal-red-salud",
+      "items_seen": 10,
+      "monitor_url": "https://portalredsalud.cl/feed/",
+      "name": "Portal Red Salud",
+      "status": "ok"
+    },
+    {
+      "checked_at": "2026-11-24T17:07:34-03:00",
+      "http_status": 200,
+      "id": "media-cooperativa",
+      "items_seen": 0,
+      "monitor_url": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
+      "name": "Cooperativa",
+      "status": "ok"
+    },
+    {
+      "checked_at": "2026-11-24T17:07:34-03:00",
+      "http_status": 200,
+      "id": "media-diarioeldia",
+      "items_seen": 1,
+      "monitor_url": "https://www.diarioeldia.cl/rss/salud/",
+      "name": "Diario El Día",
+      "status": "ok"
+    },
+    {
+      "checked_at": "2026-11-24T17:07:34-03:00",
+      "http_status": 200,
+      "id": "media-ciper",
+      "items_seen": 0,
+      "monitor_url": "https://www.ciperchile.cl/feed/",
+      "name": "CIPER",
+      "status": "ok"
+    },
+    {
+      "checked_at": "2026-11-24T17:07:34-03:00",
+      "http_status": 200,
+      "id": "actor-colmed",
+      "items_seen": 6,
+      "monitor_url": "https://www.colegiomedico.cl/feed/",
+      "name": "Colegio Médico de Chile",
+      "status": "ok"
+    },
+    {
+      "checked_at": "2026-11-24T17:07:34-03:00",
+      "http_status": 200,
+      "id": "actor-fenpof",
+      "items_seen": 0,
+      "monitor_url": "https://fenpof.cl/feed/",
+      "name": "FENPOF Chile",
       "status": "ok"
     }
   ],
