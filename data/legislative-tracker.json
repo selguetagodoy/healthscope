@@ -4,7 +4,7 @@
     {
       "title": "Presupuesto 2027 · Salud",
       "bulletin": "18.702-05",
-      "status": "Tercer trámite concluido · Mixta del presupuesto general",
+      "status": "Tercer trámite · Rechazo parcial formalizado el 24/11",
       "summary": "La Cámara respaldó las modificaciones del Senado para LRS. La Partida 16 no figura en la lista de diez partidas con discrepancias remitidas a Mixta.",
       "metric": "$28.207 millones",
       "metric_label": "Recursos consignados vía Fonasa para LRS",
@@ -22,14 +22,19 @@
           "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/"
         },
         {
-          "date": "2026-11-19",
-          "title": "Senado despacha el proyecto con modificaciones y devuelve el texto a la Cámara",
-          "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&mo=tramitacion"
+          "date": "2026-11-21",
+          "title": "Oficio de modificaciones del Senado remitido a la Cámara de origen",
+          "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391"
         },
         {
           "date": "2026-11-23",
           "title": "Cámara respalda modificaciones de Salud; diez otras partidas a Mixta",
           "url": "https://www.camara.cl/cms/2026/11/23/presupuesto-2027-camara-envia-a-mixta-diez-temas/"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "Oficio de rechazo parcial de modificaciones registrado en tercer trámite",
+          "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391"
         }
       ]
     },
