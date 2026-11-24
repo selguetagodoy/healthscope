@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "date": "2026-11-18",
+    "published": "2026-11-18",
+    "category": "farmaceutico",
+    "authority": "Instituto de Salud Pública",
+    "title": "ISP anuncia actualización de información de seguridad para agonistas GLP-1",
+    "summary": "La autoridad informó que instruirá cambios en los folletos de información sobre el riesgo de neuropatía óptica isquémica anterior no arterítica. La medida se apoya en evaluaciones internacionales de seguridad.",
+    "medication": "Agonistas GLP-1",
+    "status": "Verificado",
+    "url": "https://ispch.cl/noticia/isp-publica-nota-de-farmacovigilancia-sobre-agonistas-del-receptor-de-glp-1-por-riesgo-de-neuropatia-optica-isquemica-anterior-no-arteritica/"
+  },
+  {
+    "date": "2026-11-10",
+    "published": "2026-11-10",
+    "category": "farmaceutico",
+    "authority": "Instituto de Salud Pública",
+    "title": "ISP comunica retiro de cefazolina inyectable",
+    "summary": "La alerta 34/26 identifica un producto de cefazolina de 1 g de Difem Laboratorios. Los alcances del retiro deben consultarse en el documento oficial.",
+    "medication": "Cefazolina",
+    "status": "Verificado",
+    "url": "https://ispch.cl/alerta/alerta-de-retiro-del-mercado-n34-26-del-producto-farmaceutico-cefazolina-polvo-para-solucion-inyectable-1-g-de-difem-laboratorios-s-a/"
+  },
+  {
+    "date": "2026-11-09",
+    "published": "2026-11-09",
+    "category": "compras",
+    "authority": "Cenabast",
+    "title": "Cenabast informa avance del sistema unificado de abastecimiento",
+    "summary": "La institución reportó 115 hospitales incorporados a la plataforma y estimó una optimización de recursos de CLP 35 mil millones. Se trata de una proyección institucional, no de ahorros ejecutados.",
+    "medication": "",
+    "status": "Verificado",
+    "url": "https://www.cenabast.cl/sistema-de-abastecimiento-unico-de-medicamentos-de-cenabast-permitira-optimizar-recursos-en-35-mil-millones/"
+  }
+]
