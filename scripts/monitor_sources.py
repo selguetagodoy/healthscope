@@ -22,7 +22,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[1]
 LOCAL_TZ = ZoneInfo("America/Santiago")
 MAX_BYTES = 3_000_000
-MAX_PENDING = 250
+MAX_PENDING = 3000
 RECENT_DAYS = 120
 CUTS = ((8, 0), (12, 0), (16, 30))
 
@@ -90,7 +90,9 @@ def parse_rss(content: bytes, source: dict, now: datetime | None = None) -> list
     """Parse RSS items into review records; the records remain unpublished."""
     now_local = (now or datetime.now(timezone.utc)).astimezone(LOCAL_TZ)
     cutoff = now_local.date() - timedelta(days=RECENT_DAYS)
-    root = ET.fromstring(content)
+    root = ET.fromstring(content.lstrip())
+    if root.tag.rsplit('}',1)[-1].lower() not in {'rss','rdf'}:
+        raise ValueError('Respuesta no es un RSS reconocido')
     items = []
     for item in root.iter():
         if item.tag.rsplit("}", 1)[-1].lower() != "item":
@@ -208,8 +210,9 @@ def parse_isp_alerts(content: bytes, source: dict, now: datetime | None = None) 
             "published": published_date.isoformat(),
             "category": category,
             "title": title,
-            "summary": "".join(part for part in (issue_type, product) if part),
-            "medication": "",
+            "summary": " · ".join(part for part in (issue_type, product) if part),
+            "medication": product,
+            "source_type": "Alerta sanitaria",
             "status": "Pendiente de revisión",
             "captured_at": now_local.isoformat(timespec="seconds"),
             "url": link,

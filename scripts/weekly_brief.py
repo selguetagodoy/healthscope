@@ -15,7 +15,7 @@ DATA=ROOT/"data"
 TZ=ZoneInfo("America/Santiago")
 DO="https://www.diariooficial.interior.gob.cl/edicionelectronica/index.php"
 SENATE="https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&mo=tramitacion"
-CHAMBER="https://www.camara.cl/legislacion/proyectosdeley/leyes_promulgadas.aspx"
+CHAMBER="https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894"
 def read(name,default):
     path=ROOT/name
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
@@ -30,12 +30,12 @@ def safe(url):
     return p.scheme=="https" and bool(p.hostname)
 def relevant(text):
     t=fold(text)
-    return any(x in t for x in ("medicament","farmac","ricarte soto","trikafta","fibrosis quistica","enfermedades raras","enfermedades poco frecuentes","alto costo","hemofilia","angioedema","inmunoglobulina","oncolog","cancer","cenabast","anamed","farmacovigilancia","partida 16","presupuesto de salud","presupuesto sanitario","garantias explicitas","fonasa","isapre","bioequivalencia","instituto de salud publica","ley 20.850","ley 21.743","20.850","21.743","15047-11","15.047-11","17375-11","17.375-11")) or bool(re.search(r"\bges\b|\bisp\b|\bepof\b",t))
+    return any(x in t for x in ("presupuesto para salud","partida de salud","tratamiento de alto costo","evaluacion de tecnologias sanitarias","acceso a tratamientos","medicament","farmac","ricarte soto","trikafta","fibrosis quistica","enfermedades raras","enfermedades poco frecuentes","alto costo","hemofilia","angioedema","inmunoglobulina","oncolog","cancer","cenabast","anamed","farmacovigilancia","partida 16","presupuesto de salud","presupuesto sanitario","garantias explicitas","fonasa","isapre","bioequivalencia","instituto de salud publica","ley 20.850","ley 21.743","20.850","21.743","15047-11","15.047-11","17375-11","17.375-11")) or bool(re.search(r"\bges\b|\bisp\b|\bepof\b",t))
 def classify(record):
     t=fold(" ".join(str(record.get(k,"")) for k in ("title","summary","medication","topics")))
     cat=record.get("category","")
-    if cat=="legislacion" or record.get("source_type")=="Diario Oficial":return "Regulación y Congreso"
     if "presupuesto" in t or "partida 16" in t:return "Presupuesto y financiamiento"
+    if cat=="legislacion" or record.get("source_type")=="Diario Oficial":return "Regulación y Congreso"
     if cat=="compras" or "cenabast" in t:return "Compras y abastecimiento"
     if cat=="acceso" or any(x in t for x in ("ricarte","trikafta","fibrosis","enfermedades raras","enfermedades poco frecuentes","alto costo")) or re.search(r"\bges\b",t):return "Acceso y cobertura"
     if record.get("source_type") in ("LinkedIn","X","Comunicado institucional") or cat=="stakeholders":return "Stakeholders"
@@ -67,7 +67,7 @@ def do_rows(doc,when):
 def collect_do(today,prior):
     old={x["url"]:x for x in prior if x.get("published","")>=(today-timedelta(days=6)).isoformat()}
     # Backfill 7 days on first run; subsequently recheck today and yesterday for special editions.
-    n=2 if prior else 7
+    n=7
     checked=[];errors=[]
     for i in range(n):
         day=today-timedelta(days=i);when=day.isoformat();u=DO+"?date="+day.strftime("%d-%m-%Y")
@@ -112,7 +112,10 @@ def extra(now):
     do,status=collect_do(today,prev.get("diario",[]));statuses=[status];leg=[]
     for authority,url in [("Senado de Chile",SENATE),("Cámara de Diputadas y Diputados",CHAMBER)]:
         try:
-            docs=legislative_rows(fetch(url),authority,"Actividad legislativa",url,today);leg.extend(docs)
+            parsed=fetch(url)
+            docs=legislative_rows(parsed,authority,"Actividad legislativa",url,today)
+            if not parsed.select("tr") or len(parsed.get_text(" ",strip=True))<400: raise ValueError("Unrecognized legislative page structure")
+            leg.extend(docs)
             statuses.append({"id":authority,"name":authority,"url":url,"status":"ok","items_seen":len(docs),"errors":[]})
         except Exception as e:
             leg.extend(x for x in prev.get("legislative",[]) if x.get("authority")==authority and x.get("published","")>=(today-timedelta(days=6)).isoformat())
@@ -130,7 +133,7 @@ def make(now,extra_data=None):
     same_cut=bool(old) and old.get("last_monitor_at")==monitor.get("last_attempt_at") and old.get("extra_checked_at")==extra_data.get("checked_at")
     previous_new={r["id"] for r in old.get("verified",[])+old.get("candidates",[]) if r.get("new_since_previous")}
     for r in records:
-        url=r.get("url","");title=r.get("title","");when=r.get("published") or r.get("date") or ""
+        url=r.get("url","");title=r.get("title","");when=(r.get("published") or r.get("date") or "")[:10]
         if not safe(url) or not title or not relevant(" ".join(str(r.get(k,"")) for k in ("title","summary","medication","topics"))) or url.rstrip("/") in seen:continue
         if not when:
             if r.get("source_type") in ("LinkedIn","X"):undated.append({"title":title,"url":url,"authority":r.get("authority",""),"source_type":r.get("source_type"),"captured_at":r.get("captured_at","")})

@@ -111,9 +111,9 @@ def oc_month(period):
             if not all(key) or key in seen:continue
             seen.add(key);total+=1;orders.add(key[0]);buyers[r["OrganismoPublico"]]+=1;states[r["Estado"]]+=1
             supplier=r.get("NombreProveedor","")
-            if not re.search(r"\b(?:SPA|LTDA|LIMITADA|S\.A\.|SOCIEDAD|EIRL|CORP|INC|GMBH|FUNDACION|LABORATORIO|UNIVERSIDAD)\b",supplier,re.I):supplier="Proveedor no publicado en esta vista"
+            if not re.search(r"\b(?:SPA|LTDA|LIMITADA|SOCIEDAD|EIRL|CORP|INC|GMBH|FUNDACION|LABORATORIO|UNIVERSIDAD)\b|\bS\s*\.\s*A\s*\.",supplier,re.I):supplier="Proveedor no publicado en esta vista"
             # Preserve raw currency and quantity; never treat order total as line total.
-            rows.append({"id":key[0]+":"+key[1],"period":period,"order":key[0],"tender":r.get("CodigoLicitacion",""),"status":r["Estado"],"sent":r.get("FechaEnvio",""),"buyer":r["OrganismoPublico"],"supplier":supplier,"product":r["NombreroductoGenerico"],"description":(r.get("EspecificacionComprador") or "")[:220],"unspsc":code,"quantity":r["cantidad"],"unit":r.get("UnidadMedida",""),"currency":r["monedaItem"],"net_unit":r["precioNeto"],"net_line":r["totalLineaNeto"],"url":r.get("Link","") if (r.get("Link") or "").startswith("https://") else "https://www.mercadopublico.cl/"})
+            rows.append({"id":key[0]+":"+key[1],"period":period,"order":key[0],"tender":r.get("CodigoLicitacion",""),"status":r["Estado"],"sent":r.get("FechaEnvio",""),"buyer":r["OrganismoPublico"],"supplier":supplier,"product":r["NombreroductoGenerico"],"description":(r.get("EspecificacionComprador") or "")[:220],"unspsc":code,"quantity":r["cantidad"],"unit":r.get("UnidadMedida",""),"currency":r["monedaItem"],"net_unit":r["precioNeto"],"net_line":r["totalLineaNeto"],"url":"https://www.mercadopublico.cl/PurchaseOrder/Modules/PO/DetailsPurchaseOrder.aspx?codigoOC="+r["Codigo"] if re.fullmatch(r"\d+-\d+-[A-Z0-9]+",r["Codigo"]) else url})
     if not total:raise ValueError("No segment 51 items found")
     return rows,{"period":period,"source_url":url,"lines":total,"orders":len(orders),"buyers":dict(buyers.most_common(12)),"states":dict(states)}
 def procurement(months):

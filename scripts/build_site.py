@@ -69,6 +69,8 @@ def main():
                 if row.get("supplier")=="Proveedor no publicado en esta vista": row["supplier"]=""
                 writer.writerow(row)
         tmp.replace(p)
+    from public_data import prepare
+    prepare(DEST)
     template=(ROOT/"index.html").read_text(encoding="utf-8")
     # Fingerprint assets so a new edition never loads stale JavaScript.
     def version_asset(match):

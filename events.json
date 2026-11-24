@@ -91,9 +91,9 @@
     "published": "2026-11-24",
     "category": "legislacion",
     "authority": "Comisión de Salud del Senado",
-    "title": "La tabla de la Comisión de Salud incluye el Boletín 15.047-11, vinculado a la Ley Ricarte Soto",
-    "summary": "El proyecto propone modificar la distribución del fondo de protección financiera de la Ley Ricarte Soto. La ficha de la sesión del 24 de noviembre lo incorpora como punto 1; el registro enlazado permite revisar el desarrollo parlamentario consignado.",
-    "implications": "La inclusión en tabla acredita que el asunto estaba citado para la sesión. Esta referencia no acredita una aprobación ni un cambio normativo.",
+    "title": "Comisión de Salud mantiene pendiente la reforma de la Ley Ricarte Soto",
+    "summary": "El registro de la sesión del 24 de noviembre consigna pendiente el proyecto que busca modificar la distribución del fondo de protección financiera de la Ley 20.850. La comisión acordó además remitir antecedentes municipales sobre atención primaria a la Comisión Mixta de Presupuestos.",
+    "implications": "El proyecto sigue en discusión; la sesión no modificó las condiciones vigentes del fondo.",
     "medication": "Ley Ricarte Soto",
     "topics": [
       "Boletín 15.047-11",
@@ -101,7 +101,7 @@
       "Comisión de Salud"
     ],
     "status": "Verificado",
-    "project_status": "Incluido en tabla; resultado sustantivo no atribuido en este registro",
+    "project_status": "Pendiente según acuerdo de sesión",
     "source_type": "Sesión parlamentaria",
     "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=24%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23231&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3"
   },
@@ -476,5 +476,43 @@
     "status": "Verificado",
     "source_type": "Fuente oficial",
     "url": "https://www.chilecompra.cl/2026/09/chilecompra-aborda-oportunidades-de-la-compra-publica-de-innovacion-en-webinar-sobre-transformacion-en-compras-en-salud/"
+  },
+  {
+    "id": "senado-presupuesto-2027-salud-2026-11-18",
+    "date": "2026-11-18",
+    "published": "2026-11-18",
+    "category": "datos",
+    "authority": "Senado de Chile",
+    "title": "Senado respalda partida de Salud con compromiso de reposición para Ley Ricarte Soto",
+    "summary": "Diario y Radio Universidad de Chile informó la aprobación de la partida sanitaria y el compromiso del Ejecutivo de reponer recursos del sistema de alto costo, en la discusión del Presupuesto 2027.",
+    "implications": "La continuidad financiera de tratamientos de alto costo sigue vinculada al texto presupuestario definitivo.",
+    "medication": "Ley Ricarte Soto",
+    "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/",
+    "source_type": "Prensa",
+    "topics": [
+      "Presupuesto 2027",
+      "Ley Ricarte Soto",
+      "Partida 16"
+    ],
+    "status": "Verificado"
+  },
+  {
+    "id": "castro-reposicion-lrs-2026-11-18",
+    "date": "2026-11-18",
+    "published": "2026-11-18",
+    "category": "datos",
+    "authority": "Juan Luis Castro · Comisión de Salud",
+    "title": "Presidente de Comisión de Salud destaca acuerdo de reposición de recursos para LRS",
+    "summary": "El senador comunicó públicamente un acuerdo para reponer $28 mil millones en el contexto de la discusión presupuestaria.",
+    "implications": "La declaración identifica una prioridad de negociación; el monto definitivo debe comprobarse en el texto aprobado.",
+    "medication": "Ley Ricarte Soto",
+    "url": "https://www.pschile.cl/senador-juan-luis-castro-destaca-acuerdo-con-el-gobierno-para-reponer-28-mil-millones-a-la-ley-ricarte-soto-era-inaceptable-rebajar-esos-recursos/",
+    "source_type": "Declaración pública",
+    "topics": [
+      "Presupuesto 2027",
+      "Ley Ricarte Soto",
+      "Partida 16"
+    ],
+    "status": "Verificado"
   }
 ]

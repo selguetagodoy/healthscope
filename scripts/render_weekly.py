@@ -3,6 +3,7 @@ import html
 import json
 import re
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from urllib.parse import urlsplit
 
 def esc(v):
@@ -14,7 +15,7 @@ def day(v):
 def timestamp(v):
     try:
         d=datetime.fromisoformat(v)
-        return d.strftime("%d/%m/%Y · %H:%M")
+        return d.astimezone(ZoneInfo('America/Santiago')).strftime("%d/%m/%Y · %H:%M")
     except (ValueError,TypeError):
         return ""
 

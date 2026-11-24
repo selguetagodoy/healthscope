@@ -77,12 +77,18 @@ def validate():
     check(len(budget["rows"]) == budget["count"] == 10 and {x["year"] for x in budget["rows"]} == set(range(2017,2027)), "Budget coverage mismatch", errors)
     for dataset in ("clinical-trials","patents","procurement"):
         path = ROOT / ("data/"+dataset+".json")
+        check(path.exists(), dataset+" dataset missing", errors)
         if path.exists():
             obj = load(path)
             records = obj.get("rows", [])
             keys = [x.get("id") for x in records]
             check(len(records) == obj.get("count") and len(set(keys)) == len(keys) and all(keys), dataset+" count or identifier mismatch", errors)
             check(valid_https(obj.get("source_url")) and bool(obj.get("scope")), dataset+" missing provenance", errors)
+    for record in coverage:
+        if record.get("treatments"):
+            check(valid_https(record.get("treatment_source")), "Treatment requires direct evidence", errors)
+    for row in budget["rows"]:
+        check(row["initial_thousand_clp"]>0 and 0<=row["expense_pct"]<=200 and valid_https(row["source_url"]), "Budget invalid values", errors)
     event_urls = set()
     for i, event in enumerate(events):
         prefix = "events[" + str(i) + "]"

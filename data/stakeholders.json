@@ -677,5 +677,60 @@
     "url": "https://www.achm.cl/",
     "source_url": "https://www.achm.cl/",
     "channels": []
+  },
+  {
+    "id": "juan-luis-castro",
+    "name": "Juan Luis Castro",
+    "group": "Congreso",
+    "scope": "Presidencia de la Comisión de Salud del Senado",
+    "url": "https://www.senado.cl/comunicaciones/noticias/conozca-la-integracion-de-las-comisiones-legislativas-para-el-periodo-2026",
+    "source_url": "https://www.senado.cl/comunicaciones/noticias/conozca-la-integracion-de-las-comisiones-legislativas-para-el-periodo-2026",
+    "channels": [],
+    "kind": "Persona",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": "karol-cariola",
+    "name": "Karol Cariola",
+    "group": "Congreso",
+    "scope": "Integrante de la Comisión de Salud del Senado",
+    "url": "https://www.senado.cl/comunicaciones/noticias/conozca-la-integracion-de-las-comisiones-legislativas-para-el-periodo-2026",
+    "source_url": "https://www.senado.cl/comunicaciones/noticias/conozca-la-integracion-de-las-comisiones-legislativas-para-el-periodo-2026",
+    "channels": [],
+    "kind": "Persona",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": "ximena-ordenes",
+    "name": "Ximena Órdenes",
+    "group": "Congreso",
+    "scope": "Integrante de la Comisión de Salud del Senado",
+    "url": "https://www.senado.cl/comunicaciones/noticias/conozca-la-integracion-de-las-comisiones-legislativas-para-el-periodo-2026",
+    "source_url": "https://www.senado.cl/comunicaciones/noticias/conozca-la-integracion-de-las-comisiones-legislativas-para-el-periodo-2026",
+    "channels": [],
+    "kind": "Persona",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": "sergio-gahona",
+    "name": "Sergio Gahona",
+    "group": "Congreso",
+    "scope": "Integrante de la Comisión de Salud del Senado",
+    "url": "https://www.senado.cl/comunicaciones/noticias/conozca-la-integracion-de-las-comisiones-legislativas-para-el-periodo-2026",
+    "source_url": "https://www.senado.cl/comunicaciones/noticias/conozca-la-integracion-de-las-comisiones-legislativas-para-el-periodo-2026",
+    "channels": [],
+    "kind": "Persona",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": "enrique-lee",
+    "name": "Enrique Lee",
+    "group": "Congreso",
+    "scope": "Integrante de la Comisión de Salud del Senado",
+    "url": "https://www.senado.cl/comunicaciones/noticias/conozca-la-integracion-de-las-comisiones-legislativas-para-el-periodo-2026",
+    "source_url": "https://www.senado.cl/comunicaciones/noticias/conozca-la-integracion-de-las-comisiones-legislativas-para-el-periodo-2026",
+    "channels": [],
+    "kind": "Persona",
+    "checked_at": "2026-11-24"
   }
 ]
