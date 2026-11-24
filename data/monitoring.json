@@ -1,7 +1,7 @@
 {
-  "last_attempt_at": "2026-11-24T17:19:45Z",
-  "last_success_at": "2026-11-24T17:19:45Z",
-  "last_success_local": "2026-11-24 14:19 -03",
+  "last_attempt_at": "2026-11-24T17:23:23Z",
+  "last_success_at": "2026-11-24T17:23:23Z",
+  "last_success_local": "2026-11-24 14:23 -03",
   "schedule": [
     "08:00",
     "12:00",
@@ -9,16 +9,16 @@
   ],
   "sources": [
     {
-      "checked_at": "2026-11-24T14:19:45-03:00",
+      "checked_at": "2026-11-24T14:23:23-03:00",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>",
       "id": "isp-alertas",
       "items_seen": 0,
-      "monitor_url": "https://ispch.gob.cl/categorias-alertas/anamed/",
+      "monitor_url": "https://www.ispch.cl/categorias-alertas/anamed/",
       "name": "ISP · Alertas ANAMED",
       "status": "error"
     },
     {
-      "checked_at": "2026-11-24T14:19:45-03:00",
+      "checked_at": "2026-11-24T14:23:23-03:00",
       "http_status": 200,
       "id": "minsal-noticias",
       "items_seen": 10,
@@ -27,7 +27,7 @@
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-24T14:19:45-03:00",
+      "checked_at": "2026-11-24T14:23:23-03:00",
       "http_status": 200,
       "id": "cenabast-noticias",
       "items_seen": 9,
