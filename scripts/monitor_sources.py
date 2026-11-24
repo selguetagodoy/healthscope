@@ -249,7 +249,10 @@ def collect(now: datetime | None = None) -> tuple[list[dict], dict]:
     sources = read_json(ROOT / "data" / "sources.json", [])
     pending = read_json(ROOT / "data" / "pending.json", [])
     events = read_json(ROOT / "events.json", [])
-    seen = {canonical_url(item.get("url", "")) for item in events + pending if canonical_url(item.get("url", ""))}
+    decisions = read_json(ROOT / "data" / "editorial-decisions.json", [])
+    seen = {canonical_url(item.get("url", "")) for item in events + pending + decisions if canonical_url(item.get("url", ""))}
+    prior = read_json(ROOT / "data" / "monitoring.json", {})
+    prior_status = {x["id"]:x for x in prior.get("sources",[])}
     new_items = []
     source_results = []
     successful = 0
@@ -258,7 +261,14 @@ def collect(now: datetime | None = None) -> tuple[list[dict], dict]:
             continue
         status = {"id": source["id"], "name": source["name"], "monitor_url": source["monitor_url"], "checked_at": now_local.isoformat(timespec="seconds"), "items_seen": 0}
         try:
-            code, body = fetch_url(source["monitor_url"])
+            failures=[]
+            for endpoint in [source["monitor_url"]]+source.get("fallback_urls",[]):
+                try:
+                    code,body=fetch_url(endpoint)
+                    status["resolved_url"]=endpoint
+                    break
+                except (OSError, urllib.error.URLError, ValueError) as exc: failures.append(str(exc))
+            else: raise ValueError("; ".join(failures))
             if source.get("monitor_format") == "rss":
                 records = parse_rss(body, source, now_utc)
             elif source.get("monitor_format") == "isp-alert-table":
@@ -269,6 +279,7 @@ def collect(now: datetime | None = None) -> tuple[list[dict], dict]:
             status["http_status"] = code
             status["status"] = "ok"
             status["items_seen"] = len(records)
+            status["last_success_at"] = now_local.isoformat(timespec="seconds")
             for record in records:
                 key = canonical_url(record["url"])
                 if key not in seen:
@@ -277,11 +288,13 @@ def collect(now: datetime | None = None) -> tuple[list[dict], dict]:
                     seen.add(key)
         except (OSError, urllib.error.URLError, ET.ParseError, UnicodeError, ValueError) as exc:
             status["status"] = "error"
+            if prior_status.get(source["id"],{}).get("last_success_at"): status["last_success_at"] = prior_status[source["id"]]["last_success_at"]
             status["error"] = str(exc)[:300]
             print("Fuente con error: " + source["id"] + " · " + status["error"], file=sys.stderr)
         source_results.append(status)
 
-    all_pending = pending + new_items
+    decided = {canonical_url(x.get("url","")) for x in decisions}
+    all_pending = [x for x in pending + new_items if canonical_url(x.get("url","")) not in decided]
     today = now_local.date()
     all_pending = [item for item in all_pending if is_recent(item, today)]
     all_pending.sort(key=lambda item: (item.get("date", ""), item.get("published", ""), item.get("id", "")), reverse=True)

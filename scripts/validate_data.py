@@ -86,7 +86,7 @@ def validate():
             check(valid_https(obj.get("source_url")) and bool(obj.get("scope")), dataset+" missing provenance", errors)
     for record in coverage:
         if record.get("treatments"):
-            check(valid_https(record.get("treatment_source")), "Treatment requires direct evidence", errors)
+            check(record.get("treatment_source")==record.get("url") and bool(record.get("treatment_checked_at")), "Treatment requires direct evidence and review date", errors)
     for row in budget["rows"]:
         check(row["initial_thousand_clp"]>0 and 0<=row["expense_pct"]<=200 and valid_https(row["source_url"]), "Budget invalid values", errors)
     event_urls = set()

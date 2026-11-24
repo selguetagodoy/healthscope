@@ -30,7 +30,7 @@ def indexes(dest):
     data=dest/"data";idx=data/"search"
     def emit(name,rows,fn):write(idx/(name+".json"),[fn(r) for r in rows])
     emit("events",read(dest/"events.json"),lambda r:[r["title"],r.get("authority"),r.get("summary"),r.get("medication"),r.get("topics")])
-    emit("coverage",read(data/"coverage.json"),lambda r:[r["name"],r["regime"],r["code"]])
+    emit("coverage",read(data/"coverage.json"),lambda r:[r["name"],r["regime"],r["code"],r.get("treatments")])
     emit("epof",read(data/"epof.json")["rows"],lambda r:[r["name"],"ORPHA:"+str(r["code"])])
     emit("isp",read(data/"isp-registry.json")["rows"],lambda r:[r["name"],r["registration"],r.get("active_ingredients"),r.get("holder")])
     emit("actors",read(data/"stakeholders.json"),lambda r:[r["name"],r["group"],r.get("scope")])

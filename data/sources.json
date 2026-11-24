@@ -8,7 +8,11 @@
     "automated": true,
     "monitor_url": "https://www.ispch.cl/categorias-alertas/anamed/",
     "monitor_format": "isp-alert-table",
-    "category": "farmaceutico"
+    "category": "farmaceutico",
+    "fallback_urls": [
+      "https://ispch.gob.cl/categorias-alertas/anamed/",
+      "https://www.ispch.gob.cl/categorias-alertas/anamed/"
+    ]
   },
   {
     "id": "minsal-noticias",
@@ -667,6 +671,10 @@
       "retiro",
       "alerta",
       "farmacovigilancia"
+    ],
+    "fallback_urls": [
+      "https://www.ispch.gob.cl/categorias-noticias/noticia-anamed/feed/",
+      "https://ispch.gob.cl/feed/"
     ]
   },
   {

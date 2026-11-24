@@ -905,7 +905,11 @@
     "name": "Angiodema Hereditario",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/angiodema-hereditario/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Inhibidor de C1 esterasa",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/angiodema-hereditario/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-2",
@@ -914,7 +918,11 @@
     "name": "Artritis Psoriásica moderada o grave refractaria a tratamiento habitual",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/artritis-psoriasica-moderada-o-grave-refractaria-a-tratamiento-habitual/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Golimumab, etanercept, adalimumab o secukinumab",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/artritis-psoriasica-moderada-o-grave-refractaria-a-tratamiento-habitual/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-3",
@@ -923,7 +931,11 @@
     "name": "Artritis Reumatoide activa refractaria a tratamiento habitual",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/artritis-reumatoide-activa-refractaria-a-tratamiento-habitual/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Etanercept, abatacept, adalimumab, golimumab, tocilizumab, tofacitinib o rituximab",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/artritis-reumatoide-activa-refractaria-a-tratamiento-habitual/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-4",
@@ -932,7 +944,11 @@
     "name": "Ayudas técnicas para esclerosis lateral amiotrófica moderada o severa",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/ayudas-tecnicas-para-esclerosis-lateral-amiotrofica-moderada-o-severa/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Ayudas técnicas y ventilación no invasiva domiciliaria según listado oficial",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/ayudas-tecnicas-para-esclerosis-lateral-amiotrofica-moderada-o-severa/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-5",
@@ -941,7 +957,11 @@
     "name": "Cáncer de Mama HER2+",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-de-mama-her2/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Trastuzumab",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/cancer-de-mama-her2/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-6",
@@ -950,7 +970,11 @@
     "name": "Diabetes tipo 1 inestable severa",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/diabetes-tipo-1-inestable-severa/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Monitoreo continuo de glucosa y bomba de insulina con sensor e insumos",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/diabetes-tipo-1-inestable-severa/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-7",
@@ -959,7 +983,11 @@
     "name": "Dispositivos de uso médico para epidermólisis bullosa distrófica o juntural",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/dispositivos-de-uso-medico-para-epidermolisis-bullosa-distrofica-o-juntural/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Insumos y dispositivos de curación según listado oficial",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/dispositivos-de-uso-medico-para-epidermolisis-bullosa-distrofica-o-juntural/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-8",
@@ -968,7 +996,11 @@
     "name": "Distonía Generalizada",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/distonia-generalizada/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Dispositivo de estimulación cerebral profunda y generador de reemplazo",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/distonia-generalizada/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-9",
@@ -977,7 +1009,11 @@
     "name": "Enfermedad de Crohn grave refractaria a tratamiento habitual",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-crohn-grave-refractaria-a-tratamiento-habitual/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Infliximab o adalimumab",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-crohn-grave-refractaria-a-tratamiento-habitual/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-10",
@@ -986,7 +1022,11 @@
     "name": "Enfermedad de Fabry",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-fabry/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Exámenes diagnósticos y agalsidasa",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-fabry/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-11",
@@ -995,7 +1035,11 @@
     "name": "Enfermedad de Gaucher",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-gaucher/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Exámenes diagnósticos y taliglucerasa o imiglucerasa",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-de-gaucher/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-12",
@@ -1004,7 +1048,11 @@
     "name": "Enfermedad progresiva de Tumores Neuroendocrinos Pancreáticos",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-progresiva-de-tumores-neuroendocrinos-pancreaticos/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Sunitinib o everolimus",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/enfermedad-progresiva-de-tumores-neuroendocrinos-pancreaticos/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-13",
@@ -1013,7 +1061,11 @@
     "name": "Esclerosis Múltiple recurrente remitente con falla a tratamiento con inmunomoduladores y Esclerosis Múltiple primaria progresiva",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/esclerosis-multiple-recurrente-remitente-con-falla-a-tratamiento-con-inmunomoduladores-y-esclerosis-multiple-primaria-progresiva/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Fingolimod, natalizumab, alemtuzumab, cladribina u ocrelizumab",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/esclerosis-multiple-recurrente-remitente-con-falla-a-tratamiento-con-inmunomoduladores-y-esclerosis-multiple-primaria-progresiva/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-14",
@@ -1022,7 +1074,11 @@
     "name": "Hipertensión Arterial Pulmonar Grupo I",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipertension-arterial-pulmonar-grupo-i/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Cateterismo cardíaco; iloprost inhalatorio, ambrisentán o bosentán",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipertension-arterial-pulmonar-grupo-i/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-15",
@@ -1031,7 +1087,11 @@
     "name": "Hipoacusia sensorioneural bilateral severa o profunda postlocutiva",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipoacusia-sensorioneural-bilateral-severa-o-profunda-postlocutiva/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Implante coclear unilateral y recambios establecidos",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/hipoacusia-sensorioneural-bilateral-severa-o-profunda-postlocutiva/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-16",
@@ -1040,7 +1100,11 @@
     "name": "Mielofibrosis primaria o secundaria a otras neoplasias mieloproliferativas,",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/mielofibrosis-primaria-o-secundaria-a-otras-neoplasias-mieloproliferativas/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Ruxolitinib",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/mielofibrosis-primaria-o-secundaria-a-otras-neoplasias-mieloproliferativas/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-17",
@@ -1049,7 +1113,11 @@
     "name": "Mucopolisacaridosis Tipo I",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/mucopolisacaridosis-tipo-i/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Exámenes diagnósticos y laronidasa",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/mucopolisacaridosis-tipo-i/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-18",
@@ -1058,7 +1126,11 @@
     "name": "Mucopolisacaridosis Tipo II",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/mucopolisacaridosis-tipo-ii/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Exámenes diagnósticos e idursulfasa",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/mucopolisacaridosis-tipo-ii/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-19",
@@ -1067,7 +1139,11 @@
     "name": "Mucopolisacaridosis Tipo VI",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/mucopolisacaridosis-tipo-vi/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Exámenes diagnósticos y galsulfasa",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/mucopolisacaridosis-tipo-vi/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-20",
@@ -1076,7 +1152,11 @@
     "name": "Nutrición Enteral domiciliaria total o parcial, para personas cuya condición de salud imposibilita la alimentación por vía oral",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/nutricion-enteral-domiciliaria-total-o-parcial-para-personas-cuya-condicion-de-salud-imposibilita-la-alimentacion-por-via-oral/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Fórmulas enterales y dispositivos médicos correspondientes",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/nutricion-enteral-domiciliaria-total-o-parcial-para-personas-cuya-condicion-de-salud-imposibilita-la-alimentacion-por-via-oral/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-21",
@@ -1085,7 +1165,11 @@
     "name": "Profilaxis del virus respiratorio sincicial para prematuros menores de 32 semanas y lactantes menores de 1 año con cardiopatías congénitas hemodinámicamente significativas no resueltas o cardiopatías cianóticas secundarias",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/profilaxis-del-virus-respiratorio-sincicial-para-prematuros-menores-de-32-semanas-y-lactantes-menores-de-1-ano-con-cardiopatias-congenitas-hemodinamicamente-significativas-no-resueltas-o-cardiopatias/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Palivizumab, según periodo y criterios establecidos",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/profilaxis-del-virus-respiratorio-sincicial-para-prematuros-menores-de-32-semanas-y-lactantes-menores-de-1-ano-con-cardiopatias-congenitas-hemodinamicamente-significativas-no-resueltas-o-cardiopatias/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-22",
@@ -1094,7 +1178,11 @@
     "name": "Tirosinemia Tipo I",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tirosinemia-tipo-i/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Determinación de succinilacetona y nitisinona",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/tirosinemia-tipo-i/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-23",
@@ -1103,7 +1191,11 @@
     "name": "Tratamiento Colitis Ulcerosa moderada o grave, refractaria al tratamiento de primera línea",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-colitis-ulcerosa-moderada-o-grave-refractaria-al-tratamiento-de-primera-linea/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Golimumab, adalimumab o infliximab",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-colitis-ulcerosa-moderada-o-grave-refractaria-al-tratamiento-de-primera-linea/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-24",
@@ -1112,7 +1204,11 @@
     "name": "Tratamiento de Inmunodeficiencias Primarias",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-de-inmunodeficiencias-primarias/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Inmunoglobulina G endovenosa o subcutánea",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-de-inmunodeficiencias-primarias/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-25",
@@ -1121,7 +1217,11 @@
     "name": "Tratamiento Lupus Eritematoso Sistémico con compromiso cutáneo o articular refractario a tratamiento habitual",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-lupus-eritematoso-sistemico-con-compromiso-cutaneo-o-articular-refractario-a-tratamiento-habitual/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Belimumab",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-lupus-eritematoso-sistemico-con-compromiso-cutaneo-o-articular-refractario-a-tratamiento-habitual/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-26",
@@ -1130,7 +1230,11 @@
     "name": "Tratamiento para la Corea en personas con Enfermedad de Huntington",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-para-la-corea-en-personas-con-enfermedad-de-huntington/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Test de repetición CAG del gen HTT y tetrabenazina",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/tratamiento-para-la-corea-en-personas-con-enfermedad-de-huntington/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   },
   {
     "id": "lrs-27",
@@ -1139,6 +1243,10 @@
     "name": "Tumores del Estroma Gastrointestinal no resecables o Metástasicos",
     "url": "https://www.superdesalud.gob.cl/orientacion-en-salud/tumores-del-estroma-gastrointestinal-no-resecables-o-metastasicos/",
     "source_url": "https://www.superdesalud.gob.cl/tax-temas-de-orientacion/ley-ricarte-soto-6088/",
-    "checked_at": "2026-11-24"
+    "checked_at": "2026-11-24",
+    "treatments": "Examen inmunohistoquímico c-kit/CD117, tomografía e imatinib o sunitinib",
+    "treatment_source": "https://www.superdesalud.gob.cl/orientacion-en-salud/tumores-del-estroma-gastrointestinal-no-resecables-o-metastasicos/",
+    "treatment_checked_at": "2026-11-24",
+    "treatment_basis": "Prestaciones de alto costo descritas en ficha individual de Superintendencia de Salud"
   }
 ]
