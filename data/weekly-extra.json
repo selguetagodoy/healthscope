@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-11-24T17:30:40-03:00",
+  "diario": [
+    {
+      "id": "956d7fac421e3eb2012638",
+      "title": "Resolución exenta número E 5.558, de 2026.- Instruye el envío de un Plan de Manejo de Riesgos para los productos farmacéuticos que contienen hidroxietil almidón en su formulación",
+      "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2026/11/18/44602/01/2901733.pdf",
+      "published": "2026-11-18",
+      "date": "2026-11-18",
+      "authority": "Diario Oficial",
+      "source_type": "Diario Oficial",
+      "category": "legislacion",
+      "status": "Pendiente de revisión",
+      "summary": ""
+    }
+  ],
+  "legislative": [],
+  "sources": [
+    {
+      "id": "diario-oficial-ediciones",
+      "name": "Diario Oficial · ediciones y extraordinarias",
+      "url": "https://www.diariooficial.interior.gob.cl/edicionelectronica/index.php",
+      "status": "ok",
+      "dates_checked": [
+        "2026-11-24",
+        "2026-11-23",
+        "2026-11-22",
+        "2026-11-21",
+        "2026-11-20",
+        "2026-11-19",
+        "2026-11-18"
+      ],
+      "errors": [],
+      "items_seen": 1
+    },
+    {
+      "id": "Senado de Chile",
+      "name": "Senado de Chile",
+      "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&mo=tramitacion",
+      "status": "ok",
+      "items_seen": 0,
+      "errors": []
+    },
+    {
+      "id": "Cámara de Diputadas y Diputados",
+      "name": "Cámara de Diputadas y Diputados",
+      "url": "https://www.camara.cl/legislacion/proyectosdeley/leyes_promulgadas.aspx",
+      "status": "error",
+      "items_seen": 0,
+      "errors": [
+        "HTTP Error 403: Forbidden"
+      ]
+    }
+  ]
+}

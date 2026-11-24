@@ -1,0 +1,271 @@
+{
+  "window_start": "2026-11-18",
+  "window_end": "2026-11-24",
+  "generated_at": "2026-11-24T17:30:40-03:00",
+  "last_monitor_at": "2026-11-24T20:30:18Z",
+  "extra_checked_at": "2026-11-24T17:30:40-03:00",
+  "schedule": "Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.",
+  "verified": [
+    {
+      "id": "senado-bol-15047-11-tabla-2026-11-24",
+      "published": "2026-11-24",
+      "title": "La tabla de la Comisión de Salud incluye el Boletín 15.047-11, vinculado a la Ley Ricarte Soto",
+      "authority": "Comisión de Salud del Senado",
+      "source_type": "Sesión parlamentaria",
+      "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=24%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23231&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3",
+      "topic": "Regulación y Congreso",
+      "score": 10,
+      "status": "Verificado",
+      "summary": "El proyecto propone modificar la distribución del fondo de protección financiera de la Ley Ricarte Soto. La ficha de la sesión del 24 de noviembre lo incorpora como punto 1; el registro enlazado permite revisar el desarrollo parlamentario consignado.",
+      "implications": "La inclusión en tabla acredita que el asunto estaba citado para la sesión. Esta referencia no acredita una aprobación ni un cambio normativo.",
+      "new_since_previous": false
+    },
+    {
+      "id": "isp-ram-esavi-base-2026-11-23",
+      "published": "2026-11-23",
+      "title": "El ISP publica la base anonimizada de notificaciones RAM y ESAVI desde 2014",
+      "authority": "Instituto de Salud Pública · ANAMED",
+      "source_type": "Base de datos pública",
+      "url": "https://www.ispch.gob.cl/noticia/el-isp-disponibiliza-la-base-de-datos-de-reportes-de-sospechas-de-reacciones-adversas-a-medicamentos-ram-y-eventos-supuestamente-atribuibles-a-vacunacion-e-inmunizacion-esavi-registrados-desde-201/",
+      "topic": "Medicamentos y seguridad",
+      "score": 7,
+      "status": "Verificado",
+      "summary": "El instituto habilitó una base descargable y de actualización periódica sobre sospechas de reacciones adversas a medicamentos y eventos supuestamente atribuibles a vacunas. La ficha técnica informa registros desde 2014 y un periodo disponible hasta octubre de 2026.",
+      "implications": "El conjunto permite investigación secundaria en farmacovigilancia; su uso requiere considerar el carácter de notificación de sospecha y las notas metodológicas del ISP.",
+      "new_since_previous": false
+    },
+    {
+      "id": "isp-glp1-naiona-2026-11-18",
+      "published": "2026-11-18",
+      "title": "El ISP emite una nota de farmacovigilancia sobre agonistas GLP-1 y riesgo de NOIANA",
+      "authority": "Instituto de Salud Pública · ANAMED",
+      "source_type": "Nota de farmacovigilancia",
+      "url": "https://www.ispch.gob.cl/noticia/isp-publica-nota-de-farmacovigilancia-sobre-agonistas-del-receptor-de-glp-1-por-riesgo-de-neuropatia-optica-isquemica-anterior-no-arteritica/",
+      "topic": "Medicamentos y seguridad",
+      "score": 7,
+      "status": "Verificado",
+      "summary": "El ISP informó que instruirá actualizar los folletos dirigidos a pacientes y profesionales para medicamentos con agonistas del receptor GLP-1, a raíz del riesgo de neuropatía óptica isquémica anterior no arterítica.",
+      "implications": "La autoridad comunicó una medida de actualización de información de seguridad. La nota oficial describe el alcance y la evidencia considerada.",
+      "new_since_previous": false
+    }
+  ],
+  "candidates": [
+    {
+      "id": "956d7fac421e3eb2012638",
+      "published": "2026-11-18",
+      "title": "Resolución exenta número E 5.558, de 2026.- Instruye el envío de un Plan de Manejo de Riesgos para los productos farmacéuticos que contienen hidroxietil almidón en su formulación",
+      "authority": "Diario Oficial",
+      "source_type": "Diario Oficial",
+      "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2026/11/18/44602/01/2901733.pdf",
+      "topic": "Regulación y Congreso",
+      "score": 2,
+      "status": "Pendiente de revisión",
+      "summary": "",
+      "implications": "",
+      "new_since_previous": false
+    },
+    {
+      "id": "minsal-noticias-cd1100eb6977d5e421",
+      "published": "2026-11-24",
+      "title": "Ministra Chomali encabeza firma de convenio para extender la estrategia “recetas culturales” a todo el país",
+      "authority": "Ministerio de Salud",
+      "source_type": "Fuente oficial",
+      "url": "https://www.minsal.cl/ministra-chomali-encabeza-firma-de-convenio-para-extender-la-estrategia-recetas-culturales-a-todo-el-pais",
+      "topic": "Medicamentos y seguridad",
+      "score": 0,
+      "status": "Pendiente de revisión",
+      "summary": "",
+      "implications": "",
+      "new_since_previous": false
+    },
+    {
+      "id": "media-portal-red-salud-7d3d1d665e8951f102",
+      "published": "2026-11-24",
+      "title": "El ejercicio terapéutico como parte de la atención integral del cáncer",
+      "authority": "Portal Red Salud",
+      "source_type": "Prensa",
+      "url": "https://portalredsalud.cl/2026/11/24/el-ejercicio-terapeutico-como-parte-de-la-atencion-integral-del-cancer",
+      "topic": "Prensa especializada",
+      "score": 0,
+      "status": "Pendiente de revisión",
+      "summary": "",
+      "implications": "",
+      "new_since_previous": false
+    }
+  ],
+  "undated_social": [
+    {
+      "title": "Acceso a medicamentos y rol de los municipios",
+      "url": "https://es.linkedin.com/posts/https-www.achm.cl-_c%C3%B3mo-ampliar-el-acceso-a-medicamentos-activity-7524490139029434368-SFbk",
+      "authority": "Asociación Chilena de Municipalidades",
+      "source_type": "LinkedIn",
+      "captured_at": "2026-11-24"
+    },
+    {
+      "title": "Participación en discusión de acceso e innovación",
+      "url": "https://es.linkedin.com/posts/cenabast_cenabast-activity-7501721413020454912-xgAG",
+      "authority": "Cenabast",
+      "source_type": "LinkedIn",
+      "captured_at": "2026-11-24"
+    },
+    {
+      "title": "Consulta al mercado sobre trazabilidad",
+      "url": "https://es.linkedin.com/posts/cenabast_cenabast-minsal-saludp%C3%BAblica-activity-7515836936570384384-TM_L",
+      "authority": "Cenabast",
+      "source_type": "LinkedIn",
+      "captured_at": "2026-11-24"
+    },
+    {
+      "title": "Intermediación de medicamentos y municipios",
+      "url": "https://es.linkedin.com/posts/cenabast_remediosm%C3%A1sbaratos-leycenabast-cenabast-activity-7526353091106054144-8EbJ",
+      "authority": "Cenabast",
+      "source_type": "LinkedIn",
+      "captured_at": "2026-11-24"
+    },
+    {
+      "title": "Acceso oncológico y presupuesto 2027",
+      "url": "https://es.linkedin.com/posts/cifchile_cifchile-innovaci%C3%B3nbiom%C3%A9dica-oncolog%C3%ADa-activity-7511448628323016704-9oN9",
+      "authority": "CIF Chile",
+      "source_type": "LinkedIn",
+      "captured_at": "2026-11-24"
+    },
+    {
+      "title": "Congreso sobre enfermedades raras y diagnóstico genético",
+      "url": "https://es.linkedin.com/posts/congreso-cerpohchi-chile_cerpohchi2026-3billion-diagn%C3%B3sticogen%C3%A9tico-activity-7528496200908480512-u5EO",
+      "authority": "Congreso CERPOHCHI Chile",
+      "source_type": "LinkedIn",
+      "captured_at": "2026-11-24"
+    }
+  ],
+  "sources": [
+    {
+      "name": "ISP · Alertas ANAMED",
+      "url": "https://www.ispch.cl/categorias-alertas/anamed/",
+      "status": "error",
+      "items_seen": 0,
+      "errors": [
+        "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
+      ]
+    },
+    {
+      "name": "Ministerio de Salud",
+      "url": "https://www.minsal.cl/feed/",
+      "status": "ok",
+      "items_seen": 10,
+      "errors": []
+    },
+    {
+      "name": "Cenabast",
+      "url": "https://www.cenabast.cl/feed/",
+      "status": "ok",
+      "items_seen": 9,
+      "errors": []
+    },
+    {
+      "name": "DIPRECE",
+      "url": "https://diprece.minsal.cl/feed/",
+      "status": "ok",
+      "items_seen": 2,
+      "errors": []
+    },
+    {
+      "name": "ChileCompra",
+      "url": "https://www.chilecompra.cl/category/noticias/noticias/feed/",
+      "status": "ok",
+      "items_seen": 1,
+      "errors": []
+    },
+    {
+      "name": "Portal Prensa Salud",
+      "url": "https://portalprensasalud.cl/feed/",
+      "status": "ok",
+      "items_seen": 10,
+      "errors": []
+    },
+    {
+      "name": "Portal Red Salud",
+      "url": "https://portalredsalud.cl/feed/",
+      "status": "ok",
+      "items_seen": 10,
+      "errors": []
+    },
+    {
+      "name": "Cooperativa",
+      "url": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
+      "status": "ok",
+      "items_seen": 0,
+      "errors": []
+    },
+    {
+      "name": "Diario El Día",
+      "url": "https://www.diarioeldia.cl/rss/salud/",
+      "status": "ok",
+      "items_seen": 1,
+      "errors": []
+    },
+    {
+      "name": "CIPER",
+      "url": "https://www.ciperchile.cl/feed/",
+      "status": "ok",
+      "items_seen": 0,
+      "errors": []
+    },
+    {
+      "name": "Colegio Médico de Chile",
+      "url": "https://www.colegiomedico.cl/feed/",
+      "status": "ok",
+      "items_seen": 6,
+      "errors": []
+    },
+    {
+      "name": "FENPOF Chile",
+      "url": "https://fenpof.cl/feed/",
+      "status": "ok",
+      "items_seen": 0,
+      "errors": []
+    },
+    {
+      "id": "diario-oficial-ediciones",
+      "name": "Diario Oficial · ediciones y extraordinarias",
+      "url": "https://www.diariooficial.interior.gob.cl/edicionelectronica/index.php",
+      "status": "ok",
+      "dates_checked": [
+        "2026-11-24",
+        "2026-11-23",
+        "2026-11-22",
+        "2026-11-21",
+        "2026-11-20",
+        "2026-11-19",
+        "2026-11-18"
+      ],
+      "errors": [],
+      "items_seen": 1
+    },
+    {
+      "id": "Senado de Chile",
+      "name": "Senado de Chile",
+      "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&mo=tramitacion",
+      "status": "ok",
+      "items_seen": 0,
+      "errors": []
+    },
+    {
+      "id": "Cámara de Diputadas y Diputados",
+      "name": "Cámara de Diputadas y Diputados",
+      "url": "https://www.camara.cl/legislacion/proyectosdeley/leyes_promulgadas.aspx",
+      "status": "error",
+      "items_seen": 0,
+      "errors": [
+        "HTTP Error 403: Forbidden"
+      ]
+    }
+  ],
+  "all_ids": [
+    "senado-bol-15047-11-tabla-2026-11-24",
+    "isp-ram-esavi-base-2026-11-23",
+    "isp-glp1-naiona-2026-11-18",
+    "956d7fac421e3eb2012638",
+    "minsal-noticias-cd1100eb6977d5e421",
+    "media-portal-red-salud-7d3d1d665e8951f102"
+  ]
+}
