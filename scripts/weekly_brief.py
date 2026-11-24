@@ -127,6 +127,8 @@ def make(now,extra_data=None):
     seen=set();verified=[];candidates=[];undated=[]
     records=read("events.json",[])+read("data/pending.json",[])+extra_data.get("diario",[])+extra_data.get("legislative",[])+read("data/social-posts.json",[])
     previous=set(old.get("all_ids",[]))
+    same_cut=bool(old) and old.get("last_monitor_at")==monitor.get("last_attempt_at") and old.get("extra_checked_at")==extra_data.get("checked_at")
+    previous_new={r["id"] for r in old.get("verified",[])+old.get("candidates",[]) if r.get("new_since_previous")}
     for r in records:
         url=r.get("url","");title=r.get("title","");when=r.get("published") or r.get("date") or ""
         if not safe(url) or not title or not relevant(" ".join(str(r.get(k,"")) for k in ("title","summary","medication","topics"))) or url.rstrip("/") in seen:continue
@@ -136,7 +138,7 @@ def make(now,extra_data=None):
         if not start<=when<=end:continue
         seen.add(url.rstrip("/"))
         ok=r.get("status")=="Verificado"
-        item={"id":r.get("id",url),"published":when,"title":title,"authority":r.get("authority",""),"source_type":r.get("source_type","Fuente oficial"),"url":url,"topic":classify(r),"score":score(r),"status":"Verificado" if ok else "Pendiente de revisión","summary":r.get("summary","") if ok else "","implications":r.get("implications","") if ok else "","new_since_previous":bool(old) and r.get("id",url) not in previous}
+        item={"id":r.get("id",url),"published":when,"title":title,"authority":r.get("authority",""),"source_type":r.get("source_type","Fuente oficial"),"url":url,"topic":classify(r),"score":score(r),"status":"Verificado" if ok else "Pendiente de revisión","summary":r.get("summary","") if ok else "","implications":r.get("implications","") if ok else "","new_since_previous":bool(old) and (r.get("id",url) not in previous or (same_cut and r.get("id",url) in previous_new))}
         (verified if ok else candidates).append(item)
     key=lambda x:(x["score"],x["published"],x["title"])
     verified.sort(key=key,reverse=True);candidates.sort(key=key,reverse=True)
