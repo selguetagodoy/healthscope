@@ -71,3 +71,7 @@ Presupuesto BCN 2017–2026, estudios ClinicalTrials.gov con sede Chile, solicit
 ## Briefing semanal
 
 La portada y `/semana/` presentan siete días móviles de novedades farmacéuticas verificadas y capturas separadas. Cortes GitHub Actions: 11:17, 14:17, 17:17, 20:17 y 23:17 UTC en días hábiles; 15:17 UTC fines de semana. La hora local cambia con horario estacional. `scripts/weekly_brief.py` consulta ediciones del Diario Oficial, Senado y Cámara y expone fallos. `--offline` recompone la selección con los datos disponibles. No se publica información interna de clientes ni se automatiza la aprobación editorial. Publicaciones sociales sin fecha exacta se muestran por separado.
+
+## Seguimiento gratuito de conversación pública
+
+Prensa ofrece diez búsquedas temáticas de publicaciones indexadas en LinkedIn y X, web y Google Alerts. El directorio ofrece consultas semanales por actor. No se automatizan consultas de Google Search ni se extraen perfiles de redes sociales. Cuatro RSS adicionales (ISP, SOCHICAR, Clínicas de Chile, Colegio de Enfermeras) se integran al corte periódico y al briefing. Google Alerts requiere activar la alerta en la cuenta personal.
