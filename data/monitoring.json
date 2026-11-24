@@ -1,12 +1,40 @@
 {
-  "timezone": "America/Santiago",
-  "schedule": ["08:00", "12:00", "16:30"],
-  "last_attempt_at": null,
-  "last_success_at": null,
-  "last_success_local": null,
+  "last_attempt_at": "2026-11-24T17:14:13Z",
+  "last_success_at": "2026-11-24T17:14:13Z",
+  "last_success_local": "2026-11-24 14:14 -03",
+  "schedule": [
+    "08:00",
+    "12:00",
+    "16:30"
+  ],
   "sources": [
-    {"id":"isp-alertas","name":"ISP · Alertas ANAMED","status":"pendiente_primera_ejecucion","items_seen":0},
-    {"id":"minsal-noticias","name":"Ministerio de Salud","status":"pendiente_primera_ejecucion","items_seen":0},
-    {"id":"cenabast-noticias","name":"Cenabast","status":"pendiente_primera_ejecucion","items_seen":0}
-  ]
+    {
+      "checked_at": "2026-11-24T14:14:13-03:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>",
+      "id": "isp-alertas",
+      "items_seen": 0,
+      "monitor_url": "https://ispch.cl/categorias-alertas/anamed/",
+      "name": "ISP · Alertas ANAMED",
+      "status": "error"
+    },
+    {
+      "checked_at": "2026-11-24T14:14:13-03:00",
+      "http_status": 200,
+      "id": "minsal-noticias",
+      "items_seen": 10,
+      "monitor_url": "https://www.minsal.cl/feed/",
+      "name": "Ministerio de Salud",
+      "status": "ok"
+    },
+    {
+      "checked_at": "2026-11-24T14:14:13-03:00",
+      "http_status": 200,
+      "id": "cenabast-noticias",
+      "items_seen": 9,
+      "monitor_url": "https://www.cenabast.cl/feed/",
+      "name": "Cenabast",
+      "status": "ok"
+    }
+  ],
+  "timezone": "America/Santiago"
 }
