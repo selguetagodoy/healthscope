@@ -6,7 +6,6 @@ on:
     paths-ignore:
       - "**.md"
       - "tests/**"
-      - "scripts/**"
       - ".github/workflows/validate.yml"
       - ".github/workflows/monitor-sources.yml"
   workflow_dispatch:
