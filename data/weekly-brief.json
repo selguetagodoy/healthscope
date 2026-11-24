@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-18",
   "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T17:30:40-03:00",
-  "last_monitor_at": "2026-11-24T20:30:18Z",
-  "extra_checked_at": "2026-11-24T17:30:40-03:00",
+  "generated_at": "2026-11-24T17:31:48-03:00",
+  "last_monitor_at": "2026-11-24T20:31:31Z",
+  "extra_checked_at": "2026-11-24T17:31:48-03:00",
   "schedule": "Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.",
   "verified": [
     {
@@ -231,12 +231,7 @@
       "status": "ok",
       "dates_checked": [
         "2026-11-24",
-        "2026-11-23",
-        "2026-11-22",
-        "2026-11-21",
-        "2026-11-20",
-        "2026-11-19",
-        "2026-11-18"
+        "2026-11-23"
       ],
       "errors": [],
       "items_seen": 1
