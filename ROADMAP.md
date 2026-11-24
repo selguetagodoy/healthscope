@@ -64,3 +64,8 @@
 
 - Buscador por ORPHA y denominación, exportaciones y procedencia de la versión nacional.
 - Pendientes: confirmar importación y publicación, cruzar sinónimos, CIE y coberturas mediante mapeos explícitos; registro ISP, compras, presupuesto, ensayos y patentes.
+
+## V0.9 · registro sanitario
+
+- 27 registros iniciales con procedencia y filtros; importación masiva pendiente de exportaciones oficiales.
+- Próxima prioridad: compras farmacéuticas y adjudicaciones por línea de producto.

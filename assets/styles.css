@@ -284,3 +284,5 @@ body[data-view] main>section{display:none}body[data-view] main>section.module-ac
 
 /* V0.8 */
 .epof-table{overflow-x:auto;margin:18px 0}.epof-table table{width:100%;border-collapse:collapse;background:var(--white)}.epof-table th,.epof-table td{padding:12px;text-align:left;border-bottom:1px solid var(--line);font-size:13px}.epof-table th{background:var(--pine);color:white}.epof-table td:first-child{width:95px;white-space:nowrap;color:var(--pine)}.epof-table td:last-child{width:140px}.epof-table tbody tr:nth-child(even){background:#f4f6f2}@media(max-width:650px){.epof-table th,.epof-table td{padding:9px;font-size:12px}.epof-table td:last-child{width:auto}}
+
+#registro-isp .epof-table table{min-width:850px}#registro-isp .epof-table td:first-child{font-weight:700}#registro-isp .epof-table td:last-child{min-width:120px}

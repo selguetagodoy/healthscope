@@ -1,6 +1,6 @@
 # Estado · HealthScope Chile
 
-**V0.8 · 24-11-2026 · America/Santiago**
+**V0.9 · 24-11-2026 · America/Santiago**
 
 - GitHub Pages operativo, V0.4 verificada con HTTP 200 y diez rutas (incluyendo ficha). Workflow 45473374019 exitoso.
 - Monitor V0.4: ejecución 45473525744 exitosa; MINSAL, Cenabast y DIPRECE respondieron, ISP continúa con error TLS.
@@ -14,3 +14,5 @@
 - V0.7: 41 actores institucionales, 14 canales sociales, 20 medios en directorio, 12 fuentes RSS/HTML configuradas. Los siete RSS nuevos devolvieron XML con ítems desde Windows; su ejecución CI está pendiente. LinkedIn/X: directorio manual, cero publicaciones sociales incorporadas. Pendiente incorporar cargos individuales con respaldo oficial.
 
 - V0.8: buscador ORPHA, fuente nacional y resolución identificadas; importador reproducible con validación de 9.784 entidades, huella SHA-256 y exportación. La disponibilidad de la copia local depende del resultado de la importación CI. No se incorporan registros de personas.
+
+- V0.9: muestra ISP de 27 registros, buscador, filtros, exportaciones e importador CSV oficial. Consulta directa vigente: 1.178 resultados, 25 importados; Trikafta: 2 de 2. La exportación Excel desde Playwright no concluyó; la extracción completa sigue pendiente. Despliegue pendiente al momento del commit.

@@ -2,7 +2,7 @@
 
 Observatorio independiente de inteligencia sanitaria y farmacéutica. HealthScope organiza información pública sobre decisiones sanitarias, medicamentos, compras, cobertura y datos de Chile, con enlaces a las fuentes originales.
 
-**Versión:** 0.8 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
+**Versión:** 0.9 · **Idioma:** español de Chile · **Arquitectura:** HTML, CSS, JavaScript y JSON estáticos.
 
 ## Sitio público
 
@@ -59,3 +59,7 @@ HealthScope es un proyecto personal e independiente. Usa información pública y
 ## Nomenclatura EPOF
 
 `python scripts/import_epof.py` importa el CSV público enlazado por DIPRECE y valida 9.784 códigos únicos antes de generar `data/epof.json`. No se consultan registros personales. La copia es opcional para la compilación; si falta, la interfaz remite al catálogo oficial. La publicación indica el estado real de importación.
+
+## Registro sanitario ISP
+
+Muestra inicial de 27 registros verificados: 2 Trikafta y 25 de la primera página de venta directa vigente (1.178 resultados informados). El importador `scripts/import_isp.py` acepta exportaciones oficiales convertidas a CSV UTF-8, con estado, condición, fecha, criterio y total esperado explícitos. No confundir autorización con cobertura ni disponibilidad.

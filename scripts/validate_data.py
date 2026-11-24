@@ -67,6 +67,12 @@ def validate():
         check(len(rows) == catalog.get("count") == catalog.get("declared_count") == 9784, "EPOF catalogue count mismatch", errors)
         check(len(codes) == len(set(codes)) and all(isinstance(c,int) and c>0 for c in codes), "EPOF invalid or duplicate ORPHA codes", errors)
         check(all(bool(r.get("name")) for r in rows) and valid_https(catalog.get("source_url")), "EPOF missing names or provenance", errors)
+    isp = load(ROOT / "data/isp-registry.json")
+    isp_rows = isp.get("rows", [])
+    regs = [r.get("registration") for r in isp_rows]
+    check(len(isp_rows) == isp.get("count") and len(regs) == len(set(regs)), "ISP count or duplicate registrations", errors)
+    check(valid_https(isp.get("source_url")) and bool(isp.get("scope")), "ISP provenance missing", errors)
+    check(all(r.get("registration") and r.get("name") and r.get("holder") and r.get("checked_at") for r in isp_rows), "ISP row incomplete", errors)
     event_urls = set()
     for i, event in enumerate(events):
         prefix = "events[" + str(i) + "]"
