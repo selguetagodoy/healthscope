@@ -8,7 +8,7 @@ HealthScope prioriza publicaciones, tablas, normas y conjuntos de datos de organ
 
 | Fuente | Método | URL consultada | Uso |
 |---|---|---|---|
-| ISP · alertas ANAMED | Tabla HTML pública | https://ispch.cl/categorias-alertas/anamed/ | Alertas de seguridad, retiros y productos sin registro |
+| ISP · alertas ANAMED | Tabla HTML pública | https://www.ispch.gob.cl/categorias-alertas/anamed/ | Alertas de seguridad, retiros y productos sin registro |
 | MINSAL | Feed RSS público | https://www.minsal.cl/feed/ | Comunicados y noticias del Ministerio |
 | Cenabast | Feed RSS público | https://www.cenabast.cl/feed/ | Abastecimiento, compras y actividad institucional |
 

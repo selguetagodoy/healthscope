@@ -1,11 +1,12 @@
 name: Monitor official health sources
 
 on:
-  # Run a first live smoke check when this collector is first added or changed.
+  # Run a live check when this collector or an endpoint is changed.
   push:
     branches: [main]
     paths:
       - ".github/workflows/monitor-sources.yml"
+      - "data/sources.json"
   schedule:
     # Santiago alternates between UTC-3 and UTC-4. The local-time guard in the
     # collector selects 08:00, 12:00 and 16:30 in either season.

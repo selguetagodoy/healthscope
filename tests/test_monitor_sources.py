@@ -20,13 +20,13 @@ class MonitorSourceTests(unittest.TestCase):
         self.assertEqual(records[0]["title"], "Noticia & salud")
 
     def test_alert_table_extracts_official_article_link(self):
-        html = b'''<table><tr><td>16-11-2026</td><td>Falsificados</td><td>Farmaceutico</td><td>Alerta de producto</td><td><a href="https://ispch.cl/alerta/producto/">Publicacion ISP</a></td></tr></table>'''
+        html = b'''<table><tr><td>16-11-2026</td><td>Falsificados</td><td>Farmaceutico</td><td>Alerta de producto</td><td><a href="https://www.ispch.gob.cl/alerta/producto/">Publicacion ISP</a></td></tr></table>'''
         source = {"id": "isp-alertas", "name": "ISP", "category": "farmaceutico"}
         fixed_now = datetime(2026, 11, 24, 12, tzinfo=timezone.utc)
         records = monitor_sources.parse_isp_alerts(html, source, fixed_now)
         self.assertEqual(len(records), 1)
         self.assertEqual(records[0]["date"], "2026-11-16")
-        self.assertEqual(records[0]["url"], "https://ispch.cl/alerta/producto")
+        self.assertEqual(records[0]["url"], "https://www.ispch.gob.cl/alerta/producto")
 
     def test_canonical_url_strips_tracking_and_rejects_non_https(self):
         self.assertEqual(monitor_sources.canonical_url("https://EXAMPLE.org/a/?utm_source=x#top"), "https://example.org/a")

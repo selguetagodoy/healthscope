@@ -12,7 +12,7 @@
     "topics": ["RAM", "ESAVI", "datos abiertos"],
     "status": "Verificado",
     "source_type": "Base de datos pública",
-    "url": "https://ispch.cl/noticia/el-isp-disponibiliza-la-base-de-datos-de-reportes-de-sospechas-de-reacciones-adversas-a-medicamentos-ram-y-eventos-supuestamente-atribuibles-a-vacunacion-e-inmunizacion-esavi-registrados-desde-201/"
+    "url": "https://www.ispch.gob.cl/noticia/el-isp-disponibiliza-la-base-de-datos-de-reportes-de-sospechas-de-reacciones-adversas-a-medicamentos-ram-y-eventos-supuestamente-atribuibles-a-vacunacion-e-inmunizacion-esavi-registrados-desde-201/"
   },
   {
     "id": "minsal-revision-orientaciones-hormonizacion-2026-11-22",
@@ -90,7 +90,7 @@
     "topics": ["farmacovigilancia", "seguridad de medicamentos", "NOIANA"],
     "status": "Verificado",
     "source_type": "Nota de farmacovigilancia",
-    "url": "https://ispch.cl/noticia/isp-publica-nota-de-farmacovigilancia-sobre-agonistas-del-receptor-de-glp-1-por-riesgo-de-neuropatia-optica-isquemica-anterior-no-arteritica/"
+    "url": "https://www.ispch.gob.cl/noticia/isp-publica-nota-de-farmacovigilancia-sobre-agonistas-del-receptor-de-glp-1-por-riesgo-de-neuropatia-optica-isquemica-anterior-no-arteritica/"
   },
   {
     "id": "minsal-estrategia-cancer-cervicouterino-100-comunas-2026-11-17",
@@ -121,7 +121,7 @@
     "topics": ["alerta sanitaria", "producto sin registro", "daratumumab"],
     "status": "Verificado",
     "source_type": "Alerta sanitaria",
-    "url": "https://ispch.cl/alerta/alerta-de-productos-farmaceuticos-sin-registro-falsificados-alerta-a-la-comunidad-sobre-el-producto-comercializado-como-darzalex-400-mg-20-ml/"
+    "url": "https://www.ispch.gob.cl/alerta/alerta-de-productos-farmaceuticos-sin-registro-falsificados-alerta-a-la-comunidad-sobre-el-producto-comercializado-como-darzalex-400-mg-20-ml/"
   },
   {
     "id": "isp-ondansetron-retiro-2026-11-13",
@@ -136,7 +136,7 @@
     "topics": ["retiro del mercado", "alerta 36/26", "Vitafarma"],
     "status": "Verificado",
     "source_type": "Alerta de retiro del mercado",
-    "url": "https://ispch.cl/alerta/alerta-de-retiro-del-mercado-n36-26-del-producto-farmaceutico-ondansetron-solucion-inyectable-8mg-4-ml-de-vitafarma-s-a/"
+    "url": "https://www.ispch.gob.cl/alerta/alerta-de-retiro-del-mercado-n36-26-del-producto-farmaceutico-ondansetron-solucion-inyectable-8mg-4-ml-de-vitafarma-s-a/"
   },
   {
     "id": "isp-cefazolina-retiro-2026-11-10",
@@ -151,6 +151,6 @@
     "topics": ["retiro del mercado", "alerta 34/26", "Difem"],
     "status": "Verificado",
     "source_type": "Alerta de retiro del mercado",
-    "url": "https://ispch.cl/alerta/alerta-de-retiro-del-mercado-n34-26-del-producto-farmaceutico-cefazolina-polvo-para-solucion-inyectable-1-g-de-difem-laboratorios-s-a/"
+    "url": "https://www.ispch.gob.cl/alerta/alerta-de-retiro-del-mercado-n34-26-del-producto-farmaceutico-cefazolina-polvo-para-solucion-inyectable-1-g-de-difem-laboratorios-s-a/"
   }
 ]
