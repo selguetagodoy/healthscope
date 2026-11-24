@@ -1,24 +1,52 @@
 {
   "window_start": "2026-11-18",
   "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T18:00:33-03:00",
-  "last_monitor_at": "2026-11-24T20:59:46Z",
-  "extra_checked_at": "2026-11-24T18:00:33-03:00",
+  "generated_at": "2026-11-24T19:26:11-03:00",
+  "last_monitor_at": "2026-11-24T22:25:45Z",
+  "extra_checked_at": "2026-11-24T19:26:11-03:00",
   "schedule": "Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.",
   "verified": [
     {
+      "id": "senado-presupuesto-2027-salud-2026-11-18",
+      "published": "2026-11-18",
+      "title": "Senado respalda partida de Salud con compromiso de reposición para Ley Ricarte Soto",
+      "authority": "Senado de Chile",
+      "source_type": "Prensa",
+      "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/",
+      "topic": "Presupuesto y financiamiento",
+      "score": 17,
+      "status": "Verificado",
+      "summary": "Diario y Radio Universidad de Chile informó la aprobación de la partida sanitaria y el compromiso del Ejecutivo de reponer recursos del sistema de alto costo, en la discusión del Presupuesto 2027.",
+      "implications": "La continuidad financiera de tratamientos de alto costo sigue vinculada al texto presupuestario definitivo.",
+      "new_since_previous": true
+    },
+    {
       "id": "senado-bol-15047-11-tabla-2026-11-24",
       "published": "2026-11-24",
-      "title": "La tabla de la Comisión de Salud incluye el Boletín 15.047-11, vinculado a la Ley Ricarte Soto",
+      "title": "Comisión de Salud mantiene pendiente la reforma de la Ley Ricarte Soto",
       "authority": "Comisión de Salud del Senado",
       "source_type": "Sesión parlamentaria",
       "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=24%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23231&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3",
-      "topic": "Regulación y Congreso",
-      "score": 10,
+      "topic": "Presupuesto y financiamiento",
+      "score": 14,
       "status": "Verificado",
-      "summary": "El proyecto propone modificar la distribución del fondo de protección financiera de la Ley Ricarte Soto. La ficha de la sesión del 24 de noviembre lo incorpora como punto 1; el registro enlazado permite revisar el desarrollo parlamentario consignado.",
-      "implications": "La inclusión en tabla acredita que el asunto estaba citado para la sesión. Esta referencia no acredita una aprobación ni un cambio normativo.",
+      "summary": "El registro de la sesión del 24 de noviembre consigna pendiente el proyecto que busca modificar la distribución del fondo de protección financiera de la Ley 20.850. La comisión acordó además remitir antecedentes municipales sobre atención primaria a la Comisión Mixta de Presupuestos.",
+      "implications": "El proyecto sigue en discusión; la sesión no modificó las condiciones vigentes del fondo.",
       "new_since_previous": false
+    },
+    {
+      "id": "castro-reposicion-lrs-2026-11-18",
+      "published": "2026-11-18",
+      "title": "Presidente de Comisión de Salud destaca acuerdo de reposición de recursos para LRS",
+      "authority": "Juan Luis Castro · Comisión de Salud",
+      "source_type": "Declaración pública",
+      "url": "https://www.pschile.cl/senador-juan-luis-castro-destaca-acuerdo-con-el-gobierno-para-reponer-28-mil-millones-a-la-ley-ricarte-soto-era-inaceptable-rebajar-esos-recursos/",
+      "topic": "Presupuesto y financiamiento",
+      "score": 12,
+      "status": "Verificado",
+      "summary": "El senador comunicó públicamente un acuerdo para reponer $28 mil millones en el contexto de la discusión presupuestaria.",
+      "implications": "La declaración identifica una prioridad de negociación; el monto definitivo debe comprobarse en el texto aprobado.",
+      "new_since_previous": true
     },
     {
       "id": "isp-ram-esavi-base-2026-11-23",
@@ -98,6 +126,13 @@
       "title": "Acceso a medicamentos y rol de los municipios",
       "url": "https://es.linkedin.com/posts/https-www.achm.cl-_c%C3%B3mo-ampliar-el-acceso-a-medicamentos-activity-7524490139029434368-SFbk",
       "authority": "Asociación Chilena de Municipalidades",
+      "source_type": "LinkedIn",
+      "captured_at": "2026-11-24"
+    },
+    {
+      "title": "Debate sobre brechas de acceso a tratamientos",
+      "url": "https://es.linkedin.com/posts/cifchile_webinar-wait-indicator-2026-brecha-activity-7519448556567412736-EPIP",
+      "authority": "CIF Chile",
       "source_type": "LinkedIn",
       "captured_at": "2026-11-24"
     },
@@ -185,11 +220,9 @@
     {
       "name": "Portal Red Salud",
       "url": "https://portalredsalud.cl/feed/",
-      "status": "error",
-      "items_seen": 0,
-      "errors": [
-        "<urlopen error timed out>"
-      ]
+      "status": "ok",
+      "items_seen": 10,
+      "errors": []
     },
     {
       "name": "Cooperativa",
@@ -263,7 +296,12 @@
       "status": "ok",
       "dates_checked": [
         "2026-11-24",
-        "2026-11-23"
+        "2026-11-23",
+        "2026-11-22",
+        "2026-11-21",
+        "2026-11-20",
+        "2026-11-19",
+        "2026-11-18"
       ],
       "errors": [],
       "items_seen": 1
@@ -279,7 +317,7 @@
     {
       "id": "Cámara de Diputadas y Diputados",
       "name": "Cámara de Diputadas y Diputados",
-      "url": "https://www.camara.cl/legislacion/proyectosdeley/leyes_promulgadas.aspx",
+      "url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894",
       "status": "error",
       "items_seen": 0,
       "errors": [
@@ -288,7 +326,9 @@
     }
   ],
   "all_ids": [
+    "senado-presupuesto-2027-salud-2026-11-18",
     "senado-bol-15047-11-tabla-2026-11-24",
+    "castro-reposicion-lrs-2026-11-18",
     "isp-ram-esavi-base-2026-11-23",
     "isp-glp1-naiona-2026-11-18",
     "956d7fac421e3eb2012638",
