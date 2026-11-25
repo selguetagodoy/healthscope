@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-19",
   "window_end": "2026-11-25",
-  "generated_at": "2026-11-25T15:58:02-03:00",
-  "last_monitor_at": "2026-11-25T18:56:45Z",
-  "extra_checked_at": "2026-11-25T15:58:02-03:00",
+  "generated_at": "2026-11-25T17:09:50-03:00",
+  "last_monitor_at": "2026-11-25T20:09:21Z",
+  "extra_checked_at": "2026-11-25T17:09:50-03:00",
   "legislative_tracker": {
     "updated": "2026-11-24",
     "projects": [
@@ -86,7 +86,7 @@
       "status": "Verificado",
       "summary": "Según información publicada por T13 a las 13:17 del 25 de noviembre, la Cámara aprobó el acuerdo de la Comisión Mixta y remitió el proyecto al Senado. La Partida 16 de Salud no figuraba entre las discrepancias enviadas a Mixta el 23 de noviembre.",
       "implications": "Se mantiene el acuerdo previo sobre Salud y los recursos para Ley Ricarte Soto. La aprobación de la Cámara no acredita por sí sola el despacho definitivo del Congreso, la promulgación ni nuevas coberturas.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "senado-bol-15047-11-tabla-2026-11-24",
@@ -118,7 +118,7 @@
       "status": "Verificado",
       "summary": "Emol y otros medios informaron el despacho del acuerdo de la Comisión Mixta el 24 de noviembre. La Partida 16 no estaba incluida en las diez materias remitidas a esa instancia por la Cámara el día anterior.",
       "implications": "El acuerdo no constituye una nueva reasignación sanitaria. El seguimiento del financiamiento de alto costo debe considerar el texto final y sus glosas, además de la ejecución durante 2027.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "do-decreto-81-acreditacion-2026-11-24",
@@ -134,7 +134,7 @@
       "status": "Verificado",
       "summary": "El Diario Oficial publicó el decreto que aprueba la segunda versión del estándar de acreditación de prestadores institucionales de atención cerrada y su pauta de cotejo. El manual comprende 18 páginas y la pauta 143.",
       "implications": "El nuevo estándar comenzará a regir 24 meses después de la publicación; entonces se derogará el estándar aprobado por el Decreto Exento 18/2009. Los prestadores deberán preparar su adecuación.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "do-decreto-80-osorno-2026-11-24",
@@ -150,7 +150,7 @@
       "status": "Verificado",
       "summary": "Corrige el tercer orden de subrogación de la dirección del Servicio de Salud Osorno: corresponde al director del Hospital Río Negro y no al del Hospital Río Bueno.",
       "implications": "Rectificación administrativa de alcance local; no modifica el financiamiento ni las prestaciones sanitarias.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "camara-citacion-salud-2026-11-24",
@@ -199,6 +199,22 @@
       "summary": "El instituto habilitó una base descargable y de actualización periódica sobre sospechas de reacciones adversas a medicamentos y eventos supuestamente atribuibles a vacunas. La ficha técnica informa registros desde 2014 y un periodo disponible hasta octubre de 2026.",
       "implications": "El conjunto permite investigación secundaria en farmacovigilancia; su uso requiere considerar el carácter de notificación de sospecha y las notas metodológicas del ISP.",
       "new_since_previous": false
+    },
+    {
+      "id": "cenabast-programa-hemofilia-621-1112-lr26",
+      "published": "2026-11-19",
+      "title": "Cenabast publica licitación para el Programa Hemofilia por $11.164 millones",
+      "authority": "Cenabast",
+      "source_type": "Índice de licitaciones con datos de Mercado Público",
+      "url": "https://calza.cl/licitacion/621-1112-LR26",
+      "topic": "Compras y abastecimiento",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 8,
+      "status": "Verificado",
+      "summary": "El proceso 621-1112-LR26 solicita factor VIII recombinante de 500 y 1.000 UI. El índice público basado en Mercado Público informa un monto estimado de $11.164.133.750 CLP y cierre de ofertas el 21 de diciembre de 2026.",
+      "implications": "Proceso licitatorio, no adjudicación ni cobertura nueva. Las bases y el estado actualizado se consultan en Mercado Público por el código 621-1112-LR26.",
+      "new_since_previous": true
     },
     {
       "id": "senado-despacho-presupuesto-2027-2026-11-19",
@@ -358,7 +374,7 @@
       "name": "Cooperativa",
       "url": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
       "status": "ok",
-      "items_seen": 1,
+      "items_seen": 4,
       "errors": []
     },
     {
@@ -484,6 +500,7 @@
     "camara-citacion-salud-2026-11-24",
     "camara-presupuesto-2027-salud-2026-11-23",
     "isp-ram-esavi-base-2026-11-23",
+    "cenabast-programa-hemofilia-621-1112-lr26",
     "senado-despacho-presupuesto-2027-2026-11-19",
     "media-portal-red-salud-36ab6ff0e822493e4f",
     "minsal-noticias-cd1100eb6977d5e421"

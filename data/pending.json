@@ -76,6 +76,21 @@
   },
   {
     "authority": "Portal Red Salud",
+    "captured_at": "2026-11-25T17:09:21-03:00",
+    "category": "prensa",
+    "date": "2026-11-25",
+    "id": "media-portal-red-salud-0feacd613a64cd4f3b",
+    "medication": "",
+    "published": "2026-11-25",
+    "source_id": "media-portal-red-salud",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Diabetes y su impacto en la enfermedad renal",
+    "url": "https://portalredsalud.cl/2026/11/25/diabetes-y-su-impacto-en-la-enfermedad-renal"
+  },
+  {
+    "authority": "Portal Red Salud",
     "captured_at": "2026-11-25T15:56:45-03:00",
     "category": "prensa",
     "date": "2026-11-25",
@@ -106,6 +121,21 @@
   },
   {
     "authority": "Cooperativa",
+    "captured_at": "2026-11-25T17:09:21-03:00",
+    "category": "prensa",
+    "date": "2026-11-25",
+    "id": "media-cooperativa-c742c21e178756d138",
+    "medication": "",
+    "published": "2026-11-25",
+    "source_id": "media-cooperativa",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Calor extremo: Las medidas exigidas a las empresas para proteger a sus trabajadores",
+    "url": "https://www.cooperativa.cl/noticias/pais/trabajo/calor-extremo-las-medidas-exigidas-a-las-empresas-para-proteger-a-sus/2026-11-25/155354.html"
+  },
+  {
+    "authority": "Cooperativa",
     "captured_at": "2026-11-25T15:56:45-03:00",
     "category": "prensa",
     "date": "2026-11-25",
@@ -118,6 +148,21 @@
     "summary": "",
     "title": "La premiada serie \"The Pitt\" fijó el estreno de su temporada 3",
     "url": "https://www.cooperativa.cl/noticias/magazine/streaming/la-premiada-serie-the-pitt-fijo-el-estreno-de-su-temporada-3/2026-11-25/154218.html"
+  },
+  {
+    "authority": "Cooperativa",
+    "captured_at": "2026-11-25T17:09:21-03:00",
+    "category": "prensa",
+    "date": "2026-11-25",
+    "id": "media-cooperativa-263462126cf96b2776",
+    "medication": "",
+    "published": "2026-11-25",
+    "source_id": "media-cooperativa",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Ex Miau Astral enfrenta una nueva demanda: Víctima acusa funa en redes sociales",
+    "url": "https://www.cooperativa.cl/noticias/magazine/personajes/ex-miau-astral-enfrenta-una-nueva-demanda-victima-acusa-funa-en-redes/2026-11-25/161920.html"
   },
   {
     "authority": "Ministerio de Salud",
@@ -534,6 +579,21 @@
     "summary": "",
     "title": "Región alcanza segundo lugar nacional en vacunación contra el sarampión",
     "url": "https://www.diarioeldia.cl/noticias/2026/11/23/157770-region-alcanza-segundo-lugar-nacional-en-vacunacion-contra-el-sarampion"
+  },
+  {
+    "authority": "Cooperativa",
+    "captured_at": "2026-11-25T17:09:21-03:00",
+    "category": "prensa",
+    "date": "2026-11-23",
+    "id": "media-cooperativa-55bf8513d9ec54e3bb",
+    "medication": "",
+    "published": "2026-11-23",
+    "source_id": "media-cooperativa",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Ducray presenta Sérum Anaphase Creastim, revolución dermatológica contra la caída del cabello",
+    "url": "https://www.cooperativa.cl/noticias/corporativo/noticias/marcas-negocios/ducray-presenta-serum-anaphase-creastim-revolucion-dermatologica-contra/2026-11-23/163406.html"
   },
   {
     "authority": "Colegio Médico de Chile",
