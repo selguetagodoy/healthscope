@@ -1,5 +1,85 @@
 [
   {
+    "id": "supersalud-re-13656-2026-11-23",
+    "date": "2026-11-20",
+    "published": "2026-11-23",
+    "category": "legislacion",
+    "authority": "Superintendencia de Salud",
+    "title": "Superintendencia rechaza reposición de Nueva Masvida contra instrucción sobre licencias médicas",
+    "summary": "La Resolución Exenta IF/N.º 13656 rechaza el recurso contra la Circular IF/N.º 535, de 14 de septiembre de 2026, que prohíbe compensar obligaciones de las ISAPRES con empleadores públicos cuyos trabajadores hagan uso de licencia médica.",
+    "implications": "Se mantiene la instrucción impugnada en el ámbito de las licencias médicas del sector público. No modifica coberturas farmacéuticas.",
+    "medication": "",
+    "topics": [
+      "Licencias médicas",
+      "ISAPRE",
+      "Resolución IF 13656",
+      "Circular IF 535"
+    ],
+    "status": "Verificado",
+    "source_type": "Resolución oficial",
+    "url": "https://www.superdesalud.gob.cl/normativa/resolucion-exenta-if-n13656-emision-20-11-2026/"
+  },
+  {
+    "id": "senado-fuero-colegios-salud-18906-13",
+    "date": "2026-11-24",
+    "published": "2026-11-24",
+    "category": "legislacion",
+    "authority": "Congreso Nacional",
+    "title": "Ingresa proyecto que propone fuero laboral para dirigentes de colegios profesionales de salud",
+    "summary": "El boletín 18.906-13, ingresado el 24 de noviembre, propone establecer fuero laboral para dirigentes de colegios profesionales del área de la salud.",
+    "implications": "Inicia la discusión legislativa sobre protección de dirigentes profesionales. No constituye una obligación vigente.",
+    "medication": "",
+    "topics": [
+      "Boletín 18.906-13",
+      "Colegios profesionales",
+      "Fuero laboral"
+    ],
+    "status": "Verificado",
+    "project_status": "Ingresado, en tramitación",
+    "source_type": "Tramitación legislativa oficial",
+    "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18906-13&prmID=19593"
+  },
+  {
+    "id": "minsal-linares-contrato-2026-11-24",
+    "date": "2026-11-24",
+    "published": "2026-11-24",
+    "category": "actualidad",
+    "authority": "Ministerio de Salud",
+    "title": "Contraloría toma razón del término anticipado del contrato del Hospital de Linares",
+    "summary": "MINSAL informó que la Contraloría Regional del Maule tomó razón del término unilateral y anticipado del contrato con Astaldi, tras la paralización de las obras del nuevo hospital desde julio de 2025.",
+    "implications": "El trámite permite avanzar hacia una nueva licitación de infraestructura. No acredita que el nuevo proceso haya sido publicado ni adjudicado.",
+    "medication": "",
+    "topics": [
+      "Infraestructura hospitalaria",
+      "Contraloría",
+      "Hospital de Linares",
+      "Licitaciones"
+    ],
+    "status": "Verificado",
+    "source_type": "Comunicado oficial",
+    "url": "https://www.minsal.cl/hospital-de-linares-contraloria-toma-razon-de-termino-anticipado-de-contrato-por-incumplimiento-y-despeja-el-camino-para-nueva-licitacion/"
+  },
+  {
+    "id": "minsal-hospital-dia-collipulli-2026-11-25",
+    "date": "2026-11-25",
+    "published": "2026-11-25",
+    "category": "actualidad",
+    "authority": "Ministerio de Salud",
+    "title": "MINSAL inaugura Hospital de Día de Salud Mental para adultos en Collipulli",
+    "summary": "La ministra de Salud inauguró el dispositivo de atención ambulatoria intensiva para adultos con trastornos mentales graves. Según MINSAL, el recinto comenzó a operar durante 2026.",
+    "implications": "Fortalece la oferta especializada local y busca reducir desplazamientos para acceder a atención de mayor complejidad.",
+    "medication": "",
+    "topics": [
+      "Salud mental",
+      "Red asistencial",
+      "Collipulli",
+      "Acceso territorial"
+    ],
+    "status": "Verificado",
+    "source_type": "Comunicado oficial",
+    "url": "https://www.minsal.cl/ministra-de-salud-inaugura-hospital-de-dia-de-salud-mental-para-adultos-en-collipulli/"
+  },
+  {
     "id": "cenabast-programa-hemofilia-621-1112-lr26",
     "date": "2026-11-19",
     "published": "2026-11-19",
@@ -150,7 +230,7 @@
     "category": "datos",
     "authority": "Cámara de Diputadas y Diputados",
     "title": "Cámara aprueba el acuerdo de la Comisión Mixta del Presupuesto 2027",
-    "summary": "Según información publicada por T13 a las 13:17 del 25 de noviembre, la Cámara aprobó el acuerdo de la Comisión Mixta y remitió el proyecto al Senado. La Partida 16 de Salud no figuraba entre las discrepancias enviadas a Mixta el 23 de noviembre.",
+    "summary": "Según información publicada por T13 el 25 de noviembre, la Cámara aprobó el informe de la Comisión Mixta por 113 votos a favor, 9 en contra y sin abstenciones, remitiéndolo al Senado. La Partida 16 no figuraba entre las discrepancias enviadas a Mixta el 23 de noviembre.",
     "implications": "Se mantiene el acuerdo previo sobre Salud y los recursos para Ley Ricarte Soto. La aprobación de la Cámara no acredita por sí sola el despacho definitivo del Congreso, la promulgación ni nuevas coberturas.",
     "medication": "Presupuesto sanitario",
     "topics": [
@@ -160,7 +240,7 @@
       "Boletín 18.702-05"
     ],
     "status": "Verificado",
-    "project_status": "Informe de Mixta aprobado por Cámara, según prensa",
+    "project_status": "Informe de Mixta aprobado por Cámara; pronunciamiento final del Senado no confirmado",
     "source_type": "Prensa",
     "url": "https://www.t13.cl/noticia/nacional/camara-diputados-aprueba-proyecto-presupuesto-2027-tras-acuerdo-comision-mixta-25-11-2026"
   },
