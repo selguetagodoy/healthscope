@@ -69,6 +69,11 @@ def main():
                 if row.get("supplier")=="Proveedor no publicado en esta vista": row["supplier"]=""
                 writer.writerow(row)
         tmp.replace(p)
+    from editorial_scope import public_press
+    pending_path=DEST/"data"/"pending.json"
+    if pending_path.exists():
+        pending=json.loads(pending_path.read_text(encoding="utf-8"))
+        write(pending_path,[r for r in pending if public_press(r)])
     from public_data import prepare, indexes
     prepare(DEST)
     indexes(DEST)
@@ -104,7 +109,8 @@ def main():
         page=re.sub(r'<section ([^>]*\bid="'+re.escape(section)+r'"[^>]*)>',lambda m:'<section '+re.sub(r'class="([^"]*)"',r'class="\1 module-active"',m[1],count=1)+'>',page,count=1)
         page=page.replace('<div id="dataNotice"', '<div class="module-intro"><a href="./">Inicio</a> / '+esc(title)+'</div><div id="dataNotice"',1)
         page=page.replace('href="#contenido"','href="./'+route+'/#contenido"',1)
-        if section=="weekly": page=render(page,brief,full=True)
+        if section=="weekly":
+            page=render(page,brief,full=True).replace('href="./semana/">Abrir briefing completo →','href="./">Volver al resumen →')
         page=prune(page,{section},{specialized.get(section,"app")})
         write_page(route,page); sitemap.append(BASE+route+"/")
     events=json.loads((ROOT/"events.json").read_text(encoding="utf-8"))
@@ -114,7 +120,7 @@ def main():
         path="fichas/"+eid+"/"; url=BASE+path
         title=esc(e.get("title")); source=esc(e.get("url"))
         page=meta(template,e.get("title"),url).replace("<head>","<head>\n  <base href=\"../../\">",1)
-        main='<main id="contenido" class="shell"><article class="event-detail"><p class="module-intro"><a href="./">Inicio</a> / <a href="./radar/">Radar</a> / Ficha</p><p class="eyebrow">REGISTRO VERIFICADO · '+esc(e.get("category"))+'</p><h1>'+title+'</h1><p class="detail-meta">Fecha del hecho: '+esc(e.get("date"))+' · Publicación: '+esc(e.get("published"))+' · '+esc(e.get("authority"))+'</p><h2>Hecho documentado</h2><p>'+esc(e.get("summary"))+'</p><h2>Implicancias</h2><p>'+esc(e.get("implications"))+'</p><p class="detail-meta">Medicamento o tema: '+esc(e.get("medication"))+'</p><div class="detail-actions"><a class="button button-dark" href="'+source+'" target="_blank" rel="noopener noreferrer">Fuente original ↗</a><a class="button button-light" href="./radar/">Volver al radar</a></div></article></main>'
+        main='<main id="contenido" class="shell"><article class="event-detail"><p class="module-intro"><a href="./">Inicio</a> / <a href="./radar/">Radar</a> / Ficha</p><p class="eyebrow">REGISTRO VERIFICADO · '+esc({"legislacion":"Legislación","farmaceutico":"Farmacéutico","compras":"Compras públicas","acceso":"Acceso","datos":"Datos e indicadores","investigacion":"Investigación"}.get(e.get("category"),e.get("category")))+'</p><h1>'+title+'</h1><p class="detail-meta">Fecha del hecho: '+esc(e.get("date"))+' · Publicación: '+esc(e.get("published"))+' · '+esc(e.get("authority"))+'</p><h2>Hecho documentado</h2><p>'+esc(e.get("summary"))+'</p><h2>Implicancias</h2><p>'+esc(e.get("implications"))+'</p><p class="detail-meta">Medicamento o tema: '+esc(e.get("medication"))+'</p><div class="detail-actions"><a class="button button-dark" href="'+source+'" target="_blank" rel="noopener noreferrer">Fuente original ↗</a><a class="button button-light" href="./radar/">Volver al radar</a></div></article></main>'
         if not e.get("implications"): main=main.replace("<h2>Implicancias</h2><p></p>","")
         if not e.get("medication"): main=main.replace('<p class="detail-meta">Medicamento o tema: </p>',"")
         page=re.sub(r'<main id="contenido".*?</main>',lambda _:main,page,flags=re.S,count=1)

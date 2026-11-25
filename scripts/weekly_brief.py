@@ -10,6 +10,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
+from editorial_scope import public_press
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/"data"
 TZ=ZoneInfo("America/Santiago")

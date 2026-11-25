@@ -12,7 +12,7 @@
     investigacion: 'Investigación'
   };
   var PAGE_SIZE = 8;
-  var state = { events: [], sources: [], medicines: [], indicators: [], institutions: [], research: [], pending: [], monitoring: null, page: 1, error: false };
+  var state = { events: [], sources: [], medicines: [], indicators: [], institutions: [], research: [], pending: [], monitoring: null, page: 1, error: false, loaded: false };
   var $ = function (id) { return document.getElementById(id); };
   var normalize = function (value) { return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); };
   var escapeHtml = function (value) { return String(value == null ? '' : value).replace(/[&<>"']/g, function (char) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]; }); };
@@ -85,6 +85,7 @@
   }
 
   function renderResults() {
+    if(!state.loaded)return;
     var list = filteredEvents();
     var pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
     state.page = Math.min(state.page, pages);
@@ -139,6 +140,7 @@
   }
 
   function renderResearch() {
+    $('research').setAttribute('aria-busy', 'false');
     $('research').innerHTML = state.research.map(function (item) {
       var href = safeUrl(item.url);
       return href ? '<a class="research-item" href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer"><small>' + escapeHtml(item.kind) + '</small><strong>' + escapeHtml(item.title) + '</strong><span>' + escapeHtml(item.institution) + (item.date ? ' · ' + escapeHtml(item.date) : '') + ' ↗</span></a>' : '';
@@ -222,6 +224,7 @@
     state.research = Array.isArray(data[5]) ? data[5] : [];
     state.pending = Array.isArray(data[6]) ? data[6] : [];
     state.monitoring = data[7] || {};
+    state.loaded=true;
     renderAll();
   }).catch(function () {
     state.error = true;
