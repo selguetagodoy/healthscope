@@ -1,5 +1,31 @@
 [
   {
+    "id": "cenabast-programa-hemofilia-621-1112-lr26",
+    "date": "2026-11-19",
+    "published": "2026-11-19",
+    "category": "compras",
+    "authority": "Cenabast",
+    "title": "Cenabast publica licitación para el Programa Hemofilia por $11.164 millones",
+    "summary": "El proceso 621-1112-LR26 solicita factor VIII recombinante de 500 y 1.000 UI. El índice público basado en Mercado Público informa un monto estimado de $11.164.133.750 CLP y cierre de ofertas el 21 de diciembre de 2026.",
+    "implications": "Proceso licitatorio, no adjudicación ni cobertura nueva. Las bases y el estado actualizado se consultan en Mercado Público por el código 621-1112-LR26.",
+    "medication": "Factor VIII recombinante",
+    "topics": [
+      "Hemofilia",
+      "Factor VIII",
+      "Cenabast",
+      "621-1112-LR26",
+      "Licitaciones"
+    ],
+    "status": "Verificado",
+    "source_type": "Índice de licitaciones con datos de Mercado Público",
+    "url": "https://calza.cl/licitacion/621-1112-LR26",
+    "metric": {
+      "value": "CLP 11.164.133.750",
+      "unit": "monto estimado",
+      "qualification": "Monto informado en índice de procesos"
+    }
+  },
+  {
     "category": "legislacion",
     "status": "Verificado",
     "id": "do-decreto-81-acreditacion-2026-11-24",
