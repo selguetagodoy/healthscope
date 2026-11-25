@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "projects": [
     {
       "title": "Presupuesto 2027 · Salud",
       "bulletin": "18.702-05",
-      "status": "Tercer trámite · Rechazo parcial formalizado el 24/11",
-      "summary": "La Cámara respaldó las modificaciones del Senado para LRS. La Partida 16 no figura en la lista de diez partidas con discrepancias remitidas a Mixta.",
+      "status": "Informe de Mixta aprobado por Cámara el 25/11 · Senado por confirmar",
+      "summary": "La Cámara aprobó el informe de la Mixta por 113 votos a favor, 9 en contra y sin abstenciones, según información de prensa. La Partida 16 no estaba entre las discrepancias remitidas a Mixta. El texto definitivo y la publicación de la ley deben confirmarse.",
       "metric": "$28.207 millones",
       "metric_label": "Recursos consignados vía Fonasa para LRS",
-      "next": "Informe de Comisión Mixta, ratificación de ambas salas y publicación de la ley.",
+      "next": "Confirmar pronunciamiento final del Senado y publicación en Diario Oficial.",
       "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391",
       "timeline": [
         {
@@ -35,6 +35,11 @@
           "date": "2026-11-24",
           "title": "Oficio de rechazo parcial de modificaciones registrado en tercer trámite",
           "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "Cámara aprueba informe de Mixta y remite al Senado (según prensa)",
+          "url": "https://www.t13.cl/noticia/nacional/camara-diputados-aprueba-proyecto-presupuesto-2027-tras-acuerdo-comision-mixta-25-11-2026"
         }
       ]
     },
