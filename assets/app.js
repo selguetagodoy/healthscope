@@ -182,48 +182,80 @@
   function exportJson() { download('healthscope-radar.json', JSON.stringify(filteredEvents(), null, 2), 'application/json;charset=utf-8'); }
 
   function bindTenders() {
-    var body=$('tenderRows'), query=$('tenderQuery'), buyer=$('tenderBuyer'), sort=$('tenderSort'), before=$('tenderBefore');
-    if(!body || !query || !buyer || !sort || !before)return;
-    var records=[], page=1, size=20;
-    var params=new URLSearchParams(location.search);
-    query.value=params.get('q')||'';
-    function keywords(r){return [r.name,r.category,r.buyer,r.code,r.close_text].join(' ');}
+    var body=$('tenderRows'),query=$('tenderQuery'),buyer=$('tenderBuyer'),sort=$('tenderSort'),before=$('tenderBefore'),status=$('tenderStatus');
+    if(!body||!query||!buyer||!sort||!before||!status)return;
+    var records=[],page=1,size=20,orders=[],orderPage=1,orderSize=10,orderLoaded=false,orderPeriod='',orderError=false;
+    query.value=new URLSearchParams(location.search).get('q')||'';
+    var money=v=>v==null||v===''?'No informado':new Intl.NumberFormat('es-CL',{style:'currency',currency:'CLP',maximumFractionDigits:0}).format(v);
+    var dateText=v=>v?v.split('-').reverse().join('/'):'No informado';
+    function keywords(r){return [r.name,r.category,r.code,r.buyer].join(' ');}
     function matchPharma(value,q){return window.HealthScopePharma?window.HealthScopePharma.match(value,q):(normalize(value).includes(normalize(q))?'direct':'');}
+    function orderMatch(r,q){
+      var text=r[2]||r[0]||'',kind=matchPharma(text,q);
+      if(/^(privigen|hizentra)$/i.test(q.trim())&&/anti[- ]?(d|rh|rho)|antitimoc|ant[ií]linfoc|timoglobulina/i.test(text))return '';
+      if(!kind&&normalize([r[1],r[3],r[4]].join(' ')).includes(normalize(q)))return 'direct';
+      return kind;
+    }
+    function renderOrders(){
+      var q=query.value.trim(), panel=$('tenderOrders'), output=$('tenderOrderRows');
+      panel.hidden=!q;
+      if(!q)return;
+      $('tenderOrderLink').href='./compras-farmaceuticas/?q='+encodeURIComponent(q);
+      if(!orderLoaded){$('tenderOrderSummary').textContent=orderError?'No fue posible consultar el índice de órdenes.':'Consultando órdenes de compra…';return;}
+      var hits=orders.filter(r=>orderMatch(r,q)&&(!buyer.value||normalize(r[4]).includes(normalize(buyer.value))));
+      var pages=Math.max(1,Math.ceil(hits.length/orderSize));orderPage=Math.max(1,Math.min(orderPage,pages));
+      $('tenderOrderSummary').textContent=hits.length+' líneas coincidentes · '+orderPeriod+' · órdenes de compra, no adjudicaciones.';
+      output.innerHTML=hits.slice((orderPage-1)*orderSize,orderPage*orderSize).map(r=>'<tr><td>'+escapeHtml(r[1])+'</td><td>'+escapeHtml(r[2]||r[0])+(orderMatch(r,q)!=='direct'?'<p class="editorial-caption">Coincidencia relacionada; marca por confirmar.</p>':'')+'</td><td>'+escapeHtml(r[4]||'')+'</td><td>'+escapeHtml(r[3]||'No informado')+'</td><td>'+sourceLink('https://www.mercadopublico.cl/PurchaseOrder/Modules/PO/DetailsPurchaseOrder.aspx?codigoOC='+encodeURIComponent(r[1]),'Ver orden')+'</td></tr>').join('');
+      $('tenderOrderPage').textContent='Página '+orderPage+' de '+pages;
+      $('tenderOrderPrev').disabled=orderPage<=1;$('tenderOrderNext').disabled=orderPage>=pages;
+      $('tenderOrderPager').hidden=pages<=1;
+    }
     function update(){
-      var words=normalize(query.value).trim().split(/\s+/).filter(Boolean);
-      var visible=records.filter(function(r){
-        return !!matchPharma(keywords(r),query.value)&&(!buyer.value||r.buyer===buyer.value)&&(!before.value||(r.close&&r.close<=before.value));
-      });
+      var q=query.value.trim();
+      var visible=records.filter(r=>!!matchPharma(keywords(r),q)&&(!buyer.value||r.buyer===buyer.value)&&(!status.value||r.status===status.value)&&(!before.value||(r.close&&r.close<=before.value)));
       visible.sort(function(a,b){
-        if(sort.value==='amount')return (b.amount==null?-1:b.amount)-(a.amount==null?-1:a.amount);
-        if(sort.value==='latest')return (b.close||'').localeCompare(a.close||'');
+        if(q){var priority=r=>({direct:0,ingredient:1,related:2}[matchPharma(keywords(r),q)]??3);var diff=priority(a)-priority(b);if(diff)return diff;}
+        if(sort.value==='amount')return (b.amount??-1)-(a.amount??-1);
+        if(sort.value==='latest')return (b.award_date||b.close||'').localeCompare(a.award_date||a.close||'');
+        if(!q&&a.status!==b.status)return a.status==='Abierta'?-1:b.status==='Abierta'?1:0;
         return (a.close||'9999').localeCompare(b.close||'9999');
       });
       var pages=Math.max(1,Math.ceil(visible.length/size));page=Math.max(1,Math.min(page,pages));
       body.innerHTML=visible.slice((page-1)*size,page*size).map(function(r){
-        var link=sourceLink(r.url,'Ver ficha');
-        var kind=matchPharma(keywords(r),query.value);var alias=kind!=='direct'&&window.HealthScopePharma;
-        return '<tr><td>'+escapeHtml(r.code)+'</td><td><strong>'+escapeHtml(r.name)+'</strong>'+(alias?'<p class="editorial-caption">'+escapeHtml(window.HealthScopePharma.label(kind))+'</p>':'')+'</td><td>'+escapeHtml(r.buyer)+'</td><td>'+ (r.amount==null?'No informado':escapeHtml(new Intl.NumberFormat('es-CL',{style:'currency',currency:'CLP',maximumFractionDigits:0}).format(r.amount)))+'</td><td>'+escapeHtml(r.close? r.close.split('-').reverse().join('/'):r.close_text||'No informado')+'</td><td>'+link+'</td></tr>';
+        var kind=matchPharma(keywords(r),q),detail=r.detail?'<p class="editorial-caption">'+escapeHtml(r.detail)+'</p>':'';
+        var category=r.category?'<p class="editorial-caption">'+escapeHtml(r.category)+'</p>':'';
+        var alias=kind!=='direct'&&window.HealthScopePharma?'<p class="editorial-caption">'+escapeHtml(window.HealthScopePharma.label(kind))+'</p>':'';
+        return '<tr><td>'+escapeHtml(r.code)+'</td><td><strong>'+escapeHtml(r.name)+'</strong>'+category+detail+alias+'</td><td>'+escapeHtml(r.buyer)+'</td><td>'+escapeHtml(r.status)+(r.award_date?'<p class="editorial-caption">'+dateText(r.award_date)+'</p>':'')+'</td><td>'+escapeHtml(money(r.amount))+(r.award_amount!=null?'<p class="editorial-caption">Neto adjudicado según acta: '+escapeHtml(money(r.award_amount))+'</p>':'')+'</td><td>'+escapeHtml(r.close?dateText(r.close):r.close_text||'No informado')+'</td><td>'+sourceLink(r.url,r.status==='Abierta'?'Ver ficha':'Ver ficha / acta')+'</td></tr>';
       }).join('');
       $('tenderEmpty').hidden=visible.length!==0;
-      $('tenderResult').textContent=visible.length+' coincidencias · '+records.length+' procesos en la base';
+      $('tenderResult').textContent=visible.length+' coincidencias · '+visible.filter(r=>r.status==='Abierta').length+' abiertas · '+visible.filter(r=>r.status!=='Abierta').length+' históricas';
       $('tenderPage').textContent='Página '+page+' de '+pages;
       $('tenderPrev').disabled=page<=1;$('tenderNext').disabled=page>=pages;
+      $('tenderPager').hidden=pages<=1;
+      renderOrders();
     }
-    function refresh(){page=1;update();}
+    function refresh(){page=1;orderPage=1;update();}
     query.addEventListener('input',refresh);
-    [buyer,sort,before].forEach(function(el){el.addEventListener('change',refresh);});
-    $('tenderReset').addEventListener('click',function(){query.value='';buyer.value='';before.value='';sort.value='soon';history.replaceState(null,'',location.pathname+location.hash);refresh();query.focus();});
-    $('tenderPrev').addEventListener('click',function(){page--;update();});
-    $('tenderNext').addEventListener('click',function(){page++;update();});
+    [buyer,sort,before,status].forEach(el=>el.addEventListener('change',refresh));
+    $('tenderReset').addEventListener('click',function(){query.value='';buyer.value='';before.value='';status.value='';sort.value='soon';history.replaceState(null,'',location.pathname+location.hash);refresh();query.focus();});
+    $('tenderPrev').addEventListener('click',()=>{page--;update();});
+    $('tenderNext').addEventListener('click',()=>{page++;update();});
+    $('tenderOrderPrev').addEventListener('click',()=>{orderPage--;renderOrders();});
+    $('tenderOrderNext').addEventListener('click',()=>{orderPage++;renderOrders();});
     $('tenderResult').textContent='Cargando licitaciones…';
-    loadJson('data/tenders.json').then(function(d){
-      if(!Array.isArray(d.rows))throw Error('invalid data');
-      records=d.rows.filter(function(r){return r.code&&r.name&&safeUrl(r.url);});
-      Array.from(new Set(records.map(function(r){return r.buyer;}))).sort().forEach(function(v){var o=document.createElement('option');o.value=v;o.textContent=v;buyer.appendChild(o);});
-      $('tenderAsOf').textContent='Procesos abiertos al corte de la fuente: '+(d.checked_at||'').slice(0,10).split('-').reverse().join('/');
+    Promise.allSettled([loadJson('data/tenders.json'),loadJson('data/tenders-history.json')]).then(function(out){
+      var map=new Map();
+      out.forEach((x,i)=>{if(x.status==='fulfilled'&&Array.isArray(x.value.rows))x.value.rows.forEach(r=>{if(r.code&&r.name&&safeUrl(r.url))map.set(r.code,{...r,status:i===0?'Abierta':r.status||'Histórica'});});});
+      records=Array.from(map.values());
+      Array.from(new Set(records.map(r=>r.buyer))).sort().forEach(v=>{var o=document.createElement('option');o.value=v;o.textContent=v;buyer.appendChild(o);});
+      var open=out[0].status==='fulfilled'?out[0].value.checked_at:'';
+      $('tenderAsOf').textContent='Procesos abiertos al corte '+dateText((open||'').slice(0,10))+' · histórico: selección de fichas y actas oficiales, no exhaustiva.';
       refresh();
-    }).catch(function(){$('tenderResult').textContent='Base temporalmente no disponible. Consulta Mercado Público.';body.innerHTML='';});
+      if(out.some(x=>x.status==='rejected'))$('tenderAsOf').textContent+=' Una de las bases no está disponible.';
+    });
+    Promise.all([loadJson('data/search/procurement.json'),loadJson('data/procurement-index.json')]).then(([rows,idx])=>{
+      orders=Array.isArray(rows)?rows:[];orderPeriod=idx.periods?.[0]?.period||'último mes importado';orderLoaded=true;renderOrders();
+    }).catch(()=>{orderError=true;renderOrders();});
   }
 
   function bindEvents() {
