@@ -74,7 +74,42 @@ def render(page,d,full=False):
         if key in topics:continue
         selected.append(x);topics.add(key)
     selected.extend(x for x in ordered if x not in selected)
-    replace("div","weeklyVerified","".join(item(r,True) for r in (ordered if full else selected[:5])) or '<p><a href="./radar/">Ver agenda sanitaria →</a></p>')
+
+    # Front page uses actual verified headlines and tracked bills, not mockup content.
+    if not full:
+        lead=selected[0] if selected else None
+        lead_html='<p class="lead-label">HECHO DESTACADO · FUENTE PRIMARIA</p>'
+        if lead:
+            meta=" · ".join(filter(None,[lead.get("topic"),day(lead.get("published")),lead.get("authority")]))
+            lead_html+='<p class="lead-meta">'+esc(meta)+'</p><h2>'+esc(lead["title"])+'</h2>'
+            if lead.get("summary"):lead_html+='<p class="lead-summary">'+esc(lead["summary"])+'</p>'
+            if lead.get("implications"):lead_html+='<div class="lead-impact"><strong>Por qué importa</strong><p>'+esc(lead["implications"])+'</p></div>'
+            lead_html+='<a class="lead-source" href="'+safe(lead["url"])+'" target="_blank" rel="noopener noreferrer">Consultar fuente oficial ↗</a>'
+        else:
+            lead_html+='<h2>Decisiones y evidencia para entender la salud en Chile.</h2><a class="lead-source" href="./radar/">Explorar el radar →</a>'
+        from collections import Counter
+        distribution=Counter(x.get("topic") or "Otros" for x in verified)
+        if distribution:
+            maximum=max(distribution.values())
+            lead_html+='<figure class="edition-mini-chart"><h3>Hechos documentados por materia</h3>'+''.join('<div class="chart-row"><span>'+esc(k)+'</span><div class="chart-track" aria-hidden="true"><span style="width:'+str(100*v/maximum)+'%"></span></div><span class="chart-number">'+str(v)+'</span></div>' for k,v in distribution.most_common())+'<figcaption>Fuente: registros verificados de la edición · '+esc(day(d.get("window_start"))+'–'+day(d.get("window_end")))+'</figcaption></figure>'
+        replace("div","editorialLead",lead_html)
+        secondary='<p class="column-label">EN FOCO</p>'
+        for r in selected[1:3]:
+            secondary+='<article class="secondary-story"><small>'+esc(" · ".join(filter(None,[r.get("topic"),day(r.get("published"))])))+'</small><h3>'+esc(r["title"])+'</h3><p>'+esc(r.get("summary",""))+'</p><a class="text-link" href="'+safe(r["url"])+'" target="_blank" rel="noopener noreferrer">Fuente directa ↗</a></article>'
+        if len(selected)<2:secondary+='<a class="text-link" href="./actualidad/">Consultar actualidad →</a>'
+        replace("div","editorialSecondary",secondary)
+        tracked='<p class="column-label">SEGUIMIENTO LEGISLATIVO</p>'
+        for p in tracker.get("projects",[]):
+            if not safe(p.get("url")):continue
+            tracked+='<article class="tracker-mini"><span class="tracker-status">'+esc(p.get("status",""))+'</span><h3>'+esc(p.get("title",""))+'</h3><small>BOLETÍN '+esc(p.get("bulletin",""))+'</small>'
+            if p.get("metric"):tracked+='<strong>'+esc(p["metric"])+'</strong><p class="editorial-caption">'+esc(p.get("metric_label",""))+'</p>'
+            tracked+='<a href="'+safe(p["url"])+'" target="_blank" rel="noopener noreferrer">Tramitación oficial ↗</a></article>'
+        tracked+='<a class="text-link" href="./normativa/">Todos los proyectos →</a>'
+        replace("aside","editorialTracker",tracked)
+    else:
+        page=page.replace('class="weekly-brief section-rule','class="weekly-brief section-rule full-edition',1)
+
+    replace("div","weeklyVerified","".join(item(r,True) for r in (ordered if full else selected[3:8])) or '<p><a href="./radar/">Ver agenda sanitaria →</a></p>')
     votes=[x for x in candidates if x.get("source_type")=="Votación de Sala"]
     other=[x for x in candidates if x not in votes]
     publications="".join(item(r,False) for r in (other if full else other[:6]))
