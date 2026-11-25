@@ -75,7 +75,7 @@
     var category = $('category').value;
     var sort = $('sortOrder').value;
     return verifiedEvents().filter(function (event) {
-      return (!category || event.category === category) && (!authority || event.authority === authority) && (!from || event.date >= from) && (!to || event.date <= to) && (!query || query.split(/\s+/).every(function(token){return normalize(eventSummary(event)).includes(token);}));
+      return (!category || event.category === category) && (!authority || event.authority === authority) && (!from || event.date >= from) && (!to || event.date <= to) && (!query || (window.HealthScopePharma?!!window.HealthScopePharma.match(eventSummary(event),query):query.split(/\s+/).every(function(token){return normalize(eventSummary(event)).includes(token);})));
     }).sort(function (a, b) { return sort === 'oldest' ? a.date.localeCompare(b.date) : b.date.localeCompare(a.date); });
   }
 
@@ -187,18 +187,12 @@
     var records=[], page=1, size=20;
     var params=new URLSearchParams(location.search);
     query.value=params.get('q')||'';
-    function keywords(r){
-      var t=normalize([r.name,r.category,r.buyer,r.code].join(' '));
-      if(/inmunoglob|gamaglob|gamma.?glob|immunoglob/.test(t))t+=' privigen inmunoglobulina humana igg gamaglobulina (principio activo relacionado; marca no confirmada)';
-      if(/factor.*(?:viii|ix)|antihem/.test(t))t+=' hemofilia';
-      if(/tobramicina/.test(t))t+=' fibrosis quistica';
-      if(/trastuzumab|bortezomib|fulvestrant|nilotinib/.test(t))t+=' oncologia';
-      return t;
-    }
+    function keywords(r){return [r.name,r.category,r.buyer,r.code,r.close_text].join(' ');}
+    function matchPharma(value,q){return window.HealthScopePharma?window.HealthScopePharma.match(value,q):(normalize(value).includes(normalize(q))?'direct':'');}
     function update(){
       var words=normalize(query.value).trim().split(/\s+/).filter(Boolean);
       var visible=records.filter(function(r){
-        return words.every(function(w){return keywords(r).includes(w);})&&(!buyer.value||r.buyer===buyer.value)&&(!before.value||(r.close&&r.close<=before.value));
+        return !!matchPharma(keywords(r),query.value)&&(!buyer.value||r.buyer===buyer.value)&&(!before.value||(r.close&&r.close<=before.value));
       });
       visible.sort(function(a,b){
         if(sort.value==='amount')return (b.amount==null?-1:b.amount)-(a.amount==null?-1:a.amount);
@@ -208,8 +202,8 @@
       var pages=Math.max(1,Math.ceil(visible.length/size));page=Math.max(1,Math.min(page,pages));
       body.innerHTML=visible.slice((page-1)*size,page*size).map(function(r){
         var link=sourceLink(r.url,'Ver ficha');
-        var alias=normalize(query.value).includes('privigen')&&!normalize(r.name).includes('privigen');
-        return '<tr><td>'+escapeHtml(r.code)+'</td><td><strong>'+escapeHtml(r.name)+'</strong>'+(alias?'<p class="editorial-caption">Coincidencia por principio activo; marca no confirmada.</p>':'')+'</td><td>'+escapeHtml(r.buyer)+'</td><td>'+ (r.amount==null?'No informado':escapeHtml(new Intl.NumberFormat('es-CL',{style:'currency',currency:'CLP',maximumFractionDigits:0}).format(r.amount)))+'</td><td>'+escapeHtml(r.close? r.close.split('-').reverse().join('/'):r.close_text||'No informado')+'</td><td>'+link+'</td></tr>';
+        var kind=matchPharma(keywords(r),query.value);var alias=kind!=='direct'&&window.HealthScopePharma;
+        return '<tr><td>'+escapeHtml(r.code)+'</td><td><strong>'+escapeHtml(r.name)+'</strong>'+(alias?'<p class="editorial-caption">'+escapeHtml(window.HealthScopePharma.label(kind))+'</p>':'')+'</td><td>'+escapeHtml(r.buyer)+'</td><td>'+ (r.amount==null?'No informado':escapeHtml(new Intl.NumberFormat('es-CL',{style:'currency',currency:'CLP',maximumFractionDigits:0}).format(r.amount)))+'</td><td>'+escapeHtml(r.close? r.close.split('-').reverse().join('/'):r.close_text||'No informado')+'</td><td>'+link+'</td></tr>';
       }).join('');
       $('tenderEmpty').hidden=visible.length!==0;
       $('tenderResult').textContent=visible.length+' coincidencias · '+records.length+' procesos en la base';
