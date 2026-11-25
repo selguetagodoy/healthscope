@@ -9,6 +9,7 @@ on:
       - "data/sources.json"
       - "scripts/monitor_sources.py"
       - "scripts/weekly_brief.py"
+      - "scripts/import_tenders.py"
       - "requirements-weekly.txt"
   schedule:
     # Three-hour weekday cuts; daily weekend cut. UTC is stable across DST.
@@ -47,6 +48,9 @@ jobs:
         run: |
           python -m pip install -r requirements-weekly.txt
           python scripts/weekly_brief.py
+      - name: Refresh public tender index
+        if: always()
+        run: python scripts/import_tenders.py || echo "::warning::Tender index unavailable; retain last snapshot."
       - name: Validate captured data
         if: always()
         run: python scripts/validate_data.py
@@ -55,13 +59,13 @@ jobs:
         if: success()
         shell: bash
         run: |
-          if git diff --quiet -- data/pending.json data/monitoring.json data/weekly-extra.json data/weekly-brief.json; then
+          if git diff --quiet -- data/pending.json data/monitoring.json data/weekly-extra.json data/weekly-brief.json data/tenders.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/pending.json data/monitoring.json data/weekly-extra.json data/weekly-brief.json
+          git add data/pending.json data/monitoring.json data/weekly-extra.json data/weekly-brief.json data/tenders.json
           git commit -m "Update official-source monitoring snapshot"
           git pull --rebase origin main
           git push origin HEAD:main
