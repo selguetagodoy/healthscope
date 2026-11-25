@@ -64,9 +64,9 @@ def render(page,d,full=False):
             cards.append('<article class="leg-card"><small>BOLETÍN '+esc(p["bulletin"])+'</small><h3>'+esc(p["title"])+'</h3><p class="leg-status">'+esc(p["status"])+'</p>'+metric+'<p>'+esc(p["summary"])+'</p>'+('<ol class="leg-timeline">'+timeline+'</ol>' if timeline else '')+'<p class="leg-next"><strong>Próximo hito:</strong> '+esc(p["next"])+'</p><a class="text-link" href="'+safe(p["url"])+'" target="_blank" rel="noopener noreferrer">Tramitación oficial ↗</a></article>')
         block='<div class="leg-brief"><p class="eyebrow">CONGRESO · SEGUIMIENTO DE PROYECTOS</p><h2>Estado de la agenda legislativa</h2><p class="editorial-caption">Estado documentado al '+esc(day(tracker.get("updated")))+' · Cámara, Senado y Comisión Mixta</p><div class="leg-grid">'+''.join(cards)+'</div></div>'
         page=page.replace('<div class="weekly-body">',block+'<div class="weekly-body">',1)
-    # Prioritize the latest budget outcome and represent each chamber before other headlines.
-    leading=[x for x in verified if x.get("id")=="camara-presupuesto-2027-salud-2026-11-23"]
-    ordered=leading+[x for x in verified if x not in leading]
+    # Respect the current edition ranking: publication date, editorial score and title.
+    # Never pin a historic event to the front page.
+    ordered=sorted(verified,key=lambda x:(x.get("published") or "",x.get("score") or 0,x.get("title") or ""),reverse=True)
     # Select across themes, not five versions of the same budget story.
     selected=[];topics=set()
     for x in ordered:
