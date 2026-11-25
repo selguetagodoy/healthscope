@@ -6,7 +6,7 @@ const groups=[
 [['privigen','octagam','kiovig','gamunex','flebogamma','intratect'],[['inmunoglobulina humana','intravenosa'],['inmunoglobulina','10%'],['ivig'],['immunoglobulin','intravenous']], [['inmunoglobulina humana'],['gamaglobulina'],['gamma globulina'],['igg']]],
 [['hizentra','cuvitru','hyqvia'],[['inmunoglobulina','subcutanea'],['scig'],['immunoglobulin','subcutaneous']], [['inmunoglobulina humana'],['gamaglobulina'],['igg']]],
 [['andembry'],[['garadacimab']],[['angioedema hereditario']]],
-[['berinert','cinryze','ruconest'],[['inhibidor','c1','esterasa'],['c1','inhibidor'],['c1','inactivador'],['c1','esterase','inhibitor']],[['angioedema hereditario']]],
+[['berinert','cinryze','ruconest'],[],[['inhibidor','c1','esterasa'],['c1','inhibidor'],['c1','inactivador'],['c1','esterase','inhibitor'],['angioedema hereditario']]],
 [['ferinject','injectafer'],[['carboximaltosa ferrica'],['hierro carboximaltosa'],['ferric carboxymaltose']],[]],
 [['afstyla'],[['lonoctocog alfa']],[['factor viii','recombinante'],['factor 8','recombinante']]],
 [['haemate','humate p','voncento'],[['factor viii','von willebrand'],['factor 8','von willebrand']],[['von willebrand']]],
@@ -24,8 +24,8 @@ const groups=[
 [['firazyr'],[['icatibant']],[['angioedema hereditario']]],
 [['orladeyo'],[['berotralstat']],[['angioedema hereditario']]],
 [['hemlibra'],[['emicizumab']],[['hemofilia a']]],
-[['advate','kogenate','novoeight','elocta','adynovi'],[['factor viii','recombinante']],[['hemofilia a']]],
-[['benefix','alprolix','idelvion'],[['factor ix','recombinante']],[['hemofilia b']]],
+[['advate','kogenate','novoeight','elocta','adynovi'],[],[['factor viii','recombinante'],['hemofilia a']]],
+[['benefix','alprolix','idelvion'],[],[['factor ix','recombinante'],['hemofilia b']]],
 [['kadcyla'],[['trastuzumab emtansina'],['trastuzumab emtansine']],[]],
 [['herceptin'],[['trastuzumab']],[]],
 [['keytruda'],[['pembrolizumab']],[]],
@@ -63,6 +63,7 @@ function match(value,query){
      if(!contains(q,b))continue;
      const rest=(' '+q+' ').replace(' '+norm(b)+' ',' ').trim();
      if(rest&&!rest.split(' ').every(w=>t.includes(w)))continue;
+     if(b==='kalydeco' && /elexacaftor|tezacaftor|lumacaftor|vanzacaftor/.test(t)){best='related';continue;}
      if(exact.some(a=>all(t,a)))return 'ingredient';
      if(related.some(a=>all(t,a)))best='related';
    }
