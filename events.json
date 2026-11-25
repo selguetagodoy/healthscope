@@ -1,5 +1,40 @@
 [
   {
+    "id": "congreso-despacho-final-presupuesto-salud-2027-2026-11-25",
+    "date": "2026-11-25",
+    "published": "2026-11-25",
+    "category": "datos",
+    "authority": "Congreso Nacional",
+    "title": "Congreso despacha Presupuesto 2027: se recuperan recursos para Ley Ricarte Soto y Hospital Digital",
+    "summary": "El Senado ratificó el informe de la Comisión Mixta el 25 de noviembre, completando la tramitación del boletín 18.702-05, según información de prensa. En Salud, durante la tramitación se repuso el aporte fiscal de $28.208 millones al Fondo de Alto Costo y se redujeron en $22.744 millones sus transferencias a Fonasa; el ajuste combinado informado es de $5.464 millones. El acuerdo de Mixta recupera $10.910 millones para Hospital Digital, incluidos $133 millones para el Telecomité Oncológico.",
+    "implications": "El proyecto queda listo para promulgación y publicación. La reversión del recorte fiscal inicial de Ley Ricarte Soto favorece la continuidad de tratamientos vigentes. La ampliación de coberturas GES o LRS, los acuerdos de riesgo compartido y el acceso a nuevas terapias requieren decisiones adicionales; los montos definitivos de la Partida 16 deberán contrastarse con la ley publicada.",
+    "medication": "Tratamientos de alto costo",
+    "topics": [
+      "Presupuesto 2027",
+      "Partida 16",
+      "Ley Ricarte Soto",
+      "Enfermedades raras",
+      "Enfermedades poco frecuentes",
+      "GES",
+      "Fonasa",
+      "Hospital Digital",
+      "Oncología",
+      "Cenabast",
+      "ISP",
+      "Acuerdos de riesgo compartido",
+      "Boletín 18.702-05"
+    ],
+    "status": "Verificado",
+    "source_type": "Prensa · despacho legislativo",
+    "project_status": "Despachado a ley · pendiente de promulgación y publicación",
+    "url": "https://www.elmostrador.cl/noticias/pais/2026/11/25/congreso-despacha-primer-presupuesto-de-kast-tras-acuerdo-para-reponer-recursos-a-programas-sociales/",
+    "metric": {
+      "value": "5.464",
+      "unit": "millones CLP",
+      "qualification": "Ajuste combinado informado para Ley Ricarte Soto respecto del proyecto inicial; no es el saldo total del fondo"
+    }
+  },
+  {
     "id": "supersalud-re-13656-2026-11-23",
     "date": "2026-11-20",
     "published": "2026-11-23",
