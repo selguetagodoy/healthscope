@@ -184,29 +184,52 @@
   function bindTenders() {
     var body=$('tenderRows'), query=$('tenderQuery'), buyer=$('tenderBuyer'), sort=$('tenderSort'), before=$('tenderBefore');
     if(!body || !query || !buyer || !sort || !before)return;
-    var rows=Array.from(body.querySelectorAll('tr[data-tender]'));
-    function update(){
-      var words=normalize(query.value).trim().split(/\s+/).filter(Boolean);
-      var visible=rows.filter(function(row){
-        var hay=normalize(row.textContent+' '+row.dataset.keywords);
-        var ok=words.every(function(word){return hay.includes(word);})&&(!buyer.value||row.dataset.buyer===buyer.value)&&(!before.value||row.dataset.close<=before.value);
-        row.hidden=!ok;
-        return ok;
-      });
-      rows.sort(function(a,b){
-        if(sort.value==='amount')return Number(b.dataset.amount)-Number(a.dataset.amount);
-        if(sort.value==='latest')return b.dataset.close.localeCompare(a.dataset.close);
-        return a.dataset.close.localeCompare(b.dataset.close);
-      }).forEach(function(row){body.appendChild(row);});
-      $('tenderEmpty').hidden=visible.length!==0;
-      $('tenderResult').textContent=visible.length===1?'1 coincidencia':visible.length+' coincidencias';
-    }
+    var records=[], page=1, size=20;
     var params=new URLSearchParams(location.search);
     query.value=params.get('q')||'';
-    query.addEventListener('input',update);
-    [buyer,sort,before].forEach(function(el){el.addEventListener('change',update);});
-    $('tenderReset').addEventListener('click',function(){query.value='';buyer.value='';before.value='';sort.value='soon';update();query.focus();});
-    update();
+    function keywords(r){
+      var t=normalize([r.name,r.category,r.buyer,r.code].join(' '));
+      if(/inmunoglob|gamaglob|gamma.?glob|immunoglob/.test(t))t+=' privigen inmunoglobulina humana igg gamaglobulina (principio activo relacionado; marca no confirmada)';
+      if(/factor.*(?:viii|ix)|antihem/.test(t))t+=' hemofilia';
+      if(/tobramicina/.test(t))t+=' fibrosis quistica';
+      if(/trastuzumab|bortezomib|fulvestrant|nilotinib/.test(t))t+=' oncologia';
+      return t;
+    }
+    function update(){
+      var words=normalize(query.value).trim().split(/\s+/).filter(Boolean);
+      var visible=records.filter(function(r){
+        return words.every(function(w){return keywords(r).includes(w);})&&(!buyer.value||r.buyer===buyer.value)&&(!before.value||(r.close&&r.close<=before.value));
+      });
+      visible.sort(function(a,b){
+        if(sort.value==='amount')return (b.amount==null?-1:b.amount)-(a.amount==null?-1:a.amount);
+        if(sort.value==='latest')return (b.close||'').localeCompare(a.close||'');
+        return (a.close||'9999').localeCompare(b.close||'9999');
+      });
+      var pages=Math.max(1,Math.ceil(visible.length/size));page=Math.max(1,Math.min(page,pages));
+      body.innerHTML=visible.slice((page-1)*size,page*size).map(function(r){
+        var link=sourceLink(r.url,'Ver ficha');
+        var alias=normalize(query.value).includes('privigen')&&!normalize(r.name).includes('privigen');
+        return '<tr><td>'+escapeHtml(r.code)+'</td><td><strong>'+escapeHtml(r.name)+'</strong>'+(alias?'<p class="editorial-caption">Coincidencia por principio activo; marca no confirmada.</p>':'')+'</td><td>'+escapeHtml(r.buyer)+'</td><td>'+ (r.amount==null?'No informado':escapeHtml(new Intl.NumberFormat('es-CL',{style:'currency',currency:'CLP',maximumFractionDigits:0}).format(r.amount)))+'</td><td>'+escapeHtml(r.close? r.close.split('-').reverse().join('/'):r.close_text||'No informado')+'</td><td>'+link+'</td></tr>';
+      }).join('');
+      $('tenderEmpty').hidden=visible.length!==0;
+      $('tenderResult').textContent=visible.length+' coincidencias · '+records.length+' procesos en la base';
+      $('tenderPage').textContent='Página '+page+' de '+pages;
+      $('tenderPrev').disabled=page<=1;$('tenderNext').disabled=page>=pages;
+    }
+    function refresh(){page=1;update();}
+    query.addEventListener('input',refresh);
+    [buyer,sort,before].forEach(function(el){el.addEventListener('change',refresh);});
+    $('tenderReset').addEventListener('click',function(){query.value='';buyer.value='';before.value='';sort.value='soon';history.replaceState(null,'',location.pathname+location.hash);refresh();query.focus();});
+    $('tenderPrev').addEventListener('click',function(){page--;update();});
+    $('tenderNext').addEventListener('click',function(){page++;update();});
+    $('tenderResult').textContent='Cargando licitaciones…';
+    loadJson('data/tenders.json').then(function(d){
+      if(!Array.isArray(d.rows))throw Error('invalid data');
+      records=d.rows.filter(function(r){return r.code&&r.name&&safeUrl(r.url);});
+      Array.from(new Set(records.map(function(r){return r.buyer;}))).sort().forEach(function(v){var o=document.createElement('option');o.value=v;o.textContent=v;buyer.appendChild(o);});
+      $('tenderAsOf').textContent='Procesos abiertos al corte de la fuente: '+(d.checked_at||'').slice(0,10).split('-').reverse().join('/');
+      refresh();
+    }).catch(function(){$('tenderResult').textContent='Base temporalmente no disponible. Consulta Mercado Público.';body.innerHTML='';});
   }
 
   function bindEvents() {
