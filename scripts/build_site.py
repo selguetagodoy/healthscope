@@ -102,7 +102,7 @@ def main():
         out+="  </main>"
         page=page[:main.start()]+out+page[main.end():]
         return re.sub(r'<script[^>]*src="[^"]*assets/([a-zA-Z0-9_-]+)\.js(?:\?v=[a-f0-9]+)?"[^>]*></script>',lambda m:m[0] if m[1] in scripts else "",page)
-    (DEST/"index.html").write_text(prune(render(template,brief),{"weekly","inicio","resumen","actualidad","observatories"},{"app","weekly"}),encoding="utf-8")
+    (DEST/"index.html").write_text(prune(render(template,brief),{"weekly","inicio","tender-banner","actualidad","observatories"},{"app","weekly"}),encoding="utf-8")
     sitemap=[BASE]
     for route,(section,title) in MODULES.items():
         page=meta(template,title,BASE+route+"/").replace("<head>","<head>\n  <base href=\"../\">",1).replace("<body>",'<body data-view="'+section+'">',1)
