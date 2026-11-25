@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-19",
   "window_end": "2026-11-25",
-  "generated_at": "2026-11-25T17:09:50-03:00",
-  "last_monitor_at": "2026-11-25T20:09:21Z",
-  "extra_checked_at": "2026-11-25T17:09:50-03:00",
+  "generated_at": "2026-11-25T17:28:42-03:00",
+  "last_monitor_at": "2026-11-25T20:28:15Z",
+  "extra_checked_at": "2026-11-25T17:28:42-03:00",
   "legislative_tracker": {
     "updated": "2026-11-24",
     "projects": [
@@ -214,7 +214,7 @@
       "status": "Verificado",
       "summary": "El proceso 621-1112-LR26 solicita factor VIII recombinante de 500 y 1.000 UI. El índice público basado en Mercado Público informa un monto estimado de $11.164.133.750 CLP y cierre de ofertas el 21 de diciembre de 2026.",
       "implications": "Proceso licitatorio, no adjudicación ni cobertura nueva. Las bases y el estado actualizado se consultan en Mercado Público por el código 621-1112-LR26.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "senado-despacho-presupuesto-2027-2026-11-19",
