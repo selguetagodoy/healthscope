@@ -102,7 +102,7 @@ def main():
         out+="  </main>"
         page=page[:main.start()]+out+page[main.end():]
         return re.sub(r'<script[^>]*src="[^"]*assets/([a-zA-Z0-9_-]+)\.js(?:\?v=[a-f0-9]+)?"[^>]*></script>',lambda m:m[0] if m[1] in scripts else "",page)
-    (DEST/"index.html").write_text(prune(render(template,brief),{"weekly","inicio","tender-banner","actualidad","observatories"},{"app","weekly"}),encoding="utf-8")
+    (DEST/"index.html").write_text(prune(render(template,brief),{"weekly","inicio","tender-banner","actualidad","observatories"},{"app","weekly","pharma-search"}),encoding="utf-8")
     sitemap=[BASE]
     for route,(section,title) in MODULES.items():
         page=meta(template,title,BASE+route+"/").replace("<head>","<head>\n  <base href=\"../\">",1).replace("<body>",'<body data-view="'+section+'">',1)
@@ -111,7 +111,7 @@ def main():
         page=page.replace('href="#contenido"','href="./'+route+'/#contenido"',1)
         if section=="weekly":
             page=render(page,brief,full=True).replace('href="./semana/">Abrir briefing completo →','href="./">Volver al resumen →')
-        page=prune(page,{section},{specialized.get(section,"app")})
+        page=prune(page,{section},{specialized.get(section,"app"),"pharma-search"})
         write_page(route,page); sitemap.append(BASE+route+"/")
     events=json.loads((ROOT/"events.json").read_text(encoding="utf-8"))
     for e in events:
