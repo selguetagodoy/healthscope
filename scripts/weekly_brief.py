@@ -214,6 +214,7 @@ def make(now,extra_data=None):
     same_cut=bool(old) and old.get("last_monitor_at")==monitor.get("last_attempt_at") and old.get("extra_checked_at")==extra_data.get("checked_at")
     previous_new={r["id"] for r in old.get("verified",[])+old.get("candidates",[]) if r.get("new_since_previous")}
     for r in records:
+        if not public_press(r):continue
         url=r.get("url","");title=r.get("title","");when=(r.get("published") or r.get("date") or "")[:10]
         if not safe(url) or not title or not relevant(" ".join(str(r.get(k,"")) for k in ("title","summary","medication","topics"))) or url.rstrip("/") in seen:continue
         if not when:
