@@ -1,5 +1,47 @@
 [
   {
+    "id": "camara-presupuesto-mixta-2026-11-25",
+    "date": "2026-11-25",
+    "published": "2026-11-25",
+    "category": "datos",
+    "authority": "Cámara de Diputadas y Diputados",
+    "title": "Cámara aprueba el acuerdo de la Comisión Mixta del Presupuesto 2027",
+    "summary": "Según información publicada por T13 a las 13:17 del 25 de noviembre, la Cámara aprobó el acuerdo de la Comisión Mixta y remitió el proyecto al Senado. La Partida 16 de Salud no figuraba entre las discrepancias enviadas a Mixta el 23 de noviembre.",
+    "implications": "Se mantiene el acuerdo previo sobre Salud y los recursos para Ley Ricarte Soto. La aprobación de la Cámara no acredita por sí sola el despacho definitivo del Congreso, la promulgación ni nuevas coberturas.",
+    "medication": "Presupuesto sanitario",
+    "topics": [
+      "Presupuesto 2027",
+      "Partida 16",
+      "Ley Ricarte Soto",
+      "Boletín 18.702-05"
+    ],
+    "status": "Verificado",
+    "project_status": "Informe de Mixta aprobado por Cámara, según prensa",
+    "source_type": "Prensa",
+    "url": "https://www.t13.cl/noticia/nacional/camara-diputados-aprueba-proyecto-presupuesto-2027-tras-acuerdo-comision-mixta-25-11-2026"
+  },
+  {
+    "id": "mixta-presupuesto-2027-despacho-2026-11-24",
+    "date": "2026-11-24",
+    "published": "2026-11-24",
+    "category": "datos",
+    "authority": "Comisión Mixta del Congreso Nacional",
+    "title": "Comisión Mixta despacha acuerdo sobre las discrepancias del Presupuesto 2027",
+    "summary": "Emol y otros medios informaron el despacho del acuerdo de la Comisión Mixta el 24 de noviembre. La Partida 16 no estaba incluida en las diez materias remitidas a esa instancia por la Cámara el día anterior.",
+    "implications": "El acuerdo no constituye una nueva reasignación sanitaria. El seguimiento del financiamiento de alto costo debe considerar el texto final y sus glosas, además de la ejecución durante 2027.",
+    "medication": "Presupuesto sanitario",
+    "topics": [
+      "Presupuesto 2027",
+      "Partida 16",
+      "Ley Ricarte Soto",
+      "Comisión Mixta"
+    ],
+    "status": "Verificado",
+    "project_status": "Acuerdo de Mixta despachado, según prensa",
+    "source_type": "Prensa",
+    "url": "https://www.emol.com/noticias/Nacional/2026/11/24/1218087/comision-mixta-despacha-presupuesto-2027.html"
+  },
+  {
     "id": "isp-ram-esavi-base-2026-11-23",
     "date": "2026-11-23",
     "published": "2026-11-23",
