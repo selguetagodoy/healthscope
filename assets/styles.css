@@ -360,3 +360,13 @@ summary:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 @media(max-width:900px){.site-header{position:relative}.premium-nav{grid-template-columns:repeat(3,minmax(0,1fr))}.nav-panel{position:static;min-width:0;box-shadow:none}.nav-group summary{font-size:12px;padding:10px 6px}.premium-directory{grid-template-columns:repeat(2,minmax(0,1fr))}#compras .policy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.shell{width:calc(100% - 32px)}.premium-nav{grid-template-columns:repeat(2,minmax(0,1fr))}.premium-directory,#compras .policy-grid{grid-template-columns:1fr}.brand-copy small{font-size:8px}.weekly-head{padding:18px}.weekly-actions{gap:10px}.weekly-actions a,.weekly-actions button{min-height:44px}.budget-axis{margin-left:42px;margin-right:50px}.budget-bars{padding:12px}.premium-context{padding:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Keep long institutional names inside mobile filters. */
+.filter-row>label{min-width:0;max-width:100%}.filter-row select{max-width:100%}@media(max-width:600px){.filter-row>label{width:100%}.filter-row select,.filter-row input{width:100%;min-width:0;max-width:100%}}
+
+.advanced-filters label{min-width:0;max-width:100%}.advanced-filters select{min-width:0;max-width:100%}@media(max-width:650px){.advanced-filters label{display:grid;width:100%;grid-template-columns:minmax(0,1fr)}.advanced-filters select,.advanced-filters input{width:100%;min-width:0}}
+
+
+
+/* Preserve visually hidden labels even when responsive filter widths apply. */
+.filter-row>label.sr-only{position:absolute;width:1px;height:1px;min-width:0;max-width:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
