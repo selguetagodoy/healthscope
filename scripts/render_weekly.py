@@ -52,8 +52,7 @@ def render(page,d,full=False):
         if n!=1:raise ValueError("Briefing element absent: "+id)
     replace("span","weeklyWindow",esc(day(d.get("window_start"))+"–"+day(d.get("window_end"))+" · últimos siete días"))
     replace("strong","weeklyCut",esc("Actualización: "+timestamp(d.get("last_monitor_at") or d.get("generated_at"))))
-    kpis=[("Destacados",len(verified)),("Publicaciones",len(candidates)),("Fuentes de la edición",len(sources))]
-    replace("div","weeklyKpis","".join("<div><strong>"+esc(v)+"</strong><span>"+esc(k)+"</span></div>" for k,v in kpis))
+    page=page.replace('<div class="weekly-kpis" id="weeklyKpis"></div>',"",1)
     tracker=d.get("legislative_tracker",{})
     if tracker.get("projects"):
         cards=[]
