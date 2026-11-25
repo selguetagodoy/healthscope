@@ -1,9 +1,9 @@
 {
-  "window_start": "2026-11-18",
-  "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T21:17:56-03:00",
-  "last_monitor_at": "2026-11-25T00:16:57Z",
-  "extra_checked_at": "2026-11-24T21:17:56-03:00",
+  "window_start": "2026-11-19",
+  "window_end": "2026-11-25",
+  "generated_at": "2026-11-25T02:26:39-03:00",
+  "last_monitor_at": "2026-11-25T05:26:03Z",
+  "extra_checked_at": "2026-11-25T02:26:39-03:00",
   "legislative_tracker": {
     "updated": "2026-11-24",
     "projects": [
@@ -151,88 +151,24 @@
       "summary": "La tramitación oficial del Senado registra el despacho del proyecto en segundo trámite constitucional el 19 de noviembre, con modificaciones. El registro incluye la Partida 16 entre las partidas despachadas.",
       "implications": "Las modificaciones regresaron a la Cámara de origen para su pronunciamiento. El despacho del Senado no equivale a la publicación de la ley.",
       "new_since_previous": false
-    },
-    {
-      "id": "camara-respuesta-epof-presupuesto-2026-11-18",
-      "published": "2026-11-18",
-      "title": "Respuesta ministerial sobre financiamiento de medicamentos para enfermedades poco frecuentes",
-      "authority": "Ministerio de Salud · Cámara de Diputados",
-      "source_type": "Respuesta a oficio de fiscalización",
-      "url": "https://www.camara.cl/verdoc.aspx?prmID=182484&prmTIPO=OFICIO_FISCALIZACION_RESPUESTA",
-      "topic": "Presupuesto y financiamiento",
-      "vote_result": "",
-      "vote_totals": "",
-      "score": 21,
-      "status": "Verificado",
-      "summary": "En respuesta al oficio 27273 del diputado Andrés Celis, el Ministerio informó que el proyecto 2027 supera los $18,3 billones y contempla un aumento aproximado de 4,7% respecto de la base 2026 utilizada por la autoridad.",
-      "implications": "La respuesta permite contrastar las cifras de formulación presupuestaria y los antecedentes de enfermedades poco frecuentes con las modificaciones aprobadas durante la tramitación.",
-      "new_since_previous": false
-    },
-    {
-      "id": "senado-presupuesto-2027-salud-2026-11-18",
-      "published": "2026-11-18",
-      "title": "Senado respalda partida de Salud con compromiso de reposición para Ley Ricarte Soto",
-      "authority": "Senado de Chile",
-      "source_type": "Prensa",
-      "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/",
-      "topic": "Presupuesto y financiamiento",
-      "vote_result": "",
-      "vote_totals": "",
-      "score": 17,
-      "status": "Verificado",
-      "summary": "Diario y Radio Universidad de Chile informó la aprobación de la partida sanitaria y el compromiso del Ejecutivo de reponer recursos del sistema de alto costo, en la discusión del Presupuesto 2027.",
-      "implications": "La continuidad financiera de tratamientos de alto costo sigue vinculada al texto presupuestario definitivo.",
-      "new_since_previous": false
-    },
-    {
-      "id": "castro-reposicion-lrs-2026-11-18",
-      "published": "2026-11-18",
-      "title": "Presidente de Comisión de Salud destaca acuerdo de reposición de recursos para LRS",
-      "authority": "Juan Luis Castro · Comisión de Salud",
-      "source_type": "Declaración pública",
-      "url": "https://www.pschile.cl/senador-juan-luis-castro-destaca-acuerdo-con-el-gobierno-para-reponer-28-mil-millones-a-la-ley-ricarte-soto-era-inaceptable-rebajar-esos-recursos/",
-      "topic": "Presupuesto y financiamiento",
-      "vote_result": "",
-      "vote_totals": "",
-      "score": 12,
-      "status": "Verificado",
-      "summary": "El senador comunicó públicamente un acuerdo para reponer $28 mil millones en el contexto de la discusión presupuestaria.",
-      "implications": "La declaración identifica una prioridad de negociación; el monto definitivo debe comprobarse en el texto aprobado.",
-      "new_since_previous": false
-    },
-    {
-      "id": "isp-glp1-naiona-2026-11-18",
-      "published": "2026-11-18",
-      "title": "El ISP emite una nota de farmacovigilancia sobre agonistas GLP-1 y riesgo de NOIANA",
-      "authority": "Instituto de Salud Pública · ANAMED",
-      "source_type": "Nota de farmacovigilancia",
-      "url": "https://www.ispch.gob.cl/noticia/isp-publica-nota-de-farmacovigilancia-sobre-agonistas-del-receptor-de-glp-1-por-riesgo-de-neuropatia-optica-isquemica-anterior-no-arteritica/",
-      "topic": "Medicamentos y seguridad",
-      "vote_result": "",
-      "vote_totals": "",
-      "score": 7,
-      "status": "Verificado",
-      "summary": "El ISP informó que instruirá actualizar los folletos dirigidos a pacientes y profesionales para medicamentos con agonistas del receptor GLP-1, a raíz del riesgo de neuropatía óptica isquémica anterior no arterítica.",
-      "implications": "La autoridad comunicó una medida de actualización de información de seguridad. La nota oficial describe el alcance y la evidencia considerada.",
-      "new_since_previous": false
     }
   ],
   "candidates": [
     {
-      "id": "956d7fac421e3eb2012638",
-      "published": "2026-11-18",
-      "title": "Resolución exenta número E 5.558, de 2026.- Instruye el envío de un Plan de Manejo de Riesgos para los productos farmacéuticos que contienen hidroxietil almidón en su formulación",
-      "authority": "Diario Oficial",
-      "source_type": "Diario Oficial",
-      "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2026/11/18/44602/01/2901733.pdf",
-      "topic": "Regulación y Congreso",
+      "id": "media-portal-red-salud-36ab6ff0e822493e4f",
+      "published": "2026-11-24",
+      "title": "¿Cuántos medicamentos al día son un riesgo para una persona mayor?",
+      "authority": "Portal Red Salud",
+      "source_type": "Prensa",
+      "url": "https://portalredsalud.cl/2026/11/24/cuantos-medicamentos-al-dia-son-un-riesgo-para-una-persona-mayor",
+      "topic": "Prensa especializada",
       "vote_result": "",
       "vote_totals": "",
-      "score": 2,
+      "score": 3,
       "status": "Pendiente de revisión",
       "summary": "",
       "implications": "",
-      "new_since_previous": false
+      "new_since_previous": true
     },
     {
       "id": "minsal-noticias-cd1100eb6977d5e421",
@@ -425,16 +361,16 @@
       "url": "https://www.diariooficial.interior.gob.cl/edicionelectronica/index.php",
       "status": "ok",
       "dates_checked": [
+        "2026-11-25",
         "2026-11-24",
         "2026-11-23",
         "2026-11-22",
         "2026-11-21",
         "2026-11-20",
-        "2026-11-19",
-        "2026-11-18"
+        "2026-11-19"
       ],
       "errors": [],
-      "items_seen": 1
+      "items_seen": 0
     },
     {
       "id": "Senado de Chile",
@@ -481,11 +417,7 @@
     "camara-presupuesto-2027-salud-2026-11-23",
     "isp-ram-esavi-base-2026-11-23",
     "senado-despacho-presupuesto-2027-2026-11-19",
-    "camara-respuesta-epof-presupuesto-2026-11-18",
-    "senado-presupuesto-2027-salud-2026-11-18",
-    "castro-reposicion-lrs-2026-11-18",
-    "isp-glp1-naiona-2026-11-18",
-    "956d7fac421e3eb2012638",
+    "media-portal-red-salud-36ab6ff0e822493e4f",
     "minsal-noticias-cd1100eb6977d5e421"
   ]
 }

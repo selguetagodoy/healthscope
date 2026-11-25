@@ -1,5 +1,20 @@
 [
   {
+    "authority": "Cooperativa",
+    "captured_at": "2026-11-25T02:26:03-03:00",
+    "category": "prensa",
+    "date": "2026-11-25",
+    "id": "media-cooperativa-e3a2437ad778ced7b4",
+    "medication": "",
+    "published": "2026-11-25",
+    "source_id": "media-cooperativa",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Ejército de EE.UU. detonará 4,3 toneladas de explosivos en Iowa pese a alertas por nube tóxica",
+    "url": "https://www.cooperativa.cl/noticias/mundo/ee-uu/ejercito-de-ee-uu-detonara-4-3-toneladas-de-explosivos-en-iowa-pese-a/2026-11-25/004104.html"
+  },
+  {
     "authority": "Ministerio de Salud",
     "captured_at": "2026-11-24T16:44:01-03:00",
     "category": "actualidad",
@@ -88,6 +103,21 @@
   },
   {
     "authority": "Portal Red Salud",
+    "captured_at": "2026-11-25T02:26:03-03:00",
+    "category": "prensa",
+    "date": "2026-11-24",
+    "id": "media-portal-red-salud-e257633924f6bb8770",
+    "medication": "",
+    "published": "2026-11-24",
+    "source_id": "media-portal-red-salud",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "El 60% de los adultos mayores en Chile no está vacunado contra la principal bacteria causante de la neumonía",
+    "url": "https://portalredsalud.cl/2026/11/24/el-60-de-los-adultos-mayores-en-chile-no-esta-vacunado-contra-la-principal-bacteria-causante-de-la-neumonia"
+  },
+  {
+    "authority": "Portal Red Salud",
     "captured_at": "2026-11-24T17:07:34-03:00",
     "category": "prensa",
     "date": "2026-11-24",
@@ -100,6 +130,36 @@
     "summary": "",
     "title": "Salud sexual entre adultos: lo que conviene saber antes de un encuentro pagado",
     "url": "https://portalredsalud.cl/2026/11/24/salud-sexual-entre-adultos-lo-que-conviene-saber-antes-de-un-encuentro-pagado"
+  },
+  {
+    "authority": "Portal Red Salud",
+    "captured_at": "2026-11-25T02:26:03-03:00",
+    "category": "prensa",
+    "date": "2026-11-24",
+    "id": "media-portal-red-salud-97abe4d59bc4a14fa8",
+    "medication": "",
+    "published": "2026-11-24",
+    "source_id": "media-portal-red-salud",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "¿Cómo dormir mejor en noches de calor? 7 recomendaciones para conciliar el sueño y descansar",
+    "url": "https://portalredsalud.cl/2026/11/24/como-dormir-mejor-en-noches-de-calor-7-recomendaciones-para-conciliar-el-sueno-y-descansar"
+  },
+  {
+    "authority": "Portal Red Salud",
+    "captured_at": "2026-11-25T02:26:03-03:00",
+    "category": "prensa",
+    "date": "2026-11-24",
+    "id": "media-portal-red-salud-90df348e1bc66d867b",
+    "medication": "",
+    "published": "2026-11-24",
+    "source_id": "media-portal-red-salud",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Investigación busca reducir efectos secundarios del litio y anticipar daños renales en pacientes con trastorno bipolar",
+    "url": "https://portalredsalud.cl/2026/11/24/investigacion-busca-reducir-efectos-secundarios-del-litio-y-anticipar-danos-renales-en-pacientes-con-trastorno-bipolar"
   },
   {
     "authority": "Portal Red Salud",
@@ -178,6 +238,36 @@
   },
   {
     "authority": "Portal Red Salud",
+    "captured_at": "2026-11-25T02:26:03-03:00",
+    "category": "prensa",
+    "date": "2026-11-24",
+    "id": "media-portal-red-salud-43dce8cbb678835eb6",
+    "medication": "",
+    "published": "2026-11-24",
+    "source_id": "media-portal-red-salud",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "¿Una infección común puede hacer que tus órganos fallen? El peligro de la sepsis que pocos conocen",
+    "url": "https://portalredsalud.cl/2026/11/24/una-infeccion-comun-puede-hacer-que-tus-organos-fallen-el-peligro-de-la-sepsis-que-pocos-conocen"
+  },
+  {
+    "authority": "Portal Red Salud",
+    "captured_at": "2026-11-25T02:26:03-03:00",
+    "category": "prensa",
+    "date": "2026-11-24",
+    "id": "media-portal-red-salud-36ab6ff0e822493e4f",
+    "medication": "",
+    "published": "2026-11-24",
+    "source_id": "media-portal-red-salud",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "¿Cuántos medicamentos al día son un riesgo para una persona mayor?",
+    "url": "https://portalredsalud.cl/2026/11/24/cuantos-medicamentos-al-dia-son-un-riesgo-para-una-persona-mayor"
+  },
+  {
+    "authority": "Portal Red Salud",
     "captured_at": "2026-11-24T17:07:34-03:00",
     "category": "prensa",
     "date": "2026-11-24",
@@ -222,6 +312,21 @@
     "url": "https://portalredsalud.cl/2026/11/24/realizan-en-rancagua-la-primera-artroplastia-ambulatoria-de-cadera-en-latinoamerica-bajo-protocolo-suizo-eras"
   },
   {
+    "authority": "Portal Red Salud",
+    "captured_at": "2026-11-25T02:26:03-03:00",
+    "category": "prensa",
+    "date": "2026-11-24",
+    "id": "media-portal-red-salud-087fe7cc1110143abd",
+    "medication": "",
+    "published": "2026-11-24",
+    "source_id": "media-portal-red-salud",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Cuando el sarampión nos recuerda que la salud es colectiva",
+    "url": "https://portalredsalud.cl/2026/11/24/cuando-el-sarampion-nos-recuerda-que-la-salud-es-colectiva"
+  },
+  {
     "authority": "Cooperativa",
     "captured_at": "2026-11-24T20:31:28-03:00",
     "category": "prensa",
@@ -253,6 +358,21 @@
   },
   {
     "authority": "Cooperativa",
+    "captured_at": "2026-11-25T02:26:03-03:00",
+    "category": "prensa",
+    "date": "2026-11-24",
+    "id": "media-cooperativa-9336e0d124cdf890fc",
+    "medication": "",
+    "published": "2026-11-24",
+    "source_id": "media-cooperativa",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Senapred declaró alertas por ola de calor entre Atacama y Los Ríos",
+    "url": "https://www.cooperativa.cl/noticias/pais/tiempo/senapred-declaro-alertas-por-ola-de-calor-entre-atacama-y-los-rios/2026-11-24/214456.html"
+  },
+  {
+    "authority": "Cooperativa",
     "captured_at": "2026-11-24T21:14:57-03:00",
     "category": "prensa",
     "date": "2026-11-24",
@@ -265,6 +385,21 @@
     "summary": "",
     "title": "Tras marcha de profesores: USACh se querella por agresión a funcionario y estudiante",
     "url": "https://www.cooperativa.cl/noticias/pais/manifestaciones/tras-marcha-de-profesores-usach-se-querella-por-agresion-a-funcionario/2026-11-24/204722.html"
+  },
+  {
+    "authority": "Cooperativa",
+    "captured_at": "2026-11-25T02:26:03-03:00",
+    "category": "prensa",
+    "date": "2026-11-24",
+    "id": "media-cooperativa-0b5e5a161d9996a8f1",
+    "medication": "",
+    "published": "2026-11-24",
+    "source_id": "media-cooperativa",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Tragedia de Chiloé: Vehículo de las víctimas fatales provocó la colisión frontal",
+    "url": "https://www.cooperativa.cl/noticias/pais/region-de-los-lagos/chiloe/tragedia-de-chiloe-vehiculo-de-las-victimas-fatales-provoco-la-colision/2026-11-24/225003.html"
   },
   {
     "authority": "Ministerio de Salud",
