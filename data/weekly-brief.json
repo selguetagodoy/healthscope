@@ -1,16 +1,16 @@
 {
   "window_start": "2026-11-18",
   "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T20:51:06-03:00",
-  "last_monitor_at": "2026-11-24T23:50:08Z",
-  "extra_checked_at": "2026-11-24T20:51:06-03:00",
+  "generated_at": "2026-11-24T21:16:19-03:00",
+  "last_monitor_at": "2026-11-25T00:14:57Z",
+  "extra_checked_at": "2026-11-24T21:16:19-03:00",
   "legislative_tracker": {
     "updated": "2026-11-24",
     "projects": [
       {
         "title": "Presupuesto 2027 · Salud",
         "bulletin": "18.702-05",
-        "status": "Tercer trámite concluido · Mixta del presupuesto general",
+        "status": "Tercer trámite · Rechazo parcial formalizado el 24/11",
         "summary": "La Cámara respaldó las modificaciones del Senado para LRS. La Partida 16 no figura en la lista de diez partidas con discrepancias remitidas a Mixta.",
         "metric": "$28.207 millones",
         "metric_label": "Recursos consignados vía Fonasa para LRS",
@@ -28,14 +28,19 @@
             "url": "https://radio.uchile.cl/2026/11/18/senado-aprueba-presupuesto-para-salud-con-compromiso-del-gobierno-de-reponer-recursos-a-ley-ricarte-soto/"
           },
           {
-            "date": "2026-11-19",
-            "title": "Senado despacha el proyecto con modificaciones y devuelve el texto a la Cámara",
-            "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&mo=tramitacion"
+            "date": "2026-11-21",
+            "title": "Oficio de modificaciones del Senado remitido a la Cámara de origen",
+            "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391"
           },
           {
             "date": "2026-11-23",
             "title": "Cámara respalda modificaciones de Salud; diez otras partidas a Mixta",
             "url": "https://www.camara.cl/cms/2026/11/23/presupuesto-2027-camara-envia-a-mixta-diez-temas/"
+          },
+          {
+            "date": "2026-11-24",
+            "title": "Oficio de rechazo parcial de modificaciones registrado en tercer trámite",
+            "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391"
           }
         ]
       },
@@ -369,7 +374,7 @@
       "name": "Cooperativa",
       "url": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
       "status": "ok",
-      "items_seen": 1,
+      "items_seen": 3,
       "errors": []
     },
     {
