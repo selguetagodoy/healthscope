@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-18",
   "window_end": "2026-11-24",
-  "generated_at": "2026-11-24T21:16:19-03:00",
-  "last_monitor_at": "2026-11-25T00:14:57Z",
-  "extra_checked_at": "2026-11-24T21:16:19-03:00",
+  "generated_at": "2026-11-24T21:17:56-03:00",
+  "last_monitor_at": "2026-11-25T00:16:57Z",
+  "extra_checked_at": "2026-11-24T21:17:56-03:00",
   "legislative_tracker": {
     "updated": "2026-11-24",
     "projects": [
@@ -249,22 +249,6 @@
       "summary": "",
       "implications": "",
       "new_since_previous": false
-    },
-    {
-      "id": "media-portal-red-salud-7d3d1d665e8951f102",
-      "published": "2026-11-24",
-      "title": "El ejercicio terapéutico como parte de la atención integral del cáncer",
-      "authority": "Portal Red Salud",
-      "source_type": "Prensa",
-      "url": "https://portalredsalud.cl/2026/11/24/el-ejercicio-terapeutico-como-parte-de-la-atencion-integral-del-cancer",
-      "topic": "Prensa especializada",
-      "vote_result": "",
-      "vote_totals": "",
-      "score": 0,
-      "status": "Pendiente de revisión",
-      "summary": "",
-      "implications": "",
-      "new_since_previous": false
     }
   ],
   "undated_social": [
@@ -502,7 +486,6 @@
     "castro-reposicion-lrs-2026-11-18",
     "isp-glp1-naiona-2026-11-18",
     "956d7fac421e3eb2012638",
-    "minsal-noticias-cd1100eb6977d5e421",
-    "media-portal-red-salud-7d3d1d665e8951f102"
+    "minsal-noticias-cd1100eb6977d5e421"
   ]
 }
