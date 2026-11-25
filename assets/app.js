@@ -181,6 +181,34 @@
   }
   function exportJson() { download('healthscope-radar.json', JSON.stringify(filteredEvents(), null, 2), 'application/json;charset=utf-8'); }
 
+  function bindTenders() {
+    var body=$('tenderRows'), query=$('tenderQuery'), buyer=$('tenderBuyer'), sort=$('tenderSort'), before=$('tenderBefore');
+    if(!body || !query || !buyer || !sort || !before)return;
+    var rows=Array.from(body.querySelectorAll('tr[data-tender]'));
+    function update(){
+      var words=normalize(query.value).trim().split(/\s+/).filter(Boolean);
+      var visible=rows.filter(function(row){
+        var hay=normalize(row.textContent+' '+row.dataset.keywords);
+        var ok=words.every(function(word){return hay.includes(word);})&&(!buyer.value||row.dataset.buyer===buyer.value)&&(!before.value||row.dataset.close<=before.value);
+        row.hidden=!ok;
+        return ok;
+      });
+      rows.sort(function(a,b){
+        if(sort.value==='amount')return Number(b.dataset.amount)-Number(a.dataset.amount);
+        if(sort.value==='latest')return b.dataset.close.localeCompare(a.dataset.close);
+        return a.dataset.close.localeCompare(b.dataset.close);
+      }).forEach(function(row){body.appendChild(row);});
+      $('tenderEmpty').hidden=visible.length!==0;
+      $('tenderResult').textContent=visible.length===1?'1 coincidencia':visible.length+' coincidencias';
+    }
+    var params=new URLSearchParams(location.search);
+    query.value=params.get('q')||'';
+    query.addEventListener('input',update);
+    [buyer,sort,before].forEach(function(el){el.addEventListener('change',update);});
+    $('tenderReset').addEventListener('click',function(){query.value='';buyer.value='';before.value='';sort.value='soon';update();query.focus();});
+    update();
+  }
+
   function bindEvents() {
     function refresh(){state.page=1;renderResults();}
     if($('query')){
@@ -211,6 +239,7 @@
   }
 
   bindEvents();
+  bindTenders();
   var datasetPaths=['events.json','data/sources.json','data/medications.json','data/indicators.json','data/institutions.json','data/research.json','data/pending.json','data/monitoring.json'];
   var failed=[];
   Promise.all(datasetPaths.map(function(path){return loadJson(path).catch(function(){failed.push(path);return null;});})).then(function (data) {
