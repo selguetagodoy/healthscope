@@ -1,5 +1,123 @@
 [
   {
+    "category": "legislacion",
+    "status": "Verificado",
+    "id": "do-decreto-81-acreditacion-2026-11-24",
+    "date": "2026-11-09",
+    "published": "2026-11-24",
+    "authority": "Ministerio de Salud · Subsecretaría de Salud Pública",
+    "title": "Decreto Exento N.º 81 aprueba nuevo estándar de acreditación hospitalaria",
+    "summary": "El Diario Oficial publicó el decreto que aprueba la segunda versión del estándar de acreditación de prestadores institucionales de atención cerrada y su pauta de cotejo. El manual comprende 18 páginas y la pauta 143.",
+    "implications": "El nuevo estándar comenzará a regir 24 meses después de la publicación; entonces se derogará el estándar aprobado por el Decreto Exento 18/2009. Los prestadores deberán preparar su adecuación.",
+    "medication": "",
+    "topics": [
+      "Acreditación",
+      "Calidad asistencial",
+      "Decreto 81/2026",
+      "CVE 2902520"
+    ],
+    "source_type": "Diario Oficial",
+    "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2026/11/24/44607/01/2902520.pdf"
+  },
+  {
+    "category": "legislacion",
+    "status": "Verificado",
+    "id": "do-decreto-80-osorno-2026-11-24",
+    "date": "2026-11-09",
+    "published": "2026-11-24",
+    "authority": "Ministerio de Salud · Subsecretaría de Salud Pública",
+    "title": "Decreto Exento N.º 80 rectifica subrogación del Servicio de Salud Osorno",
+    "summary": "Corrige el tercer orden de subrogación de la dirección del Servicio de Salud Osorno: corresponde al director del Hospital Río Negro y no al del Hospital Río Bueno.",
+    "implications": "Rectificación administrativa de alcance local; no modifica el financiamiento ni las prestaciones sanitarias.",
+    "medication": "",
+    "topics": [
+      "Servicio de Salud Osorno",
+      "Decreto 80/2026",
+      "CVE 2902519"
+    ],
+    "source_type": "Diario Oficial",
+    "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2026/11/24/44607/01/2902519.pdf"
+  },
+  {
+    "category": "legislacion",
+    "status": "Verificado",
+    "id": "do-decreto-67-lrs-2026-11-05",
+    "date": "2026-10-22",
+    "published": "2026-11-05",
+    "authority": "Ministerio de Salud · Subsecretaría de Salud Pública",
+    "title": "Decreto Exento N.º 67 aprueba cinco establecimientos para la red Ricarte Soto",
+    "summary": "Aprueba prestadores para esclerosis múltiple, enfermedad de Crohn, lupus eritematoso sistémico, artritis psoriásica y artritis reumatoide refractaria. El Hospital Herminda Martín de Chillán queda aprobado solo para tratamiento de lupus; los demás registros incluyen confirmación, tratamiento y seguimiento.",
+    "implications": "Modifica la red autorizada de atención, no la nómina de tratamientos cubiertos. Fonasa debe publicar el listado de prestadores aprobados y con convenio suscrito.",
+    "medication": "Ley Ricarte Soto",
+    "topics": [
+      "Ley 20.850",
+      "Red de prestadores",
+      "Decreto 67/2026",
+      "CVE 2893876"
+    ],
+    "source_type": "Diario Oficial",
+    "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2026/11/05/44591/01/2893876.pdf"
+  },
+  {
+    "category": "legislacion",
+    "status": "Verificado",
+    "id": "supersalud-circular-539-2026-11-05",
+    "date": "2026-10-30",
+    "published": "2026-11-05",
+    "authority": "Superintendencia de Salud",
+    "title": "Circular IF/N.º 539 precisa plazo de notificación en urgencias GES y Ricarte Soto",
+    "summary": "Aclara desde cuándo se computa el plazo de información de pacientes en urgencia por riesgo de muerte o secuela grave en el marco GES y de la Ley 20.850.",
+    "implications": "Precisión operativa para la notificación de urgencias; no incorpora nuevas patologías o medicamentos.",
+    "medication": "GES y Ley Ricarte Soto",
+    "topics": [
+      "Circular IF 539",
+      "GES",
+      "Ley 20.850",
+      "Urgencias"
+    ],
+    "source_type": "Circular oficial",
+    "url": "https://www.superdesalud.gob.cl/normativa/circular-if-n539-emision-30-10-2026/"
+  },
+  {
+    "category": "legislacion",
+    "status": "Verificado",
+    "id": "supersalud-circular-541-2026-11-05",
+    "date": "2026-11-05",
+    "published": "2026-11-05",
+    "authority": "Superintendencia de Salud",
+    "title": "Circular IF/N.º 541 aclara cálculo del deducible CAEC",
+    "summary": "La Superintendencia precisa la determinación de la base de cálculo del deducible de la Cobertura Adicional para Enfermedades Catastróficas.",
+    "implications": "Relevante para el financiamiento de atenciones catastróficas bajo CAEC; no equivale a una ampliación del GES o de la Ley Ricarte Soto.",
+    "medication": "",
+    "topics": [
+      "CAEC",
+      "Circular IF 541",
+      "Financiamiento"
+    ],
+    "source_type": "Circular oficial",
+    "url": "https://www.superdesalud.gob.cl/normativa/circular-if-n541-emision-5-11-2026/"
+  },
+  {
+    "category": "legislacion",
+    "status": "Verificado",
+    "id": "minsal-consulta-condiciones-comerciales-2026-10-26",
+    "date": "2026-10-26",
+    "published": "2026-10-26",
+    "authority": "Ministerio de Salud",
+    "title": "MINSAL consulta actualización del formulario de condiciones comerciales de medicamentos 2026",
+    "summary": "La consulta publicada el 26 de octubre propone actualizar el formulario aprobado por Resolución Exenta 957/2024. El periodo indicado es de 30 días corridos desde la publicación.",
+    "implications": "El calendario publicado sitúa el término previsto del periodo el 25 de noviembre. La propuesta no equivale a una norma definitiva; corresponde verificar el cierre y la eventual resolución posterior.",
+    "medication": "Medicamentos en general",
+    "topics": [
+      "Condiciones comerciales",
+      "Consulta pública",
+      "Resolución 957/2024",
+      "Medicamentos"
+    ],
+    "source_type": "Consulta pública oficial",
+    "url": "https://www.minsal.cl/consultas-publicas-vigentes/"
+  },
+  {
     "id": "camara-presupuesto-mixta-2026-11-25",
     "date": "2026-11-25",
     "published": "2026-11-25",
