@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-19",
   "window_end": "2026-11-25",
-  "generated_at": "2026-11-25T02:26:39-03:00",
-  "last_monitor_at": "2026-11-25T05:26:03Z",
-  "extra_checked_at": "2026-11-25T02:26:39-03:00",
+  "generated_at": "2026-11-25T15:58:02-03:00",
+  "last_monitor_at": "2026-11-25T18:56:45Z",
+  "extra_checked_at": "2026-11-25T15:58:02-03:00",
   "legislative_tracker": {
     "updated": "2026-11-24",
     "projects": [
@@ -73,6 +73,22 @@
   "schedule": "Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.",
   "verified": [
     {
+      "id": "camara-presupuesto-mixta-2026-11-25",
+      "published": "2026-11-25",
+      "title": "Cámara aprueba el acuerdo de la Comisión Mixta del Presupuesto 2027",
+      "authority": "Cámara de Diputadas y Diputados",
+      "source_type": "Prensa",
+      "url": "https://www.t13.cl/noticia/nacional/camara-diputados-aprueba-proyecto-presupuesto-2027-tras-acuerdo-comision-mixta-25-11-2026",
+      "topic": "Presupuesto y financiamiento",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 12,
+      "status": "Verificado",
+      "summary": "Según información publicada por T13 a las 13:17 del 25 de noviembre, la Cámara aprobó el acuerdo de la Comisión Mixta y remitió el proyecto al Senado. La Partida 16 de Salud no figuraba entre las discrepancias enviadas a Mixta el 23 de noviembre.",
+      "implications": "Se mantiene el acuerdo previo sobre Salud y los recursos para Ley Ricarte Soto. La aprobación de la Cámara no acredita por sí sola el despacho definitivo del Congreso, la promulgación ni nuevas coberturas.",
+      "new_since_previous": true
+    },
+    {
       "id": "senado-bol-15047-11-tabla-2026-11-24",
       "published": "2026-11-24",
       "title": "Comisión de Salud mantiene pendiente la reforma de la Ley Ricarte Soto",
@@ -87,6 +103,54 @@
       "summary": "El registro de la sesión del 24 de noviembre consigna pendiente el proyecto que busca modificar la distribución del fondo de protección financiera de la Ley 20.850. La comisión acordó además remitir antecedentes municipales sobre atención primaria a la Comisión Mixta de Presupuestos.",
       "implications": "El proyecto sigue en discusión; la sesión no modificó las condiciones vigentes del fondo.",
       "new_since_previous": false
+    },
+    {
+      "id": "mixta-presupuesto-2027-despacho-2026-11-24",
+      "published": "2026-11-24",
+      "title": "Comisión Mixta despacha acuerdo sobre las discrepancias del Presupuesto 2027",
+      "authority": "Comisión Mixta del Congreso Nacional",
+      "source_type": "Prensa",
+      "url": "https://www.emol.com/noticias/Nacional/2026/11/24/1218087/comision-mixta-despacha-presupuesto-2027.html",
+      "topic": "Presupuesto y financiamiento",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 12,
+      "status": "Verificado",
+      "summary": "Emol y otros medios informaron el despacho del acuerdo de la Comisión Mixta el 24 de noviembre. La Partida 16 no estaba incluida en las diez materias remitidas a esa instancia por la Cámara el día anterior.",
+      "implications": "El acuerdo no constituye una nueva reasignación sanitaria. El seguimiento del financiamiento de alto costo debe considerar el texto final y sus glosas, además de la ejecución durante 2027.",
+      "new_since_previous": true
+    },
+    {
+      "id": "do-decreto-81-acreditacion-2026-11-24",
+      "published": "2026-11-24",
+      "title": "Decreto Exento N.º 81 aprueba nuevo estándar de acreditación hospitalaria",
+      "authority": "Ministerio de Salud · Subsecretaría de Salud Pública",
+      "source_type": "Diario Oficial",
+      "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2026/11/24/44607/01/2902520.pdf",
+      "topic": "Regulación y Congreso",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 2,
+      "status": "Verificado",
+      "summary": "El Diario Oficial publicó el decreto que aprueba la segunda versión del estándar de acreditación de prestadores institucionales de atención cerrada y su pauta de cotejo. El manual comprende 18 páginas y la pauta 143.",
+      "implications": "El nuevo estándar comenzará a regir 24 meses después de la publicación; entonces se derogará el estándar aprobado por el Decreto Exento 18/2009. Los prestadores deberán preparar su adecuación.",
+      "new_since_previous": true
+    },
+    {
+      "id": "do-decreto-80-osorno-2026-11-24",
+      "published": "2026-11-24",
+      "title": "Decreto Exento N.º 80 rectifica subrogación del Servicio de Salud Osorno",
+      "authority": "Ministerio de Salud · Subsecretaría de Salud Pública",
+      "source_type": "Diario Oficial",
+      "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2026/11/24/44607/01/2902519.pdf",
+      "topic": "Regulación y Congreso",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 2,
+      "status": "Verificado",
+      "summary": "Corrige el tercer orden de subrogación de la dirección del Servicio de Salud Osorno: corresponde al director del Hospital Río Negro y no al del Hospital Río Bueno.",
+      "implications": "Rectificación administrativa de alcance local; no modifica el financiamiento ni las prestaciones sanitarias.",
+      "new_since_previous": true
     },
     {
       "id": "camara-citacion-salud-2026-11-24",
@@ -168,7 +232,7 @@
       "status": "Pendiente de revisión",
       "summary": "",
       "implications": "",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "minsal-noticias-cd1100eb6977d5e421",
@@ -294,7 +358,7 @@
       "name": "Cooperativa",
       "url": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
       "status": "ok",
-      "items_seen": 3,
+      "items_seen": 1,
       "errors": []
     },
     {
@@ -370,7 +434,7 @@
         "2026-11-19"
       ],
       "errors": [],
-      "items_seen": 0
+      "items_seen": 1
     },
     {
       "id": "Senado de Chile",
@@ -412,7 +476,11 @@
     }
   ],
   "all_ids": [
+    "camara-presupuesto-mixta-2026-11-25",
     "senado-bol-15047-11-tabla-2026-11-24",
+    "mixta-presupuesto-2027-despacho-2026-11-24",
+    "do-decreto-81-acreditacion-2026-11-24",
+    "do-decreto-80-osorno-2026-11-24",
     "camara-citacion-salud-2026-11-24",
     "camara-presupuesto-2027-salud-2026-11-23",
     "isp-ram-esavi-base-2026-11-23",

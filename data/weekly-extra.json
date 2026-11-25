@@ -1,6 +1,19 @@
 {
-  "checked_at": "2026-11-25T02:26:39-03:00",
-  "diario": [],
+  "checked_at": "2026-11-25T15:58:02-03:00",
+  "diario": [
+    {
+      "id": "ec56bb47362c973a233995",
+      "title": "Decreto exento número 81, de 2026.- Aprueba Manual del Estándar General de Acreditación para Prestadores Institucionales de Atención Cerrada Segunda Versión y la Pauta de Cotejo asociada al mismo",
+      "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2026/11/24/44607/01/2902520.pdf",
+      "published": "2026-11-24",
+      "date": "2026-11-24",
+      "authority": "Diario Oficial",
+      "source_type": "Diario Oficial",
+      "category": "legislacion",
+      "status": "Pendiente de revisión",
+      "summary": ""
+    }
+  ],
   "legislative": [],
   "sources": [
     {
@@ -18,7 +31,7 @@
         "2026-11-19"
       ],
       "errors": [],
-      "items_seen": 0
+      "items_seen": 1
     },
     {
       "id": "Senado de Chile",
