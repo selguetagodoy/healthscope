@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-11-25",
+  "scope": "Selección de procesos históricos verificados individualmente en fichas y actas oficiales; no es un censo de adjudicaciones.",
+  "rows": [
+    {
+      "code": "948356-107-LP26",
+      "name": "Adquisición de gamaglobulina",
+      "category": "Inmunoglobulina humana normal 5 g/50 mL (10%); Privigen",
+      "buyer": "Hospital de Carabineros",
+      "published": "2026-06-26",
+      "close": "2026-07-08",
+      "award_date": "2026-10-01",
+      "status": "Adjudicada",
+      "amount": 142857143,
+      "award_amount": 244000,
+      "detail": "Privigen: oferta de $253.000 por unidad, no adjudicada. Flebogamma 5%: adjudicada, $244.000 por unidad; cantidad adjudicada 1 según acta.",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=s5S2ymomuWP2xRQzR2LhIlt2IiT+urqq08vl8Y87KJ0%3D"
+    },
+    {
+      "code": "621-250-LR26",
+      "name": "Inmunoglobulina G humana 5 a 10 gramos",
+      "category": "Inmunoglobulina G (IgG)",
+      "buyer": "Cenabast",
+      "published": "2026-02-26",
+      "close": "2026-04-01",
+      "award_date": "2026-06-22",
+      "status": "Adjudicada",
+      "amount": null,
+      "detail": "Cantidad solicitada: 122.676 unidades. Marca y proveedor no confirmados en la ficha consultada.",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=HY+FD1TTY9FJsMQwRep6Fw%3D%3D"
+    },
+    {
+      "code": "608-324-LR25",
+      "name": "Adquisición de inmunoglobulina humana",
+      "category": "Inmunoglobulina humana normal 5 g/100 mL (5%) y 5 g/50 mL (10%)",
+      "buyer": "Hospital Dr. Gustavo Fricke",
+      "published": "2025-12-31",
+      "close": "2026-01-30",
+      "award_date": "2026-02-16",
+      "status": "Adjudicada",
+      "amount": null,
+      "detail": "Bases: 1.350 frascos al 5% y 600 al 10%. Marca adjudicada no confirmada.",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=HxM86BRZ64iHNu7yoT6GHw%3D%3D"
+    },
+    {
+      "code": "1058024-35-LR25",
+      "name": "Convenio suministro inmunoglobulina humana",
+      "category": "Inmunoglobulina G (IgG) 5 g/100 mL solución para perfusión",
+      "buyer": "Complejo Asistencial Dr. Víctor Ríos Ruiz",
+      "published": "2026-02-23",
+      "close": "2026-03-26",
+      "award_date": "2026-06-24",
+      "status": "Adjudicada",
+      "amount": null,
+      "detail": "Cantidad solicitada: 1.485 frascos. Marca adjudicada no confirmada.",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=9bs3Xj4DSBK74L3vXqlaNA%3D%3D"
+    },
+    {
+      "code": "1058085-228-LQ25",
+      "name": "Convenio suministro de inmunoglobulina humana ante no despacho de Cenabast",
+      "category": "Inmunoglobulina humana 5 g/50 mL solución para perfusión",
+      "buyer": "Hospital del Salvador",
+      "status": "Adjudicada",
+      "amount": null,
+      "detail": "Bases: 1.000 frascos, convenio por 36 meses. Marca adjudicada no confirmada.",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=DDq0AB%2F9rtXKo9++8HalJg%3D%3D"
+    }
+  ]
+}
