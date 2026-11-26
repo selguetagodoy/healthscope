@@ -1,20 +1,20 @@
 {
-  "window_start": "2026-11-19",
-  "window_end": "2026-11-25",
-  "generated_at": "2026-11-25T17:28:42-03:00",
-  "last_monitor_at": "2026-11-25T20:28:15Z",
-  "extra_checked_at": "2026-11-25T17:28:42-03:00",
+  "window_start": "2026-11-20",
+  "window_end": "2026-11-26",
+  "generated_at": "2026-11-26T02:01:27-03:00",
+  "last_monitor_at": "2026-11-26T05:00:28Z",
+  "extra_checked_at": "2026-11-26T02:01:27-03:00",
   "legislative_tracker": {
-    "updated": "2026-11-24",
+    "updated": "2026-11-25",
     "projects": [
       {
         "title": "Presupuesto 2027 · Salud",
         "bulletin": "18.702-05",
-        "status": "Tercer trámite · Rechazo parcial formalizado el 24/11",
-        "summary": "La Cámara respaldó las modificaciones del Senado para LRS. La Partida 16 no figura en la lista de diez partidas con discrepancias remitidas a Mixta.",
-        "metric": "$28.207 millones",
-        "metric_label": "Recursos consignados vía Fonasa para LRS",
-        "next": "Informe de Comisión Mixta, ratificación de ambas salas y publicación de la ley.",
+        "status": "Despachado a ley · 25/11/2026",
+        "summary": "Ambas salas aprobaron el informe de Mixta. La negociación repuso recursos para Ley Ricarte Soto y Hospital Digital; el texto consolidado se contrastará con la ley publicada.",
+        "metric": "$28.208 millones",
+        "metric_label": "Reposición del aporte fiscal LRS (ajuste combinado: $5.464 millones)",
+        "next": "Promulgación, publicación y seguimiento de ejecución y coberturas 2027.",
         "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391",
         "timeline": [
           {
@@ -41,6 +41,16 @@
             "date": "2026-11-24",
             "title": "Oficio de rechazo parcial de modificaciones registrado en tercer trámite",
             "url": "https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmBOLETIN=18702-05&prmID=19391"
+          },
+          {
+            "date": "2026-11-25",
+            "title": "Cámara aprueba informe de Mixta y remite al Senado (según prensa)",
+            "url": "https://www.t13.cl/noticia/nacional/camara-diputados-aprueba-proyecto-presupuesto-2027-tras-acuerdo-comision-mixta-25-11-2026"
+          },
+          {
+            "date": "2026-11-25",
+            "title": "Senado ratifica informe de Mixta: presupuesto despachado a ley",
+            "url": "https://www.elmostrador.cl/noticias/pais/2026/11/25/congreso-despacha-primer-presupuesto-de-kast-tras-acuerdo-para-reponer-recursos-a-programas-sociales/"
           }
         ]
       },
@@ -73,6 +83,22 @@
   "schedule": "Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.",
   "verified": [
     {
+      "id": "congreso-despacho-final-presupuesto-salud-2027-2026-11-25",
+      "published": "2026-11-25",
+      "title": "Congreso despacha Presupuesto 2027: se recuperan recursos para Ley Ricarte Soto y Hospital Digital",
+      "authority": "Congreso Nacional",
+      "source_type": "Prensa · despacho legislativo",
+      "url": "https://www.elmostrador.cl/noticias/pais/2026/11/25/congreso-despacha-primer-presupuesto-de-kast-tras-acuerdo-para-reponer-recursos-a-programas-sociales/",
+      "topic": "Presupuesto y financiamiento",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 37,
+      "status": "Verificado",
+      "summary": "El Senado ratificó el informe de la Comisión Mixta el 25 de noviembre, completando la tramitación del boletín 18.702-05, según información de prensa. En Salud, durante la tramitación se repuso el aporte fiscal de $28.208 millones al Fondo de Alto Costo y se redujeron en $22.744 millones sus transferencias a Fonasa; el ajuste combinado informado es de $5.464 millones. El acuerdo de Mixta recupera $10.910 millones para Hospital Digital, incluidos $133 millones para el Telecomité Oncológico.",
+      "implications": "El proyecto queda listo para promulgación y publicación. La reversión del recorte fiscal inicial de Ley Ricarte Soto favorece la continuidad de tratamientos vigentes. La ampliación de coberturas GES o LRS, los acuerdos de riesgo compartido y el acceso a nuevas terapias requieren decisiones adicionales; los montos definitivos de la Partida 16 deberán contrastarse con la ley publicada.",
+      "new_since_previous": true
+    },
+    {
       "id": "camara-presupuesto-mixta-2026-11-25",
       "published": "2026-11-25",
       "title": "Cámara aprueba el acuerdo de la Comisión Mixta del Presupuesto 2027",
@@ -84,7 +110,7 @@
       "vote_totals": "",
       "score": 12,
       "status": "Verificado",
-      "summary": "Según información publicada por T13 a las 13:17 del 25 de noviembre, la Cámara aprobó el acuerdo de la Comisión Mixta y remitió el proyecto al Senado. La Partida 16 de Salud no figuraba entre las discrepancias enviadas a Mixta el 23 de noviembre.",
+      "summary": "Según información publicada por T13 el 25 de noviembre, la Cámara aprobó el informe de la Comisión Mixta por 113 votos a favor, 9 en contra y sin abstenciones, remitiéndolo al Senado. La Partida 16 no figuraba entre las discrepancias enviadas a Mixta el 23 de noviembre.",
       "implications": "Se mantiene el acuerdo previo sobre Salud y los recursos para Ley Ricarte Soto. La aprobación de la Cámara no acredita por sí sola el despacho definitivo del Congreso, la promulgación ni nuevas coberturas.",
       "new_since_previous": false
     },
@@ -201,36 +227,20 @@
       "new_since_previous": false
     },
     {
-      "id": "cenabast-programa-hemofilia-621-1112-lr26",
-      "published": "2026-11-19",
-      "title": "Cenabast publica licitación para el Programa Hemofilia por $11.164 millones",
-      "authority": "Cenabast",
-      "source_type": "Índice de licitaciones con datos de Mercado Público",
-      "url": "https://calza.cl/licitacion/621-1112-LR26",
-      "topic": "Compras y abastecimiento",
+      "id": "supersalud-re-13656-2026-11-23",
+      "published": "2026-11-23",
+      "title": "Superintendencia rechaza reposición de Nueva Masvida contra instrucción sobre licencias médicas",
+      "authority": "Superintendencia de Salud",
+      "source_type": "Resolución oficial",
+      "url": "https://www.superdesalud.gob.cl/normativa/resolucion-exenta-if-n13656-emision-20-11-2026/",
+      "topic": "Regulación y Congreso",
       "vote_result": "",
       "vote_totals": "",
-      "score": 8,
+      "score": 2,
       "status": "Verificado",
-      "summary": "El proceso 621-1112-LR26 solicita factor VIII recombinante de 500 y 1.000 UI. El índice público basado en Mercado Público informa un monto estimado de $11.164.133.750 CLP y cierre de ofertas el 21 de diciembre de 2026.",
-      "implications": "Proceso licitatorio, no adjudicación ni cobertura nueva. Las bases y el estado actualizado se consultan en Mercado Público por el código 621-1112-LR26.",
-      "new_since_previous": false
-    },
-    {
-      "id": "senado-despacho-presupuesto-2027-2026-11-19",
-      "published": "2026-11-19",
-      "title": "Senado despacha el Presupuesto 2027 con modificaciones, incluida la Partida 16 de Salud",
-      "authority": "Sala del Senado",
-      "source_type": "Tramitación legislativa oficial",
-      "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&mo=tramitacion",
-      "topic": "Presupuesto y financiamiento",
-      "vote_result": "",
-      "vote_totals": "",
-      "score": 4,
-      "status": "Verificado",
-      "summary": "La tramitación oficial del Senado registra el despacho del proyecto en segundo trámite constitucional el 19 de noviembre, con modificaciones. El registro incluye la Partida 16 entre las partidas despachadas.",
-      "implications": "Las modificaciones regresaron a la Cámara de origen para su pronunciamiento. El despacho del Senado no equivale a la publicación de la ley.",
-      "new_since_previous": false
+      "summary": "La Resolución Exenta IF/N.º 13656 rechaza el recurso contra la Circular IF/N.º 535, de 14 de septiembre de 2026, que prohíbe compensar obligaciones de las ISAPRES con empleadores públicos cuyos trabajadores hagan uso de licencia médica.",
+      "implications": "Se mantiene la instrucción impugnada en el ámbito de las licencias médicas del sector público. No modifica coberturas farmacéuticas.",
+      "new_since_previous": true
     }
   ],
   "candidates": [
@@ -374,14 +384,14 @@
       "name": "Cooperativa",
       "url": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
       "status": "ok",
-      "items_seen": 4,
+      "items_seen": 0,
       "errors": []
     },
     {
       "name": "Diario El Día",
       "url": "https://www.diarioeldia.cl/rss/salud/",
       "status": "ok",
-      "items_seen": 1,
+      "items_seen": 2,
       "errors": []
     },
     {
@@ -441,13 +451,13 @@
       "url": "https://www.diariooficial.interior.gob.cl/edicionelectronica/index.php",
       "status": "ok",
       "dates_checked": [
+        "2026-11-26",
         "2026-11-25",
         "2026-11-24",
         "2026-11-23",
         "2026-11-22",
         "2026-11-21",
-        "2026-11-20",
-        "2026-11-19"
+        "2026-11-20"
       ],
       "errors": [],
       "items_seen": 1
@@ -492,6 +502,7 @@
     }
   ],
   "all_ids": [
+    "congreso-despacho-final-presupuesto-salud-2027-2026-11-25",
     "camara-presupuesto-mixta-2026-11-25",
     "senado-bol-15047-11-tabla-2026-11-24",
     "mixta-presupuesto-2027-despacho-2026-11-24",
@@ -500,8 +511,7 @@
     "camara-citacion-salud-2026-11-24",
     "camara-presupuesto-2027-salud-2026-11-23",
     "isp-ram-esavi-base-2026-11-23",
-    "cenabast-programa-hemofilia-621-1112-lr26",
-    "senado-despacho-presupuesto-2027-2026-11-19",
+    "supersalud-re-13656-2026-11-23",
     "media-portal-red-salud-36ab6ff0e822493e4f",
     "minsal-noticias-cd1100eb6977d5e421"
   ]

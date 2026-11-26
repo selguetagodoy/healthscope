@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25T17:28:42-03:00",
+  "checked_at": "2026-11-26T02:01:27-03:00",
   "diario": [
     {
       "id": "ec56bb47362c973a233995",
@@ -22,13 +22,13 @@
       "url": "https://www.diariooficial.interior.gob.cl/edicionelectronica/index.php",
       "status": "ok",
       "dates_checked": [
+        "2026-11-26",
         "2026-11-25",
         "2026-11-24",
         "2026-11-23",
         "2026-11-22",
         "2026-11-21",
-        "2026-11-20",
-        "2026-11-19"
+        "2026-11-20"
       ],
       "errors": [],
       "items_seen": 1
