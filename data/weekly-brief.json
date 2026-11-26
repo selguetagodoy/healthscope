@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-20",
   "window_end": "2026-11-26",
-  "generated_at": "2026-11-26T02:01:27-03:00",
-  "last_monitor_at": "2026-11-26T05:00:28Z",
-  "extra_checked_at": "2026-11-26T02:01:27-03:00",
+  "generated_at": "2026-11-26T17:11:39-03:00",
+  "last_monitor_at": "2026-11-26T20:10:15Z",
+  "extra_checked_at": "2026-11-26T17:11:39-03:00",
   "legislative_tracker": {
     "updated": "2026-11-25",
     "projects": [
@@ -83,6 +83,22 @@
   "schedule": "Cada 3 horas en jornada hábil; fin de semana, corte diario. Horario aproximado según UTC y estación.",
   "verified": [
     {
+      "id": "castro-salida-comite-socialismo-democratico-2026-11-26",
+      "published": "2026-11-26",
+      "title": "Juan Luis Castro dejará la jefatura del comité parlamentario; continúa registrado como presidente de la Comisión de Salud",
+      "authority": "Senado de Chile · Comisión de Salud",
+      "source_type": "Prensa",
+      "url": "https://puranoticia.pnt.cl/nacional/senador-saavedra-confirma-salida-de-juan-luis-castro-de-la-presidencia-del",
+      "topic": "Presupuesto y financiamiento",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 17,
+      "status": "Verificado",
+      "summary": "El senador Gastón Saavedra (PS) confirmó el 26 de noviembre, según Puranoticia, la decisión de reemplazar a Juan Luis Castro (PS) en la presidencia del Comité del Socialismo Democrático, tras la controversia por el retiro inconsulto de permisos constitucionales durante la tramitación del Presupuesto 2027. La decisión anunciada se refiere al comité parlamentario y no a la Comisión de Salud, cuya ficha oficial sigue identificando a Castro como presidente.",
+      "implications": "Hito de seguimiento institucional por su papel en la conducción de la agenda sanitaria, incluidos el acceso a medicamentos, GES y Ley Ricarte Soto. Corresponde observar eventuales cambios en la composición o presidencia de la Comisión de Salud y en su agenda. No se ha acreditado un cambio de presidencia ni una modificación de coberturas o financiamiento sanitario derivada de este anuncio.",
+      "new_since_previous": true
+    },
+    {
       "id": "congreso-despacho-final-presupuesto-salud-2027-2026-11-25",
       "published": "2026-11-25",
       "title": "Congreso despacha Presupuesto 2027: se recuperan recursos para Ley Ricarte Soto y Hospital Digital",
@@ -96,7 +112,7 @@
       "status": "Verificado",
       "summary": "El Senado ratificó el informe de la Comisión Mixta el 25 de noviembre, completando la tramitación del boletín 18.702-05, según información de prensa. En Salud, durante la tramitación se repuso el aporte fiscal de $28.208 millones al Fondo de Alto Costo y se redujeron en $22.744 millones sus transferencias a Fonasa; el ajuste combinado informado es de $5.464 millones. El acuerdo de Mixta recupera $10.910 millones para Hospital Digital, incluidos $133 millones para el Telecomité Oncológico.",
       "implications": "El proyecto queda listo para promulgación y publicación. La reversión del recorte fiscal inicial de Ley Ricarte Soto favorece la continuidad de tratamientos vigentes. La ampliación de coberturas GES o LRS, los acuerdos de riesgo compartido y el acceso a nuevas terapias requieren decisiones adicionales; los montos definitivos de la Partida 16 deberán contrastarse con la ley publicada.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "camara-presupuesto-mixta-2026-11-25",
@@ -240,10 +256,26 @@
       "status": "Verificado",
       "summary": "La Resolución Exenta IF/N.º 13656 rechaza el recurso contra la Circular IF/N.º 535, de 14 de septiembre de 2026, que prohíbe compensar obligaciones de las ISAPRES con empleadores públicos cuyos trabajadores hagan uso de licencia médica.",
       "implications": "Se mantiene la instrucción impugnada en el ámbito de las licencias médicas del sector público. No modifica coberturas farmacéuticas.",
-      "new_since_previous": true
+      "new_since_previous": false
     }
   ],
   "candidates": [
+    {
+      "id": "media-portal-red-salud-d4bd294d65500b9928",
+      "published": "2026-11-26",
+      "title": "¿Tu medicamento puede hacer que el sol te queme más rápido? Los fármacos que requieren especial cuidado en una ola de calor",
+      "authority": "Portal Red Salud",
+      "source_type": "Prensa",
+      "url": "https://portalredsalud.cl/2026/11/26/tu-medicamento-puede-hacer-que-el-sol-te-queme-mas-rapido-los-farmacos-que-requieren-especial-cuidado-en-una-ola-de-calor",
+      "topic": "Prensa especializada",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 3,
+      "status": "Pendiente de revisión",
+      "summary": "",
+      "implications": "",
+      "new_since_previous": true
+    },
     {
       "id": "media-portal-red-salud-36ab6ff0e822493e4f",
       "published": "2026-11-24",
@@ -384,7 +416,7 @@
       "name": "Cooperativa",
       "url": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
       "status": "ok",
-      "items_seen": 0,
+      "items_seen": 2,
       "errors": []
     },
     {
@@ -502,6 +534,7 @@
     }
   ],
   "all_ids": [
+    "castro-salida-comite-socialismo-democratico-2026-11-26",
     "congreso-despacho-final-presupuesto-salud-2027-2026-11-25",
     "camara-presupuesto-mixta-2026-11-25",
     "senado-bol-15047-11-tabla-2026-11-24",
@@ -512,6 +545,7 @@
     "camara-presupuesto-2027-salud-2026-11-23",
     "isp-ram-esavi-base-2026-11-23",
     "supersalud-re-13656-2026-11-23",
+    "media-portal-red-salud-d4bd294d65500b9928",
     "media-portal-red-salud-36ab6ff0e822493e4f",
     "minsal-noticias-cd1100eb6977d5e421"
   ]
