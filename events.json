@@ -1,5 +1,27 @@
 [
   {
+    "id": "cenabast-lrs-audiencias-2026-11-26",
+    "date": "2026-11-24",
+    "published": "2026-11-26",
+    "category": "acceso",
+    "authority": "Comisión de Salud del Senado · Cenabast",
+    "title": "Cenabast plantea trazabilidad diaria y ajustes de compras en la reforma de la Ley Ricarte Soto",
+    "summary": "En la audiencia del 24 de noviembre, difundida el 26 por Diario Estrategia, Cenabast expuso la concentración de proveedores para seis medicamentos de alto costo, entre ellos Trikafta, y explicó la adopción de trazabilidad GS1, ajustes al precio máximo industrial y desafíos operativos del eventual traspaso de tratamientos al GES. La comisión acordó continuar las audiencias con participación de Cenabast.",
+    "implications": "La discusión afecta el diseño futuro de compras, inventarios y acuerdos de riesgo compartido. No se aprobó el traspaso de medicamentos específicos al GES ni se ampliaron coberturas en esta sesión.",
+    "medication": "Trikafta; terapias de alto costo",
+    "topics": [
+      "Ley Ricarte Soto",
+      "GES",
+      "Cenabast",
+      "Acuerdos de riesgo compartido",
+      "Trikafta",
+      "Boletín 15.047-11"
+    ],
+    "status": "Verificado",
+    "source_type": "Prensa · audiencia parlamentaria",
+    "url": "https://www.diarioestrategia.cl/texto-diario/mostrar/6109741/cenabast-comienza-ronda-audiencias-cambios-ley-ricarte-soto"
+  },
+  {
     "id": "pnl-reunion-minsal-2026-11-26",
     "date": "2026-11-26",
     "published": "2026-11-26",
