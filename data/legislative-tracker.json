@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-27",
   "projects": [
     {
       "title": "Presupuesto 2027 · Salud",
@@ -52,14 +52,19 @@
       "title": "Reforma del Fondo de Diagnósticos y Tratamientos de Alto Costo",
       "bulletin": "15.047-11",
       "status": "En discusión · Comisión de Salud del Senado",
-      "summary": "El registro del 24 de noviembre deja pendiente la reforma de la distribución del fondo.",
-      "next": "Nuevo tratamiento en comisión y acuerdos legislativos.",
+      "summary": "El 24 de noviembre la Comisión de Salud recibió a Cenabast, la Sociedad Chilena de Gastroenterología y FAME Chile. La discusión incluyó trazabilidad, compras y sostenibilidad del fondo; el proyecto sigue pendiente.",
+      "next": "Continuar audiencias y discusión del proyecto. No existe decisión de traspaso de medicamentos específicos a GES.",
       "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=24%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23231&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3",
       "timeline": [
         {
           "date": "2026-11-24",
           "title": "Materia permanece pendiente en comisión",
           "url": "https://tramitacion.senado.cl/appsenado/index.php?ac=sesiones_celebradas&ano=2026&comi_nombre=de+Salud&desde=0&fecha=24%2F11%2F2026&hasta=0&idcomision=195&idpunto=nada&idsesion=23231&inicio=09%3A30&legi=0&listado=2&lugar=&mo=comisiones&termino=&tipo=3"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "Se difunden antecedentes de Cenabast sobre trazabilidad y acuerdos de riesgo compartido",
+          "url": "https://www.diarioestrategia.cl/texto-diario/mostrar/6109741/cenabast-comienza-ronda-audiencias-cambios-ley-ricarte-soto"
         }
       ]
     },
