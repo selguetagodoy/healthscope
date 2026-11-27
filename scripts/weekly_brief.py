@@ -41,6 +41,7 @@ def classify(record):
     if cat=="legislacion" or record.get("source_type")=="Diario Oficial":return "Regulación y Congreso"
     if cat=="compras" or "cenabast" in t:return "Compras y abastecimiento"
     if cat=="acceso" or any(x in t for x in ("ricarte","trikafta","fibrosis","enfermedades raras","enfermedades poco frecuentes","alto costo")) or re.search(r"\bges\b",t):return "Acceso y cobertura"
+    if cat=="actualidad":return "Actualidad sanitaria"
     if record.get("source_type") in ("LinkedIn","X","Comunicado institucional") or cat=="stakeholders":return "Stakeholders"
     if record.get("source_type")=="Prensa" or cat=="prensa":return "Prensa especializada"
     return "Medicamentos y seguridad"
@@ -216,7 +217,9 @@ def make(now,extra_data=None):
     for r in records:
         if not public_press(r):continue
         url=r.get("url","");title=r.get("title","");when=(r.get("published") or r.get("date") or "")[:10]
-        if not safe(url) or not title or not relevant(" ".join(str(r.get(k,"")) for k in ("title","summary","medication","topics"))) or url.rstrip("/") in seen:continue
+        # Editorially verified events are already curated; keyword screening is only for raw captures.
+        if not safe(url) or not title or url.rstrip("/") in seen:continue
+        if r.get("status")!="Verificado" and not relevant(" ".join(str(r.get(k,"")) for k in ("title","summary","medication","topics"))):continue
         if not when:
             if r.get("source_type") in ("LinkedIn","X"):undated.append({"title":title,"url":url,"authority":r.get("authority",""),"source_type":r.get("source_type"),"captured_at":r.get("captured_at","")})
             continue
