@@ -922,5 +922,149 @@
     "status": "Verificado",
     "source_type": "Citación parlamentaria",
     "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=1707&prmIdTipo=2101"
+  },
+  {
+    "id": "isp-re-e5878-metotrexato-2026-11-24",
+    "date": "2026-11-24",
+    "published": "2026-11-24",
+    "category": "farmaceutico",
+    "authority": "Instituto de Salud Pública",
+    "title": "ISP instruye actualizar folletos de productos que contienen metotrexato",
+    "summary": "La Resolución Exenta E5878, de 24 de noviembre de 2026, instruye actualizar la información al profesional y al paciente de los medicamentos que contienen metotrexato, según el índice oficial de resoluciones del ISP.",
+    "implications": "Los titulares de registro sanitario deben revisar el acto administrativo y sus exigencias específicas. La publicación no acredita cambios de cobertura o financiamiento.",
+    "medication": "Metotrexato",
+    "topics": [
+      "Farmacovigilancia",
+      "Folletos",
+      "Registro sanitario",
+      "E5878",
+      "Oncología",
+      "Reumatología"
+    ],
+    "status": "Verificado",
+    "source_type": "Índice oficial de resoluciones",
+    "url": "https://ispch.cl/resoluciones/?pag=1"
+  },
+  {
+    "id": "isp-re-e5779-glp1-2026-11-19",
+    "date": "2026-11-19",
+    "published": "2026-11-19",
+    "category": "farmaceutico",
+    "authority": "Instituto de Salud Pública",
+    "title": "ISP dicta resolución sobre modificación de folletos de agonistas GLP-1",
+    "summary": "La Resolución Exenta E5779, de 19 de noviembre de 2026, dispone modificar los folletos de información al profesional y al paciente de los productos farmacéuticos que contienen agonistas del receptor GLP-1. Es un acto distinto de la nota de farmacovigilancia del 18 de noviembre.",
+    "implications": "Implica seguimiento de las obligaciones de actualización de información de seguridad por los titulares de registro; los detalles y plazos deben contrastarse con el texto íntegro.",
+    "medication": "Agonistas GLP-1",
+    "topics": [
+      "E5779",
+      "Farmacovigilancia",
+      "Folletos",
+      "Diabetes",
+      "Obesidad"
+    ],
+    "status": "Verificado",
+    "source_type": "Índice oficial de resoluciones",
+    "url": "https://ispch.cl/resoluciones/?pag=1"
+  },
+  {
+    "id": "minsal-infraestructura-malleco-2026-11-26",
+    "date": "2026-11-26",
+    "published": "2026-11-26",
+    "category": "actualidad",
+    "authority": "Ministerio de Salud",
+    "title": "MINSAL revisa avances de infraestructura hospitalaria en Malleco",
+    "summary": "La ministra de Salud y el subsecretario Julio Montt inspeccionaron el proceso de renovación del Hospital de Traiguén y las obras de la segunda etapa de normalización del Hospital de Curacautín, que contemplan cerca de 2.000 metros cuadrados adicionales, según el comunicado ministerial.",
+    "implications": "Seguimiento de capacidad asistencial y modernización de infraestructura regional. La visita no equivale a la puesta en servicio de las obras.",
+    "medication": "",
+    "topics": [
+      "Infraestructura hospitalaria",
+      "Malleco",
+      "Traiguén",
+      "Curacautín",
+      "Red asistencial"
+    ],
+    "status": "Verificado",
+    "source_type": "Comunicado oficial · RSS MINSAL",
+    "url": "https://www.minsal.cl/ministra-chomali-inspecciona-avances-de-proyectos-de-infraestructura-en-la-provincia-de-malleco"
+  },
+  {
+    "id": "camara-oficio-jurel-17800-11-2026-11-26",
+    "date": "2026-11-26",
+    "published": "2026-11-26",
+    "category": "legislacion",
+    "authority": "Cámara de Diputadas y Diputados · Comisión de Salud",
+    "title": "Comisión de Salud solicita sistematizar exposiciones sobre rotulación del jurel",
+    "summary": "El registro de oficios de la Cámara consigna el 26 de noviembre una solicitud de compilación y comparación de las exposiciones realizadas el 24 de noviembre, durante la discusión general del boletín 17.800-11 sobre rotulación y etiquetado del jurel.",
+    "implications": "Es un antecedente de tramitación del proyecto de modificación del Código Sanitario; no constituye aprobación ni entrada en vigor de nuevas exigencias.",
+    "medication": "",
+    "topics": [
+      "Boletín 17.800-11",
+      "Código Sanitario",
+      "Etiquetado",
+      "Comisión de Salud"
+    ],
+    "status": "Verificado",
+    "source_type": "Registro oficial de oficios",
+    "url": "https://www.camara.cl/legislacion/comisiones/respuestas_oficio.aspx?prmID=3311&prmIdOficio=286940"
+  },
+  {
+    "id": "supersalud-ip9549-dialisis-2026-11-26",
+    "date": "2026-11-26",
+    "published": "2026-11-26",
+    "category": "legislacion",
+    "authority": "Superintendencia de Salud",
+    "title": "Resolución IP/N.º 9549 mantiene acreditación de Diálisis Chillán Viejo",
+    "summary": "La Intendencia de Prestadores mantiene la inscripción N.º 551 del prestador Diálisis Chillán Viejo, Región de Ñuble, tras su tercer procedimiento de acreditación.",
+    "implications": "Acto individual de acreditación de prestadores; no modifica estándares generales ni la cobertura de diálisis.",
+    "medication": "",
+    "topics": [
+      "Acreditación",
+      "Diálisis",
+      "Ñuble",
+      "IP 9549"
+    ],
+    "status": "Verificado",
+    "source_type": "Resolución oficial",
+    "url": "https://www.superdesalud.gob.cl/normativa/resolucion-exenta-ip-n9549-emision-26-11-2026/"
+  },
+  {
+    "id": "supersalud-ip9548-cesfam-2026-11-26",
+    "date": "2026-11-26",
+    "published": "2026-11-26",
+    "category": "legislacion",
+    "authority": "Superintendencia de Salud",
+    "title": "Resolución IP/N.º 9548 mantiene acreditación del CESFAM Dr. Raúl Yazigi",
+    "summary": "La Intendencia de Prestadores mantiene la inscripción N.º 545 del CESFAM Dr. Raúl Yazigi, comuna de Lo Prado, luego de su tercer procedimiento de acreditación.",
+    "implications": "Acto individual de acreditación de atención primaria; no implica cambios de financiamiento.",
+    "medication": "",
+    "topics": [
+      "Acreditación",
+      "APS",
+      "Lo Prado",
+      "IP 9548"
+    ],
+    "status": "Verificado",
+    "source_type": "Resolución oficial",
+    "url": "https://www.superdesalud.gob.cl/normativa/resolucion-exenta-ip-n9548-emision-26-11-2026/"
+  },
+  {
+    "id": "supersalud-ip9551-oftalmologia-2026-11-26",
+    "date": "2026-11-26",
+    "published": "2026-11-26",
+    "category": "legislacion",
+    "authority": "Superintendencia de Salud",
+    "title": "Resolución IP/N.º 9551 mantiene acreditación de Fundación Oftalmológica Los Andes",
+    "summary": "La Intendencia de Prestadores mantiene la inscripción N.º 19 de la Fundación Oftalmológica Los Andes, Vitacura, tras su quinto procedimiento de acreditación.",
+    "implications": "Acto individual de acreditación; no modifica coberturas de prestaciones oftalmológicas.",
+    "medication": "",
+    "topics": [
+      "Acreditación",
+      "Oftalmología",
+      "Vitacura",
+      "IP 9551"
+    ],
+    "status": "Verificado",
+    "source_type": "Resolución oficial",
+    "url": "https://www.superdesalud.gob.cl/normativa/resolucion-exenta-ip-n9551-emision-26-11-2026/"
   }
 ]
