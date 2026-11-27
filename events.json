@@ -943,7 +943,7 @@
     ],
     "status": "Verificado",
     "source_type": "Índice oficial de resoluciones",
-    "url": "https://ispch.cl/resoluciones/?pag=1"
+    "url": "https://www.ispch.cl/resoluciones/?%3Bpage=6&%3Bsort=asc&order=field_numero_value&pag=1&sort=asc"
   },
   {
     "id": "isp-re-e5779-glp1-2026-11-19",
@@ -964,7 +964,7 @@
     ],
     "status": "Verificado",
     "source_type": "Índice oficial de resoluciones",
-    "url": "https://ispch.cl/resoluciones/?pag=1"
+    "url": "https://www.ispch.cl/resoluciones/?pag=1&tipo=Medicamentos"
   },
   {
     "id": "minsal-infraestructura-malleco-2026-11-26",
