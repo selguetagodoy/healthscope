@@ -51,7 +51,7 @@ def render(page,d,full=False):
         page,n=re.subn(pattern,lambda m:m[1]+value+m[2],page,count=1,flags=re.S)
         if n!=1:raise ValueError("Briefing element absent: "+id)
     replace("span","weeklyWindow",esc(day(d.get("window_start"))+"–"+day(d.get("window_end"))+" · últimos siete días"))
-    replace("strong","weeklyCut",esc("Actualización: "+timestamp(d.get("last_monitor_at") or d.get("generated_at"))))
+    replace("strong","weeklyCut",esc("Edición: "+timestamp(d.get("generated_at"))))
     page=page.replace('<div class="weekly-kpis" id="weeklyKpis"></div>',"",1)
     tracker=d.get("legislative_tracker",{})
     if tracker.get("projects"):
@@ -77,13 +77,13 @@ def render(page,d,full=False):
     # Front page uses actual verified headlines and tracked bills, not mockup content.
     if not full:
         lead=selected[0] if selected else None
-        lead_html='<p class="lead-label">HECHO DESTACADO · FUENTE PRIMARIA</p>'
+        lead_html='<p class="lead-label">HECHO DESTACADO</p>'
         if lead:
             meta=" · ".join(filter(None,[lead.get("topic"),day(lead.get("published")),lead.get("authority")]))
             lead_html+='<p class="lead-meta">'+esc(meta)+'</p><h2>'+esc(lead["title"])+'</h2>'
             if lead.get("summary"):lead_html+='<p class="lead-summary">'+esc(lead["summary"])+'</p>'
             if lead.get("implications"):lead_html+='<div class="lead-impact"><strong>Por qué importa</strong><p>'+esc(lead["implications"])+'</p></div>'
-            lead_html+='<a class="lead-source" href="'+safe(lead["url"])+'" target="_blank" rel="noopener noreferrer">Consultar fuente oficial ↗</a>'
+            lead_html+='<a class="lead-source" href="'+safe(lead["url"])+'" target="_blank" rel="noopener noreferrer">Consultar fuente original ↗</a>'
         else:
             lead_html+='<h2>Decisiones y evidencia para entender la salud en Chile.</h2><a class="lead-source" href="./radar/">Explorar el radar →</a>'
         from collections import Counter
