@@ -1,5 +1,71 @@
 [
   {
+    "id": "pnl-reunion-minsal-2026-11-26",
+    "date": "2026-11-26",
+    "published": "2026-11-26",
+    "category": "actualidad",
+    "authority": "Ministerio de Salud · Partido Nacional Libertario",
+    "title": "PNL anuncia reunión con la ministra de Salud para el 3 de diciembre y mantiene abierta la posibilidad de una acusación constitucional",
+    "summary": "Según Emol y BioBioChile, el Partido Nacional Libertario anunció el 26 de noviembre una reunión con la ministra May Chomalí para abordar el financiamiento público de terapias hormonales en menores de edad. La ministra informó que el programa y las terapias están bajo revisión, sin una decisión institucional sobre su continuidad.",
+    "implications": "El diálogo abre un hito de seguimiento político para el 3 de diciembre. La amenaza de acusación constitucional no equivale a la presentación de un libelo ni a una modificación de las prestaciones vigentes. Corresponde monitorear eventuales actos ministeriales y acuerdos parlamentarios.",
+    "medication": "",
+    "topics": [
+      "May Chomalí",
+      "PNL",
+      "Ministerio de Salud",
+      "Agenda política sanitaria",
+      "Financiamiento",
+      "Tratamientos hormonales"
+    ],
+    "status": "Verificado",
+    "source_type": "Prensa",
+    "url": "https://www.emol.com/noticias/Nacional/2026/11/26/1218274/libertarios-reunion-chomali-hormonizacion.html"
+  },
+  {
+    "id": "isp-terapias-avanzadas-ops-2026-11-24",
+    "date": "2026-11-24",
+    "published": "2026-11-24",
+    "category": "acceso",
+    "authority": "Instituto de Salud Pública de Chile · OPS",
+    "title": "ISP participa en encuentro regional sobre acceso sostenible a terapias avanzadas",
+    "summary": "El ISP informó su participación en el encuentro de São Paulo, realizado entre el 18 y el 20 de noviembre y organizado por la OPS con apoyo de la AECID. La instancia abordó barreras y recomendaciones para el acceso equitativo y sostenible a terapias avanzadas en América Latina y el Caribe.",
+    "implications": "La participación chilena constituye una señal de seguimiento para la evaluación, regulación y financiamiento de terapias innovadoras, incluidas las aplicables a enfermedades poco frecuentes. No representa por sí sola una autorización sanitaria, incorporación a GES o Ley Ricarte Soto ni un nuevo mecanismo de financiamiento.",
+    "medication": "Terapias avanzadas",
+    "topics": [
+      "Terapias avanzadas",
+      "Terapia génica",
+      "Enfermedades poco frecuentes",
+      "Acceso",
+      "Evaluación de tecnologías sanitarias",
+      "OPS",
+      "ISP"
+    ],
+    "status": "Verificado",
+    "source_type": "Fuente oficial",
+    "url": "https://www.ispch.cl/noticia/isp-participo-del-encuentro-regional-sobre-diagnostico-del-acceso-a-terapias-avanzadas-en-america-latina-y-el-caribe/"
+  },
+  {
+    "id": "minsal-educacion-prevencion-suicidio-2026-11-24",
+    "date": "2026-11-24",
+    "published": "2026-11-24",
+    "category": "actualidad",
+    "authority": "Ministerio de Salud · Ministerio de Educación",
+    "title": "Más de 20 instituciones de educación superior se suman a la estrategia nacional de prevención del suicidio",
+    "summary": "Salud y Educación anunciaron un convenio con instituciones de educación superior para fortalecer la detección temprana, el acompañamiento y la derivación a las redes asistenciales, en el marco de la estrategia nacional 2026–2035.",
+    "implications": "El acuerdo refuerza la coordinación territorial y la formación de equipos universitarios en salud mental. Es un hito de implementación intersectorial, no una nueva garantía de cobertura ni una asignación presupuestaria específica.",
+    "medication": "",
+    "topics": [
+      "Salud mental",
+      "Prevención del suicidio",
+      "Educación superior",
+      "Estrategia nacional 2026–2035",
+      "Red asistencial"
+    ],
+    "status": "Verificado",
+    "source_type": "Fuente oficial",
+    "url": "https://www.minsal.cl/salud-y-educacion-sellan-compromiso-con-casas-de-estudio-para-sumarse-activamente-a-la-estrategia-para-la-prevencion-del-suicidio/"
+  },
+  {
     "id": "castro-salida-comite-socialismo-democratico-2026-11-26",
     "date": "2026-11-26",
     "published": "2026-11-26",
@@ -171,7 +237,7 @@
     "authority": "Ministerio de Salud · Subsecretaría de Salud Pública",
     "title": "Decreto Exento N.º 81 aprueba nuevo estándar de acreditación hospitalaria",
     "summary": "El Diario Oficial publicó el decreto que aprueba la segunda versión del estándar de acreditación de prestadores institucionales de atención cerrada y su pauta de cotejo. El manual comprende 18 páginas y la pauta 143.",
-    "implications": "El nuevo estándar comenzará a regir 24 meses después de la publicación; entonces se derogará el estándar aprobado por el Decreto Exento 18/2009. Los prestadores deberán preparar su adecuación.",
+    "implications": "El manual y su pauta entrarán en vigor el 24 de noviembre de 2028, a los 24 meses de su publicación. En esa fecha se derogará el estándar del Decreto Exento N.º 18/2009. Hospitales y clínicas de atención cerrada disponen de ese período para preparar su adecuación.",
     "medication": "",
     "topics": [
       "Acreditación",
