@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-21",
   "window_end": "2026-11-27",
-  "generated_at": "2026-11-27T11:47:55-03:00",
-  "last_monitor_at": "2026-11-27T14:46:39Z",
-  "extra_checked_at": "2026-11-27T11:47:55-03:00",
+  "generated_at": "2026-11-27T16:57:32-03:00",
+  "last_monitor_at": "2026-11-27T19:57:06Z",
+  "extra_checked_at": "2026-11-27T16:57:32-03:00",
   "legislative_tracker": {
     "updated": "2026-11-27",
     "projects": [
@@ -101,7 +101,7 @@
       "status": "Verificado",
       "summary": "En la audiencia del 24 de noviembre, difundida el 26 por Diario Estrategia, Cenabast expuso la concentración de proveedores para seis medicamentos de alto costo, entre ellos Trikafta, y explicó la adopción de trazabilidad GS1, ajustes al precio máximo industrial y desafíos operativos del eventual traspaso de tratamientos al GES. La comisión acordó continuar las audiencias con participación de Cenabast.",
       "implications": "La discusión afecta el diseño futuro de compras, inventarios y acuerdos de riesgo compartido. No se aprobó el traspaso de medicamentos específicos al GES ni se ampliaron coberturas en esta sesión.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "castro-salida-comite-socialismo-democratico-2026-11-26",
@@ -133,7 +133,7 @@
       "status": "Verificado",
       "summary": "La Intendencia de Prestadores mantiene la inscripción N.º 19 de la Fundación Oftalmológica Los Andes, Vitacura, tras su quinto procedimiento de acreditación.",
       "implications": "Acto individual de acreditación; no modifica coberturas de prestaciones oftalmológicas.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "supersalud-ip9549-dialisis-2026-11-26",
@@ -149,7 +149,7 @@
       "status": "Verificado",
       "summary": "La Intendencia de Prestadores mantiene la inscripción N.º 551 del prestador Diálisis Chillán Viejo, Región de Ñuble, tras su tercer procedimiento de acreditación.",
       "implications": "Acto individual de acreditación de prestadores; no modifica estándares generales ni la cobertura de diálisis.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "supersalud-ip9548-cesfam-2026-11-26",
@@ -165,7 +165,7 @@
       "status": "Verificado",
       "summary": "La Intendencia de Prestadores mantiene la inscripción N.º 545 del CESFAM Dr. Raúl Yazigi, comuna de Lo Prado, luego de su tercer procedimiento de acreditación.",
       "implications": "Acto individual de acreditación de atención primaria; no implica cambios de financiamiento.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "camara-oficio-jurel-17800-11-2026-11-26",
@@ -197,7 +197,7 @@
       "status": "Verificado",
       "summary": "Según Emol y BioBioChile, el Partido Nacional Libertario anunció el 26 de noviembre una reunión con la ministra May Chomalí para abordar el financiamiento público de terapias hormonales en menores de edad. La ministra informó que el programa y las terapias están bajo revisión, sin una decisión institucional sobre su continuidad.",
       "implications": "El diálogo abre un hito de seguimiento político para el 3 de diciembre. La amenaza de acusación constitucional no equivale a la presentación de un libelo ni a una modificación de las prestaciones vigentes. Corresponde monitorear eventuales actos ministeriales y acuerdos parlamentarios.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "minsal-infraestructura-malleco-2026-11-26",
@@ -213,7 +213,7 @@
       "status": "Verificado",
       "summary": "La ministra de Salud y el subsecretario Julio Montt inspeccionaron el proceso de renovación del Hospital de Traiguén y las obras de la segunda etapa de normalización del Hospital de Curacautín, que contemplan cerca de 2.000 metros cuadrados adicionales, según el comunicado ministerial.",
       "implications": "Seguimiento de capacidad asistencial y modernización de infraestructura regional. La visita no equivale a la puesta en servicio de las obras.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "congreso-despacho-final-presupuesto-salud-2027-2026-11-25",
@@ -261,7 +261,7 @@
       "status": "Verificado",
       "summary": "La ministra de Salud inauguró el dispositivo de atención ambulatoria intensiva para adultos con trastornos mentales graves. Según MINSAL, el recinto comenzó a operar durante 2026.",
       "implications": "Fortalece la oferta especializada local y busca reducir desplazamientos para acceder a atención de mayor complejidad.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "senado-bol-15047-11-tabla-2026-11-24",
@@ -325,7 +325,7 @@
       "status": "Verificado",
       "summary": "El ISP informó su participación en el encuentro de São Paulo, realizado entre el 18 y el 20 de noviembre y organizado por la OPS con apoyo de la AECID. La instancia abordó barreras y recomendaciones para el acceso equitativo y sostenible a terapias avanzadas en América Latina y el Caribe.",
       "implications": "La participación chilena constituye una señal de seguimiento para la evaluación, regulación y financiamiento de terapias innovadoras, incluidas las aplicables a enfermedades poco frecuentes. No representa por sí sola una autorización sanitaria, incorporación a GES o Ley Ricarte Soto ni un nuevo mecanismo de financiamiento.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "senado-fuero-colegios-salud-18906-13",
@@ -341,7 +341,7 @@
       "status": "Verificado",
       "summary": "El boletín 18.906-13, ingresado el 24 de noviembre, propone establecer fuero laboral para dirigentes de colegios profesionales del área de la salud.",
       "implications": "Inicia la discusión legislativa sobre protección de dirigentes profesionales. No constituye una obligación vigente.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "do-decreto-81-acreditacion-2026-11-24",
@@ -405,7 +405,7 @@
       "status": "Verificado",
       "summary": "Salud y Educación anunciaron un convenio con instituciones de educación superior para fortalecer la detección temprana, el acompañamiento y la derivación a las redes asistenciales, en el marco de la estrategia nacional 2026–2035.",
       "implications": "El acuerdo refuerza la coordinación territorial y la formación de equipos universitarios en salud mental. Es un hito de implementación intersectorial, no una nueva garantía de cobertura ni una asignación presupuestaria específica.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "minsal-linares-contrato-2026-11-24",
@@ -421,7 +421,7 @@
       "status": "Verificado",
       "summary": "MINSAL informó que la Contraloría Regional del Maule tomó razón del término unilateral y anticipado del contrato con Astaldi, tras la paralización de las obras del nuevo hospital desde julio de 2025.",
       "implications": "El trámite permite avanzar hacia una nueva licitación de infraestructura. No acredita que el nuevo proceso haya sido publicado ni adjudicado.",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "camara-presupuesto-2027-salud-2026-11-23",
@@ -485,7 +485,7 @@
       "status": "Verificado",
       "summary": "En un comunicado del 22 de noviembre, el Ministerio señaló que continuará revisando orientaciones técnicas y circulares relacionadas con hormonización cruzada, conforme al sentido de una indicación presentada por el Ejecutivo.",
       "implications": "La comunicación describe un proceso de revisión ministerial; la publicación no equivale por sí misma a una nueva norma ni informa la entrada en vigencia de cambios clínicos.",
-      "new_since_previous": true
+      "new_since_previous": false
     }
   ],
   "candidates": [
@@ -503,7 +503,7 @@
       "status": "Pendiente de revisión",
       "summary": "",
       "implications": "",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "media-portal-red-salud-d4bd294d65500b9928",
@@ -536,6 +536,22 @@
       "summary": "",
       "implications": "",
       "new_since_previous": false
+    },
+    {
+      "id": "minsal-noticias-0bbc8b049ce8a5cc0d",
+      "published": "2026-11-27",
+      "title": "Minsal informa aumento de circulación de Influenza A y refuerza llamado a la prevención",
+      "authority": "Ministerio de Salud",
+      "source_type": "Fuente oficial",
+      "url": "https://www.minsal.cl/minsal-informa-aumento-de-circulacion-de-influenza-a-y-refuerza-llamado-a-la-prevencion",
+      "topic": "Actualidad sanitaria",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 0,
+      "status": "Pendiente de revisión",
+      "summary": "",
+      "implications": "",
+      "new_since_previous": true
     },
     {
       "id": "media-portal-red-salud-c633c98866cabcdd86",
@@ -677,7 +693,7 @@
       "name": "Cooperativa",
       "url": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss____1.xml",
       "status": "ok",
-      "items_seen": 1,
+      "items_seen": 2,
       "errors": []
     },
     {
@@ -704,9 +720,11 @@
     {
       "name": "FENPOF Chile",
       "url": "https://fenpof.cl/feed/",
-      "status": "ok",
+      "status": "error",
       "items_seen": 0,
-      "errors": []
+      "errors": [
+        "HTTP Error 415: Unsupported Media Type"
+      ]
     },
     {
       "name": "ISP · Publicaciones oficiales",
@@ -734,9 +752,11 @@
     {
       "name": "Colegio de Enfermeras de Chile",
       "url": "https://colegiodeenfermeras.cl/feed/",
-      "status": "ok",
+      "status": "error",
       "items_seen": 0,
-      "errors": []
+      "errors": [
+        "HTTP Error 415: Unsupported Media Type"
+      ]
     },
     {
       "id": "diario-oficial-ediciones",
@@ -823,6 +843,7 @@
     "minsal-noticias-1f9deadc6307462215",
     "media-portal-red-salud-d4bd294d65500b9928",
     "media-portal-red-salud-36ab6ff0e822493e4f",
+    "minsal-noticias-0bbc8b049ce8a5cc0d",
     "media-portal-red-salud-c633c98866cabcdd86",
     "minsal-noticias-cd1100eb6977d5e421"
   ]
