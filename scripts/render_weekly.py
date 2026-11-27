@@ -52,6 +52,8 @@ def render(page,d,full=False):
         if n!=1:raise ValueError("Briefing element absent: "+id)
     replace("span","weeklyWindow",esc(day(d.get("window_start"))+"–"+day(d.get("window_end"))+" · últimos siete días"))
     replace("strong","weeklyCut",esc("Edición: "+timestamp(d.get("generated_at"))))
+    last_scan=timestamp(d.get("last_monitor_at"))
+    replace("span","weeklyHealth",esc("Última consulta de fuentes: "+last_scan) if last_scan else "")
     page=page.replace('<div class="weekly-kpis" id="weeklyKpis"></div>',"",1)
     tracker=d.get("legislative_tracker",{})
     if tracker.get("projects"):
@@ -108,7 +110,8 @@ def render(page,d,full=False):
     else:
         page=page.replace('class="weekly-brief section-rule','class="weekly-brief section-rule full-edition',1)
 
-    replace("div","weeklyVerified","".join(item(r,True) for r in (ordered if full else selected[3:8])) or '<p><a href="./radar/">Ver agenda sanitaria →</a></p>')
+    shown=ordered if full else [r for r in ordered if r not in selected[:3]]
+    replace("div","weeklyVerified","".join(item(r,True) for r in shown) or '<p><a href="./radar/">Ver agenda sanitaria →</a></p>')
     votes=[x for x in candidates if x.get("source_type")=="Votación de Sala"]
     other=[x for x in candidates if x not in votes]
     publications="".join(item(r,False) for r in (other if full else other[:6]))
