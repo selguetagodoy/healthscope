@@ -1,105 +1,9 @@
 {
-  "checked_at": "2026-11-26T17:12:19-03:00",
+  "checked_at": "2026-11-26T23:52:37-03:00",
   "source": "Gestor Público · índice de datos de ChileCompra",
   "scope": "Procesos abiertos de Cenabast y del rubro salud e insumos médicos indexados por Gestor Público; no equivale a todas las licitaciones nacionales ni acredita adjudicaciones.",
   "errors": [],
   "rows": [
-    {
-      "code": "1057496-44-LE26",
-      "name": "Suministro Ropa Hospitalaria",
-      "buyer": "Servicio de Salud Sur Hospital San Luis",
-      "amount": null,
-      "close": "2026-11-26",
-      "close_text": "jue 26 nov · 20:00",
-      "category": "Vestuario para el personal médico y artículos relacionados",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057496-44-LE26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
-      "code": "1233600-61-LE26",
-      "name": "Adquisición camillas clínicas y accesorios salud",
-      "buyer": "Corp Municipal de Renca",
-      "amount": null,
-      "close": "2026-11-26",
-      "close_text": "jue 26 nov · 19:00",
-      "category": "Artículos para transporte de paciente",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1233600-61-LE26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
-      "code": "1973-115-LP26",
-      "name": "Suministro de promestrieno 1%",
-      "buyer": "Centro de Referencia de Salud de Penalolen Cordillera Oriente",
-      "amount": 116000000,
-      "close": "2026-11-26",
-      "close_text": "jue 26 nov · 17:30",
-      "category": "Estrógenos, progesteronas y anticonceptivos internos",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1973-115-LP26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
-      "code": "1973-116-LP26",
-      "name": "Suministro de fármacos ginecológicos",
-      "buyer": "Centro de Referencia de Salud de Penalolen Cordillera Oriente",
-      "amount": 75000000,
-      "close": "2026-11-26",
-      "close_text": "jue 26 nov · 17:30",
-      "category": "Amebicidas, tricomonacidas y antiprotozoarios · Antibióticos · Anticoagulantes · Antiespasmódicos · Antiinfecciosos y analgésicos urinarios · Estrógenos, progesteronas y anticonceptivos internos · Fármacos antiúlcera y otros fármacos gastrointestinales relacionados · Fungicidas · Medicamentos para enfermedades de la vesícula biliar · Medicamentos tiroideas y antitiroideas",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1973-116-LP26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
-      "code": "2258-227-LR26",
-      "name": "Adquisicion de insumos e material de osteosintesis para intervenciones traumatológicas del hospital regional de antofagasta",
-      "buyer": "Servicio de Salud Antofagasta Hospital L",
-      "amount": null,
-      "close": "2026-11-26",
-      "close_text": "jue 26 nov · 18:00",
-      "category": "Implantes quirúrgicos, ensanchadores, extensores, alambres quirúrgicos y productos relacionados",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2258-227-LR26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
-      "code": "607-88-LE26",
-      "name": "Suministro medicamento uso veterinario",
-      "buyer": "Parque Metropolitano de Santiago",
-      "amount": 51000000,
-      "close": "2026-11-26",
-      "close_text": "jue 26 nov · 20:00",
-      "category": "Antibióticos · Antihelmínticos y otros antiparasitarios · Fármacos anestésicos, complementos relacionados y analépticos · Productos para tos, resfriados y antialérgicos · Suplementos dietéticos y productos de terapia alimenticia",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=607-88-LE26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
-      "code": "619568-10-LE26",
-      "name": "Servicio de mantencion y reparacion unidades dentales np818",
-      "buyer": "I Municipalidad de San Felipe",
-      "amount": null,
-      "close": "2026-11-26",
-      "close_text": "jue 26 nov · 17:46",
-      "category": "Equipo y suministros para imágenes dentales",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=619568-10-LE26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
-      "code": "754-20-LE26",
-      "name": "Compra y despacho mat deportivos establecimientos",
-      "buyer": "Subsecretaria del Ministerio de Educacion Publica",
-      "amount": 56000000,
-      "close": "2026-11-26",
-      "close_text": "jue 26 nov · 20:00",
-      "category": "Accesorios para deportes · Equipo de bolos, accesorios y suministros · Equipos de gimnasia · Equipos para deportes de raqueta y pista · Equipos para deportes en cancha · Equipos y juegos de mesa · Productos de terapia y evaluación sensorial, perceptual, cognitiva y de desteridad",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=754-20-LE26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
     {
       "code": "1057049-425-LP26",
       "name": "Bmc adq catéteres mascarillas nariceras otros neo",
@@ -1337,6 +1241,30 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1057438-29-LE26",
+      "name": "Imágenes diagnósticas",
+      "buyer": "Servicio de Salud Coquimbo Hospital Vicuna",
+      "amount": null,
+      "close": "2026-11-30",
+      "close_text": "lun 30 nov · 15:00",
+      "category": "Laboratorios clínicos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057438-29-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1057472-123-LP26",
+      "name": "Arriendo de Motor de Oídos con Suministro de Insumos en Consignación",
+      "buyer": "Hospital Clinico Metropolitano el Carmen Doctor Luis Valentin Ferrada",
+      "amount": null,
+      "close": "2026-11-30",
+      "close_text": "lun 30 nov · 16:00",
+      "category": "Instrumentos para medir la audición",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057472-123-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1057472-156-LE26",
       "name": "Suministro de Insumos para Unidad de Esterilizació",
       "buyer": "Hospital Clinico Metropolitano el Carmen Doctor Luis Valentin Ferrada",
@@ -1589,18 +1517,6 @@
       "snapshot": "2026-11-26"
     },
     {
-      "code": "1057822-57-LE26",
-      "name": "Adquisición Equipamiento Servicio Quemados HGGB",
-      "buyer": "Servicio de Salud Concepcion",
-      "amount": null,
-      "close": "2026-11-30",
-      "close_text": "lun 30 nov · 15:01",
-      "category": "Sujetadores clínicos · Transporte de equipo médico y traslado de productos",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057822-57-LE26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
       "code": "1057882-10-LE26",
       "name": "Adq camilla de transporte para incubadora",
       "buyer": "Hospital Oriente Dr Luis Tisne Brousse",
@@ -1609,6 +1525,18 @@
       "close_text": "lun 30 nov · 15:00",
       "category": "Artículos para transporte de paciente",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057882-10-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1057898-114-LR26",
+      "name": "Adquisición de equipo y equipamiento de dermatología para el nuevo hospital regional ñuble",
+      "buyer": "Servicio de Salud Nuble",
+      "amount": null,
+      "close": "2026-11-30",
+      "close_text": "lun 30 nov · 17:00",
+      "category": "Espéculos y accesorios para auscultación médica · Instrumentos para medición de longitud · Instrumentos y accesorios de observación",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057898-114-LR26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -2765,18 +2693,6 @@
       "snapshot": "2026-11-26"
     },
     {
-      "code": "4291-75-L126",
-      "name": "Adquisición de insumos de laboratorio para diversas unidades",
-      "buyer": "Universidad de Antofagasta",
-      "amount": 5123263,
-      "close": "2026-11-30",
-      "close_text": "lun 30 nov · 15:30",
-      "category": "Cajas y accesorios eléctricos · Equipo y suministros de filtrado para laboratorio · Equipo y suministros para pipetas y manipulación de líquidos · Kits para ensayos manuales, controles de calidad, calibradores y normativas · Reactivos de analizadores clínicos y diagnósticos",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=4291-75-L126",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
       "code": "4309-300-LE26",
       "name": "Segundo llamado insulina humana nph 100 ui por ml",
       "buyer": "Hospital Guillermo Grant Benavente",
@@ -2881,6 +2797,18 @@
       "close_text": "lun 30 nov · 19:21",
       "category": "Laboratorios clínicos",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=483-60-L126",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "5055-47-LP26",
+      "name": "Adquisicion de prótesis escoliosis neuromuscular",
+      "buyer": "Servicio de Salud del Maule Hospital de Talca",
+      "amount": null,
+      "close": "2026-11-30",
+      "close_text": "lun 30 nov · 17:00",
+      "category": "Implantes quirúrgicos, ensanchadores, extensores, alambres quirúrgicos y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=5055-47-LP26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -3085,6 +3013,18 @@
       "close_text": "lun 30 nov · 16:00",
       "category": "Inmunodepresores",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=621-1019-LR26",
+      "source": "https://www.gestorpublico.cl/licitaciones-organismo/cenabast",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "621-999-LR26",
+      "name": "Brimonidina 02% sol oftalmica fra 5 ml 1000023381",
+      "buyer": "Cenabast",
+      "amount": 1066602639,
+      "close": "2026-11-30",
+      "close_text": "lun 30 nov · 16:00",
+      "category": "Simpatomiméticos o adrenérgicos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=621-999-LR26",
       "source": "https://www.gestorpublico.cl/licitaciones-organismo/cenabast",
       "snapshot": "2026-11-26"
     },
@@ -3409,6 +3349,18 @@
       "close_text": "mar 1 dic · 19:00",
       "category": "Sistemas y dispositivos de terapia de entrega de oxígeno",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057547-472-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1057822-57-LE26",
+      "name": "Adquisición Equipamiento Servicio Quemados HGGB",
+      "buyer": "Servicio de Salud Concepcion",
+      "amount": null,
+      "close": "2026-12-01",
+      "close_text": "mar 1 dic · 15:01",
+      "category": "Sujetadores clínicos · Transporte de equipo médico y traslado de productos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057822-57-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -4217,6 +4169,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1070620-133-LE26",
+      "name": "Pzm-sum ins quimioterapia",
+      "buyer": "Hospital Doctor Ernesto Torres Galdames",
+      "amount": null,
+      "close": "2026-12-02",
+      "close_text": "mié 2 dic · 17:15",
+      "category": "Equipo y suministros de quimioterapia",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1070620-133-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1113159-24-L126",
       "name": "Insumos medicos para bodega farmacia",
       "buyer": "Servicio de Salud Antofagasta Hospital M",
@@ -4613,6 +4577,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "4291-75-L126",
+      "name": "Adquisición de insumos de laboratorio para diversas unidades",
+      "buyer": "Universidad de Antofagasta",
+      "amount": 5123263,
+      "close": "2026-12-02",
+      "close_text": "mié 2 dic · 15:30",
+      "category": "Cajas y accesorios eléctricos · Equipo y suministros de filtrado para laboratorio · Equipo y suministros para pipetas y manipulación de líquidos · Kits para ensayos manuales, controles de calidad, calibradores y normativas · Reactivos de analizadores clínicos y diagnósticos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=4291-75-L126",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "4587-28-LE26",
       "name": "Adquisicion de medicamentos",
       "buyer": "I Municipalidad de Cabildo",
@@ -4793,6 +4769,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1057049-453-LE26",
+      "name": "Mes adq. electrodo de estimulacion fisologicas vaina de canulacion cortador de vaina y otros insumos para hemodinamia del HCSBA",
+      "buyer": "Serv Salud Metropolitano Central Hospital Clinico San Borja Arriaran",
+      "amount": null,
+      "close": "2026-12-03",
+      "close_text": "jue 3 dic · 15:30",
+      "category": "Artículos para imágenes vasculares, cardiología intervencional y laboratorio de cateterización cardiaca · Conectores, enchufes y terminales · Equipo de electroterapia",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057049-453-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1057384-180-L126",
       "name": "Reactivos para Unidad Laboratorio",
       "buyer": "Servicio de Salud Antofagasta Hospital M",
@@ -4813,6 +4801,18 @@
       "close_text": "jue 3 dic · 16:00",
       "category": "Cuidado y almacenaje de artículos personales",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057389-72-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1057419-40-L126",
+      "name": "Prestaciones de control dosimétrico por 36 meses hospital santa barbara",
+      "buyer": "Servicio de Salud Bio Bio Hospital Santa Barbara",
+      "amount": 3300000,
+      "close": "2026-12-03",
+      "close_text": "jue 3 dic · 16:37",
+      "category": "Productos para controlar y detectar radiación médica",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057419-40-L126",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -4897,18 +4897,6 @@
       "close_text": "jue 3 dic · 09:00",
       "category": "Elementos no metálicos y gases puros",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057545-121-LP26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
-      "code": "1057549-12-L126",
-      "name": "Compra de servicio de examen de ecotomografías de mama para el hfc de lanco",
-      "buyer": "Servicio de Salud Valdivia Hospital Lanc",
-      "amount": 2600000,
-      "close": "2026-12-03",
-      "close_text": "jue 3 dic · 16:04",
-      "category": "Artículos para imágenes de ultrasonido, doppler y eco",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057549-12-L126",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -5153,18 +5141,6 @@
       "snapshot": "2026-11-26"
     },
     {
-      "code": "1643-115-L126",
-      "name": "Suministro de Tejidos Tubulares para HTA",
-      "buyer": "Servicio Nacional de Salud Hospital de T",
-      "amount": 2400000,
-      "close": "2026-12-03",
-      "close_text": "jue 3 dic · 17:00",
-      "category": "Vendas, vendajes y productos relacionados",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1643-115-L126",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
       "code": "1723-48-LE26",
       "name": "Ayudas tecnicas y o servicios de apoyo",
       "buyer": "I Municipalidad de los Lagos",
@@ -5233,6 +5209,18 @@
       "close_text": "jue 3 dic · 16:00",
       "category": "Productos médicos para vacío y succión",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2069-207-CO26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "2111-370-LE26",
+      "name": "Suministro de prucaloprida 2mg",
+      "buyer": "Hospital de Urgencia Asistencia Publica Dr Alejandro del Rio",
+      "amount": null,
+      "close": "2026-12-03",
+      "close_text": "jue 3 dic · 15:00",
+      "category": "Laxantes",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2111-370-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -5381,6 +5369,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "3690-18-L126",
+      "name": "Medicamentos farmacia comunitaria",
+      "buyer": "I Municipalidad de las Cabras",
+      "amount": null,
+      "close": "2026-12-03",
+      "close_text": "jue 3 dic · 15:00",
+      "category": "Agentes antidiabéticos y agentes hiperglicémicos · Antibióticos · Anti-oxidantes · Farmacéuticos · Fármacos antiinflamatorios no esteroideos (NSAID) · Fungicidas · Medicamentos antihipertensivos · Productos para tos, resfriados y antialérgicos · Simpatomiméticos o adrenérgicos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=3690-18-L126",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "3855-2-LE26",
       "name": "Adquisicion de elementos de proteccion personal y equipamiento de seguridad y apoyo de emergencia",
       "buyer": "I Municipalidad de Mejillones",
@@ -5389,6 +5389,18 @@
       "close_text": "jue 3 dic · 16:00",
       "category": "Artículos de baño y cuerpo · Contenedores de almacenaje para servicios médicos de urgencia · Control de tráfico · Electrolitos · Equipo de vigilancia y detección · Equipos de protección anticaida · Iluminación de emergencia · Iluminación exterior para vehículos · Instrumentos meteorológicos · Kits para urgencias en terreno · Platos, utensilios para servir y recipientes para almacenar · Productos de resucitación de emergencia · Productos de terapia para frío y calor · Productos y accesorios de otorrinolaringología · Protectores respiratorios · Ropa protectora de seguridad contra materias peligrosas · Seguridad y protección para embalaje · Sistemas de construcción de instalaciones médicas · Suministros para aseo · Vendas, vendajes y productos relacionados",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=3855-2-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "4115-10-LE26",
+      "name": "Adquisicion de electrocardiografos para dsm curaca",
+      "buyer": "I Municipalidad de Curacautin",
+      "amount": 15000000,
+      "close": "2026-12-03",
+      "close_text": "jue 3 dic · 12:17",
+      "category": "Unidades de electrocardiografía (ECG) y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=4115-10-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -5413,6 +5425,18 @@
       "close_text": "jue 3 dic · 17:31",
       "category": "Equipo quirúrgico, accesorios y productos relacionados",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=5083-22-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "557974-50-LE26",
+      "name": "Equipamiento medicos varios",
+      "buyer": "Corporacion Municipal de Educacion,salud,cultura y Atencion al Menor,",
+      "amount": 15874872,
+      "close": "2026-12-03",
+      "close_text": "jue 3 dic · 15:09",
+      "category": "Analizadores, accesorios y suministros clínicos y de diagnósticos · Artículos para imágenes de ultrasonido, doppler y eco · Ayudas para la formación médica · Básculas o balanzas médicas · Dispositivos de medición de talla · Espéculos y accesorios para auscultación médica · Oxímetros de pulso · Piezas de mobiliario y accesorios · Sistemas y dispositivos de terapia de entrega de oxígeno · Unidades de electrocardiografía (ECG) y productos relacionados · Unidades de presión sanguínea y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=557974-50-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -5585,6 +5609,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1057472-155-LE26",
+      "name": "Suministro de insumos Odontológicos",
+      "buyer": "Hospital Clinico Metropolitano el Carmen Doctor Luis Valentin Ferrada",
+      "amount": null,
+      "close": "2026-12-04",
+      "close_text": "vie 4 dic · 17:00",
+      "category": "Equipo y suministros ortodónticos y prostodónticos · Instrumentos y dispositivos dentales y de sub-especialidad · Materiales dentales",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057472-155-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1057489-356-CO26",
       "name": "Convenio de Suministro de Sonda Flexible Argón por 24 meses para Hospital del Salvador",
       "buyer": "Servicio de Salud Oriente Hospital del Salvador",
@@ -5725,18 +5761,6 @@
       "close_text": "vie 4 dic · 12:00",
       "category": "Artículos para transporte de paciente",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1211839-88-LE26",
-      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
-      "snapshot": "2026-11-26"
-    },
-    {
-      "code": "1216085-74-LE26",
-      "name": "Adquisición de sillón dental",
-      "buyer": "Corp Municipal para el Desarrollo Social",
-      "amount": 6873950,
-      "close": "2026-12-04",
-      "close_text": "vie 4 dic · 15:01",
-      "category": "Asientos y taburetes clínicos y productos relacionados",
-      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1216085-74-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -6041,6 +6065,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "3017-94-L126",
+      "name": "Implementos taller de deportes programa 4a7 escuela bello horizonte lota",
+      "buyer": "I Municipalidad de Lota",
+      "amount": 600000,
+      "close": "2026-12-04",
+      "close_text": "vie 4 dic · 14:00",
+      "category": "Armas de fuego · Artículos de baño y cuerpo · Cerrojos · Cofres, armarios y baúles para almacenaje · Cuerdas y cables · Equipos de boxeo · Equipos para deportes de raqueta y pista · Equipos para deportes en cancha · Equipos y juegos de mesa · Herramientas para envasado · Instrumentos de laboratorio · Instrumentos de viento de madera · Juguetes · Legumbres · Maletas · Maquinaria agrícola para preparación del suelo · Recursos materiales para el profesor de pensamiento lógico, percepción espacial, identificación de coincidencias y patrones · Tejidos especiales",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=3017-94-L126",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "3017-95-L126",
       "name": "Insumos para oficina asistencia social lota",
       "buyer": "I Municipalidad de Lota",
@@ -6097,6 +6133,18 @@
       "close_text": "vie 4 dic · 11:00",
       "category": "Accesorios y tratamientos para mascotas",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=3443-53-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "3495-27-LE26",
+      "name": "Mantención equipos biomedicos y tecnicos dsm 2026",
+      "buyer": "I Municipalidad de Vilcun",
+      "amount": 9500000,
+      "close": "2026-12-04",
+      "close_text": "vie 4 dic · 10:00",
+      "category": "Productos de resucitación de emergencia",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=3495-27-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -6305,6 +6353,30 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "564162-178-L126",
+      "name": "Solicitud N° 95515 - Reactivos de laboratorio - CC 112 / PS 1872",
+      "buyer": "Universidad de Santiago de Chile",
+      "amount": 7207969,
+      "close": "2026-12-04",
+      "close_text": "vie 4 dic · 15:00",
+      "category": "Reactivos de analizadores clínicos y diagnósticos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=564162-178-L126",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "564162-179-L126",
+      "name": "Solicitud 95517 - Insumos y fungibles de laboratorio - CC112 / PS 1872",
+      "buyer": "Universidad de Santiago de Chile",
+      "amount": 2391788,
+      "close": "2026-12-04",
+      "close_text": "vie 4 dic · 15:00",
+      "category": "Equipo y suministros de filtrado para laboratorio · Equipo y suministros para pipetas y manipulación de líquidos · Reactivos de analizadores clínicos y diagnósticos · Suministros de cultivo de tejido y cribado de alta definición · Tubos de ensayo",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=564162-179-L126",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "621-1043-LP26",
       "name": "Itraconazol 100 mg cp 1000023265",
       "buyer": "Cenabast",
@@ -6485,6 +6557,30 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1057418-33-LE26",
+      "name": "Implementos de apoyo y protección instrumentos y materiales evaluación nutricional y otros para distintos servicios del hospital mulchen",
+      "buyer": "Servicio de Salud Bio Bio Hospital de Mulchen",
+      "amount": null,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 15:01",
+      "category": "Accesorios para pintar · Asistencia en el manejo de medicamentos para discapacitados físicos · Camas para pacientes y accesorios · Cubiertas y cajas · Dosificadores y medidores de medicamentos y suministros · Herramientas de medición y trazado · Herramientas para palanca y curvar · Instrumentos de laboratorio · Instrumentos de medición de peso · Productos de terapia y evaluación sensorial, perceptual, cognitiva y de desteridad · Ropa de hospital · Sujetadores clínicos · Unidades de presión sanguínea y productos relacionados · Vendas, vendajes y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057418-33-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1057421-52-LE26",
+      "name": "Convenio suministro insumos clínicos",
+      "buyer": "Servicio de Salud Bio Bio Hospital de Laja",
+      "amount": 60000000,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 17:30",
+      "category": "Agujas clínicas · Bombas y conductos de laboratorio · Instrumentos de laboratorio · Productos médicos de urgencia para catástrofes · Suministros de intubación · Unidades de electrocardiografía (ECG) y productos relacionados · Vendas, vendajes y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057421-52-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1057439-88-LR26",
       "name": "Convenio Exámenes Especializados de Laboratorio",
       "buyer": "Servicio de Salud Coquimbo Hospital la Serena",
@@ -6545,6 +6641,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1057491-217-LE26",
+      "name": "Suministro sistema quirúrgico de fémur pediátrico",
+      "buyer": "Servicio de Salud Oriente Hospital Luis Calvo Mackenna",
+      "amount": 63843000,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 15:00",
+      "category": "Implantes quirúrgicos, ensanchadores, extensores, alambres quirúrgicos y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057491-217-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1057494-76-LP26",
       "name": "Reactivos e insumos para exámenes de hematología",
       "buyer": "Servicio de Salud Sur Hospital Exequiel",
@@ -6589,6 +6697,18 @@
       "close_text": "lun 7 dic · 15:01",
       "category": "Especialidades médicas",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057509-425-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1057541-47-LE26",
+      "name": "Adquisición de Materiales Programa TEA",
+      "buyer": "Direccion Servicio de Salud Talcahuano",
+      "amount": 17716490,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 15:01",
+      "category": "Accesorios para deportes · Aditivos para alimentos y fármacos · Artículos de ayuda para la comunicación de discapacitados · Baterías, pilas y accesorios · Compuestos de modelado y arcilla, equipos de cerámica y accesorios · Cubiertas y cajas · Electrodomésticos para cocina · Equipos audiovisuales y de electrónica menor · Equipos para deportes de raqueta y pista · Equipos para deportes en cancha · Equipo y accesorios de tejido, pespunteado y cosido · Equipo y dispositivos para ejercicios de rehabilitación · Herramientas para envasado · Instrumentos de escritura · Juegos · Juguetes · Lienzos, películas, tableros y papeles para el artista · Maquinaria para fundición · Maquinaria para transformación textil · Máquinas encuadernadoras y plastificadoras · Máquinas para procesamiento de papel y accesorios · Materiales de proyecto multicultural y accesorios · Materiales educativos sobre las relaciones de pareja y sexuales, embarazo precoz, maternidad y desarrollo del niño · Monederos, bolsos de mano y bolsas · Papel de imprenta y escritura · Productos de entrenamiento para caminar · Productos de terapia y evaluación sensorial, perceptual, cognitiva y de desteridad · Recursos materiales para el profesor · Suministros y accesorios de escultura · Tierra y suelo · Vajilla y servicio de mesa · Ventas y marketing · Ventilación",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057541-47-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -6653,6 +6773,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1057549-12-L126",
+      "name": "Compra de servicio de examen de ecotomografías de mama para el hfc de lanco",
+      "buyer": "Servicio de Salud Valdivia Hospital Lanc",
+      "amount": 2600000,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 16:04",
+      "category": "Artículos para imágenes de ultrasonido, doppler y eco",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057549-12-L126",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1057900-4-LE26",
       "name": "Adquisición de ecografo portatil para hospital de san carlos dr. benicio arzola medina",
       "buyer": "Servicio de Salud Nuble Hospital de San Carlos Dr Benicio Arzola Medin",
@@ -6661,6 +6793,18 @@
       "close_text": "lun 7 dic · 17:00",
       "category": "Artículos para imágenes de ultrasonido, doppler y eco",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057900-4-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1058012-40-LE26",
+      "name": "Medicamento selexipag 800 mcg hcm 2027",
+      "buyer": "Hospital Clinico de Magallanes Dr. Lautaro Navarro Avaria",
+      "amount": null,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 15:00",
+      "category": "Farmacéuticos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1058012-40-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -6749,6 +6893,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1070620-134-LP26",
+      "name": "Pzm-sum. sistemas derivativas neurocirugia",
+      "buyer": "Hospital Doctor Ernesto Torres Galdames",
+      "amount": null,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 17:30",
+      "category": "Drenajes médicos de incisión, bolsas de drenaje, depósitos y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1070620-134-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1075963-355-LR26",
       "name": "Convenio suministro fármacos linagliptina",
       "buyer": "Servicio de Salud Arica Hosp Dr Juan Noe Crevani",
@@ -6769,6 +6925,18 @@
       "close_text": "lun 7 dic · 17:30",
       "category": "Agentes bloqueadores adrenérgicos · Agentes oftálmicos · Amebicidas, tricomonacidas y antiprotozoarios · Analgésicos no narcóticos · Antibióticos · Antídotos y eméticos · Antihelmínticos y otros antiparasitarios · Fármacos anestésicos, complementos relacionados y analépticos · Fungicidas · Medicamentos antihipertensivos · Producción farmacéutica · Productos para tos, resfriados y antialérgicos · Sales de potasio · Vasodilatadores",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1075963-356-LR26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1216085-74-LE26",
+      "name": "Adquisición de sillón dental",
+      "buyer": "Corp Municipal para el Desarrollo Social",
+      "amount": 6873950,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 15:01",
+      "category": "Asientos y taburetes clínicos y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1216085-74-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -6877,6 +7045,18 @@
       "close_text": "lun 7 dic · 16:00",
       "category": "Equipos y accesorios de esterilizadores y autoclaves",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1641-337-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1643-115-L126",
+      "name": "Suministro de Tejidos Tubulares para HTA",
+      "buyer": "Servicio Nacional de Salud Hospital de T",
+      "amount": 2400000,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 17:00",
+      "category": "Vendas, vendajes y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1643-115-L126",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -7049,6 +7229,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "2099-74-L126",
+      "name": "Servicio de lavado de ropa de trabajo de funcionarios del laboratorio de punta arenas, secretaría regional ministerial de salud magallanes y antártica chilena",
+      "buyer": "Subsecretaria de Salud Publica",
+      "amount": 1600000,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 22:05",
+      "category": "Servicios de lavado",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2099-74-L126",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "2101-188-LP26",
       "name": "Convenio de exámnenes de alto costo",
       "buyer": "Hospital Intercultural Kallvu Llanka.-",
@@ -7097,6 +7289,42 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "2307-51-LE26",
+      "name": "Adquisición de instrumental odontológico req.3851",
+      "buyer": "I Municipalidad de Osorno",
+      "amount": 9999808,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 15:31",
+      "category": "Equipo y suministros dentales de laboratorio y de esterilización · Instrumentos y dispositivos dentales y de sub-especialidad · Lámparas para examen médico · Suministros dentales generales",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2307-51-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "2332-142-LE26",
+      "name": "Adquisición de ortopantomógrafo digital y cbct 3D para el departamento de salud municipal de puerto montt",
+      "buyer": "I Municipalidad de Puerto Montt",
+      "amount": 70091000,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 15:00",
+      "category": "Computadores · Equipamiento para distribución y transformación eléctrica · Equipo y suministros para imágenes dentales",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2332-142-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "2335-84-LE26",
+      "name": "Medicamentos y prod. farmaceuticos f.c. op 717 718 719 720",
+      "buyer": "I Municipalidad de Linares",
+      "amount": 44706294,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 16:30",
+      "category": "Agentes antidiabéticos y agentes hiperglicémicos · Agentes antihiperlipidémicos · Agentes antipsicóticos · Agentes antivértigo, antinauseantes y antieméticos · Agentes bloqueadores adrenérgicos · Agentes hemorreológicos · Agentes oftálmicos · Amebicidas, tricomonacidas y antiprotozoarios · Analgésicos no narcóticos · Antibióticos · Anticoagulantes · Anticonvulsivos · Antidepresivos · Antidiarreicos · Antihistamínicos o bloqueadores H2 · Antimetabolitos · Corticosteroides · Descongestionantes nasales · Diuréticos · Estimulantes · Estrógenos, progesteronas y anticonceptivos internos · Fármacos antiinflamatorios no esteroideos (NSAID) · Fármacos antiúlcera y otros fármacos gastrointestinales relacionados · Fungicidas · Hormonas y antihormonas · Inmunodepresores · Laxantes · Medicamentos antiangina · Medicamentos antihipertensivos · Medicamentos contra el Parkinson · Productos para tos, resfriados y antialérgicos · Simpatomiméticos o adrenérgicos · Suplementos dietéticos y productos de terapia alimenticia · Tranquilizantes y fármacos ansiolíticos y antimaníacos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2335-84-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "2446-350-LP26",
       "name": "Pp 421-2026 adquisición de 31 desfibriladores",
       "buyer": "I Municipalidad de Coquimbo",
@@ -7121,6 +7349,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "2981-348-LE26",
+      "name": "Suministro para analisis confirmatorios de muestras biologicas orina jenacif",
+      "buyer": "Policia de Investigaciones de Chile",
+      "amount": 60000000,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 15:01",
+      "category": "Laboratorios clínicos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2981-348-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "2997-72-LP26",
       "name": "Prevención Forraje Animal y alimentación Apícola",
       "buyer": "I Municipalidad de Montepatria",
@@ -7129,6 +7369,18 @@
       "close_text": "lun 7 dic · 19:47",
       "category": "Agentes antivértigo, antinauseantes y antieméticos · Semillas de cereales",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2997-72-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "3017-97-LE26",
+      "name": "Equipamiento sala de monitoreo seguridad pública lota",
+      "buyer": "I Municipalidad de Lota",
+      "amount": 8766268,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 15:01",
+      "category": "Cables eléctricos y accesorios · Chapa · Clavos · Conectores, enchufes y terminales · Equipamiento para distribución y transformación eléctrica · Equipo de generación y medición de luz y ondas · Equipos audiovisuales y de electrónica menor · Llaves, destornilladores y guías · Madera · Máquinas-herramientas · Pantallas o monitores de computador · Productos ortopédicos blandos para la extremidad inferior · Puertas · Tornillos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=3017-97-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -7333,6 +7585,18 @@
       "close_text": "lun 7 dic · 15:01",
       "category": "Instrumentos para medir la audición",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=514847-21-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "5184-145-LE26",
+      "name": "Servicio trismestral de dosimetría personal",
+      "buyer": "Servicio de Salud del Maule Hospital de Linares",
+      "amount": 13500000,
+      "close": "2026-12-07",
+      "close_text": "lun 7 dic · 16:00",
+      "category": "Productos para controlar y detectar radiación médica",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=5184-145-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -7577,6 +7841,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1057402-209-LS26",
+      "name": "Contratación de Servicios Especializados para el Desarrollo de Sistemas Informáticos del Hospital Clínico de Magallanes",
+      "buyer": "Hospital Clinico de Magallanes Dr. Lautaro Navarro Avaria",
+      "amount": null,
+      "close": "2026-12-08",
+      "close_text": "mar 8 dic · 18:00",
+      "category": "Servicios de personal temporal",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057402-209-LS26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1002772-132-LE26",
       "name": "Filtros cal sodada canister compatible ge cs2",
       "buyer": "Servicio Salud Occidente Hospital Dr Felix Bulnes Cerda",
@@ -7661,6 +7937,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1057049-455-LE26",
+      "name": "Mes adq. de matriz de regeneracion dermica y matriz de generacion dermica para cirugia infantil del HCSBA",
+      "buyer": "Serv Salud Metropolitano Central Hospital Clinico San Borja Arriaran",
+      "amount": null,
+      "close": "2026-12-09",
+      "close_text": "mié 9 dic · 15:30",
+      "category": "Cierres médicos de tejidos y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057049-455-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1057402-218-LP26",
       "name": "Insumos para equipo peróxido de hidrógeno y otros de la unidad de esterilización hcm",
       "buyer": "Hospital Clinico de Magallanes Dr. Lautaro Navarro Avaria",
@@ -7681,6 +7969,18 @@
       "close_text": "mié 9 dic · 17:00",
       "category": "Dispositivos, accesorios y suministros protésicos",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057417-187-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1057434-38-LE26",
+      "name": "Convenio de suministro de oxigeno domiciliario CESFAM dr. v.m. fernandez",
+      "buyer": "Servicio de Salud Concepcion Arauco Cons",
+      "amount": null,
+      "close": "2026-12-09",
+      "close_text": "mié 9 dic · 15:30",
+      "category": "Contenedores de almacenaje para servicios médicos de urgencia",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057434-38-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -8117,6 +8417,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "3588-72-LE26",
+      "name": "Aplicación supresor de polvo diversas calles yung",
+      "buyer": "I Municipalidad de Yungay",
+      "amount": null,
+      "close": "2026-12-09",
+      "close_text": "mié 9 dic · 15:01",
+      "category": "Laxantes",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=3588-72-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "3671-91-LP26",
       "name": "“adquisición de equipo autoclave” para el departamento de salud de la comuna de chillán viejo.",
       "buyer": "Ilustre Municipalidad de Chillan Viejo",
@@ -8341,6 +8653,18 @@
       "close_text": "mié 9 dic · 17:00",
       "category": "Artículos para imágenes vasculares, cardiología intervencional y laboratorio de cateterización cardiaca",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=699866-156-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "898-233-LE26",
+      "name": "Habilitacion salas tea",
+      "buyer": "Servicio de Salud Valparaiso San Antonio",
+      "amount": 25000000,
+      "close": "2026-12-09",
+      "close_text": "mié 9 dic · 18:42",
+      "category": "Sistemas de construcción de instalaciones médicas",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=898-233-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -8705,6 +9029,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "2258-243-LE26",
+      "name": "Sensor venoso 12 y cartucho sistema monitoreo cdi one view",
+      "buyer": "Servicio de Salud Antofagasta Hospital L",
+      "amount": null,
+      "close": "2026-12-10",
+      "close_text": "jue 10 dic · 16:21",
+      "category": "Suministros y accesorios para cirugía de corazón abierto y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2258-243-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "2258-257-LR26",
       "name": "Tubos y contenedores para la toma de muetra de examenes del hospital reional de antofagasta",
       "buyer": "Servicio de Salud Antofagasta Hospital L",
@@ -8981,6 +9317,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "3191-138-LE26",
+      "name": "Arriendo de equipos de análisis biomédico",
+      "buyer": "Direccion de Abastecimiento de la Armada",
+      "amount": 67000000,
+      "close": "2026-12-11",
+      "close_text": "vie 11 dic · 15:05",
+      "category": "Artículos radiográficos de diagnóstico médico · Equipo quirúrgico, accesorios y productos relacionados · Unidades de electrocardiografía (ECG) y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=3191-138-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "3378-77-LR26",
       "name": "Suministro de fármacos del grupo n°2: fármacos oncológicos",
       "buyer": "Division Logistica del Ejercito",
@@ -9001,6 +9349,18 @@
       "close_text": "vie 11 dic · 16:00",
       "category": "Equipo quirúrgico, accesorios y productos relacionados",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=3378-78-LR26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "4463-11-LP26",
+      "name": "Contrato de suministro de nutrición parenteral",
+      "buyer": "Servicio de Salud del Maule Hospital de Curico",
+      "amount": null,
+      "close": "2026-12-11",
+      "close_text": "vie 11 dic · 17:01",
+      "category": "Electrolitos · Farmacéuticos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=4463-11-LP26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -9341,6 +9701,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1555-94-LE26",
+      "name": "Suministro de soluciones desinfectantes",
+      "buyer": "Hospital Provincial del Huasco Msr Fernando Ariztia Ruiz",
+      "amount": null,
+      "close": "2026-12-14",
+      "close_text": "lun 14 dic · 15:01",
+      "category": "Equipo de teñido de portaobjetos para laboratorio · Sustitutos de plasma sanguíneo, extensores y expansores",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1555-94-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1561228-6-LP26",
       "name": "Evaluaciones médicas pie SLEP antofagasta",
       "buyer": "Servicio Local de Educación Pública Antofagasta",
@@ -9529,6 +9901,18 @@
       "close_text": "lun 14 dic · 15:30",
       "category": "Antibióticos · Anticonvulsivos · Antihistamínicos o bloqueadores H2 · Estrógenos, progesteronas y anticonceptivos internos · Fármacos anestésicos, complementos relacionados y analépticos · Fármacos antiinflamatorios no esteroideos (NSAID) · Fungicidas · Medicamentos antivirales · Medicamentos para dolores de cabeza vasculares y migraña · Productos para tos, resfriados y antialérgicos · Relajantes músculo-esqueléticos de acción centrada",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=514862-155-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "514862-156-LE26",
+      "name": "10033074 grupo 2 medicamentos varios farmacia 2027",
+      "buyer": "Corporacion Municipal de Penalolen para el Desarrolo Social Cormup",
+      "amount": 21261320,
+      "close": "2026-12-14",
+      "close_text": "lun 14 dic · 15:30",
+      "category": "Agentes antivértigo, antinauseantes y antieméticos · Agentes bloqueadores adrenérgicos · Antiácidos y antiflatulentos · Antidepresivos · Antisépticos · Contenedores de almacenaje para servicios médicos de urgencia · Corticosteroides · Descongestionantes nasales · Fármacos antiúlcera y otros fármacos gastrointestinales relacionados · Fungicidas · Hormonas del crecimiento y sus inhibidores · Productos para tos, resfriados y antialérgicos · Suplementos dietéticos y productos de terapia alimenticia",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=514862-156-LE26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -10001,6 +10385,66 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1002772-139-LP26",
+      "name": "Captores de pic con kit instalacion en comodato",
+      "buyer": "Servicio Salud Occidente Hospital Dr Felix Bulnes Cerda",
+      "amount": null,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 16:00",
+      "category": "Unidades de control de cuidado intenso y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1002772-139-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1002772-140-LP26",
+      "name": "Dispositivos medicos para procedimientos urologico",
+      "buyer": "Servicio Salud Occidente Hospital Dr Felix Bulnes Cerda",
+      "amount": null,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 17:00",
+      "category": "Artículos para examen oftalmológico · Cánulas, puntas y estiletes de irrigación, succión quirúrgica y productos relacionados · Construcciones médicas prefabricadas · Equipo y suministros de obstetricia y ginecología · Suministros de intubación · Suministros urológicos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1002772-140-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1002772-141-LP26",
+      "name": "Insumos clínicos y quirúrgicos transversales",
+      "buyer": "Servicio Salud Occidente Hospital Dr Felix Bulnes Cerda",
+      "amount": null,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 14:55",
+      "category": "Agujas clínicas · Jeringas y accesorios · Suministros e instrumentos para disección patológica",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1002772-141-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1057049-458-LP26",
+      "name": "Csp - suministro de rnm varias con sedación",
+      "buyer": "Serv Salud Metropolitano Central Hospital Clinico San Borja Arriaran",
+      "amount": null,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 15:00",
+      "category": "Evaluaciones de salud individuales",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057049-458-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1057402-216-LP26",
+      "name": "Soluciones hemodiálisis hcm 2027-2029",
+      "buyer": "Hospital Clinico de Magallanes Dr. Lautaro Navarro Avaria",
+      "amount": null,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 15:00",
+      "category": "Equipo de hemodiálisis extracorpórea y suministros",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057402-216-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1057421-50-LP26",
       "name": "Convenio de suministro de reactivos e insumos de hematología con equipamiento en comodato para el hospital de la familia y la comunidad de laja",
       "buyer": "Servicio de Salud Bio Bio Hospital de Laja",
@@ -10049,6 +10493,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "1380-223-LP26",
+      "name": "Propuesta Pública N°420 DEL 2026 denominada “ADQUISICIÓN DE INSUMOS PARA CIRUGÍAS CARDIACAS II”",
+      "buyer": "Hospital Doctor Hernan Henriquez Aravena",
+      "amount": null,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 15:00",
+      "category": "Abrazaderas quirúrgicas, fórceps, ligadores quirúrgicos e instrumentos relacionados · Accesorios, catéteres y cánulas intravenosas y arteriales · Cierres médicos de tejidos y productos relacionados · Equipo de perfusión de corazón abierto, monitores, accesorios y productos relacionados · Suministros de resucitadores · Suministros quirúrgicos auxiliares · Sutura y productos relacionados · Unidades de electrocardiografía (ECG) y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1380-223-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1499-213-LR26",
       "name": "RBV Medicamentos EVEROLIMUS distintas presentaciones",
       "buyer": "Instituto Nacional del Torax",
@@ -10057,6 +10513,18 @@
       "close_text": "mié 16 dic · 17:00",
       "category": "Inmunodepresores",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1499-213-LR26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1559-26-LP26",
+      "name": "Preparados magistrales uso oftalmologico",
+      "buyer": "Servicio Salud Occidente Hospital Dr Felix Bulnes Cerda",
+      "amount": null,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 16:00",
+      "category": "Agentes dermatológicos · Inmunodepresores",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1559-26-LP26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -10109,6 +10577,42 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "2133-107-LP26",
+      "name": "366-26 dfl 36 serv interv qx cirugia de torax",
+      "buyer": "Hospital Doctor Hernan Henriquez Aravena",
+      "amount": 207354236,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 15:00",
+      "category": "Especialidades médicas",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2133-107-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "2582-75-LP26",
+      "name": "Insumos odontológicos red de salud i.m.s.",
+      "buyer": "I Municipalidad de Santiago",
+      "amount": 274639128,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 14:00",
+      "category": "Accesorios de máquinas de oficina · Agentes hemostáticos tópicos exógenos · Agujas clínicas · Antiácidos y antiflatulentos · Antisépticos · Artículos dentales · Construcciones médicas prefabricadas · Equipo y suministros dentales para impresión · Estimulantes · Fármacos herbales · Instrumentos de especialidad oftálmica y productos relacionados · Instrumentos de laboratorio · Instrumentos quirúrgicos para el cierre de tejidos, suturas y productos relacionados · Lubricantes · Suministros para la administración de enema · Taladros quirúrgicos de mano, escariadores, instrumentos de punzonar, accesorios y productos relacionados · Torundas de algodón y aplicadoras de algodón",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=2582-75-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "4305-20-LP26",
+      "name": "Adquisición de víveres para la bae",
+      "buyer": "Division Logistica del Ejercito",
+      "amount": null,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 15:00",
+      "category": "Aceites vegetales y grasas comestibles · Acompañamientos preparados · Bebidas no alcohólicas · Café y té · Carnes procesadas y preparadas · Carnes y aves de corral · Cereales · Cereales procesados · Fármacos herbales · Frutas · Frutos secos · Grasas y aceites animales comestibles · Hierbas, especias y extractos · Huevos y sustitutos · Jaleas, gelatinas, mermeladas, pastas de untar, dulces y conservas de frutas · Legumbres · Mariscos frescos · Mariscos, moluscos y crustáceos acuáticos · Materiales y mezclas instantáneas · Pan, galletas y pastelitos dulces · Pasta o tallarines naturales · Pescados · Postres y decoraciones · Productos de chocolates, azúcares y edulcorantes · Productos de confitería · Productos de leche y mantequilla · Quesos · Salmuera, salsas y aceitunas · Salsas, condimentos y productos para untar · Semillas de cereales · Sopas y estofados · Suministros y mezclas para hacer al horno · Tentempiés · Tratamientos con hierbas · Verduras · Vinagres y vinos de cocinar",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=4305-20-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "4309-311-LP26",
       "name": "Convenio terlipresina y otros",
       "buyer": "Hospital Guillermo Grant Benavente",
@@ -10121,6 +10625,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "5184-144-LP26",
+      "name": "Insumos esterilizacion con equipamiento",
+      "buyer": "Servicio de Salud del Maule Hospital de Linares",
+      "amount": 278000000,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 18:00",
+      "category": "Suministros de envasado y envoltura de esterilización",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=5184-144-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "538598-46-LR26",
       "name": "Examenes Qca Clínica Sedimento Orina Hemo Glicada",
       "buyer": "Hospital Metropolitano de Santiago",
@@ -10129,6 +10645,18 @@
       "close_text": "mié 16 dic · 16:00",
       "category": "Reactivos de analizadores clínicos y diagnósticos",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=538598-46-LR26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "561252-1-LP26",
+      "name": "Seguro de salud dental catastrófico y vida",
+      "buyer": "Servicio Nacional de Turismo",
+      "amount": null,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 15:00",
+      "category": "Seguros de vida, salud y accidentes",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=561252-1-LP26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -10205,6 +10733,18 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "705290-82-LP26",
+      "name": "Toma e informe de examenes holter de ritmo",
+      "buyer": "Servicio Salud Occidente Hospital Dr Felix Bulnes Cerda",
+      "amount": null,
+      "close": "2026-12-16",
+      "close_text": "mié 16 dic · 17:00",
+      "category": "Evaluaciones de salud individuales",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=705290-82-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1002584-15-LR26",
       "name": "Equipamiento para escuela fridolina barrientos",
       "buyer": "Direccion de Educacion Publica",
@@ -10225,6 +10765,18 @@
       "close_text": "jue 17 dic · 16:00",
       "category": "Evaluaciones de salud individuales",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1017312-19-LP26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1058087-27-LP26",
+      "name": "Adquisición por sistema de suministro del servici",
+      "buyer": "Servicio de Salud Oriente Hospital Luis Calvo Mackenna",
+      "amount": 347000000,
+      "close": "2026-12-17",
+      "close_text": "jue 17 dic · 15:00",
+      "category": "Farmacéuticos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1058087-27-LP26",
       "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
       "snapshot": "2026-11-26"
     },
@@ -11045,6 +11597,30 @@
       "snapshot": "2026-11-26"
     },
     {
+      "code": "621-1135-LE26",
+      "name": "Kit calcetin tobillo 24 a 26 cm 40 mmhg 1000023468",
+      "buyer": "Cenabast",
+      "amount": 61953809,
+      "close": "2026-12-24",
+      "close_text": "jue 24 dic · 16:00",
+      "category": "Vendas, vendajes y productos relacionados",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=621-1135-LE26",
+      "source": "https://www.gestorpublico.cl/licitaciones-organismo/cenabast",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "1057049-454-LR26",
+      "name": "Jcd insumos para cataratas con comodato de equipo",
+      "buyer": "Serv Salud Metropolitano Central Hospital Clinico San Borja Arriaran",
+      "amount": 503700000,
+      "close": "2026-12-28",
+      "close_text": "lun 28 dic · 15:30",
+      "category": "Artículos para examen oftalmológico · Instrumentos de especialidad oftálmica y productos relacionados · Productos médicos para vacío y succión",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=1057049-454-LR26",
+      "source": "https://www.gestorpublico.cl/licitaciones-de/salud-e-insumos-medicos",
+      "snapshot": "2026-11-26"
+    },
+    {
       "code": "1057489-357-LR26",
       "name": "Convenio de sumnistro de insumos para procedimientos de radiologia intervencional endovascular por 18 meses para hospital del salvador.",
       "buyer": "Servicio de Salud Oriente Hospital del Salvador",
@@ -11185,6 +11761,42 @@
       "close_text": "lun 28 dic · 16:00",
       "category": "Antiinfecciosos y analgésicos urinarios",
       "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=621-1133-LR26",
+      "source": "https://www.gestorpublico.cl/licitaciones-organismo/cenabast",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "621-1134-LR26",
+      "name": "Dutasterida 05 mg cmcp 1000023185",
+      "buyer": "Cenabast",
+      "amount": 1165785181,
+      "close": "2026-12-28",
+      "close_text": "lun 28 dic · 16:00",
+      "category": "Andrógenos e inhibidores androgénicos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=621-1134-LR26",
+      "source": "https://www.gestorpublico.cl/licitaciones-organismo/cenabast",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "621-1136-LR26",
+      "name": "Tramadol 50mg cm reccp liberac prolong 1000023403",
+      "buyer": "Cenabast",
+      "amount": 1594697322,
+      "close": "2026-12-28",
+      "close_text": "lun 28 dic · 16:00",
+      "category": "Analgésicos narcóticos",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=621-1136-LR26",
+      "source": "https://www.gestorpublico.cl/licitaciones-organismo/cenabast",
+      "snapshot": "2026-11-26"
+    },
+    {
+      "code": "621-1137-LR26",
+      "name": "Adalimumab 40mg sol.iny.jrpautoin 1000023457",
+      "buyer": "Cenabast",
+      "amount": 4889013717,
+      "close": "2026-12-28",
+      "close_text": "lun 28 dic · 16:00",
+      "category": "Fármacos antiinflamatorios no esteroideos (NSAID)",
+      "url": "https://www.mercadopublico.cl/fichaLicitacion.html?idLicitacion=621-1137-LR26",
       "source": "https://www.gestorpublico.cl/licitaciones-organismo/cenabast",
       "snapshot": "2026-11-26"
     },

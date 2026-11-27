@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-20",
   "window_end": "2026-11-26",
-  "generated_at": "2026-11-26T17:11:39-03:00",
-  "last_monitor_at": "2026-11-26T20:10:15Z",
-  "extra_checked_at": "2026-11-26T17:11:39-03:00",
+  "generated_at": "2026-11-26T23:51:54-03:00",
+  "last_monitor_at": "2026-11-27T02:50:37Z",
+  "extra_checked_at": "2026-11-26T23:51:54-03:00",
   "legislative_tracker": {
     "updated": "2026-11-25",
     "projects": [
@@ -96,6 +96,22 @@
       "status": "Verificado",
       "summary": "El senador Gastón Saavedra (PS) confirmó el 26 de noviembre, según Puranoticia, la decisión de reemplazar a Juan Luis Castro (PS) en la presidencia del Comité del Socialismo Democrático, tras la controversia por el retiro inconsulto de permisos constitucionales durante la tramitación del Presupuesto 2027. La decisión anunciada se refiere al comité parlamentario y no a la Comisión de Salud, cuya ficha oficial sigue identificando a Castro como presidente.",
       "implications": "Hito de seguimiento institucional por su papel en la conducción de la agenda sanitaria, incluidos el acceso a medicamentos, GES y Ley Ricarte Soto. Corresponde observar eventuales cambios en la composición o presidencia de la Comisión de Salud y en su agenda. No se ha acreditado un cambio de presidencia ni una modificación de coberturas o financiamiento sanitario derivada de este anuncio.",
+      "new_since_previous": false
+    },
+    {
+      "id": "camara-oficio-jurel-17800-11-2026-11-26",
+      "published": "2026-11-26",
+      "title": "Comisión de Salud solicita sistematizar exposiciones sobre rotulación del jurel",
+      "authority": "Cámara de Diputadas y Diputados · Comisión de Salud",
+      "source_type": "Registro oficial de oficios",
+      "url": "https://www.camara.cl/legislacion/comisiones/respuestas_oficio.aspx?prmID=3311&prmIdOficio=286940",
+      "topic": "Regulación y Congreso",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 2,
+      "status": "Verificado",
+      "summary": "El registro de oficios de la Cámara consigna el 26 de noviembre una solicitud de compilación y comparación de las exposiciones realizadas el 24 de noviembre, durante la discusión general del boletín 17.800-11 sobre rotulación y etiquetado del jurel.",
+      "implications": "Es un antecedente de tramitación del proyecto de modificación del Código Sanitario; no constituye aprobación ni entrada en vigor de nuevas exigencias.",
       "new_since_previous": true
     },
     {
@@ -161,6 +177,22 @@
       "summary": "Emol y otros medios informaron el despacho del acuerdo de la Comisión Mixta el 24 de noviembre. La Partida 16 no estaba incluida en las diez materias remitidas a esa instancia por la Cámara el día anterior.",
       "implications": "El acuerdo no constituye una nueva reasignación sanitaria. El seguimiento del financiamiento de alto costo debe considerar el texto final y sus glosas, además de la ejecución durante 2027.",
       "new_since_previous": false
+    },
+    {
+      "id": "isp-re-e5878-metotrexato-2026-11-24",
+      "published": "2026-11-24",
+      "title": "ISP instruye actualizar folletos de productos que contienen metotrexato",
+      "authority": "Instituto de Salud Pública",
+      "source_type": "Índice oficial de resoluciones",
+      "url": "https://www.ispch.cl/resoluciones/?%3Bpage=6&%3Bsort=asc&order=field_numero_value&pag=1&sort=asc",
+      "topic": "Medicamentos y seguridad",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 7,
+      "status": "Verificado",
+      "summary": "La Resolución Exenta E5878, de 24 de noviembre de 2026, instruye actualizar la información al profesional y al paciente de los medicamentos que contienen metotrexato, según el índice oficial de resoluciones del ISP.",
+      "implications": "Los titulares de registro sanitario deben revisar el acto administrativo y sus exigencias específicas. La publicación no acredita cambios de cobertura o financiamiento.",
+      "new_since_previous": true
     },
     {
       "id": "do-decreto-81-acreditacion-2026-11-24",
@@ -274,7 +306,7 @@
       "status": "Pendiente de revisión",
       "summary": "",
       "implications": "",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "media-portal-red-salud-36ab6ff0e822493e4f",
@@ -291,6 +323,22 @@
       "summary": "",
       "implications": "",
       "new_since_previous": false
+    },
+    {
+      "id": "media-portal-red-salud-c633c98866cabcdd86",
+      "published": "2026-11-26",
+      "title": "Estudiantes de TENS y Farmacia de Santo Tomás atienden a la comunidad en una feria de salud en la Plaza de Armas de Los Ángeles",
+      "authority": "Portal Red Salud",
+      "source_type": "Prensa",
+      "url": "https://portalredsalud.cl/2026/11/26/estudiantes-de-tens-y-farmacia-de-santo-tomas-atienden-a-la-comunidad-en-una-feria-de-salud-en-la-plaza-de-armas-de-los-angeles",
+      "topic": "Prensa especializada",
+      "vote_result": "",
+      "vote_totals": "",
+      "score": 0,
+      "status": "Pendiente de revisión",
+      "summary": "",
+      "implications": "",
+      "new_since_previous": true
     },
     {
       "id": "minsal-noticias-cd1100eb6977d5e421",
@@ -423,7 +471,7 @@
       "name": "Diario El Día",
       "url": "https://www.diarioeldia.cl/rss/salud/",
       "status": "ok",
-      "items_seen": 2,
+      "items_seen": 4,
       "errors": []
     },
     {
@@ -443,9 +491,11 @@
     {
       "name": "FENPOF Chile",
       "url": "https://fenpof.cl/feed/",
-      "status": "ok",
+      "status": "error",
       "items_seen": 0,
-      "errors": []
+      "errors": [
+        "HTTP Error 415: Unsupported Media Type"
+      ]
     },
     {
       "name": "ISP · Publicaciones oficiales",
@@ -473,9 +523,11 @@
     {
       "name": "Colegio de Enfermeras de Chile",
       "url": "https://colegiodeenfermeras.cl/feed/",
-      "status": "ok",
+      "status": "error",
       "items_seen": 0,
-      "errors": []
+      "errors": [
+        "HTTP Error 415: Unsupported Media Type"
+      ]
     },
     {
       "id": "diario-oficial-ediciones",
@@ -535,10 +587,12 @@
   ],
   "all_ids": [
     "castro-salida-comite-socialismo-democratico-2026-11-26",
+    "camara-oficio-jurel-17800-11-2026-11-26",
     "congreso-despacho-final-presupuesto-salud-2027-2026-11-25",
     "camara-presupuesto-mixta-2026-11-25",
     "senado-bol-15047-11-tabla-2026-11-24",
     "mixta-presupuesto-2027-despacho-2026-11-24",
+    "isp-re-e5878-metotrexato-2026-11-24",
     "do-decreto-81-acreditacion-2026-11-24",
     "do-decreto-80-osorno-2026-11-24",
     "camara-citacion-salud-2026-11-24",
@@ -547,6 +601,7 @@
     "supersalud-re-13656-2026-11-23",
     "media-portal-red-salud-d4bd294d65500b9928",
     "media-portal-red-salud-36ab6ff0e822493e4f",
+    "media-portal-red-salud-c633c98866cabcdd86",
     "minsal-noticias-cd1100eb6977d5e421"
   ]
 }
