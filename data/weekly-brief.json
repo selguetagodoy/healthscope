@@ -1,9 +1,9 @@
 {
   "window_start": "2026-11-21",
   "window_end": "2026-11-27",
-  "generated_at": "2026-11-27T16:57:32-03:00",
-  "last_monitor_at": "2026-11-27T19:57:06Z",
-  "extra_checked_at": "2026-11-27T16:57:32-03:00",
+  "generated_at": "2026-11-27T23:42:00-03:00",
+  "last_monitor_at": "2026-11-28T02:40:35Z",
+  "extra_checked_at": "2026-11-27T23:42:00-03:00",
   "legislative_tracker": {
     "updated": "2026-11-27",
     "projects": [
@@ -551,7 +551,7 @@
       "status": "Pendiente de revisión",
       "summary": "",
       "implications": "",
-      "new_since_previous": true
+      "new_since_previous": false
     },
     {
       "id": "media-portal-red-salud-c633c98866cabcdd86",
@@ -672,7 +672,7 @@
       "name": "ChileCompra",
       "url": "https://www.chilecompra.cl/category/noticias/noticias/feed/",
       "status": "ok",
-      "items_seen": 1,
+      "items_seen": 0,
       "errors": []
     },
     {

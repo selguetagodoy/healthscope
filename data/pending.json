@@ -181,6 +181,21 @@
   },
   {
     "authority": "Cooperativa",
+    "captured_at": "2026-11-27T23:40:35-03:00",
+    "category": "prensa",
+    "date": "2026-11-27",
+    "id": "media-cooperativa-ee6aa1fca5af35f20c",
+    "medication": "",
+    "published": "2026-11-27",
+    "source_id": "media-cooperativa",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Tiroteo dejó cuatro heridos en la población La Legua de San Joaquín",
+    "url": "https://www.cooperativa.cl/noticias/pais/policial/tiroteo-dejo-cuatro-heridos-en-la-poblacion-la-legua-de-san-joaquin/2026-11-27/212424.html"
+  },
+  {
+    "authority": "Cooperativa",
     "captured_at": "2026-11-27T16:57:06-03:00",
     "category": "prensa",
     "date": "2026-11-27",
@@ -223,6 +238,21 @@
     "summary": "",
     "title": "Dos muertos y cuatro heridos por choque frontal entre ambulancia y camioneta en Sierra Gorda",
     "url": "https://www.cooperativa.cl/noticias/pais/policial/accidentes-de-transito/dos-muertos-y-cuatro-heridos-por-choque-frontal-entre-ambulancia-y/2026-11-27/160226.html"
+  },
+  {
+    "authority": "Cooperativa",
+    "captured_at": "2026-11-27T23:40:35-03:00",
+    "category": "prensa",
+    "date": "2026-11-27",
+    "id": "media-cooperativa-14c3f8b5b27d1c364f",
+    "medication": "",
+    "published": "2026-11-27",
+    "source_id": "media-cooperativa",
+    "source_type": "Prensa",
+    "status": "Pendiente de revisión",
+    "summary": "",
+    "title": "Fallo dividido: Corte revocó prisión de hijo imputado por el crimen de Julia Chuñil",
+    "url": "https://www.cooperativa.cl/noticias/pais/policial/casos-emblematicos/fallo-dividido-corte-revoco-prision-de-hijo-imputado-por-el-crimen-de/2026-11-27/220356.html"
   },
   {
     "authority": "Ministerio de Salud",
